@@ -1,0 +1,441 @@
+{
+ "totalMs": 95000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 2000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 2000,
+   "endMs": 14000,
+   "type": "work",
+   "label": "Kniebeugen 🏋️‍♀️"
+  },
+  {
+   "startMs": 14000,
+   "endMs": 25000,
+   "type": "work",
+   "label": "腕立て伏せ"
+  },
+  {
+   "startMs": 25000,
+   "endMs": 35000,
+   "type": "rest",
+   "label": "تمرين الضغط"
+  },
+  {
+   "startMs": 35000,
+   "endMs": 40000,
+   "type": "cooldown",
+   "label": "Ñandú é"
+  },
+  {
+   "startMs": 40000,
+   "endMs": 44000,
+   "type": "work",
+   "label": "Jump, \"high\" \\ low"
+  },
+  {
+   "startMs": 44000,
+   "endMs": 47000,
+   "type": "work",
+   "label": "👨‍👩‍👧‍👦 family"
+  },
+  {
+   "startMs": 47000,
+   "endMs": 50000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 50000,
+   "endMs": 62000,
+   "type": "work",
+   "label": "Kniebeugen 🏋️‍♀️"
+  },
+  {
+   "startMs": 62000,
+   "endMs": 73000,
+   "type": "work",
+   "label": "腕立て伏せ"
+  },
+  {
+   "startMs": 73000,
+   "endMs": 83000,
+   "type": "rest",
+   "label": "تمرين الضغط"
+  },
+  {
+   "startMs": 83000,
+   "endMs": 88000,
+   "type": "cooldown",
+   "label": "Ñandú é"
+  },
+  {
+   "startMs": 88000,
+   "endMs": 92000,
+   "type": "work",
+   "label": "Jump, \"high\" \\ low"
+  },
+  {
+   "startMs": 92000,
+   "endMs": 95000,
+   "type": "work",
+   "label": "👨‍👩‍👧‍👦 family"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 1000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 2000,
+   "kind": "round",
+   "text": "Round 1 of 2"
+  },
+  {
+   "atMs": 2000,
+   "kind": "start",
+   "text": "Kniebeugen 🏋️‍♀️"
+  },
+  {
+   "atMs": 8000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 10000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 11000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 12000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 13000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 14000,
+   "kind": "start",
+   "text": "腕立て伏せ"
+  },
+  {
+   "atMs": 20000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 21000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 22000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 23000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 24000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 25000,
+   "kind": "start",
+   "text": "تمرين الضغط"
+  },
+  {
+   "atMs": 30000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 31000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 32000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 33000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 34000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 35000,
+   "kind": "start",
+   "text": "Ñandú é"
+  },
+  {
+   "atMs": 36000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 37000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 38000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 39000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 40000,
+   "kind": "start",
+   "text": "Jump, \"high\" \\ low"
+  },
+  {
+   "atMs": 41000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 42000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 43000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 44000,
+   "kind": "start",
+   "text": "👨‍👩‍👧‍👦 family"
+  },
+  {
+   "atMs": 45000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 46000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 47000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 48000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 49000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 50000,
+   "kind": "round",
+   "text": "Round 2 of 2"
+  },
+  {
+   "atMs": 50000,
+   "kind": "start",
+   "text": "Kniebeugen 🏋️‍♀️"
+  },
+  {
+   "atMs": 56000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 57000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 58000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 59000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 60000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 61000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 62000,
+   "kind": "start",
+   "text": "腕立て伏せ"
+  },
+  {
+   "atMs": 68000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 69000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 70000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 71000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 72000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 73000,
+   "kind": "start",
+   "text": "تمرين الضغط"
+  },
+  {
+   "atMs": 78000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 79000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 80000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 81000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 82000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 83000,
+   "kind": "start",
+   "text": "Ñandú é"
+  },
+  {
+   "atMs": 84000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 85000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 86000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 87000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 88000,
+   "kind": "start",
+   "text": "Jump, \"high\" \\ low"
+  },
+  {
+   "atMs": 89000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 90000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 91000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 92000,
+   "kind": "start",
+   "text": "👨‍👩‍👧‍👦 family"
+  },
+  {
+   "atMs": 93000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 94000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 95000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

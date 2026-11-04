@@ -1,0 +1,65 @@
+{
+ "id": "rc-08-clock-back",
+ "family": "recovery",
+ "title": "wall clock set back 10 min after the save",
+ "adversarial": true,
+ "ambiguous": true,
+ "readings": [
+  "REC1"
+ ],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Recover",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 10,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 40,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 20,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 10,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "record": {
+   "state": "running",
+   "startedAtWallMs": 1792173600000,
+   "savedAtWallMs": 1792173700000,
+   "elapsedMs": 100000,
+   "events": [],
+   "baseWallMs": 1792173600000
+  },
+  "nowWallMs": 1792173100000
+ }
+}

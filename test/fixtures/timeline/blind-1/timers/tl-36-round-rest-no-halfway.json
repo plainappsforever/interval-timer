@@ -1,0 +1,35 @@
+{
+ "timer": {
+  "name": "Rest halfway",
+  "color": "#C62828",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 3,
+    "restBetweenRoundsS": 12,
+    "intervals": [
+     {
+      "name": "Work",
+      "seconds": 12,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 0,
+   "endCue": "both",
+   "repeatWhole": 1,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 3
+ }
+}

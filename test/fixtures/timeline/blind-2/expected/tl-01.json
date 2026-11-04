@@ -1,0 +1,494 @@
+{
+ "totalMs": 250000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 10000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 30000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 30000,
+   "endMs": 40000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 40000,
+   "endMs": 60000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 60000,
+   "endMs": 70000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 70000,
+   "endMs": 90000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 90000,
+   "endMs": 100000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 100000,
+   "endMs": 120000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 120000,
+   "endMs": 130000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 130000,
+   "endMs": 150000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 150000,
+   "endMs": 160000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 160000,
+   "endMs": 180000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 180000,
+   "endMs": 190000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 190000,
+   "endMs": 210000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 210000,
+   "endMs": 220000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 220000,
+   "endMs": 240000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 240000,
+   "endMs": 250000,
+   "type": "rest",
+   "label": "Rest"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10000,
+   "kind": "round",
+   "text": "Round 1 of 8"
+  },
+  {
+   "atMs": 10000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 27000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 28000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 29000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 30000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 37000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 38000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 39000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 40000,
+   "kind": "round",
+   "text": "Round 2 of 8"
+  },
+  {
+   "atMs": 40000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 57000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 58000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 59000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 60000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 67000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 68000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 69000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 70000,
+   "kind": "round",
+   "text": "Round 3 of 8"
+  },
+  {
+   "atMs": 70000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 87000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 88000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 89000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 90000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 97000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 98000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 99000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 100000,
+   "kind": "round",
+   "text": "Round 4 of 8"
+  },
+  {
+   "atMs": 100000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 117000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 118000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 119000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 120000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 127000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 128000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 129000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 130000,
+   "kind": "round",
+   "text": "Round 5 of 8"
+  },
+  {
+   "atMs": 130000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 147000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 148000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 149000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 150000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 157000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 158000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 159000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 160000,
+   "kind": "round",
+   "text": "Round 6 of 8"
+  },
+  {
+   "atMs": 160000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 177000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 178000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 179000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 180000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 187000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 188000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 189000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 190000,
+   "kind": "round",
+   "text": "Round 7 of 8"
+  },
+  {
+   "atMs": 190000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 207000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 208000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 209000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 210000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 217000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 218000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 219000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 220000,
+   "kind": "round",
+   "text": "Round 8 of 8"
+  },
+  {
+   "atMs": 220000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 237000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 238000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 239000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 240000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 247000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 248000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 249000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 250000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

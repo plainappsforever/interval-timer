@@ -1,0 +1,143 @@
+appId: ${APP_ID}
+name: Settings - language switch without restart and after one (U9, A12), cue settings saved, help and privacy texts
+tags:
+  - p7
+---
+- runFlow: subflows/fresh.yaml
+- tapOn:
+    id: open-settings
+- extendedWaitUntil:
+    visible:
+      id: settings-screen
+    timeout: 10000
+# defaults (D27): voice on, vibration on, Lock Screen activity off (iOS only), silent switch not respected (iOS only)
+- assertVisible:
+    id: set-voice
+    checked: true
+- scrollUntilVisible:
+    element:
+      id: set-haptics
+    direction: DOWN
+- assertVisible:
+    id: set-haptics
+    checked: true
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - scrollUntilVisible:
+          element:
+            id: set-respect-silent
+          direction: DOWN
+      - assertVisible:
+          id: set-respect-silent
+          checked: false
+      - scrollUntilVisible:
+          element:
+            id: set-live-activity
+          direction: DOWN
+      - assertVisible:
+          id: set-live-activity
+          checked: false
+# the phone's voices for the language, or the honest no-voice note
+- scrollUntilVisible:
+    element:
+      text: "Voice cues"
+    direction: UP
+- assertVisible: "Phone’s default voice|No voice for English is installed.*"
+# change cue settings; they are saved at once
+- scrollUntilVisible:
+    element:
+      id: countdown-5
+    direction: DOWN
+- tapOn:
+    id: countdown-5
+- tapOn:
+    id: beep-soft
+- tapOn:
+    id: set-haptics
+- assertVisible:
+    id: set-haptics
+    checked: false
+- scrollUntilVisible:
+    element:
+      id: settings-locked-help
+    direction: DOWN
+- assertVisible:
+    id: settings-locked-help
+    text: ".*(keep playing on time|keeps the workout running).*"
+- scrollUntilVisible:
+    element:
+      id: settings-privacy
+    direction: DOWN
+- assertVisible:
+    id: settings-privacy
+    text: "Plain Intervals collects nothing.*"
+# Apple 5.1.1(i): the policy link is in the app (P8); not tapped — it leaves the app for the browser
+- scrollUntilVisible:
+    element:
+      id: settings-privacy-link
+    direction: DOWN
+- assertVisible:
+    id: settings-privacy-link
+# language: German at once, no restart
+- scrollUntilVisible:
+    element:
+      id: settings-language
+    direction: UP
+- tapOn:
+    id: settings-language
+- scrollUntilVisible:
+    element:
+      id: language-de
+    direction: DOWN
+- tapOn:
+    id: language-de
+- scrollUntilVisible:
+    element:
+      id: settings-language-value
+    direction: UP
+- assertVisible:
+    id: settings-language-value
+    text: "Deutsch"
+- assertVisible: "Sprachansagen"
+# still German after a restart; the settings above kept
+- stopApp
+- runFlow: subflows/launch.yaml
+- assertVisible:
+    id: section-templates
+    text: "Vorlagen"
+- tapOn:
+    id: open-settings
+- extendedWaitUntil:
+    visible:
+      id: settings-screen
+    timeout: 10000
+- assertVisible: "Sprache"
+- scrollUntilVisible:
+    element:
+      id: set-haptics
+    direction: DOWN
+- assertVisible:
+    id: set-haptics
+    checked: false
+- scrollUntilVisible:
+    element:
+      id: countdown-5
+    direction: DOWN
+- assertVisible:
+    id: countdown-5
+    selected: true
+# back to the device language (English on the test devices)
+- scrollUntilVisible:
+    element:
+      id: settings-language
+    direction: UP
+- tapOn:
+    id: settings-language
+- tapOn:
+    id: language-system
+- assertVisible:
+    id: settings-language-value
+    text: "Device language"
+- assertVisible: "Voice cues"

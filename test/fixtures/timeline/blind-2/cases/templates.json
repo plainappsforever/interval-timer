@@ -1,0 +1,93 @@
+[
+ {
+  "id": "tp-01",
+  "family": "templates",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "seeded 'tabata' template total (English)",
+  "input": {
+   "keyword": "tabata"
+  },
+  "expected": {
+   "totalMs": 250000
+  }
+ },
+ {
+  "id": "tp-02",
+  "family": "templates",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "seeded 'hiit' template total (English)",
+  "input": {
+   "keyword": "hiit"
+  },
+  "expected": {
+   "totalMs": 460000
+  }
+ },
+ {
+  "id": "tp-03",
+  "family": "templates",
+  "adversarial": false,
+  "ambiguous": "A15",
+  "why": "seeded 'emom' template total (English)",
+  "input": {
+   "keyword": "emom"
+  },
+  "expected": {
+   "totalMs": 610000
+  }
+ },
+ {
+  "id": "tp-04",
+  "family": "templates",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "seeded 'walk' template total (English)",
+  "input": {
+   "keyword": "walk"
+  },
+  "expected": {
+   "totalMs": 1810000
+  }
+ },
+ {
+  "id": "tp-05",
+  "family": "templates",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "seeded 'stretch' template total (English)",
+  "input": {
+   "keyword": "stretch"
+  },
+  "expected": {
+   "totalMs": 305000
+  }
+ },
+ {
+  "id": "tp-06",
+  "family": "templates",
+  "adversarial": false,
+  "ambiguous": "A15",
+  "why": "seeded 'boxing' template total (English)",
+  "input": {
+   "keyword": "boxing"
+  },
+  "expected": {
+   "totalMs": 2890000
+  }
+ },
+ {
+  "id": "tp-07",
+  "family": "templates",
+  "adversarial": false,
+  "ambiguous": "A15",
+  "why": "seeded 'circuit' template total (English)",
+  "input": {
+   "keyword": "circuit"
+  },
+  "expected": {
+   "totalMs": 1210000
+  }
+ }
+]

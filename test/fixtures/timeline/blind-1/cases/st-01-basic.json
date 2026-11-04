@@ -1,0 +1,59 @@
+{
+ "id": "st-01-basic",
+ "family": "stats",
+ "title": "3 consecutive days ending today; totals, planned vs actual",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "zone": "Europe/Berlin",
+  "nowMs": 1792173600000,
+  "sessions": [
+   {
+    "timerName": "Tabata",
+    "startedAt": 1791954000000,
+    "endedAt": 1791954250000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Tabata",
+    "startedAt": 1792040400000,
+    "endedAt": 1792040650000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Walk/Run",
+    "startedAt": 1792083600000,
+    "endedAt": 1792083720000,
+    "plannedS": 900,
+    "actualS": 120,
+    "completed": false,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "HIIT",
+    "startedAt": 1792166400000,
+    "endedAt": 1792166860000,
+    "plannedS": 460,
+    "actualS": 460,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   }
+  ]
+ }
+}

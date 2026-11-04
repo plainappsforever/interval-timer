@@ -1,0 +1,49 @@
+{
+ "timer": {
+  "name": "Repeat open",
+  "color": "#1565C0",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 1,
+    "restBetweenRoundsS": 0,
+    "intervals": [
+     {
+      "name": "Work",
+      "seconds": 20,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Max reps",
+      "seconds": 1,
+      "type": "open",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 7
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 0,
+   "endCue": "both",
+   "repeatWhole": 2,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 3
+ },
+ "nextAt": [
+  40000,
+  100000
+ ]
+}

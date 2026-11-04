@@ -1,0 +1,139 @@
+{
+ "totalMs": 30000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 10000,
+   "type": "work",
+   "label": "Ten"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 30000,
+   "type": "work",
+   "label": "Twenty"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Ten"
+  },
+  {
+   "atMs": 1000,
+   "kind": "countdown",
+   "text": "9"
+  },
+  {
+   "atMs": 2000,
+   "kind": "countdown",
+   "text": "8"
+  },
+  {
+   "atMs": 3000,
+   "kind": "countdown",
+   "text": "7"
+  },
+  {
+   "atMs": 4000,
+   "kind": "countdown",
+   "text": "6"
+  },
+  {
+   "atMs": 5000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 5000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 6000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10000,
+   "kind": "start",
+   "text": "Twenty"
+  },
+  {
+   "atMs": 20000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 20000,
+   "kind": "countdown",
+   "text": "10"
+  },
+  {
+   "atMs": 21000,
+   "kind": "countdown",
+   "text": "9"
+  },
+  {
+   "atMs": 22000,
+   "kind": "countdown",
+   "text": "8"
+  },
+  {
+   "atMs": 23000,
+   "kind": "countdown",
+   "text": "7"
+  },
+  {
+   "atMs": 24000,
+   "kind": "countdown",
+   "text": "6"
+  },
+  {
+   "atMs": 25000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 26000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 27000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 28000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 29000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 30000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

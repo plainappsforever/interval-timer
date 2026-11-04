@@ -1,0 +1,145 @@
+{
+ "timer": {
+  "name": "Circuit",
+  "color": "",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 3,
+    "restBetweenRoundsS": 60,
+    "intervals": [
+     {
+      "name": "Station 1",
+      "seconds": 45,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Rest",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Station 2",
+      "seconds": 45,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Rest",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Station 3",
+      "seconds": 45,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Rest",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Station 4",
+      "seconds": 45,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Rest",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Station 5",
+      "seconds": 45,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Rest",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Station 6",
+      "seconds": 45,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Rest",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 10,
+   "endCue": "both",
+   "repeatWhole": 1,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 3
+ }
+}

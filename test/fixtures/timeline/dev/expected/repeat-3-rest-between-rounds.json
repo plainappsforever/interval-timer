@@ -1,0 +1,447 @@
+{
+ "totalMs": 390000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 30000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 30000,
+   "endMs": 50000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 50000,
+   "endMs": 80000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 80000,
+   "endMs": 100000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 100000,
+   "endMs": 130000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 130000,
+   "endMs": 160000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 160000,
+   "endMs": 180000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 180000,
+   "endMs": 210000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 210000,
+   "endMs": 230000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 230000,
+   "endMs": 260000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 260000,
+   "endMs": 290000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 290000,
+   "endMs": 310000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 310000,
+   "endMs": 340000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 340000,
+   "endMs": 360000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 360000,
+   "endMs": 390000,
+   "type": "work",
+   "label": "Work"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "round",
+   "text": "Round 1 of 3"
+  },
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 27000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 28000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 29000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 30000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 47000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 48000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 49000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 50000,
+   "kind": "round",
+   "text": "Round 2 of 3"
+  },
+  {
+   "atMs": 50000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 77000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 78000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 79000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 80000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 97000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 98000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 99000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 100000,
+   "kind": "round",
+   "text": "Round 3 of 3"
+  },
+  {
+   "atMs": 100000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 127000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 128000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 129000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 130000,
+   "kind": "round",
+   "text": "Round 1 of 3"
+  },
+  {
+   "atMs": 130000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 157000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 158000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 159000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 160000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 177000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 178000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 179000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 180000,
+   "kind": "round",
+   "text": "Round 2 of 3"
+  },
+  {
+   "atMs": 180000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 207000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 208000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 209000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 210000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 227000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 228000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 229000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 230000,
+   "kind": "round",
+   "text": "Round 3 of 3"
+  },
+  {
+   "atMs": 230000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 257000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 258000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 259000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 260000,
+   "kind": "round",
+   "text": "Round 1 of 3"
+  },
+  {
+   "atMs": 260000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 287000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 288000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 289000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 290000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 307000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 308000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 309000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 310000,
+   "kind": "round",
+   "text": "Round 2 of 3"
+  },
+  {
+   "atMs": 310000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 337000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 338000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 339000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 340000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 357000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 358000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 359000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 360000,
+   "kind": "round",
+   "text": "Round 3 of 3"
+  },
+  {
+   "atMs": 360000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 387000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 388000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 389000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 390000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

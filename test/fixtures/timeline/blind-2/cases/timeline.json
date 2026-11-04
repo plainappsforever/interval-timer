@@ -1,0 +1,380 @@
+[
+ {
+  "id": "tl-01",
+  "family": "timeline",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "Tabata 20/10 x 8 as SPEC 4 describes it, default prep 10",
+  "timerFile": "timers/tl-01.json",
+  "expectedFile": "expected/tl-01.json"
+ },
+ {
+  "id": "tl-02",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "countdown 10 on a 10 s interval: no '10' at the start, halfway collides with '5'",
+  "timerFile": "timers/tl-02.json",
+  "expectedFile": "expected/tl-02.json"
+ },
+ {
+  "id": "tl-03",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "countdown 5 on 3 s intervals gives only '2','1' each round",
+  "timerFile": "timers/tl-03.json",
+  "expectedFile": "expected/tl-03.json"
+ },
+ {
+  "id": "tl-04",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "1 s intervals with countdown: no countdown cue at all, round cues still",
+  "timerFile": "timers/tl-04.json",
+  "expectedFile": "expected/tl-04.json"
+ },
+ {
+  "id": "tl-06",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "halfway at odd seconds (11 -> 5500), none at 9 s, at 10 s and 13 s",
+  "timerFile": "timers/tl-06.json",
+  "expectedFile": "expected/tl-06.json"
+ },
+ {
+  "id": "tl-07",
+  "family": "timeline",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "single 5999 s interval with halfway and countdown 10",
+  "timerFile": "timers/tl-07.json",
+  "expectedFile": "expected/tl-07.json"
+ },
+ {
+  "id": "tl-08",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "D32: block interval TYPED prep with halfway on, countdown off, voice start",
+  "timerFile": "timers/tl-08.json",
+  "expectedFile": "expected/tl-08.json"
+ },
+ {
+  "id": "tl-09",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "D32: typed prep with start none + timer-level prep segment before it",
+  "timerFile": "timers/tl-09.json",
+  "expectedFile": "expected/tl-09.json"
+ },
+ {
+  "id": "tl-10",
+  "family": "timeline",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "timer-level prep 60 s with countdown 10: no halfway on prep",
+  "timerFile": "timers/tl-10.json",
+  "expectedFile": "expected/tl-10.json"
+ },
+ {
+  "id": "tl-11",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "prep 1 s: no prep countdown cue (only strictly after start)",
+  "timerFile": "timers/tl-11.json",
+  "expectedFile": "expected/tl-11.json"
+ },
+ {
+  "id": "tl-12",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "prep 2 s with countdown 5: only '1'",
+  "timerFile": "timers/tl-12.json",
+  "expectedFile": "expected/tl-12.json"
+ },
+ {
+  "id": "tl-13",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "rest between rounds 15 s: always countdown, never halfway, label Rest",
+  "timerFile": "timers/tl-13.json",
+  "expectedFile": "expected/tl-13.json"
+ },
+ {
+  "id": "tl-14",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "rest between rounds 1 s: start cue only",
+  "timerFile": "timers/tl-14.json",
+  "expectedFile": "expected/tl-14.json"
+ },
+ {
+  "id": "tl-15",
+  "family": "timeline",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "rest between rounds 4 s with countdown 5 -> 3,2,1",
+  "timerFile": "timers/tl-15.json",
+  "expectedFile": "expected/tl-15.json"
+ },
+ {
+  "id": "tl-16",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "long circuit: 3 blocks x 6 stations (45/15) x 3 rounds, 60 s between rounds",
+  "timerFile": "timers/tl-16.json",
+  "expectedFile": "expected/tl-16.json"
+ },
+ {
+  "id": "tl-17",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "repeat whole 3 with prep once, round cues restart per repeat, rest only between rounds",
+  "timerFile": "timers/tl-17.json",
+  "expectedFile": "expected/tl-17.json"
+ },
+ {
+  "id": "tl-18",
+  "family": "timeline",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "repeat whole 10 (maximum) of a tiny timer",
+  "timerFile": "timers/tl-18.json",
+  "expectedFile": "expected/tl-18.json"
+ },
+ {
+  "id": "tl-19",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "open interval without Next: cut, totalMs null, no end cue, nothing after it",
+  "timerFile": "timers/tl-19.json",
+  "expectedFile": "expected/tl-19.json"
+ },
+ {
+  "id": "tl-20",
+  "family": "timeline",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "open interval closed by Next at 100000: timeline continues, end at new total",
+  "timerFile": "timers/tl-20.json",
+  "expectedFile": "expected/tl-20.json"
+ },
+ {
+  "id": "tl-21",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": "A3",
+  "why": "Next before the open start: zero-length open segment, two start cues at one ms",
+  "timerFile": "timers/tl-21.json",
+  "expectedFile": "expected/tl-21.json"
+ },
+ {
+  "id": "tl-22",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "two open intervals, one Next: cut at the second open",
+  "timerFile": "timers/tl-22.json",
+  "expectedFile": "expected/tl-22.json"
+ },
+ {
+  "id": "tl-23",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "open interval in a 3-round block with rest between rounds, one Next per round",
+  "timerFile": "timers/tl-23.json",
+  "expectedFile": "expected/tl-23.json"
+ },
+ {
+  "id": "tl-24",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "open interval with halfway and countdown flags on: both ignored",
+  "timerFile": "timers/tl-24.json",
+  "expectedFile": "expected/tl-24.json"
+ },
+ {
+  "id": "tl-25",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": "A3",
+  "why": "open first segment, prep 0, Next at 0: zero-length segment at 0",
+  "timerFile": "timers/tl-25.json",
+  "expectedFile": "expected/tl-25.json"
+ },
+ {
+  "id": "tl-26",
+  "family": "timeline",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "end cue none: no end cue",
+  "timerFile": "timers/tl-26.json",
+  "expectedFile": "expected/tl-26.json"
+ },
+ {
+  "id": "tl-27",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": "A2",
+  "why": "every interval start none in a 4-round block: round cues only",
+  "timerFile": "timers/tl-27.json",
+  "expectedFile": "expected/tl-27.json"
+ },
+ {
+  "id": "tl-28",
+  "family": "timeline",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "non-Latin interval names are spoken verbatim",
+  "timerFile": "timers/tl-28.json",
+  "expectedFile": "expected/tl-28.json"
+ },
+ {
+  "id": "tl-29",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "emoji / ZWJ names verbatim in labels and start texts",
+  "timerFile": "timers/tl-29.json",
+  "expectedFile": "expected/tl-29.json"
+ },
+ {
+  "id": "tl-30",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "interval names that look like cue texts ('Round 1 of 2', '3', 'Halfway', 'Done')",
+  "timerFile": "timers/tl-30.json",
+  "expectedFile": "expected/tl-30.json"
+ },
+ {
+  "id": "tl-31",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "maximum structure: 20 blocks x 30 intervals of 1-5 s",
+  "timerFile": "timers/tl-31.json",
+  "expectedFile": "expected/tl-31.json"
+ },
+ {
+  "id": "tl-32",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "rounds 99 with 2 s rest between rounds",
+  "timerFile": "timers/tl-32.json",
+  "expectedFile": "expected/tl-32.json"
+ },
+ {
+  "id": "tl-33",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "countdown 10 on an 11 s interval with halfway: '10' at +1000, halfway 5500",
+  "timerFile": "timers/tl-33.json",
+  "expectedFile": "expected/tl-33.json"
+ },
+ {
+  "id": "tl-34",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "rounds 1 with rest between rounds 30: no rest segment, no round cue",
+  "timerFile": "timers/tl-34.json",
+  "expectedFile": "expected/tl-34.json"
+ },
+ {
+  "id": "tl-36",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "mixed blocks: rounds 1 / 4 with rest / 2",
+  "timerFile": "timers/tl-36.json",
+  "expectedFile": "expected/tl-36.json"
+ },
+ {
+  "id": "tl-37",
+  "family": "timeline",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "openTickS on a non-open interval is ignored; cooldown halfway",
+  "timerFile": "timers/tl-37.json",
+  "expectedFile": "expected/tl-37.json"
+ },
+ {
+  "id": "tl-38",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "countdown 5 on 5 s and 6 s intervals",
+  "timerFile": "timers/tl-38.json",
+  "expectedFile": "expected/tl-38.json"
+ },
+ {
+  "id": "tl-39",
+  "family": "timeline",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "boxing 3/1 x 12, halfway on rounds, countdown 10",
+  "timerFile": "timers/tl-39.json",
+  "expectedFile": "expected/tl-39.json"
+ },
+ {
+  "id": "tl-40",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "typed prep at the start of a 15-round block gets the round cue first",
+  "timerFile": "timers/tl-40.json",
+  "expectedFile": "expected/tl-40.json"
+ },
+ {
+  "id": "tl-41",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "repeat whole 2 with an open interval, one Next per repeat",
+  "timerFile": "timers/tl-41.json",
+  "expectedFile": "expected/tl-41.json"
+ },
+ {
+  "id": "tl-42",
+  "family": "timeline",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "start modes voice / both / none mixed in one block",
+  "timerFile": "timers/tl-42.json",
+  "expectedFile": "expected/tl-42.json"
+ },
+ {
+  "id": "tl-44",
+  "family": "timeline",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "countdown 5 on a 10 s interval: halfway and '5' at 5000, halfway first",
+  "timerFile": "timers/tl-44.json",
+  "expectedFile": "expected/tl-44.json"
+ },
+ {
+  "id": "tl-45",
+  "family": "timeline",
+  "adversarial": false,
+  "ambiguous": "A1",
+  "why": "beep-only start cue: listed with the label as text",
+  "timerFile": "timers/tl-45.json",
+  "expectedFile": "expected/tl-45.json"
+ }
+]

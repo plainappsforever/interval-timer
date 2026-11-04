@@ -1,0 +1,45 @@
+{
+ "timer": {
+  "name": "Ones",
+  "color": "#C62828",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 3,
+    "restBetweenRoundsS": 1,
+    "intervals": [
+     {
+      "name": "A",
+      "seconds": 1,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "B",
+      "seconds": 1,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 1,
+   "endCue": "both",
+   "repeatWhole": 1,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 3
+ }
+}

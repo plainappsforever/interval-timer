@@ -1,0 +1,482 @@
+{
+ "totalMs": 70000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 4000,
+   "type": "work",
+   "label": "Up"
+  },
+  {
+   "startMs": 4000,
+   "endMs": 7000,
+   "type": "rest",
+   "label": "Down"
+  },
+  {
+   "startMs": 7000,
+   "endMs": 11000,
+   "type": "work",
+   "label": "Up"
+  },
+  {
+   "startMs": 11000,
+   "endMs": 14000,
+   "type": "rest",
+   "label": "Down"
+  },
+  {
+   "startMs": 14000,
+   "endMs": 18000,
+   "type": "work",
+   "label": "Up"
+  },
+  {
+   "startMs": 18000,
+   "endMs": 21000,
+   "type": "rest",
+   "label": "Down"
+  },
+  {
+   "startMs": 21000,
+   "endMs": 25000,
+   "type": "work",
+   "label": "Up"
+  },
+  {
+   "startMs": 25000,
+   "endMs": 28000,
+   "type": "rest",
+   "label": "Down"
+  },
+  {
+   "startMs": 28000,
+   "endMs": 32000,
+   "type": "work",
+   "label": "Up"
+  },
+  {
+   "startMs": 32000,
+   "endMs": 35000,
+   "type": "rest",
+   "label": "Down"
+  },
+  {
+   "startMs": 35000,
+   "endMs": 39000,
+   "type": "work",
+   "label": "Up"
+  },
+  {
+   "startMs": 39000,
+   "endMs": 42000,
+   "type": "rest",
+   "label": "Down"
+  },
+  {
+   "startMs": 42000,
+   "endMs": 46000,
+   "type": "work",
+   "label": "Up"
+  },
+  {
+   "startMs": 46000,
+   "endMs": 49000,
+   "type": "rest",
+   "label": "Down"
+  },
+  {
+   "startMs": 49000,
+   "endMs": 53000,
+   "type": "work",
+   "label": "Up"
+  },
+  {
+   "startMs": 53000,
+   "endMs": 56000,
+   "type": "rest",
+   "label": "Down"
+  },
+  {
+   "startMs": 56000,
+   "endMs": 60000,
+   "type": "work",
+   "label": "Up"
+  },
+  {
+   "startMs": 60000,
+   "endMs": 63000,
+   "type": "rest",
+   "label": "Down"
+  },
+  {
+   "startMs": 63000,
+   "endMs": 67000,
+   "type": "work",
+   "label": "Up"
+  },
+  {
+   "startMs": 67000,
+   "endMs": 70000,
+   "type": "rest",
+   "label": "Down"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Up"
+  },
+  {
+   "atMs": 1000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 2000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 3000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 4000,
+   "kind": "start",
+   "text": "Down"
+  },
+  {
+   "atMs": 5000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 6000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 7000,
+   "kind": "start",
+   "text": "Up"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 10000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 11000,
+   "kind": "start",
+   "text": "Down"
+  },
+  {
+   "atMs": 12000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 13000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 14000,
+   "kind": "start",
+   "text": "Up"
+  },
+  {
+   "atMs": 15000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 16000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 17000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 18000,
+   "kind": "start",
+   "text": "Down"
+  },
+  {
+   "atMs": 19000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 20000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 21000,
+   "kind": "start",
+   "text": "Up"
+  },
+  {
+   "atMs": 22000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 23000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 24000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 25000,
+   "kind": "start",
+   "text": "Down"
+  },
+  {
+   "atMs": 26000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 27000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 28000,
+   "kind": "start",
+   "text": "Up"
+  },
+  {
+   "atMs": 29000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 30000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 31000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 32000,
+   "kind": "start",
+   "text": "Down"
+  },
+  {
+   "atMs": 33000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 34000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 35000,
+   "kind": "start",
+   "text": "Up"
+  },
+  {
+   "atMs": 36000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 37000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 38000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 39000,
+   "kind": "start",
+   "text": "Down"
+  },
+  {
+   "atMs": 40000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 41000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 42000,
+   "kind": "start",
+   "text": "Up"
+  },
+  {
+   "atMs": 43000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 44000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 45000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 46000,
+   "kind": "start",
+   "text": "Down"
+  },
+  {
+   "atMs": 47000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 48000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 49000,
+   "kind": "start",
+   "text": "Up"
+  },
+  {
+   "atMs": 50000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 51000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 52000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 53000,
+   "kind": "start",
+   "text": "Down"
+  },
+  {
+   "atMs": 54000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 55000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 56000,
+   "kind": "start",
+   "text": "Up"
+  },
+  {
+   "atMs": 57000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 58000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 59000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 60000,
+   "kind": "start",
+   "text": "Down"
+  },
+  {
+   "atMs": 61000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 62000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 63000,
+   "kind": "start",
+   "text": "Up"
+  },
+  {
+   "atMs": 64000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 65000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 66000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 67000,
+   "kind": "start",
+   "text": "Down"
+  },
+  {
+   "atMs": 68000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 69000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 70000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

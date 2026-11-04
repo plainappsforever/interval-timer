@@ -1,0 +1,48 @@
+{
+ "timer": {
+  "name": "Open flags",
+  "color": "#1565C0",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 1,
+    "restBetweenRoundsS": 0,
+    "intervals": [
+     {
+      "name": "Hold",
+      "seconds": 40,
+      "type": "open",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Release",
+      "seconds": 10,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 0,
+   "endCue": "both",
+   "repeatWhole": 1,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 5
+ },
+ "nextAt": [
+  33000
+ ]
+}

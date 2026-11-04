@@ -1,0 +1,79 @@
+{
+ "id": "cv-02-guard",
+ "family": "csv",
+ "title": "formula lead characters = + - @ TAB CR in names and notes",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "sessions": [
+   {
+    "timerName": "=HYPERLINK(\"http://x\")",
+    "startedAt": 1791615600000,
+    "endedAt": 1791615850000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "=SUM(A1:A9)"
+   },
+   {
+    "timerName": "+30s drill",
+    "startedAt": 1791702000000,
+    "endedAt": 1791702251000,
+    "plannedS": 250,
+    "actualS": 251,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "+1 call"
+   },
+   {
+    "timerName": "-plank",
+    "startedAt": 1791788400000,
+    "endedAt": 1791788652000,
+    "plannedS": 250,
+    "actualS": 252,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "-5 kg"
+   },
+   {
+    "timerName": "@home",
+    "startedAt": 1791874800000,
+    "endedAt": 1791875053000,
+    "plannedS": 250,
+    "actualS": 253,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "@gym"
+   },
+   {
+    "timerName": "Tabata",
+    "startedAt": 1791961200000,
+    "endedAt": 1791961454000,
+    "plannedS": 250,
+    "actualS": 254,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "\tTabbed"
+   },
+   {
+    "timerName": "HIIT",
+    "startedAt": 1792047600000,
+    "endedAt": 1792047855000,
+    "plannedS": 250,
+    "actualS": 255,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "\rCR first"
+   }
+  ]
+ }
+}

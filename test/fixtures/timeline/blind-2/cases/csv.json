@@ -1,0 +1,353 @@
+[
+ {
+  "id": "cv-01",
+  "family": "csv",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "formula guard on timer names: = + - @ and a lone =",
+  "input": {
+   "sessions": [
+    {
+     "id": 1,
+     "timerId": 1,
+     "timerName": "=SUM(A1:A9)",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838101000,
+     "plannedS": 210,
+     "actualS": 101,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    },
+    {
+     "id": 2,
+     "timerId": 1,
+     "timerName": "+1 lap",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838102000,
+     "plannedS": 210,
+     "actualS": 102,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    },
+    {
+     "id": 3,
+     "timerId": 1,
+     "timerName": "-5 burpees",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838103000,
+     "plannedS": 210,
+     "actualS": 103,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    },
+    {
+     "id": 4,
+     "timerId": 1,
+     "timerName": "@gym",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838104000,
+     "plannedS": 210,
+     "actualS": 104,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    },
+    {
+     "id": 5,
+     "timerId": 1,
+     "timerName": "=",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838105000,
+     "plannedS": 210,
+     "actualS": 105,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    }
+   ],
+   "check": "timerName"
+  },
+  "expected": {
+   "rows": 5,
+   "cells": [
+    "'=SUM(A1:A9)",
+    "'+1 lap",
+    "'-5 burpees",
+    "'@gym",
+    "'="
+   ]
+  }
+ },
+ {
+  "id": "cv-02",
+  "family": "csv",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "RFC 4180 quoting: comma, quotes, newline, CRLF, tab inside, emoji, Arabic",
+  "input": {
+   "sessions": [
+    {
+     "id": 1,
+     "timerId": 1,
+     "timerName": "Legs, \"heavy\"",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838101000,
+     "plannedS": 210,
+     "actualS": 101,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    },
+    {
+     "id": 2,
+     "timerId": 1,
+     "timerName": "Line1\nLine2",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838102000,
+     "plannedS": 210,
+     "actualS": 102,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    },
+    {
+     "id": 3,
+     "timerId": 1,
+     "timerName": "A\r\nB",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838103000,
+     "plannedS": 210,
+     "actualS": 103,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    },
+    {
+     "id": 4,
+     "timerId": 1,
+     "timerName": "Tab\tinside",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838104000,
+     "plannedS": 210,
+     "actualS": 104,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    },
+    {
+     "id": 5,
+     "timerId": 1,
+     "timerName": "\u00dcn\u00efc\u00f6d\u00e9 \ud83c\udfcb\ufe0f\u200d\u2640\ufe0f",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838105000,
+     "plannedS": 210,
+     "actualS": 105,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    },
+    {
+     "id": 6,
+     "timerId": 1,
+     "timerName": "\u062a\u0645\u0631\u064a\u0646 \u0633\u0631\u064a\u0639",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838106000,
+     "plannedS": 210,
+     "actualS": 106,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    }
+   ],
+   "check": "timerName"
+  },
+  "expected": {
+   "rows": 6,
+   "cells": [
+    "Legs, \"heavy\"",
+    "Line1\nLine2",
+    "A\r\nB",
+    "Tab\tinside",
+    "\u00dcn\u00efc\u00f6d\u00e9 \ud83c\udfcb\ufe0f\u200d\u2640\ufe0f",
+    "\u062a\u0645\u0631\u064a\u0646 \u0633\u0631\u064a\u0639"
+   ]
+  }
+ },
+ {
+  "id": "cv-03",
+  "family": "csv",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "guard inside a quoted field; a name already starting with an apostrophe is unchanged",
+  "input": {
+   "sessions": [
+    {
+     "id": 1,
+     "timerId": 1,
+     "timerName": "=HYPERLINK(\"http://x\",\"y\")",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838101000,
+     "plannedS": 210,
+     "actualS": 101,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    },
+    {
+     "id": 2,
+     "timerId": 1,
+     "timerName": "'already",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838102000,
+     "plannedS": 210,
+     "actualS": 102,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    },
+    {
+     "id": 3,
+     "timerId": 1,
+     "timerName": "-",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838103000,
+     "plannedS": 210,
+     "actualS": 103,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    },
+    {
+     "id": 4,
+     "timerId": 1,
+     "timerName": "@SUM(1,2)",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838104000,
+     "plannedS": 210,
+     "actualS": 104,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    }
+   ],
+   "check": "timerName"
+  },
+  "expected": {
+   "rows": 4,
+   "cells": [
+    "'=HYPERLINK(\"http://x\",\"y\")",
+    "'already",
+    "'-",
+    "'@SUM(1,2)"
+   ]
+  }
+ },
+ {
+  "id": "cv-04",
+  "family": "csv",
+  "adversarial": true,
+  "ambiguous": "A11",
+  "why": "leading tab / carriage return are guarded (OWASP list)",
+  "input": {
+   "sessions": [
+    {
+     "id": 1,
+     "timerId": 1,
+     "timerName": "\t=1+1",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838101000,
+     "plannedS": 210,
+     "actualS": 101,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    },
+    {
+     "id": 2,
+     "timerId": 1,
+     "timerName": "\r=1+1",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838102000,
+     "plannedS": 210,
+     "actualS": 102,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    }
+   ],
+   "check": "timerName"
+  },
+  "expected": {
+   "rows": 2,
+   "cells": [
+    "'\t=1+1",
+    "'\r=1+1"
+   ]
+  }
+ },
+ {
+  "id": "cv-06",
+  "family": "csv",
+  "adversarial": true,
+  "ambiguous": "A11",
+  "why": "note field guarded and quoted",
+  "input": {
+   "sessions": [
+    {
+     "id": 1,
+     "timerId": 1,
+     "timerName": "Plain",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838101000,
+     "plannedS": 210,
+     "actualS": 101,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": "=cmd|' /C calc'!A0"
+    },
+    {
+     "id": 2,
+     "timerId": 1,
+     "timerName": "Plain 2",
+     "startedAt": 1790838000000,
+     "endedAt": 1790838102000,
+     "plannedS": 210,
+     "actualS": 102,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": "line\nbreak, comma"
+    }
+   ],
+   "check": "note"
+  },
+  "expected": {
+   "rows": 2,
+   "cells": [
+    "'=cmd|' /C calc'!A0",
+    "line\nbreak, comma"
+   ]
+  }
+ }
+]

@@ -1,0 +1,319 @@
+{
+ "id": "bk-04-keep-both",
+ "family": "backup",
+ "title": "keep both: every changed timer exists twice (current + backup copy), deleted ones return",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "initial": {
+   "timers": [
+    {
+     "name": "Tabata",
+     "color": "#C62828",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 8,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 20,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Übung 🏋️‍♀️ \"Tag\" \\ 1",
+     "color": "#C62828",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "ブロック 1 / Блок",
+       "rounds": 2,
+       "restBetweenRoundsS": 3,
+       "intervals": [
+        {
+         "name": "腕立て伏せ",
+         "seconds": 11,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "تمرين الضغط",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Ñandú",
+         "seconds": 5,
+         "type": "cooldown",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "👨‍👩‍👧‍👦 <&> %20 ?d=",
+         "seconds": 3,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 2,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Physio",
+     "color": "#C62828",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "Sides",
+       "rounds": 3,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Left",
+         "seconds": 30,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Right",
+         "seconds": 30,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 5,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   ],
+   "sessions": [
+    {
+     "timerName": "Tabata",
+     "startedAt": 1791615600000,
+     "endedAt": 1791615850000,
+     "plannedS": 250,
+     "actualS": 250,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    },
+    {
+     "timerName": "Übung 🏋️‍♀️ \"Tag\" \\ 1",
+     "startedAt": 1791702000000,
+     "endedAt": 1791702200000,
+     "plannedS": 212,
+     "actualS": 200,
+     "completed": false,
+     "skippedIntervals": 2,
+     "pauses": 1,
+     "note": "knee, \"ok\""
+    }
+   ]
+  },
+  "mode": "keepBoth",
+  "mutations": [
+   {
+    "op": "editTimer",
+    "ref": 0,
+    "timer": {
+     "name": "Tabata",
+     "color": "#C62828",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 8,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 25,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 5,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   },
+   {
+    "op": "editTimer",
+    "ref": 1,
+    "timer": {
+     "name": "Übung edited",
+     "color": "#C62828",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 1,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Only",
+         "seconds": 40,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 0,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   },
+   {
+    "op": "deleteTimer",
+    "ref": 2
+   },
+   {
+    "op": "addTimer",
+    "timer": {
+     "name": "Added later",
+     "color": "#C62828",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 1,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "New",
+         "seconds": 12,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 0,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   },
+   {
+    "op": "deleteSession",
+    "ref": 0
+   },
+   {
+    "op": "deleteSession",
+    "ref": 1
+   },
+   {
+    "op": "addSession",
+    "session": {
+     "timerName": "Added later",
+     "startedAt": 1792047600000,
+     "endedAt": 1792047612000,
+     "plannedS": 12,
+     "actualS": 12,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    }
+   }
+  ]
+ }
+}

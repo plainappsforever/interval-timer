@@ -1,0 +1,82 @@
+{
+ "id": "rn-16-open-next",
+ "family": "runner",
+ "title": "open interval counts up (no remaining, no total) until Next rebases",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Run open",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 1,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Warm",
+       "seconds": 10,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Free",
+       "seconds": 60,
+       "type": "open",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Work",
+       "seconds": 10,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 0,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "script": [
+   {
+    "t": 1000,
+    "op": "start"
+   },
+   {
+    "t": 31000,
+    "op": "probe"
+   },
+   {
+    "t": 51000,
+    "op": "next"
+   },
+   {
+    "t": 56000,
+    "op": "probe"
+   }
+  ]
+ }
+}

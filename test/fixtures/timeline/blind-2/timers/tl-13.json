@@ -1,0 +1,45 @@
+{
+ "timer": {
+  "name": "Round rest",
+  "color": "#1565C0",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 3,
+    "restBetweenRoundsS": 15,
+    "intervals": [
+     {
+      "name": "Squat",
+      "seconds": 30,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": false,
+      "openTickS": 0
+     },
+     {
+      "name": "Lunge",
+      "seconds": 30,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": false,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 0,
+   "endCue": "both",
+   "repeatWhole": 1,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 3
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "id": "cv-01-plain",
+ "family": "csv",
+ "title": "plain rows",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "sessions": [
+   {
+    "timerName": "Tabata",
+    "startedAt": 1791615600000,
+    "endedAt": 1791615850000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "HIIT 30/15",
+    "startedAt": 1791702000000,
+    "endedAt": 1791702251000,
+    "plannedS": 250,
+    "actualS": 251,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "good"
+   },
+   {
+    "timerName": "Walk/Run",
+    "startedAt": 1791788400000,
+    "endedAt": 1791788652000,
+    "plannedS": 250,
+    "actualS": 252,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "legs heavy"
+   }
+  ]
+ }
+}

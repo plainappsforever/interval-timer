@@ -1,0 +1,114 @@
+{
+ "id": "st-10-gap-streaks",
+ "family": "stats",
+ "title": "today + yesterday current 2, an older 5-day run is the longest",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "zone": "Europe/Berlin",
+  "nowMs": 1792177200000,
+  "sessions": [
+   {
+    "timerName": "Tabata",
+    "startedAt": 1790960400000,
+    "endedAt": 1790960650000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Tabata",
+    "startedAt": 1791046800000,
+    "endedAt": 1791047050000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Tabata",
+    "startedAt": 1791133200000,
+    "endedAt": 1791133450000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Tabata",
+    "startedAt": 1791219600000,
+    "endedAt": 1791219850000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Tabata",
+    "startedAt": 1791306000000,
+    "endedAt": 1791306250000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Tabata",
+    "startedAt": 1791565200000,
+    "endedAt": 1791565450000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Tabata",
+    "startedAt": 1792083600000,
+    "endedAt": 1792083850000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Tabata",
+    "startedAt": 1792170000000,
+    "endedAt": 1792170250000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "HIIT",
+    "startedAt": 1791262800000,
+    "endedAt": 1791263260000,
+    "plannedS": 460,
+    "actualS": 460,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   }
+  ]
+ }
+}

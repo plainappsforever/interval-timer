@@ -1,0 +1,58 @@
+{
+ "id": "cb-06-halfway-batch",
+ "family": "cuesBetween",
+ "title": "A batch holds halfway and countdown '5' at the same ms",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Ten",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 1,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Ten",
+       "seconds": 10,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": true,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 0,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 5
+  },
+  "windows": [
+   [
+    4000,
+    5500
+   ],
+   [
+    5000,
+    5999
+   ],
+   [
+    3000,
+    2000
+   ]
+  ]
+ }
+}

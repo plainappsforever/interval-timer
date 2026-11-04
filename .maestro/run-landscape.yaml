@@ -1,0 +1,48 @@
+appId: ${APP_ID}
+name: Running screen in landscape - time, interval and controls stay on screen; other screens stay portrait (SPEC §3, A16)
+tags:
+  - p6
+---
+# iOS: setOrientation turns the simulator (screenshot checked in P6). Android: the running screen asks for FULL_SENSOR, so
+# Maestro's setOrientation (user_rotation) does not turn it; P6 checked landscape there with `adb emu rotate` + screenshot.
+- runFlow: subflows/fresh.yaml
+- tapOn:
+    id: start-last
+- extendedWaitUntil:
+    visible:
+      id: run-label
+      text: "Get ready"
+    timeout: 20000
+- setOrientation: LANDSCAPE_LEFT
+- waitForAnimationToEnd:
+    timeout: 3000
+- assertVisible:
+    id: run-remaining
+- assertVisible:
+    id: run-label
+- assertVisible:
+    id: run-toggle
+- assertVisible:
+    id: run-end
+- assertVisible:
+    id: run-status-line
+- tapOn:
+    id: run-skip
+- assertVisible:
+    id: run-label
+    text: "Work"
+- setOrientation: PORTRAIT
+- waitForAnimationToEnd:
+    timeout: 3000
+- tapOn:
+    id: run-end
+# more than 10 % done on a slow device: End asks first
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- tapOn:
+    id: done-close

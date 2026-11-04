@@ -1,0 +1,37 @@
+{
+ "id": "st-08-kathmandu",
+ "family": "stats",
+ "title": "UTC+5:45: 23:59 and 00:01 local are different days; streak 2",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "zone": "Asia/Kathmandu",
+  "nowMs": 1792116900000,
+  "sessions": [
+   {
+    "timerName": "Yoga",
+    "startedAt": 1792088040000,
+    "endedAt": 1792088070000,
+    "plannedS": 30,
+    "actualS": 30,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Yoga",
+    "startedAt": 1792088160000,
+    "endedAt": 1792089060000,
+    "plannedS": 900,
+    "actualS": 900,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   }
+  ]
+ }
+}

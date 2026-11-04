@@ -1,0 +1,70 @@
+{
+ "id": "rn-15-runs-out",
+ "family": "runner",
+ "title": "probing after the total: the run has ended at the total",
+ "adversarial": false,
+ "ambiguous": true,
+ "readings": [
+  "R2"
+ ],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Run A",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 3,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 20,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": true,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 10,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 5,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "script": [
+   {
+    "t": 0,
+    "op": "start"
+   },
+   {
+    "t": 94000,
+    "op": "probe"
+   },
+   {
+    "t": 200000,
+    "op": "probe"
+   }
+  ]
+ }
+}

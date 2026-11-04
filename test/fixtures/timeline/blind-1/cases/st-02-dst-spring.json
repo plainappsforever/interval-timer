@@ -1,0 +1,59 @@
+{
+ "id": "st-02-dst-spring",
+ "family": "stats",
+ "title": "Berlin spring-forward: 23-hour day inside a 3-day streak",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "zone": "Europe/Berlin",
+  "nowMs": 1774864800000,
+  "sessions": [
+   {
+    "timerName": "Run",
+    "startedAt": 1774654200000,
+    "endedAt": 1774654800000,
+    "plannedS": 600,
+    "actualS": 600,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Run",
+    "startedAt": 1774740600000,
+    "endedAt": 1774741200000,
+    "plannedS": 600,
+    "actualS": 600,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Run",
+    "startedAt": 1774819800000,
+    "endedAt": 1774820400000,
+    "plannedS": 600,
+    "actualS": 600,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Box",
+    "startedAt": 1774827000000,
+    "endedAt": 1774827900000,
+    "plannedS": 900,
+    "actualS": 900,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   }
+  ]
+ }
+}

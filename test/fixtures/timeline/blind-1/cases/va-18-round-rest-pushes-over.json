@@ -1,0 +1,41 @@
+{
+ "id": "va-18-round-rest-pushes-over",
+ "family": "validation",
+ "title": "99 rounds x 290 s + 98 x 5 s round-rest > 8 h, without rests < 8 h",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Valid",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 99,
+     "restBetweenRoundsS": 5,
+     "intervals": [
+      {
+       "name": "W",
+       "seconds": 290,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 0,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  }
+ }
+}

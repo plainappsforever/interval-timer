@@ -1,0 +1,428 @@
+{
+ "totalMs": 73000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 10000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 15000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 15000,
+   "endMs": 18000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 18000,
+   "endMs": 23000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 23000,
+   "endMs": 28000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 28000,
+   "endMs": 31000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 31000,
+   "endMs": 36000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 36000,
+   "endMs": 39000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 39000,
+   "endMs": 44000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 44000,
+   "endMs": 49000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 49000,
+   "endMs": 52000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 52000,
+   "endMs": 57000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 57000,
+   "endMs": 60000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 60000,
+   "endMs": 65000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 65000,
+   "endMs": 70000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 70000,
+   "endMs": 73000,
+   "type": "rest",
+   "label": "Rest"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10000,
+   "kind": "round",
+   "text": "Round 1 of 2"
+  },
+  {
+   "atMs": 10000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 12000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 13000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 14000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 15000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 16000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 17000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 18000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 20000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 21000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 22000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 23000,
+   "kind": "round",
+   "text": "Round 2 of 2"
+  },
+  {
+   "atMs": 23000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 25000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 26000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 27000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 28000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 29000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 30000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 31000,
+   "kind": "round",
+   "text": "Round 1 of 2"
+  },
+  {
+   "atMs": 31000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 33000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 34000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 35000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 36000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 37000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 38000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 39000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 41000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 42000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 43000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 44000,
+   "kind": "round",
+   "text": "Round 2 of 2"
+  },
+  {
+   "atMs": 44000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 46000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 47000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 48000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 49000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 50000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 51000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 52000,
+   "kind": "round",
+   "text": "Round 1 of 2"
+  },
+  {
+   "atMs": 52000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 54000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 55000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 56000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 57000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 58000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 59000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 60000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 62000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 63000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 64000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 65000,
+   "kind": "round",
+   "text": "Round 2 of 2"
+  },
+  {
+   "atMs": 65000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 67000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 68000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 69000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 70000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 71000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 72000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 73000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

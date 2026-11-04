@@ -1,0 +1,39 @@
+{
+ "id": "fm-12-block-one-round-rest",
+ "family": "format",
+ "title": "block total: 1 round with rest 45 (never used)",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "op": "blockTotal",
+  "block": {
+   "name": "",
+   "rounds": 1,
+   "restBetweenRoundsS": 45,
+   "intervals": [
+    {
+     "name": "A",
+     "seconds": 50,
+     "type": "work",
+     "color": "",
+     "cueStart": "both",
+     "halfwayCue": false,
+     "countdownCue": true,
+     "openTickS": 0
+    },
+    {
+     "name": "B",
+     "seconds": 25,
+     "type": "work",
+     "color": "",
+     "cueStart": "both",
+     "halfwayCue": false,
+     "countdownCue": true,
+     "openTickS": 0
+    }
+   ]
+  }
+ }
+}

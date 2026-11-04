@@ -1,0 +1,88 @@
+{
+ "id": "rn-02-pause-accounting",
+ "family": "runner",
+ "title": "pause/resume twice: elapsed excludes paused time",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Run A",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 3,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 20,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": true,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 10,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 5,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "script": [
+   {
+    "t": 10000,
+    "op": "start"
+   },
+   {
+    "t": 22000,
+    "op": "pause"
+   },
+   {
+    "t": 60000,
+    "op": "probe"
+   },
+   {
+    "t": 70000,
+    "op": "resume"
+   },
+   {
+    "t": 75000,
+    "op": "probe"
+   },
+   {
+    "t": 80000,
+    "op": "pause"
+   },
+   {
+    "t": 81000,
+    "op": "resume"
+   },
+   {
+    "t": 100000,
+    "op": "probe"
+   }
+  ]
+ }
+}

@@ -1,0 +1,142 @@
+{
+ "totalMs": 28800000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 5999000,
+   "type": "work",
+   "label": "L1"
+  },
+  {
+   "startMs": 5999000,
+   "endMs": 11998000,
+   "type": "work",
+   "label": "L2"
+  },
+  {
+   "startMs": 11998000,
+   "endMs": 17997000,
+   "type": "work",
+   "label": "L3"
+  },
+  {
+   "startMs": 17997000,
+   "endMs": 23996000,
+   "type": "work",
+   "label": "L4"
+  },
+  {
+   "startMs": 23996000,
+   "endMs": 28800000,
+   "type": "work",
+   "label": "Tail"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "L1"
+  },
+  {
+   "atMs": 5996000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 5997000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 5998000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 5999000,
+   "kind": "start",
+   "text": "L2"
+  },
+  {
+   "atMs": 11995000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 11996000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 11997000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 11998000,
+   "kind": "start",
+   "text": "L3"
+  },
+  {
+   "atMs": 17994000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 17995000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 17996000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 17997000,
+   "kind": "start",
+   "text": "L4"
+  },
+  {
+   "atMs": 23993000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 23994000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 23995000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 23996000,
+   "kind": "start",
+   "text": "Tail"
+  },
+  {
+   "atMs": 28797000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 28798000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 28799000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 28800000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

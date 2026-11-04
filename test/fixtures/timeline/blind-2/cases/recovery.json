@@ -1,0 +1,986 @@
+[
+ {
+  "id": "rc-01",
+  "family": "recovery",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "killed while running, relaunch 4:32 later -> Resume at wall-clock elapsed",
+  "input": {
+   "timer": {
+    "name": "Recovery",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 6,
+      "restBetweenRoundsS": 60,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 60,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 30,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1792137600000,
+     "do": "start"
+    }
+   ],
+   "relaunchAt": 1792137872000
+  },
+  "expected": {
+   "decision": "resume",
+   "state": "running",
+   "elapsedMs": 272000,
+   "segmentIndex": 6,
+   "remainingMs": 38000,
+   "totalMs": 850000,
+   "nextCue": {
+    "atMs": 307000,
+    "kinds": [
+     "countdown"
+    ]
+   }
+  }
+ },
+ {
+  "id": "rc-02",
+  "family": "recovery",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "relaunch hours after the end -> finished, completed, interrupted",
+  "input": {
+   "timer": {
+    "name": "Recovery",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 6,
+      "restBetweenRoundsS": 60,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 60,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 30,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1792137600000,
+     "do": "start"
+    }
+   ],
+   "relaunchAt": 1792155600000
+  },
+  "expected": {
+   "decision": "finished",
+   "elapsedMs": 850000,
+   "totalMs": 850000,
+   "completed": true,
+   "interrupted": true
+  }
+ },
+ {
+  "id": "rc-03",
+  "family": "recovery",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "relaunch exactly at the total -> finished",
+  "input": {
+   "timer": {
+    "name": "Recovery",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 6,
+      "restBetweenRoundsS": 60,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 60,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 30,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1792137600000,
+     "do": "start"
+    }
+   ],
+   "relaunchAt": 1792138450000
+  },
+  "expected": {
+   "decision": "finished",
+   "elapsedMs": 850000,
+   "totalMs": 850000,
+   "completed": true,
+   "interrupted": true
+  }
+ },
+ {
+  "id": "rc-04",
+  "family": "recovery",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "relaunch 1 ms before the total -> resume in the last segment",
+  "input": {
+   "timer": {
+    "name": "Recovery",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 6,
+      "restBetweenRoundsS": 60,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 60,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 30,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1792137600000,
+     "do": "start"
+    }
+   ],
+   "relaunchAt": 1792138449999
+  },
+  "expected": {
+   "decision": "resume",
+   "state": "running",
+   "elapsedMs": 849999,
+   "segmentIndex": 17,
+   "remainingMs": 1,
+   "totalMs": 850000,
+   "nextCue": {
+    "atMs": 850000,
+    "kinds": [
+     "end"
+    ]
+   }
+  }
+ },
+ {
+  "id": "rc-05",
+  "family": "recovery",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "a 2-minute pause before the kill is not counted",
+  "input": {
+   "timer": {
+    "name": "Recovery",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 6,
+      "restBetweenRoundsS": 60,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 60,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 30,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1792137600000,
+     "do": "start"
+    },
+    {
+     "at": 1792137700000,
+     "do": "pause"
+    },
+    {
+     "at": 1792137820000,
+     "do": "resume"
+    }
+   ],
+   "relaunchAt": 1792138000000
+  },
+  "expected": {
+   "decision": "resume",
+   "state": "running",
+   "elapsedMs": 280000,
+   "segmentIndex": 6,
+   "remainingMs": 30000,
+   "totalMs": 850000,
+   "nextCue": {
+    "atMs": 307000,
+    "kinds": [
+     "countdown"
+    ]
+   }
+  }
+ },
+ {
+  "id": "rc-06",
+  "family": "recovery",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "killed while paused, relaunch 23 h later -> resume paused at the same elapsed",
+  "input": {
+   "timer": {
+    "name": "Recovery",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 6,
+      "restBetweenRoundsS": 60,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 60,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 30,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1792137600000,
+     "do": "start"
+    },
+    {
+     "at": 1792137900000,
+     "do": "pause"
+    }
+   ],
+   "relaunchAt": 1792220700000
+  },
+  "expected": {
+   "decision": "resume",
+   "state": "paused",
+   "elapsedMs": 300000,
+   "segmentIndex": 6,
+   "remainingMs": 10000,
+   "totalMs": 850000
+  }
+ },
+ {
+  "id": "rc-07",
+  "family": "recovery",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "killed while paused, relaunch 25 h later -> saved as partial",
+  "input": {
+   "timer": {
+    "name": "Recovery",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 6,
+      "restBetweenRoundsS": 60,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 60,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 30,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1792137600000,
+     "do": "start"
+    },
+    {
+     "at": 1792137900000,
+     "do": "pause"
+    }
+   ],
+   "relaunchAt": 1792227900000
+  },
+  "expected": {
+   "decision": "partial",
+   "completed": false,
+   "elapsedMs": 300000,
+   "totalMs": 850000
+  }
+ },
+ {
+  "id": "rc-08",
+  "family": "recovery",
+  "adversarial": true,
+  "ambiguous": "A10",
+  "why": "paused exactly 24 h",
+  "input": {
+   "timer": {
+    "name": "Recovery",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 6,
+      "restBetweenRoundsS": 60,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 60,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 30,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1792137600000,
+     "do": "start"
+    },
+    {
+     "at": 1792137900000,
+     "do": "pause"
+    }
+   ],
+   "relaunchAt": 1792224300000
+  },
+  "expected": {
+   "decision": "resume",
+   "state": "paused",
+   "elapsedMs": 300000,
+   "segmentIndex": 6,
+   "remainingMs": 10000,
+   "totalMs": 850000
+  }
+ },
+ {
+  "id": "rc-09",
+  "family": "recovery",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "two +30 s replayed: elapsed lands in a different segment than without them",
+  "input": {
+   "timer": {
+    "name": "Recovery",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 6,
+      "restBetweenRoundsS": 60,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 60,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 30,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1792137600000,
+     "do": "start"
+    },
+    {
+     "at": 1792137615000,
+     "do": "addTime"
+    },
+    {
+     "at": 1792137616000,
+     "do": "addTime"
+    }
+   ],
+   "relaunchAt": 1792137760000
+  },
+  "expected": {
+   "decision": "resume",
+   "state": "running",
+   "elapsedMs": 160000,
+   "segmentIndex": 3,
+   "remainingMs": 60000,
+   "totalMs": 910000,
+   "nextCue": {
+    "atMs": 217000,
+    "kinds": [
+     "countdown"
+    ]
+   }
+  }
+ },
+ {
+  "id": "rc-10",
+  "family": "recovery",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "replayed Skip and Back move the base",
+  "input": {
+   "timer": {
+    "name": "Recovery",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 6,
+      "restBetweenRoundsS": 60,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 60,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 30,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1792137600000,
+     "do": "start"
+    },
+    {
+     "at": 1792137602000,
+     "do": "skip"
+    },
+    {
+     "at": 1792137612000,
+     "do": "skip"
+    },
+    {
+     "at": 1792137613000,
+     "do": "back"
+    },
+    {
+     "at": 1792137613500,
+     "do": "back"
+    }
+   ],
+   "relaunchAt": 1792137800000
+  },
+  "expected": {
+   "decision": "resume",
+   "state": "running",
+   "elapsedMs": 186500,
+   "segmentIndex": 4,
+   "remainingMs": 33500,
+   "totalMs": 850000,
+   "nextCue": {
+    "atMs": 190000,
+    "kinds": [
+     "halfway"
+    ]
+   }
+  }
+ },
+ {
+  "id": "rc-11",
+  "family": "recovery",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "replayed Next: the timeline after the open interval is rebuilt",
+  "input": {
+   "timer": {
+    "name": "Open recovery",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Warm",
+        "seconds": 60,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Max",
+        "seconds": 30,
+        "type": "open",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 30
+       },
+       {
+        "name": "Cool",
+        "seconds": 120,
+        "type": "cooldown",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1792137600000,
+     "do": "start"
+    },
+    {
+     "at": 1792137800000,
+     "do": "next"
+    }
+   ],
+   "relaunchAt": 1792137860000
+  },
+  "expected": {
+   "decision": "resume",
+   "state": "running",
+   "elapsedMs": 260000,
+   "segmentIndex": 3,
+   "remainingMs": 60000,
+   "totalMs": 320000,
+   "nextCue": {
+    "atMs": 317000,
+    "kinds": [
+     "countdown"
+    ]
+   }
+  }
+ },
+ {
+  "id": "rc-12",
+  "family": "recovery",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "killed inside an open interval, relaunch 30 min later -> resume in the open segment",
+  "input": {
+   "timer": {
+    "name": "Open recovery",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Warm",
+        "seconds": 60,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Max",
+        "seconds": 30,
+        "type": "open",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 30
+       },
+       {
+        "name": "Cool",
+        "seconds": 120,
+        "type": "cooldown",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1792137600000,
+     "do": "start"
+    }
+   ],
+   "relaunchAt": 1792139400000
+  },
+  "expected": {
+   "decision": "resume",
+   "state": "running",
+   "elapsedMs": 1800000,
+   "segmentIndex": 2,
+   "remainingMs": null,
+   "totalMs": null,
+   "nextCue": {
+    "atMs": 1810000,
+    "kinds": [
+     "openTick"
+    ]
+   }
+  }
+ },
+ {
+  "id": "rc-13",
+  "family": "recovery",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "killed inside an open interval, relaunch 5 h later -> partial (open-ended > 2 h)",
+  "input": {
+   "timer": {
+    "name": "Open recovery",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Warm",
+        "seconds": 60,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Max",
+        "seconds": 30,
+        "type": "open",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 30
+       },
+       {
+        "name": "Cool",
+        "seconds": 120,
+        "type": "cooldown",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1792137600000,
+     "do": "start"
+    }
+   ],
+   "relaunchAt": 1792155600000
+  },
+  "expected": {
+   "decision": "partial",
+   "completed": false,
+   "totalMs": null
+  }
+ }
+]

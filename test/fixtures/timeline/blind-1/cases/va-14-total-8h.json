@@ -1,0 +1,81 @@
+{
+ "id": "va-14-total-8h",
+ "family": "validation",
+ "title": "total exactly 8 h incl. prep 10 is valid",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Valid",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 1,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "L",
+       "seconds": 5999,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "L",
+       "seconds": 5999,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "L",
+       "seconds": 5999,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "L",
+       "seconds": 5999,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "T",
+       "seconds": 4794,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 10,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  }
+ }
+}

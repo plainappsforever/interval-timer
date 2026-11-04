@@ -1,0 +1,172 @@
+{
+ "totalMs": 60000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 12000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 12000,
+   "endMs": 24000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 24000,
+   "endMs": 36000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 36000,
+   "endMs": 48000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 48000,
+   "endMs": 60000,
+   "type": "work",
+   "label": "Work"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "round",
+   "text": "Round 1 of 3"
+  },
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 6000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 10000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 11000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 12000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 21000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 22000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 23000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 24000,
+   "kind": "round",
+   "text": "Round 2 of 3"
+  },
+  {
+   "atMs": 24000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 30000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 33000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 34000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 35000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 36000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 45000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 46000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 47000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 48000,
+   "kind": "round",
+   "text": "Round 3 of 3"
+  },
+  {
+   "atMs": 48000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 54000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 57000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 58000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 59000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 60000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

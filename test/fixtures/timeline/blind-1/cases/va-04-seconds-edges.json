@@ -1,0 +1,51 @@
+{
+ "id": "va-04-seconds-edges",
+ "family": "validation",
+ "title": "1 s and 5999 s are valid",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Valid",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 1,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "A",
+       "seconds": 1,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "B",
+       "seconds": 5999,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 10,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  }
+ }
+}

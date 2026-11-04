@@ -1,0 +1,156 @@
+appId: ${APP_ID}
+name: Editor - template changed and saved (U2), new custom timer with two blocks, inline validation, live total (U3, A15)
+tags:
+  - p6
+---
+- runFlow: subflows/fresh.yaml
+
+# U2: Tabata 20/10 x 8 + 10 s get ready = 04:10; two rounds fewer = 03:10, saved and shown on the list
+- tapOn: "Tabata, .*"
+- extendedWaitUntil:
+    visible:
+      id: editor-total
+      text: "Total 04:10"
+    timeout: 10000
+- tapOn:
+    id: block-0-rounds-minus
+- tapOn:
+    id: block-0-rounds-minus
+- assertVisible:
+    id: block-0-rounds
+    text: "Rounds 6"
+- assertVisible:
+    id: editor-total
+    text: "Total 03:10"
+- tapOn:
+    id: editor-save
+- extendedWaitUntil:
+    visible: "Tabata, 03:10"
+    timeout: 10000
+
+# U3: a new timer (Work 30 / Rest 15 x 8 + 10 s = 06:10), renamed, longer work, fewer rounds, a second block
+- tapOn:
+    id: new-timer
+- extendedWaitUntil:
+    visible:
+      id: editor-total
+      text: "Total 06:10"
+    timeout: 10000
+- tapOn:
+    id: editor-name
+- eraseText: 20
+- inputText: "Leg day"
+- pressKey: Enter
+# Work 30 -> 35 s: 10 + 8 x 50 = 06:50
+- tapOn:
+    id: iv-0-0-len-plus
+- assertVisible:
+    id: iv-0-0-len
+    text: "00:35"
+- assertVisible:
+    id: editor-total
+    text: "Total 06:50"
+# 7 rounds with 20 s rest between rounds: 10 + 7 x 50 + 6 x 20 = 08:00
+- tapOn:
+    id: block-0-rounds-minus
+- scrollUntilVisible:
+    element:
+      id: block-0-rest-plus
+    direction: DOWN
+    centerElement: true
+- tapOn:
+    id: block-0-rest-plus
+- tapOn:
+    id: block-0-rest-plus
+- tapOn:
+    id: block-0-rest-plus
+- tapOn:
+    id: block-0-rest-plus
+- assertVisible:
+    id: editor-total
+    text: "Total 08:00"
+# a typed length: 1:30 for the rest interval: 10 + 7 x (35 + 90) + 120 = 16:45
+- scrollUntilVisible:
+    element:
+      id: iv-0-1-len
+    direction: UP
+    centerElement: true
+- tapOn:
+    id: iv-0-1-len
+- eraseText: 8
+- inputText: "1:30"
+- pressKey: Enter
+- assertVisible:
+    id: iv-0-1-len
+    text: "01:30"
+- assertVisible:
+    id: editor-total
+    text: "Total 16:45"
+# second block (one Work 30 s interval): 17:15
+- scrollUntilVisible:
+    element:
+      id: editor-add-block
+    direction: DOWN
+    centerElement: true
+- tapOn:
+    id: editor-add-block
+- scrollUntilVisible:
+    element:
+      id: iv-1-0-name
+    direction: DOWN
+    centerElement: true
+# inline validation: an empty interval name blocks Save
+- tapOn:
+    id: iv-1-0-name
+- eraseText: 20
+- pressKey: Enter
+- tapOn:
+    id: editor-save
+- assertVisible:
+    id: editor-issues
+- assertVisible: "Fix the marked fields to save.*"
+- tapOn:
+    id: iv-1-0-name
+- inputText: "  Plank  "
+- pressKey: Enter
+- tapOn:
+    id: editor-save
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+# saved with the trimmed name (REVIEW S7); the list shows the new timer and its total
+- assertVisible: "Leg day, 17:15"
+- tapOn: "Leg day.*"
+- extendedWaitUntil:
+    visible:
+      id: editor-total
+      text: "Total 17:15"
+    timeout: 10000
+- scrollUntilVisible:
+    element:
+      id: iv-1-0-name
+    direction: DOWN
+    centerElement: true
+- assertVisible:
+    id: iv-1-0-name
+    text: "Plank"
+# Save and start opens the running screen
+- tapOn:
+    id: editor-start
+- extendedWaitUntil:
+    visible:
+      id: run-screen
+    timeout: 30000
+- tapOn:
+    id: run-end
+# more than 10 % done on a slow device: End asks first
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- tapOn:
+    id: done-close

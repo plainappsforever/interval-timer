@@ -1,0 +1,96 @@
+appId: ${APP_ID}
+name: Two sessions - a start link during a workout asks Keep/End; a share link during a workout returns to it after Save (SPEC §9, D41)
+tags:
+  - p7
+---
+- runFlow: subflows/fresh.yaml
+- tapOn: "Start Tabata"
+- extendedWaitUntil:
+    visible:
+      id: run-label
+    timeout: 30000
+# a second start (deep link to the running route of another timer, as a Shortcut would open it)
+- openLink: ${SCHEME}://run/2
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: run-conflict
+    timeout: 15000
+- assertVisible:
+    id: run-conflict-title
+    text: "Tabata is running."
+- tapOn:
+    id: run-conflict-keep
+- extendedWaitUntil:
+    visible:
+      id: run-skip
+    timeout: 10000
+- tapOn:
+    id: run-skip
+- assertVisible:
+    id: run-path
+    text: "Round [0-9] of 8"
+# a share link while the workout runs: the import screen says so, Save leads back to the workout
+- openLink: ${SCHEME}://t?d=eyJ2IjoxLCJuIjoiUXVpY2sgdGVzdCIsImIiOlt7InIiOjIsImkiOlt7Im4iOiJXb3JrIiwicyI6NSwidCI6IndvcmsifSx7Im4iOiJSZXN0IiwicyI6MywidCI6InJlc3QifV19XSwiYyI6IiMxNTY1QzAiLCJwIjp7InBzIjozfX0
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: import-running
+    timeout: 15000
+- assertVisible: "Tabata is running. Saving takes you back to it."
+- tapOn:
+    id: import-save
+- extendedWaitUntil:
+    visible:
+      id: run-path
+      text: "Round [0-9] of 8"
+    timeout: 10000
+# the second start again, now End it and start: Tabata is saved as ended early, the other timer runs
+- openLink: ${SCHEME}://run/2
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: run-conflict
+    timeout: 15000
+- tapOn:
+    id: run-conflict-end
+- extendedWaitUntil:
+    visible:
+      id: run-skip
+    timeout: 30000
+- tapOn:
+    id: run-skip
+- assertVisible:
+    id: run-path
+    text: "Round [0-9]+ of 10"
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- tapOn:
+    id: done-close
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+- assertVisible: "Quick test.*"
+- tapOn:
+    id: open-history
+- extendedWaitUntil:
+    visible:
+      id: stat-all
+      text: "Workouts: 2 · .*"
+    timeout: 10000
+- assertVisible: "Tabata"
+- assertVisible: "HIIT 30/15"

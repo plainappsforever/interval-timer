@@ -1,0 +1,45 @@
+{
+ "timer": {
+  "name": "Repeat 10",
+  "color": "",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 1,
+    "restBetweenRoundsS": 0,
+    "intervals": [
+     {
+      "name": "A",
+      "seconds": 5,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "B",
+      "seconds": 6,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 0,
+   "endCue": "both",
+   "repeatWhole": 10,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 3
+ }
+}

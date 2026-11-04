@@ -1,0 +1,65 @@
+{
+ "timer": {
+  "name": "CD10",
+  "color": "",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 1,
+    "restBetweenRoundsS": 0,
+    "intervals": [
+     {
+      "name": "A",
+      "seconds": 10,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "B",
+      "seconds": 11,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "C",
+      "seconds": 9,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "D",
+      "seconds": 1,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 0,
+   "endCue": "both",
+   "repeatWhole": 1,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 10
+ }
+}

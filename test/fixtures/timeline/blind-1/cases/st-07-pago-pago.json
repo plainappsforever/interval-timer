@@ -1,0 +1,48 @@
+{
+ "id": "st-07-pago-pago",
+ "family": "stats",
+ "title": "Same sessions in UTC-11",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "zone": "Pacific/Pago_Pago",
+  "nowMs": 1792144800000,
+  "sessions": [
+   {
+    "timerName": "Early",
+    "startedAt": 1792056600000,
+    "endedAt": 1792057000000,
+    "plannedS": 400,
+    "actualS": 400,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Early",
+    "startedAt": 1792060200000,
+    "endedAt": 1792060600000,
+    "plannedS": 400,
+    "actualS": 400,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Late",
+    "startedAt": 1792141200000,
+    "endedAt": 1792141700000,
+    "plannedS": 500,
+    "actualS": 500,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   }
+  ]
+ }
+}

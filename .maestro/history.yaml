@@ -1,0 +1,137 @@
+appId: ${APP_ID}
+name: History - a completed and an ended-early workout, stats, week/month buckets, note, delete (A10, SPEC screen 5)
+tags:
+  - p7
+---
+- runFlow: subflows/fresh.yaml
+- tapOn:
+    id: open-history
+- extendedWaitUntil:
+    visible:
+      id: history-empty
+    timeout: 10000
+- assertVisible:
+    id: stat-all
+    text: "Workouts: 0 · 00:00"
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - tapOn: "Timers"
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - back
+# 1) the 19-second Quick test (3 s get ready + 2 x (Work 5, Rest 3)) runs to its end: Completed
+- openLink: ${SCHEME}://t?d=eyJ2IjoxLCJuIjoiUXVpY2sgdGVzdCIsImIiOlt7InIiOjIsImkiOlt7Im4iOiJXb3JrIiwicyI6NSwidCI6IndvcmsifSx7Im4iOiJSZXN0IiwicyI6MywidCI6InJlc3QifV19XSwiYyI6IiMxNTY1QzAiLCJwIjp7InBzIjozfX0
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: import-save
+    timeout: 20000
+- tapOn:
+    id: import-save
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+- tapOn: "Start Quick test"
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 90000
+- assertVisible:
+    id: done-result
+    text: "Completed"
+- tapOn:
+    id: done-close
+# 2) Tabata ended at once: Ended early (no confirm under 10 %)
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+- tapOn: "Start Tabata"
+- extendedWaitUntil:
+    visible:
+      id: run-label
+    timeout: 30000
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- assertVisible:
+    id: done-result
+    text: "Ended early"
+- tapOn:
+    id: done-close
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+- tapOn:
+    id: open-history
+- extendedWaitUntil:
+    visible:
+      id: history-stats
+    timeout: 10000
+- assertVisible:
+    id: stat-today
+    text: "Workouts: 2 · .*"
+- assertVisible:
+    id: stat-streak
+    text: "1"
+- assertVisible:
+    id: history-most-used
+- assertVisible:
+    id: "bucket-20..-W.."
+- tapOn:
+    id: history-unit-month
+- assertVisible:
+    id: "bucket-20..-.."
+- assertVisible: ".*of 00:19 · Completed"
+- assertVisible: ".*of 04:10 · Ended early"
+# details: note saved, then delete
+- tapOn: ".*of 04:10 · Ended early"
+- extendedWaitUntil:
+    visible:
+      id: session-screen
+    timeout: 10000
+- assertVisible:
+    id: session-result
+    text: "Ended early"
+- assertVisible:
+    id: session-planned
+    text: "04:10"
+- tapOn:
+    id: session-note
+- inputText: "Felt heavy"
+- tapOn:
+    id: session-save-note
+# Android Maestro sometimes types the first letter twice (test tool, L14)
+- assertVisible: ".*elt heavy"
+# Save note dismisses the keyboard itself; on iOS make sure (Maestro's Android hideKeyboard may press Back)
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - hideKeyboard
+- tapOn:
+    id: session-delete
+- tapOn:
+    id: session-delete-confirm
+- extendedWaitUntil:
+    visible:
+      id: history-stats
+    timeout: 10000
+- assertVisible:
+    id: stat-today
+    text: "Workouts: 1 · .*"
+- assertNotVisible: ".*Ended early"

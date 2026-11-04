@@ -1,0 +1,123 @@
+[
+ {
+  "id": "sa-01",
+  "family": "statsTotals",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "day totals across the autumn DST change (25 h day)",
+  "input": {
+   "tz": "Europe/Berlin",
+   "period": "day",
+   "sessions": [
+    {
+     "startedAt": 1792881000000,
+     "actualS": 100
+    },
+    {
+     "startedAt": 1792967400000,
+     "actualS": 200
+    },
+    {
+     "startedAt": 1792969800000,
+     "actualS": 300
+    },
+    {
+     "startedAt": 1792879140000,
+     "actualS": 400
+    }
+   ]
+  },
+  "expected": {
+   "2026-10-24": {
+    "count": 1,
+    "actualS": 400
+   },
+   "2026-10-25": {
+    "count": 2,
+    "actualS": 300
+   },
+   "2026-10-26": {
+    "count": 1,
+    "actualS": 300
+   }
+  }
+ },
+ {
+  "id": "sa-02",
+  "family": "statsTotals",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "ISO week totals around the year end at UTC+14",
+  "input": {
+   "tz": "Pacific/Kiritimati",
+   "period": "week",
+   "sessions": [
+    {
+     "startedAt": 1798372800000,
+     "actualS": 10
+    },
+    {
+     "startedAt": 1798714800000,
+     "actualS": 20
+    },
+    {
+     "startedAt": 1798966800000,
+     "actualS": 30
+    },
+    {
+     "startedAt": 1798972200000,
+     "actualS": 40
+    }
+   ]
+  },
+  "expected": {
+   "2026-W53": {
+    "count": 3,
+    "actualS": 60
+   },
+   "2027-W01": {
+    "count": 1,
+    "actualS": 40
+   }
+  }
+ },
+ {
+  "id": "sa-03",
+  "family": "statsTotals",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "month totals at UTC-12: UTC instant in November, local still October",
+  "input": {
+   "tz": "Etc/GMT+12",
+   "period": "month",
+   "sessions": [
+    {
+     "startedAt": 1793530800000,
+     "actualS": 50
+    },
+    {
+     "startedAt": 1793534400000,
+     "actualS": 60
+    },
+    {
+     "startedAt": 1790855940000,
+     "actualS": 70
+    }
+   ]
+  },
+  "expected": {
+   "2026-09": {
+    "count": 1,
+    "actualS": 70
+   },
+   "2026-10": {
+    "count": 1,
+    "actualS": 50
+   },
+   "2026-11": {
+    "count": 1,
+    "actualS": 60
+   }
+  }
+ }
+]

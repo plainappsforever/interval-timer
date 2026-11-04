@@ -1,0 +1,63 @@
+{
+ "id": "rc-10-dst-fall",
+ "family": "recovery",
+ "title": "New York DST fall-back: local clock reads earlier at relaunch, 30 min really passed",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Recover long",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 30,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 40,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 20,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 10,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "record": {
+   "state": "running",
+   "startedAtWallMs": 1793511600000,
+   "savedAtWallMs": 1793511900000,
+   "elapsedMs": 300000,
+   "events": [],
+   "baseWallMs": 1793511600000
+  },
+  "nowWallMs": 1793513400000
+ }
+}

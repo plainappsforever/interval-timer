@@ -1,0 +1,204 @@
+{
+ "totalMs": 100000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 10000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 30000,
+   "type": "work",
+   "label": "運動"
+  },
+  {
+   "startMs": 30000,
+   "endMs": 40000,
+   "type": "rest",
+   "label": "استراحة"
+  },
+  {
+   "startMs": 40000,
+   "endMs": 55000,
+   "type": "cooldown",
+   "label": "Übung"
+  },
+  {
+   "startMs": 55000,
+   "endMs": 75000,
+   "type": "work",
+   "label": "運動"
+  },
+  {
+   "startMs": 75000,
+   "endMs": 85000,
+   "type": "rest",
+   "label": "استراحة"
+  },
+  {
+   "startMs": 85000,
+   "endMs": 100000,
+   "type": "cooldown",
+   "label": "Übung"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10000,
+   "kind": "round",
+   "text": "Round 1 of 2"
+  },
+  {
+   "atMs": 10000,
+   "kind": "start",
+   "text": "運動"
+  },
+  {
+   "atMs": 27000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 28000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 29000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 30000,
+   "kind": "start",
+   "text": "استراحة"
+  },
+  {
+   "atMs": 37000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 38000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 39000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 40000,
+   "kind": "start",
+   "text": "Übung"
+  },
+  {
+   "atMs": 52000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 53000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 54000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 55000,
+   "kind": "round",
+   "text": "Round 2 of 2"
+  },
+  {
+   "atMs": 55000,
+   "kind": "start",
+   "text": "運動"
+  },
+  {
+   "atMs": 72000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 73000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 74000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 75000,
+   "kind": "start",
+   "text": "استراحة"
+  },
+  {
+   "atMs": 82000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 83000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 84000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 85000,
+   "kind": "start",
+   "text": "Übung"
+  },
+  {
+   "atMs": 97000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 98000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 99000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 100000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

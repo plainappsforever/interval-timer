@@ -1,0 +1,77 @@
+{
+ "dataRows": 6,
+ "rows": [
+  {
+   "cells": [
+    {
+     "value": "=HYPERLINK(\"http://x\")",
+     "guard": true
+    },
+    {
+     "value": "=SUM(A1:A9)",
+     "guard": true
+    }
+   ]
+  },
+  {
+   "cells": [
+    {
+     "value": "+30s drill",
+     "guard": true
+    },
+    {
+     "value": "+1 call",
+     "guard": true
+    }
+   ]
+  },
+  {
+   "cells": [
+    {
+     "value": "-plank",
+     "guard": true
+    },
+    {
+     "value": "-5 kg",
+     "guard": true
+    }
+   ]
+  },
+  {
+   "cells": [
+    {
+     "value": "@home",
+     "guard": true
+    },
+    {
+     "value": "@gym",
+     "guard": true
+    }
+   ]
+  },
+  {
+   "cells": [
+    {
+     "value": "Tabata",
+     "guard": false
+    },
+    {
+     "value": "\tTabbed",
+     "guard": true
+    }
+   ]
+  },
+  {
+   "cells": [
+    {
+     "value": "HIIT",
+     "guard": false
+    },
+    {
+     "value": "\rCR first",
+     "guard": true
+    }
+   ]
+  }
+ ]
+}

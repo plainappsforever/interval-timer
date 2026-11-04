@@ -1,0 +1,51 @@
+{
+ "id": "st-13-midnight-crossing",
+ "family": "stats",
+ "title": "a session that starts 23:50 and ends 00:20; an ended-early session alone on a day",
+ "adversarial": false,
+ "ambiguous": true,
+ "readings": [
+  "S1",
+  "S3"
+ ],
+ "readingsNoted": [],
+ "input": {
+  "zone": "Europe/Berlin",
+  "nowMs": 1792173600000,
+  "sessions": [
+   {
+    "timerName": "Long",
+    "startedAt": 1792014600000,
+    "endedAt": 1792016400000,
+    "plannedS": 1800,
+    "actualS": 1800,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Long",
+    "startedAt": 1791954000000,
+    "endedAt": 1791955800000,
+    "plannedS": 1800,
+    "actualS": 1800,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Short",
+    "startedAt": 1792126800000,
+    "endedAt": 1792126860000,
+    "plannedS": 600,
+    "actualS": 60,
+    "completed": false,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   }
+  ]
+ }
+}

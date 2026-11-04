@@ -1,0 +1,88 @@
+appId: ${APP_ID}
+name: Run link - a start link from outside asks Start-name first; Cancel goes home, Start runs; in-app Start still starts at once (review F11)
+tags:
+  - p9
+---
+- runFlow: subflows/fresh.yaml
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+# a link to the running route (another app, a web page, a Shortcut): nothing plays until a tap
+- openLink: ${SCHEME}://run/2
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: run-link
+    timeout: 15000
+- assertVisible:
+    id: run-link-name
+    text: "HIIT 30/15"
+- assertNotVisible:
+    id: run-skip
+- tapOn:
+    id: run-link-cancel
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+# the same link again, now Start: the workout runs
+- openLink: ${SCHEME}://run/2
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: run-link
+    timeout: 15000
+- tapOn:
+    id: run-link-start
+- extendedWaitUntil:
+    visible:
+      id: run-skip
+    timeout: 30000
+- assertVisible:
+    id: run-path
+    text: "Round [0-9]+ of 10"
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+# Start again from the Done screen and the home screen's own Start: no question (two taps stay two taps, A5)
+- tapOn:
+    id: done-again
+- extendedWaitUntil:
+    visible:
+      id: run-skip
+    timeout: 30000
+- assertNotVisible:
+    id: run-link
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- tapOn:
+    id: done-close
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+- tapOn: "Start Tabata"
+- extendedWaitUntil:
+    visible:
+      id: run-skip
+    timeout: 30000
+- assertNotVisible:
+    id: run-link

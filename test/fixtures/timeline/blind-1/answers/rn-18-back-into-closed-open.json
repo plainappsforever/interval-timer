@@ -1,0 +1,107 @@
+{
+ "steps": [
+  {
+   "state": "running",
+   "elapsedMs": 0,
+   "totalMs": null,
+   "segmentIndex": 0,
+   "remainingMs": 10000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 20000,
+   "totalMs": 30000,
+   "segmentIndex": 2,
+   "remainingMs": 10000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 10000,
+   "totalMs": 30000,
+   "segmentIndex": 1,
+   "remainingMs": 10000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 11000,
+   "totalMs": 30000,
+   "segmentIndex": 1,
+   "remainingMs": 9000
+  }
+ ],
+ "timeline": {
+  "totalMs": 30000,
+  "segments": [
+   {
+    "startMs": 0,
+    "endMs": 10000,
+    "type": "work",
+    "label": "Warm"
+   },
+   {
+    "startMs": 10000,
+    "endMs": 20000,
+    "type": "open",
+    "label": "Free"
+   },
+   {
+    "startMs": 20000,
+    "endMs": 30000,
+    "type": "work",
+    "label": "Work"
+   }
+  ],
+  "cues": [
+   {
+    "atMs": 0,
+    "kind": "start",
+    "text": "Warm"
+   },
+   {
+    "atMs": 7000,
+    "kind": "countdown",
+    "text": "3"
+   },
+   {
+    "atMs": 8000,
+    "kind": "countdown",
+    "text": "2"
+   },
+   {
+    "atMs": 9000,
+    "kind": "countdown",
+    "text": "1"
+   },
+   {
+    "atMs": 10000,
+    "kind": "start",
+    "text": "Free"
+   },
+   {
+    "atMs": 20000,
+    "kind": "start",
+    "text": "Work"
+   },
+   {
+    "atMs": 27000,
+    "kind": "countdown",
+    "text": "3"
+   },
+   {
+    "atMs": 28000,
+    "kind": "countdown",
+    "text": "2"
+   },
+   {
+    "atMs": 29000,
+    "kind": "countdown",
+    "text": "1"
+   },
+   {
+    "atMs": 30000,
+    "kind": "end",
+    "text": "Done"
+   }
+  ]
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "id": "fm-06-duration-28800-de",
+ "family": "format",
+ "title": "duration 28800 s in de",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "op": "duration",
+  "seconds": 28800,
+  "lang": "de"
+ }
+}

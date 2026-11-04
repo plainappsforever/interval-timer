@@ -1,0 +1,34 @@
+{
+ "sessions": 2,
+ "completedSessions": 2,
+ "actualS": 500,
+ "plannedS": 500,
+ "perDay": {
+  "2026-10-14": {
+   "sessions": 1,
+   "actualS": 250
+  },
+  "2026-10-15": {
+   "sessions": 1,
+   "actualS": 250
+  }
+ },
+ "perWeek": {
+  "2026-W42": {
+   "sessions": 2,
+   "actualS": 500
+  }
+ },
+ "perMonth": {
+  "2026-10": {
+   "sessions": 2,
+   "actualS": 500
+  }
+ },
+ "streakCurrent": 2,
+ "streakLongest": 2,
+ "mostUsed": {
+  "Tabata": 2
+ },
+ "topTimer": "Tabata"
+}

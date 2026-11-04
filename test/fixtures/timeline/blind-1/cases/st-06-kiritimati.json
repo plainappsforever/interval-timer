@@ -1,0 +1,48 @@
+{
+ "id": "st-06-kiritimati",
+ "family": "stats",
+ "title": "UTC+14: 09:30Z and 10:30Z on the same UTC day fall on different local days",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "zone": "Pacific/Kiritimati",
+  "nowMs": 1792144200000,
+  "sessions": [
+   {
+    "timerName": "Early",
+    "startedAt": 1792056600000,
+    "endedAt": 1792057000000,
+    "plannedS": 400,
+    "actualS": 400,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Early",
+    "startedAt": 1792060200000,
+    "endedAt": 1792060600000,
+    "plannedS": 400,
+    "actualS": 400,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Late",
+    "startedAt": 1792141200000,
+    "endedAt": 1792141700000,
+    "plannedS": 500,
+    "actualS": 500,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   }
+  ]
+ }
+}

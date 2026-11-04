@@ -1,0 +1,51 @@
+appId: ${APP_ID}
+name: A9 helper - voice table (A12), 500 seeded timers, cold list load and search; timings in the Metro log ([A9], [A12])
+# Helper for P7 measurements, not part of the suite (dev builds only: the debug route).
+---
+- runFlow: ../subflows/fresh.yaml
+- openLink: ${SCHEME}://debug/seed
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: voice-table
+    timeout: 20000
+- tapOn:
+    id: voice-table
+- extendedWaitUntil:
+    visible:
+      id: seed-status
+      text: "voices exact/any.*"
+    timeout: 60000
+- tapOn:
+    id: seed-500
+- extendedWaitUntil:
+    visible:
+      id: seed-status
+      text: "seeded 500.*"
+    timeout: 300000
+# a cold start lists all 507 timers
+- stopApp
+- runFlow: ../subflows/launch.yaml
+- extendedWaitUntil:
+    visible:
+      id: home-search
+    timeout: 30000
+- stopApp
+- runFlow: ../subflows/launch.yaml
+- extendedWaitUntil:
+    visible:
+      id: home-search
+    timeout: 30000
+- tapOn:
+    id: home-search
+- inputText: "Seed 42"
+- extendedWaitUntil:
+    visible: "Seed 42[0-9] .*"
+    timeout: 10000
+- eraseText: 7
+- inputText: "Boxing 3"
+- extendedWaitUntil:
+    visible: "Boxing 3/1.*"
+    timeout: 10000

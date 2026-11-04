@@ -1,0 +1,39 @@
+{
+ "id": "st-12-yesterday-only",
+ "family": "stats",
+ "title": "last session yesterday, none yet today",
+ "adversarial": false,
+ "ambiguous": true,
+ "readings": [
+  "S2"
+ ],
+ "readingsNoted": [],
+ "input": {
+  "zone": "Europe/Berlin",
+  "nowMs": 1792130400000,
+  "sessions": [
+   {
+    "timerName": "Tabata",
+    "startedAt": 1791997200000,
+    "endedAt": 1791997450000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Tabata",
+    "startedAt": 1792083600000,
+    "endedAt": 1792083850000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   }
+  ]
+ }
+}

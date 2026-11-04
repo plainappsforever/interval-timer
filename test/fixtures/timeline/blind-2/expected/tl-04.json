@@ -1,0 +1,92 @@
+{
+ "totalMs": 5000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 1000,
+   "type": "work",
+   "label": "Tap"
+  },
+  {
+   "startMs": 1000,
+   "endMs": 2000,
+   "type": "work",
+   "label": "Tap"
+  },
+  {
+   "startMs": 2000,
+   "endMs": 3000,
+   "type": "work",
+   "label": "Tap"
+  },
+  {
+   "startMs": 3000,
+   "endMs": 4000,
+   "type": "work",
+   "label": "Tap"
+  },
+  {
+   "startMs": 4000,
+   "endMs": 5000,
+   "type": "work",
+   "label": "Tap"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "round",
+   "text": "Round 1 of 5"
+  },
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Tap"
+  },
+  {
+   "atMs": 1000,
+   "kind": "round",
+   "text": "Round 2 of 5"
+  },
+  {
+   "atMs": 1000,
+   "kind": "start",
+   "text": "Tap"
+  },
+  {
+   "atMs": 2000,
+   "kind": "round",
+   "text": "Round 3 of 5"
+  },
+  {
+   "atMs": 2000,
+   "kind": "start",
+   "text": "Tap"
+  },
+  {
+   "atMs": 3000,
+   "kind": "round",
+   "text": "Round 4 of 5"
+  },
+  {
+   "atMs": 3000,
+   "kind": "start",
+   "text": "Tap"
+  },
+  {
+   "atMs": 4000,
+   "kind": "round",
+   "text": "Round 5 of 5"
+  },
+  {
+   "atMs": 4000,
+   "kind": "start",
+   "text": "Tap"
+  },
+  {
+   "atMs": 5000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

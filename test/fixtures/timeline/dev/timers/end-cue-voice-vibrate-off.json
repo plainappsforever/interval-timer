@@ -1,0 +1,35 @@
+{
+ "timer": {
+  "name": "Voice end",
+  "color": "",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 1,
+    "restBetweenRoundsS": 0,
+    "intervals": [
+     {
+      "name": "Work",
+      "seconds": 20,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 0,
+   "endCue": "voice",
+   "repeatWhole": 1,
+   "vibrate": false
+  }
+ },
+ "settings": {
+  "countdownFrom": 3
+ }
+}

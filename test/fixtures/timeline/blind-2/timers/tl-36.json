@@ -1,0 +1,99 @@
+{
+ "timer": {
+  "name": "Mixed",
+  "color": "#1565C0",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 1,
+    "restBetweenRoundsS": 0,
+    "intervals": [
+     {
+      "name": "Jog",
+      "seconds": 30,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Skip",
+      "seconds": 20,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Hop",
+      "seconds": 10,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   },
+   {
+    "name": "",
+    "rounds": 4,
+    "restBetweenRoundsS": 20,
+    "intervals": [
+     {
+      "name": "Push",
+      "seconds": 40,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Rest",
+      "seconds": 20,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   },
+   {
+    "name": "",
+    "rounds": 2,
+    "restBetweenRoundsS": 0,
+    "intervals": [
+     {
+      "name": "Stretch",
+      "seconds": 30,
+      "type": "cooldown",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": false,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 10,
+   "endCue": "both",
+   "repeatWhole": 1,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 3
+ }
+}

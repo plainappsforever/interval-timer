@@ -1,0 +1,63 @@
+{
+ "ok": true,
+ "timer": {
+  "name": "Übung 🏋️‍♀️ \"Tag\" \\ 1",
+  "color": "#C62828",
+  "blocks": [
+   {
+    "name": "ブロック 1 / Блок",
+    "rounds": 2,
+    "restBetweenRoundsS": 3,
+    "intervals": [
+     {
+      "name": "腕立て伏せ",
+      "seconds": 11,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "تمرين الضغط",
+      "seconds": 10,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Ñandú",
+      "seconds": 5,
+      "type": "cooldown",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "👨‍👩‍👧‍👦 <&> %20 ?d=",
+      "seconds": 3,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 2,
+   "endCue": "both",
+   "repeatWhole": 1,
+   "vibrate": true
+  }
+ },
+ "linkPrefix": "plainintervals://t?d="
+}

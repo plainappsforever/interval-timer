@@ -1,0 +1,59 @@
+{
+ "totalMs": 43000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 33000,
+   "type": "open",
+   "label": "Hold"
+  },
+  {
+   "startMs": 33000,
+   "endMs": 43000,
+   "type": "work",
+   "label": "Release"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Hold"
+  },
+  {
+   "atMs": 33000,
+   "kind": "start",
+   "text": "Release"
+  },
+  {
+   "atMs": 38000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 39000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 40000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 41000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 42000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 43000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

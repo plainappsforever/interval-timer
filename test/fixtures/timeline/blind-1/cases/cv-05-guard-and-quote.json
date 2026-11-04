@@ -1,0 +1,35 @@
+{
+ "id": "cv-05-guard-and-quote",
+ "family": "csv",
+ "title": "formula characters together with commas and quotes",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "sessions": [
+   {
+    "timerName": "=1,2",
+    "startedAt": 1791615600000,
+    "endedAt": 1791615850000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "-\"x\",y"
+   },
+   {
+    "timerName": "@\"a\"",
+    "startedAt": 1791702000000,
+    "endedAt": 1791702251000,
+    "plannedS": 250,
+    "actualS": 251,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "+\n="
+   }
+  ]
+ }
+}

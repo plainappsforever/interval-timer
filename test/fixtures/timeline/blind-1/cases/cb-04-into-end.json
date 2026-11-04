@@ -1,0 +1,72 @@
+{
+ "id": "cb-04-into-end",
+ "family": "cuesBetween",
+ "title": "Windows reaching the end: only the end cue (no countdown burst)",
+ "adversarial": true,
+ "ambiguous": true,
+ "readings": [
+  "C1"
+ ],
+ "readingsNoted": [
+  "C1"
+ ],
+ "input": {
+  "timer": {
+   "name": "Catch-up",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 2,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 20,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": true,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 10,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 5,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "windows": [
+   [
+    63500,
+    65000
+   ],
+   [
+    60000,
+    70000
+   ],
+   [
+    64999,
+    65000
+   ]
+  ]
+ }
+}

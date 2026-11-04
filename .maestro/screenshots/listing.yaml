@@ -1,0 +1,84 @@
+appId: ${APP_ID}
+name: Listing screenshots - home, running, editor, history, settings (RELEASE_KIT 3e; run by scripts/screenshots.sh, not part of the suite)
+tags:
+  - screenshots
+---
+# Fresh install: only the seeded templates, no personal data. Each shot waits for its screen first.
+- runFlow: ../subflows/fresh.yaml
+- extendedWaitUntil:
+    visible:
+      id: start-last
+    timeout: 15000
+- takeScreenshot: 01-home
+# 2. Running screen: Tabata, Work, round 3 of 8 (Get ready → W1 → R1 → W2 → R2 → W3 = five skips)
+- tapOn: "Start Tabata"
+- extendedWaitUntil:
+    visible:
+      id: run-skip
+    timeout: 30000
+- repeat:
+    times: 5
+    commands:
+      - tapOn:
+          id: run-skip
+- extendedWaitUntil:
+    visible:
+      id: run-path
+      text: "Round 3 of 8"
+    timeout: 10000
+- takeScreenshot: 02-running
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- tapOn:
+    id: done-close
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+# 3. Editor with the Circuit template (named intervals, rounds, live total)
+- scrollUntilVisible:
+    element: "Circuit, .*"
+    direction: DOWN
+    timeout: 10000
+- tapOn: "Circuit, .*"
+- extendedWaitUntil:
+    visible:
+      id: editor-screen
+    timeout: 10000
+- takeScreenshot: 03-editor
+# back home without platform-specific back buttons: relaunch (state kept)
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 15000
+# 4. History (the workout above)
+- tapOn:
+    id: open-history
+- extendedWaitUntil:
+    visible:
+      id: history-screen
+    timeout: 10000
+- takeScreenshot: 04-history
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 15000
+# 5. Settings (language, voice, beeps, countdown)
+- tapOn:
+    id: open-settings
+- extendedWaitUntil:
+    visible:
+      id: settings-screen
+    timeout: 10000
+- takeScreenshot: 05-settings

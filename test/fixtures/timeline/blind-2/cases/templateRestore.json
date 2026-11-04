@@ -1,0 +1,33 @@
+[
+ {
+  "id": "tp-08",
+  "family": "templateRestore",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "delete two templates, rename one, edit one, then Restore templates",
+  "input": {
+   "deleteKeywords": [
+    "tabata",
+    "stretch"
+   ],
+   "renameKeyword": "boxing",
+   "renameSuffix": " (mine)",
+   "editKeyword": "hiit",
+   "editFirstIntervalSeconds": 33
+  },
+  "expected": {
+   "count": 8,
+   "perKeyword": {
+    "tabata": 1,
+    "hiit": 1,
+    "emom": 1,
+    "walk": 1,
+    "stretch": 1,
+    "boxing": 2,
+    "circuit": 1
+   },
+   "editedKeyword": "hiit",
+   "editedFirstIntervalSeconds": 33
+  }
+ }
+]

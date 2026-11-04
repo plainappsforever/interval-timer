@@ -1,0 +1,85 @@
+{
+ "timer": {
+  "name": "Übung 🏋️‍♀️ \"Tag 1\"",
+  "color": "#C62828",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "ブロック 1",
+    "rounds": 2,
+    "restBetweenRoundsS": 3,
+    "intervals": [
+     {
+      "name": "Kniebeugen 🏋️‍♀️",
+      "seconds": 12,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "腕立て伏せ",
+      "seconds": 11,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "تمرين الضغط",
+      "seconds": 10,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Ñandú é",
+      "seconds": 5,
+      "type": "cooldown",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Jump, \"high\" \\ low",
+      "seconds": 4,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "👨‍👩‍👧‍👦 family",
+      "seconds": 3,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 2,
+   "endCue": "both",
+   "repeatWhole": 1,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 5
+ }
+}

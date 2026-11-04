@@ -1,0 +1,126 @@
+{
+ "totalMs": 6026000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 7000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 7000,
+   "endMs": 14000,
+   "type": "work",
+   "label": "Seven"
+  },
+  {
+   "startMs": 14000,
+   "endMs": 27000,
+   "type": "rest",
+   "label": "Thirteen"
+  },
+  {
+   "startMs": 27000,
+   "endMs": 6026000,
+   "type": "work",
+   "label": "Max"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 4000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 5000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 6000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 7000,
+   "kind": "start",
+   "text": "Seven"
+  },
+  {
+   "atMs": 11000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 12000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 13000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 14000,
+   "kind": "start",
+   "text": "Thirteen"
+  },
+  {
+   "atMs": 20500,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 24000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 25000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 26000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 27000,
+   "kind": "start",
+   "text": "Max"
+  },
+  {
+   "atMs": 3026500,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 6023000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 6024000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 6025000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 6026000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

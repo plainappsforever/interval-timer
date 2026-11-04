@@ -1,0 +1,300 @@
+{
+ "totalMs": 28800000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 3600000,
+   "type": "work",
+   "label": "Hour"
+  },
+  {
+   "startMs": 3600000,
+   "endMs": 7200000,
+   "type": "work",
+   "label": "Hour"
+  },
+  {
+   "startMs": 7200000,
+   "endMs": 10800000,
+   "type": "work",
+   "label": "Hour"
+  },
+  {
+   "startMs": 10800000,
+   "endMs": 14400000,
+   "type": "work",
+   "label": "Hour"
+  },
+  {
+   "startMs": 14400000,
+   "endMs": 18000000,
+   "type": "work",
+   "label": "Hour"
+  },
+  {
+   "startMs": 18000000,
+   "endMs": 21600000,
+   "type": "work",
+   "label": "Hour"
+  },
+  {
+   "startMs": 21600000,
+   "endMs": 25200000,
+   "type": "work",
+   "label": "Hour"
+  },
+  {
+   "startMs": 25200000,
+   "endMs": 28800000,
+   "type": "work",
+   "label": "Hour"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "round",
+   "text": "Round 1 of 8"
+  },
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Hour"
+  },
+  {
+   "atMs": 1800000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 3597000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 3598000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 3599000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 3600000,
+   "kind": "round",
+   "text": "Round 2 of 8"
+  },
+  {
+   "atMs": 3600000,
+   "kind": "start",
+   "text": "Hour"
+  },
+  {
+   "atMs": 5400000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 7197000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 7198000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 7199000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 7200000,
+   "kind": "round",
+   "text": "Round 3 of 8"
+  },
+  {
+   "atMs": 7200000,
+   "kind": "start",
+   "text": "Hour"
+  },
+  {
+   "atMs": 9000000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 10797000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 10798000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 10799000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10800000,
+   "kind": "round",
+   "text": "Round 4 of 8"
+  },
+  {
+   "atMs": 10800000,
+   "kind": "start",
+   "text": "Hour"
+  },
+  {
+   "atMs": 12600000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 14397000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 14398000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 14399000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 14400000,
+   "kind": "round",
+   "text": "Round 5 of 8"
+  },
+  {
+   "atMs": 14400000,
+   "kind": "start",
+   "text": "Hour"
+  },
+  {
+   "atMs": 16200000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 17997000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 17998000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 17999000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 18000000,
+   "kind": "round",
+   "text": "Round 6 of 8"
+  },
+  {
+   "atMs": 18000000,
+   "kind": "start",
+   "text": "Hour"
+  },
+  {
+   "atMs": 19800000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 21597000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 21598000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 21599000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 21600000,
+   "kind": "round",
+   "text": "Round 7 of 8"
+  },
+  {
+   "atMs": 21600000,
+   "kind": "start",
+   "text": "Hour"
+  },
+  {
+   "atMs": 23400000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 25197000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 25198000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 25199000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 25200000,
+   "kind": "round",
+   "text": "Round 8 of 8"
+  },
+  {
+   "atMs": 25200000,
+   "kind": "start",
+   "text": "Hour"
+  },
+  {
+   "atMs": 27000000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 28797000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 28798000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 28799000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 28800000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "sessions": 3,
+ "completedSessions": 3,
+ "actualS": 1300,
+ "plannedS": 1300,
+ "perDay": {
+  "2026-10-14": {
+   "sessions": 2,
+   "actualS": 800
+  },
+  "2026-10-15": {
+   "sessions": 1,
+   "actualS": 500
+  }
+ },
+ "perWeek": {
+  "2026-W42": {
+   "sessions": 3,
+   "actualS": 1300
+  }
+ },
+ "perMonth": {
+  "2026-10": {
+   "sessions": 3,
+   "actualS": 1300
+  }
+ },
+ "streakCurrent": 2,
+ "streakLongest": 2,
+ "mostUsed": {
+  "Early": 2,
+  "Late": 1
+ },
+ "topTimer": "Early"
+}

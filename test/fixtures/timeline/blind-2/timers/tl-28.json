@@ -1,0 +1,65 @@
+{
+ "timer": {
+  "name": "Mundo",
+  "color": "#1565C0",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 2,
+    "restBetweenRoundsS": 0,
+    "intervals": [
+     {
+      "name": "\u30b9\u30af\u30ef\u30c3\u30c8",
+      "seconds": 20,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "\u0631\u0627\u062d\u0629",
+      "seconds": 10,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "\u0906\u0930\u093e\u092e \u0915\u0930\u094b",
+      "seconds": 10,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Unterarm-\u00dcbung",
+      "seconds": 15,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 0,
+   "endCue": "both",
+   "repeatWhole": 1,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 3
+ }
+}

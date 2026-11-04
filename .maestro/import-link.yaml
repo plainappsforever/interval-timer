@@ -1,0 +1,59 @@
+appId: ${APP_ID}
+name: Import link - a shared timer link opens the Import preview, Save adds it; a broken link says so (U8, D19)
+tags:
+  - p6
+---
+- runFlow: subflows/fresh.yaml
+# made by scripts/flow-link.mjs with the app's share codec: 10 s + Legs 3 x (40/20/40/20) with 60 s between rounds
+# + Plank 60 x 2 with 30 s between = 10:40
+- openLink: ${SCHEME}://t?d=eyJ2IjoxLCJuIjoiU2hhcmVkIGNpcmN1aXQiLCJiIjpbeyJyIjozLCJpIjpbeyJuIjoiU3F1YXRzIiwicyI6NDAsInQiOiJ3b3JrIn0seyJuIjoiUmVzdCIsInMiOjIwLCJ0IjoicmVzdCJ9LHsibiI6IlB1c2gtdXBzIiwicyI6NDAsInQiOiJ3b3JrIn0seyJuIjoiUmVzdCIsInMiOjIwLCJ0IjoicmVzdCJ9XSwibiI6IkxlZ3MiLCJyciI6NjB9LHsiciI6MiwiaSI6W3sibiI6IlBsYW5rIiwicyI6NjAsInQiOiJ3b3JrIiwiaCI6MX1dLCJyciI6MzB9XX0
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: import-preview
+    timeout: 20000
+- assertVisible:
+    id: import-preview-name
+    text: "Shared circuit"
+- assertVisible:
+    id: import-preview-total
+    text: "Total 10:40"
+- tapOn:
+    id: import-save
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+- assertVisible: "Shared circuit, 10:40"
+- tapOn: "Shared circuit.*"
+- extendedWaitUntil:
+    visible:
+      id: block-0-name
+      text: "Legs"
+    timeout: 10000
+- assertVisible:
+    id: iv-0-2-name
+    text: "Push-ups"
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - tapOn: "Timers"
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - back
+# a damaged link: an honest message, nothing saved
+- openLink: ${SCHEME}://t?d=bm90LWEtdGltZXI
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: import-error
+    timeout: 20000
+- assertNotVisible:
+    id: import-save

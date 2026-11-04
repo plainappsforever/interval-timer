@@ -1,0 +1,122 @@
+{
+ "totalMs": 140000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 20000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 20000,
+   "endMs": 50000,
+   "type": "open",
+   "label": "Max reps"
+  },
+  {
+   "startMs": 50000,
+   "endMs": 65000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 65000,
+   "endMs": 85000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 85000,
+   "endMs": 140000,
+   "type": "open",
+   "label": "Max reps"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "round",
+   "text": "Round 1 of 2"
+  },
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 17000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 18000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 19000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 20000,
+   "kind": "start",
+   "text": "Max reps"
+  },
+  {
+   "atMs": 50000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 62000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 63000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 64000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 65000,
+   "kind": "round",
+   "text": "Round 2 of 2"
+  },
+  {
+   "atMs": 65000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 82000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 83000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 84000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 85000,
+   "kind": "start",
+   "text": "Max reps"
+  },
+  {
+   "atMs": 140000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "id": "cv-06-no-false-guard",
+ "family": "csv",
+ "title": "not guarded: '=' and '@' inside, digits, apostrophe, empty",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "sessions": [
+   {
+    "timerName": "a=b",
+    "startedAt": 1791615600000,
+    "endedAt": 1791615850000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "1+1"
+   },
+   {
+    "timerName": "x@y",
+    "startedAt": 1791702000000,
+    "endedAt": 1791702251000,
+    "plannedS": 250,
+    "actualS": 251,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "'already"
+   },
+   {
+    "timerName": "Tabata",
+    "startedAt": 1791788400000,
+    "endedAt": 1791788652000,
+    "plannedS": 250,
+    "actualS": 252,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "100%",
+    "startedAt": 1791874800000,
+    "endedAt": 1791875053000,
+    "plannedS": 250,
+    "actualS": 253,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "x-y"
+   }
+  ]
+ }
+}

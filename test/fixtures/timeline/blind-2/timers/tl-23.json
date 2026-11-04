@@ -1,0 +1,50 @@
+{
+ "timer": {
+  "name": "Open rounds",
+  "color": "#1565C0",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 3,
+    "restBetweenRoundsS": 10,
+    "intervals": [
+     {
+      "name": "Set",
+      "seconds": 30,
+      "type": "open",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 20
+     },
+     {
+      "name": "Breathe",
+      "seconds": 20,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 10,
+   "endCue": "both",
+   "repeatWhole": 1,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 3
+ },
+ "nextAt": [
+  55000,
+  120000,
+  200000
+ ]
+}

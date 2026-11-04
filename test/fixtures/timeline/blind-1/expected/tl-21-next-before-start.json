@@ -1,0 +1,70 @@
+{
+ "totalMs": 15000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 10000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 10000,
+   "type": "open",
+   "label": "Free"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 15000,
+   "type": "work",
+   "label": "Work 2"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10000,
+   "kind": "start",
+   "text": "Work 2"
+  },
+  {
+   "atMs": 12000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 13000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 14000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 15000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

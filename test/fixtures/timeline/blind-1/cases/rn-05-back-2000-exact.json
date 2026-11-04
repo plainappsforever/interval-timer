@@ -1,0 +1,72 @@
+{
+ "id": "rn-05-back-2000-exact",
+ "family": "runner",
+ "title": "back exactly 2000 ms in restarts; 1999 ms in goes back",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Run A",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 3,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 20,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": true,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 10,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 5,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "script": [
+   {
+    "t": 0,
+    "op": "start"
+   },
+   {
+    "t": 7000,
+    "op": "back"
+   },
+   {
+    "t": 8999,
+    "op": "back"
+   },
+   {
+    "t": 9000,
+    "op": "probe"
+   }
+  ]
+ }
+}

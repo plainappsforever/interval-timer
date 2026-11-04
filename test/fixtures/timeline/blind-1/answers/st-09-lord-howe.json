@@ -1,0 +1,58 @@
+{
+ "sessions": 6,
+ "completedSessions": 6,
+ "actualS": 5600,
+ "plannedS": 5600,
+ "perDay": {
+  "2026-09-30": {
+   "sessions": 1,
+   "actualS": 600
+  },
+  "2026-10-01": {
+   "sessions": 1,
+   "actualS": 1000
+  },
+  "2026-10-02": {
+   "sessions": 1,
+   "actualS": 1000
+  },
+  "2026-10-03": {
+   "sessions": 1,
+   "actualS": 1000
+  },
+  "2026-10-04": {
+   "sessions": 1,
+   "actualS": 1000
+  },
+  "2026-10-05": {
+   "sessions": 1,
+   "actualS": 1000
+  }
+ },
+ "perWeek": {
+  "2026-W40": {
+   "sessions": 5,
+   "actualS": 4600
+  },
+  "2026-W41": {
+   "sessions": 1,
+   "actualS": 1000
+  }
+ },
+ "perMonth": {
+  "2026-09": {
+   "sessions": 1,
+   "actualS": 600
+  },
+  "2026-10": {
+   "sessions": 5,
+   "actualS": 5000
+  }
+ },
+ "streakCurrent": 6,
+ "streakLongest": 6,
+ "mostUsed": {
+  "Swim": 6
+ },
+ "topTimer": "Swim"
+}

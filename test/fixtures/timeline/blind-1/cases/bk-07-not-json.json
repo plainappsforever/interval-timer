@@ -1,0 +1,144 @@
+{
+ "id": "bk-07-not-json",
+ "family": "backup",
+ "title": "restore of non-JSON text: refused, database unchanged",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "initial": {
+   "timers": [
+    {
+     "name": "Tabata",
+     "color": "#C62828",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 8,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 20,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Übung 🏋️‍♀️ \"Tag\" \\ 1",
+     "color": "#C62828",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "ブロック 1 / Блок",
+       "rounds": 2,
+       "restBetweenRoundsS": 3,
+       "intervals": [
+        {
+         "name": "腕立て伏せ",
+         "seconds": 11,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "تمرين الضغط",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Ñandú",
+         "seconds": 5,
+         "type": "cooldown",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "👨‍👩‍👧‍👦 <&> %20 ?d=",
+         "seconds": 3,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 2,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   ],
+   "sessions": [
+    {
+     "timerName": "Tabata",
+     "startedAt": 1791615600000,
+     "endedAt": 1791615850000,
+     "plannedS": 250,
+     "actualS": 250,
+     "completed": true,
+     "skippedIntervals": 0,
+     "pauses": 0,
+     "note": ""
+    },
+    {
+     "timerName": "Übung 🏋️‍♀️ \"Tag\" \\ 1",
+     "startedAt": 1791702000000,
+     "endedAt": 1791702200000,
+     "plannedS": 212,
+     "actualS": 200,
+     "completed": false,
+     "skippedIntervals": 2,
+     "pauses": 1,
+     "note": "knee, \"ok\""
+    }
+   ]
+  },
+  "hostile": {
+   "kind": "raw",
+   "text": "{\"timers\": ["
+  },
+  "mode": "keepBoth"
+ }
+}

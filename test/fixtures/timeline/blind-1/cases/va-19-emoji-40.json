@@ -1,0 +1,53 @@
+{
+ "id": "va-19-emoji-40",
+ "family": "validation",
+ "title": "timer name of 40 emoji (40 code points, 80 UTF-16 units)",
+ "adversarial": true,
+ "ambiguous": true,
+ "readings": [
+  "V1"
+ ],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 8,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 20,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 10,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 10,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  }
+ }
+}

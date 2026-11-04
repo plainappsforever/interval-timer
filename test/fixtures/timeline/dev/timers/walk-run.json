@@ -1,0 +1,45 @@
+{
+ "timer": {
+  "name": "Walk/Run",
+  "color": "",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 15,
+    "restBetweenRoundsS": 0,
+    "intervals": [
+     {
+      "name": "Walk",
+      "seconds": 60,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Run",
+      "seconds": 60,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 10,
+   "endCue": "both",
+   "repeatWhole": 1,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 3
+ }
+}

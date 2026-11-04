@@ -1,0 +1,18 @@
+{
+ "windows": [
+  [
+   {
+    "atMs": 5000,
+    "kind": "halfway",
+    "text": "Halfway"
+   },
+   {
+    "atMs": 5000,
+    "kind": "countdown",
+    "text": "5"
+   }
+  ],
+  [],
+  []
+ ]
+}

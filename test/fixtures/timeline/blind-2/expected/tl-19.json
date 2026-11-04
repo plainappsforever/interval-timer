@@ -1,0 +1,75 @@
+{
+ "totalMs": null,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 5000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 5000,
+   "endMs": 35000,
+   "type": "work",
+   "label": "Warm-up"
+  },
+  {
+   "startMs": 35000,
+   "endMs": null,
+   "type": "open",
+   "label": "AMRAP"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 2000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 3000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 4000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 5000,
+   "kind": "start",
+   "text": "Warm-up"
+  },
+  {
+   "atMs": 20000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 32000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 33000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 34000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 35000,
+   "kind": "start",
+   "text": "AMRAP"
+  }
+ ]
+}

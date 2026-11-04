@@ -1,0 +1,66 @@
+appId: ${APP_ID}
+name: Recovery - the app is killed mid-session, relaunch offers Resume at the right time, cues continue (A8, U6)
+tags:
+  - p6
+---
+- runFlow: subflows/fresh.yaml
+- tapOn:
+    id: start-last
+- extendedWaitUntil:
+    visible:
+      id: run-label
+      text: "Get ready"
+    timeout: 20000
+- tapOn:
+    id: run-skip
+- extendedWaitUntil:
+    visible:
+      id: run-remaining
+      text: "(Work, )?00:1[0-5]"
+    timeout: 15000
+# kill the process (iOS: terminate; Android: force-stop) with the workout running
+- stopApp
+- runFlow: subflows/launch.yaml
+- assertVisible:
+    id: recovery-offer
+- assertVisible:
+    id: recovery-text
+    text: "Tabata was interrupted at 00:[1-5][0-9]\\."
+- assertNotVisible:
+    id: start-last
+- tapOn:
+    id: recovery-resume
+- extendedWaitUntil:
+    visible:
+      id: run-screen
+    timeout: 30000
+# it continues running (not paused) at the wall-clock position, with the total unchanged
+- assertVisible:
+    id: run-toggle
+    text: "Pause"
+- assertVisible:
+    id: run-elapsed
+    text: "0[0-1]:[0-5][0-9] / 04:10"
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- assertVisible:
+    id: done-interrupted
+- assertVisible:
+    id: done-result
+    text: "Ended early"
+- tapOn:
+    id: done-close
+# the record is gone: no second offer
+- stopApp
+- runFlow: subflows/launch.yaml
+- assertNotVisible:
+    id: recovery-offer
+- assertVisible:
+    id: start-last

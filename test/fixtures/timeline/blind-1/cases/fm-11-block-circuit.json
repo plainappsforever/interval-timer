@@ -1,0 +1,139 @@
+{
+ "id": "fm-11-block-circuit",
+ "family": "format",
+ "title": "block total: 6 stations 45/15 x 3 rounds + 2 x 60 s round-rest",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "op": "blockTotal",
+  "block": {
+   "name": "",
+   "rounds": 3,
+   "restBetweenRoundsS": 60,
+   "intervals": [
+    {
+     "name": "S0",
+     "seconds": 45,
+     "type": "work",
+     "color": "",
+     "cueStart": "both",
+     "halfwayCue": false,
+     "countdownCue": true,
+     "openTickS": 0
+    },
+    {
+     "name": "Rest",
+     "seconds": 15,
+     "type": "rest",
+     "color": "",
+     "cueStart": "both",
+     "halfwayCue": false,
+     "countdownCue": true,
+     "openTickS": 0
+    },
+    {
+     "name": "S1",
+     "seconds": 45,
+     "type": "work",
+     "color": "",
+     "cueStart": "both",
+     "halfwayCue": false,
+     "countdownCue": true,
+     "openTickS": 0
+    },
+    {
+     "name": "Rest",
+     "seconds": 15,
+     "type": "rest",
+     "color": "",
+     "cueStart": "both",
+     "halfwayCue": false,
+     "countdownCue": true,
+     "openTickS": 0
+    },
+    {
+     "name": "S2",
+     "seconds": 45,
+     "type": "work",
+     "color": "",
+     "cueStart": "both",
+     "halfwayCue": false,
+     "countdownCue": true,
+     "openTickS": 0
+    },
+    {
+     "name": "Rest",
+     "seconds": 15,
+     "type": "rest",
+     "color": "",
+     "cueStart": "both",
+     "halfwayCue": false,
+     "countdownCue": true,
+     "openTickS": 0
+    },
+    {
+     "name": "S3",
+     "seconds": 45,
+     "type": "work",
+     "color": "",
+     "cueStart": "both",
+     "halfwayCue": false,
+     "countdownCue": true,
+     "openTickS": 0
+    },
+    {
+     "name": "Rest",
+     "seconds": 15,
+     "type": "rest",
+     "color": "",
+     "cueStart": "both",
+     "halfwayCue": false,
+     "countdownCue": true,
+     "openTickS": 0
+    },
+    {
+     "name": "S4",
+     "seconds": 45,
+     "type": "work",
+     "color": "",
+     "cueStart": "both",
+     "halfwayCue": false,
+     "countdownCue": true,
+     "openTickS": 0
+    },
+    {
+     "name": "Rest",
+     "seconds": 15,
+     "type": "rest",
+     "color": "",
+     "cueStart": "both",
+     "halfwayCue": false,
+     "countdownCue": true,
+     "openTickS": 0
+    },
+    {
+     "name": "S5",
+     "seconds": 45,
+     "type": "work",
+     "color": "",
+     "cueStart": "both",
+     "halfwayCue": false,
+     "countdownCue": true,
+     "openTickS": 0
+    },
+    {
+     "name": "Rest",
+     "seconds": 15,
+     "type": "rest",
+     "color": "",
+     "cueStart": "both",
+     "halfwayCue": false,
+     "countdownCue": true,
+     "openTickS": 0
+    }
+   ]
+  }
+ }
+}

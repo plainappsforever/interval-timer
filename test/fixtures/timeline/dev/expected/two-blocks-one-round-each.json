@@ -1,0 +1,142 @@
+{
+ "totalMs": 110000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 10000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 40000,
+   "type": "work",
+   "label": "Squat"
+  },
+  {
+   "startMs": 40000,
+   "endMs": 50000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 50000,
+   "endMs": 95000,
+   "type": "work",
+   "label": "Plank"
+  },
+  {
+   "startMs": 95000,
+   "endMs": 110000,
+   "type": "rest",
+   "label": "Rest"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10000,
+   "kind": "start",
+   "text": "Squat"
+  },
+  {
+   "atMs": 37000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 38000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 39000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 40000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 47000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 48000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 49000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 50000,
+   "kind": "start",
+   "text": "Plank"
+  },
+  {
+   "atMs": 92000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 93000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 94000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 95000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 107000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 108000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 109000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 110000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

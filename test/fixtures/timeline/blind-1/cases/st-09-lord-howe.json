@@ -1,0 +1,81 @@
+{
+ "id": "st-09-lord-howe",
+ "family": "stats",
+ "title": "Lord Howe 30-minute DST change (4 Oct 2026); streak and month boundary",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "zone": "Australia/Lord_Howe",
+  "nowMs": 1791154800000,
+  "sessions": [
+   {
+    "timerName": "Swim",
+    "startedAt": 1790774100000,
+    "endedAt": 1790774700000,
+    "plannedS": 600,
+    "actualS": 600,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Swim",
+    "startedAt": 1790775900000,
+    "endedAt": 1790776900000,
+    "plannedS": 1000,
+    "actualS": 1000,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Swim",
+    "startedAt": 1790883000000,
+    "endedAt": 1790884000000,
+    "plannedS": 1000,
+    "actualS": 1000,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Swim",
+    "startedAt": 1790969400000,
+    "endedAt": 1790970400000,
+    "plannedS": 1000,
+    "actualS": 1000,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Swim",
+    "startedAt": 1791043200000,
+    "endedAt": 1791044200000,
+    "plannedS": 1000,
+    "actualS": 1000,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Swim",
+    "startedAt": 1791140400000,
+    "endedAt": 1791141400000,
+    "plannedS": 1000,
+    "actualS": 1000,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   }
+  ]
+ }
+}

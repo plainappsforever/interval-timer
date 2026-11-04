@@ -1,0 +1,96 @@
+{
+ "totalMs": 25000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 0,
+   "type": "open",
+   "label": "Ready?"
+  },
+  {
+   "startMs": 0,
+   "endMs": 10000,
+   "type": "work",
+   "label": "Go"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 15000,
+   "type": "open",
+   "label": "Ready?"
+  },
+  {
+   "startMs": 15000,
+   "endMs": 25000,
+   "type": "work",
+   "label": "Go"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "round",
+   "text": "Round 1 of 2"
+  },
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Ready?"
+  },
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Go"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10000,
+   "kind": "round",
+   "text": "Round 2 of 2"
+  },
+  {
+   "atMs": 10000,
+   "kind": "start",
+   "text": "Ready?"
+  },
+  {
+   "atMs": 15000,
+   "kind": "start",
+   "text": "Go"
+  },
+  {
+   "atMs": 22000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 23000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 24000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 25000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

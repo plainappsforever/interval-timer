@@ -1,0 +1,26 @@
+plugins {
+  id 'com.android.library'
+  id 'expo-module-gradle-plugin'
+}
+
+group = 'expo.modules.sessionrunner'
+version = '0.1.0'
+
+android {
+  namespace "expo.modules.sessionrunner"
+  defaultConfig {
+    versionCode 1
+    versionName "0.1.0"
+  }
+  lintOptions {
+    abortOnError false
+  }
+}
+
+dependencies {
+  // Same media3 version expo-audio 57 already puts on the classpath (copied from Breathe 9bb123a).
+  implementation "androidx.media3:media3-session:1.9.0"
+  implementation "androidx.media3:media3-common:1.9.0"
+  // F3 (D44.3): JVM unit tests of the pure call-watch rule (eye-app exposure-monitor pattern).
+  testImplementation 'junit:junit:4.13.2'
+}

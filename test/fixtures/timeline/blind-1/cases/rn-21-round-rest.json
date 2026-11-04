@@ -1,0 +1,80 @@
+{
+ "id": "rn-21-round-rest",
+ "family": "runner",
+ "title": "skip into the round-rest, back after 2.7 s restarts it, +30 s on it",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Run B",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 2,
+     "restBetweenRoundsS": 6,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 4,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 0,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "script": [
+   {
+    "t": 100,
+    "op": "start"
+   },
+   {
+    "t": 200,
+    "op": "skip"
+   },
+   {
+    "t": 300,
+    "op": "skip"
+   },
+   {
+    "t": 2400,
+    "op": "probe"
+   },
+   {
+    "t": 3000,
+    "op": "back"
+   },
+   {
+    "t": 3500,
+    "op": "addTime"
+   }
+  ]
+ }
+}

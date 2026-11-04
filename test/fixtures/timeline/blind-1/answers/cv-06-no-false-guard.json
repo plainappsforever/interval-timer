@@ -1,0 +1,53 @@
+{
+ "dataRows": 4,
+ "rows": [
+  {
+   "cells": [
+    {
+     "value": "a=b",
+     "guard": false
+    },
+    {
+     "value": "1+1",
+     "guard": false
+    }
+   ]
+  },
+  {
+   "cells": [
+    {
+     "value": "x@y",
+     "guard": false
+    },
+    {
+     "value": "'already",
+     "guard": false
+    }
+   ]
+  },
+  {
+   "cells": [
+    {
+     "value": "Tabata",
+     "guard": false
+    },
+    {
+     "value": "",
+     "guard": false
+    }
+   ]
+  },
+  {
+   "cells": [
+    {
+     "value": "100%",
+     "guard": false
+    },
+    {
+     "value": "x-y",
+     "guard": false
+    }
+   ]
+  }
+ ]
+}

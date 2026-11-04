@@ -1,0 +1,1332 @@
+{
+ "totalMs": 1950000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 10000,
+   "type": "prep",
+   "label": "Get set"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 70000,
+   "type": "work",
+   "label": "Run"
+  },
+  {
+   "startMs": 70000,
+   "endMs": 130000,
+   "type": "rest",
+   "label": "Walk"
+  },
+  {
+   "startMs": 130000,
+   "endMs": 140000,
+   "type": "prep",
+   "label": "Get set"
+  },
+  {
+   "startMs": 140000,
+   "endMs": 200000,
+   "type": "work",
+   "label": "Run"
+  },
+  {
+   "startMs": 200000,
+   "endMs": 260000,
+   "type": "rest",
+   "label": "Walk"
+  },
+  {
+   "startMs": 260000,
+   "endMs": 270000,
+   "type": "prep",
+   "label": "Get set"
+  },
+  {
+   "startMs": 270000,
+   "endMs": 330000,
+   "type": "work",
+   "label": "Run"
+  },
+  {
+   "startMs": 330000,
+   "endMs": 390000,
+   "type": "rest",
+   "label": "Walk"
+  },
+  {
+   "startMs": 390000,
+   "endMs": 400000,
+   "type": "prep",
+   "label": "Get set"
+  },
+  {
+   "startMs": 400000,
+   "endMs": 460000,
+   "type": "work",
+   "label": "Run"
+  },
+  {
+   "startMs": 460000,
+   "endMs": 520000,
+   "type": "rest",
+   "label": "Walk"
+  },
+  {
+   "startMs": 520000,
+   "endMs": 530000,
+   "type": "prep",
+   "label": "Get set"
+  },
+  {
+   "startMs": 530000,
+   "endMs": 590000,
+   "type": "work",
+   "label": "Run"
+  },
+  {
+   "startMs": 590000,
+   "endMs": 650000,
+   "type": "rest",
+   "label": "Walk"
+  },
+  {
+   "startMs": 650000,
+   "endMs": 660000,
+   "type": "prep",
+   "label": "Get set"
+  },
+  {
+   "startMs": 660000,
+   "endMs": 720000,
+   "type": "work",
+   "label": "Run"
+  },
+  {
+   "startMs": 720000,
+   "endMs": 780000,
+   "type": "rest",
+   "label": "Walk"
+  },
+  {
+   "startMs": 780000,
+   "endMs": 790000,
+   "type": "prep",
+   "label": "Get set"
+  },
+  {
+   "startMs": 790000,
+   "endMs": 850000,
+   "type": "work",
+   "label": "Run"
+  },
+  {
+   "startMs": 850000,
+   "endMs": 910000,
+   "type": "rest",
+   "label": "Walk"
+  },
+  {
+   "startMs": 910000,
+   "endMs": 920000,
+   "type": "prep",
+   "label": "Get set"
+  },
+  {
+   "startMs": 920000,
+   "endMs": 980000,
+   "type": "work",
+   "label": "Run"
+  },
+  {
+   "startMs": 980000,
+   "endMs": 1040000,
+   "type": "rest",
+   "label": "Walk"
+  },
+  {
+   "startMs": 1040000,
+   "endMs": 1050000,
+   "type": "prep",
+   "label": "Get set"
+  },
+  {
+   "startMs": 1050000,
+   "endMs": 1110000,
+   "type": "work",
+   "label": "Run"
+  },
+  {
+   "startMs": 1110000,
+   "endMs": 1170000,
+   "type": "rest",
+   "label": "Walk"
+  },
+  {
+   "startMs": 1170000,
+   "endMs": 1180000,
+   "type": "prep",
+   "label": "Get set"
+  },
+  {
+   "startMs": 1180000,
+   "endMs": 1240000,
+   "type": "work",
+   "label": "Run"
+  },
+  {
+   "startMs": 1240000,
+   "endMs": 1300000,
+   "type": "rest",
+   "label": "Walk"
+  },
+  {
+   "startMs": 1300000,
+   "endMs": 1310000,
+   "type": "prep",
+   "label": "Get set"
+  },
+  {
+   "startMs": 1310000,
+   "endMs": 1370000,
+   "type": "work",
+   "label": "Run"
+  },
+  {
+   "startMs": 1370000,
+   "endMs": 1430000,
+   "type": "rest",
+   "label": "Walk"
+  },
+  {
+   "startMs": 1430000,
+   "endMs": 1440000,
+   "type": "prep",
+   "label": "Get set"
+  },
+  {
+   "startMs": 1440000,
+   "endMs": 1500000,
+   "type": "work",
+   "label": "Run"
+  },
+  {
+   "startMs": 1500000,
+   "endMs": 1560000,
+   "type": "rest",
+   "label": "Walk"
+  },
+  {
+   "startMs": 1560000,
+   "endMs": 1570000,
+   "type": "prep",
+   "label": "Get set"
+  },
+  {
+   "startMs": 1570000,
+   "endMs": 1630000,
+   "type": "work",
+   "label": "Run"
+  },
+  {
+   "startMs": 1630000,
+   "endMs": 1690000,
+   "type": "rest",
+   "label": "Walk"
+  },
+  {
+   "startMs": 1690000,
+   "endMs": 1700000,
+   "type": "prep",
+   "label": "Get set"
+  },
+  {
+   "startMs": 1700000,
+   "endMs": 1760000,
+   "type": "work",
+   "label": "Run"
+  },
+  {
+   "startMs": 1760000,
+   "endMs": 1820000,
+   "type": "rest",
+   "label": "Walk"
+  },
+  {
+   "startMs": 1820000,
+   "endMs": 1830000,
+   "type": "prep",
+   "label": "Get set"
+  },
+  {
+   "startMs": 1830000,
+   "endMs": 1890000,
+   "type": "work",
+   "label": "Run"
+  },
+  {
+   "startMs": 1890000,
+   "endMs": 1950000,
+   "type": "rest",
+   "label": "Walk"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "round",
+   "text": "Round 1 of 15"
+  },
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get set"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10000,
+   "kind": "start",
+   "text": "Run"
+  },
+  {
+   "atMs": 40000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 67000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 68000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 69000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 70000,
+   "kind": "start",
+   "text": "Walk"
+  },
+  {
+   "atMs": 127000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 128000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 129000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 130000,
+   "kind": "round",
+   "text": "Round 2 of 15"
+  },
+  {
+   "atMs": 130000,
+   "kind": "start",
+   "text": "Get set"
+  },
+  {
+   "atMs": 137000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 138000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 139000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 140000,
+   "kind": "start",
+   "text": "Run"
+  },
+  {
+   "atMs": 170000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 197000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 198000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 199000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 200000,
+   "kind": "start",
+   "text": "Walk"
+  },
+  {
+   "atMs": 257000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 258000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 259000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 260000,
+   "kind": "round",
+   "text": "Round 3 of 15"
+  },
+  {
+   "atMs": 260000,
+   "kind": "start",
+   "text": "Get set"
+  },
+  {
+   "atMs": 267000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 268000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 269000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 270000,
+   "kind": "start",
+   "text": "Run"
+  },
+  {
+   "atMs": 300000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 327000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 328000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 329000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 330000,
+   "kind": "start",
+   "text": "Walk"
+  },
+  {
+   "atMs": 387000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 388000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 389000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 390000,
+   "kind": "round",
+   "text": "Round 4 of 15"
+  },
+  {
+   "atMs": 390000,
+   "kind": "start",
+   "text": "Get set"
+  },
+  {
+   "atMs": 397000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 398000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 399000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 400000,
+   "kind": "start",
+   "text": "Run"
+  },
+  {
+   "atMs": 430000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 457000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 458000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 459000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 460000,
+   "kind": "start",
+   "text": "Walk"
+  },
+  {
+   "atMs": 517000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 518000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 519000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 520000,
+   "kind": "round",
+   "text": "Round 5 of 15"
+  },
+  {
+   "atMs": 520000,
+   "kind": "start",
+   "text": "Get set"
+  },
+  {
+   "atMs": 527000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 528000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 529000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 530000,
+   "kind": "start",
+   "text": "Run"
+  },
+  {
+   "atMs": 560000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 587000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 588000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 589000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 590000,
+   "kind": "start",
+   "text": "Walk"
+  },
+  {
+   "atMs": 647000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 648000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 649000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 650000,
+   "kind": "round",
+   "text": "Round 6 of 15"
+  },
+  {
+   "atMs": 650000,
+   "kind": "start",
+   "text": "Get set"
+  },
+  {
+   "atMs": 657000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 658000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 659000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 660000,
+   "kind": "start",
+   "text": "Run"
+  },
+  {
+   "atMs": 690000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 717000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 718000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 719000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 720000,
+   "kind": "start",
+   "text": "Walk"
+  },
+  {
+   "atMs": 777000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 778000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 779000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 780000,
+   "kind": "round",
+   "text": "Round 7 of 15"
+  },
+  {
+   "atMs": 780000,
+   "kind": "start",
+   "text": "Get set"
+  },
+  {
+   "atMs": 787000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 788000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 789000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 790000,
+   "kind": "start",
+   "text": "Run"
+  },
+  {
+   "atMs": 820000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 847000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 848000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 849000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 850000,
+   "kind": "start",
+   "text": "Walk"
+  },
+  {
+   "atMs": 907000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 908000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 909000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 910000,
+   "kind": "round",
+   "text": "Round 8 of 15"
+  },
+  {
+   "atMs": 910000,
+   "kind": "start",
+   "text": "Get set"
+  },
+  {
+   "atMs": 917000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 918000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 919000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 920000,
+   "kind": "start",
+   "text": "Run"
+  },
+  {
+   "atMs": 950000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 977000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 978000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 979000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 980000,
+   "kind": "start",
+   "text": "Walk"
+  },
+  {
+   "atMs": 1037000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1038000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1039000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1040000,
+   "kind": "round",
+   "text": "Round 9 of 15"
+  },
+  {
+   "atMs": 1040000,
+   "kind": "start",
+   "text": "Get set"
+  },
+  {
+   "atMs": 1047000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1048000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1049000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1050000,
+   "kind": "start",
+   "text": "Run"
+  },
+  {
+   "atMs": 1080000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 1107000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1108000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1109000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1110000,
+   "kind": "start",
+   "text": "Walk"
+  },
+  {
+   "atMs": 1167000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1168000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1169000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1170000,
+   "kind": "round",
+   "text": "Round 10 of 15"
+  },
+  {
+   "atMs": 1170000,
+   "kind": "start",
+   "text": "Get set"
+  },
+  {
+   "atMs": 1177000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1178000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1179000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1180000,
+   "kind": "start",
+   "text": "Run"
+  },
+  {
+   "atMs": 1210000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 1237000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1238000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1239000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1240000,
+   "kind": "start",
+   "text": "Walk"
+  },
+  {
+   "atMs": 1297000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1298000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1299000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1300000,
+   "kind": "round",
+   "text": "Round 11 of 15"
+  },
+  {
+   "atMs": 1300000,
+   "kind": "start",
+   "text": "Get set"
+  },
+  {
+   "atMs": 1307000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1308000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1309000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1310000,
+   "kind": "start",
+   "text": "Run"
+  },
+  {
+   "atMs": 1340000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 1367000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1368000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1369000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1370000,
+   "kind": "start",
+   "text": "Walk"
+  },
+  {
+   "atMs": 1427000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1428000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1429000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1430000,
+   "kind": "round",
+   "text": "Round 12 of 15"
+  },
+  {
+   "atMs": 1430000,
+   "kind": "start",
+   "text": "Get set"
+  },
+  {
+   "atMs": 1437000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1438000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1439000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1440000,
+   "kind": "start",
+   "text": "Run"
+  },
+  {
+   "atMs": 1470000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 1497000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1498000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1499000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1500000,
+   "kind": "start",
+   "text": "Walk"
+  },
+  {
+   "atMs": 1557000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1558000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1559000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1560000,
+   "kind": "round",
+   "text": "Round 13 of 15"
+  },
+  {
+   "atMs": 1560000,
+   "kind": "start",
+   "text": "Get set"
+  },
+  {
+   "atMs": 1567000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1568000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1569000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1570000,
+   "kind": "start",
+   "text": "Run"
+  },
+  {
+   "atMs": 1600000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 1627000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1628000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1629000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1630000,
+   "kind": "start",
+   "text": "Walk"
+  },
+  {
+   "atMs": 1687000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1688000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1689000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1690000,
+   "kind": "round",
+   "text": "Round 14 of 15"
+  },
+  {
+   "atMs": 1690000,
+   "kind": "start",
+   "text": "Get set"
+  },
+  {
+   "atMs": 1697000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1698000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1699000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1700000,
+   "kind": "start",
+   "text": "Run"
+  },
+  {
+   "atMs": 1730000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 1757000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1758000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1759000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1760000,
+   "kind": "start",
+   "text": "Walk"
+  },
+  {
+   "atMs": 1817000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1818000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1819000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1820000,
+   "kind": "round",
+   "text": "Round 15 of 15"
+  },
+  {
+   "atMs": 1820000,
+   "kind": "start",
+   "text": "Get set"
+  },
+  {
+   "atMs": 1827000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1828000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1829000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1830000,
+   "kind": "start",
+   "text": "Run"
+  },
+  {
+   "atMs": 1860000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 1887000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1888000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1889000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1890000,
+   "kind": "start",
+   "text": "Walk"
+  },
+  {
+   "atMs": 1947000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 1948000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 1949000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 1950000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

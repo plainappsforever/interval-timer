@@ -1,0 +1,14 @@
+{
+ "id": "fm-02-duration-59-en",
+ "family": "format",
+ "title": "duration 59 s in en",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "op": "duration",
+  "seconds": 59,
+  "lang": "en"
+ }
+}

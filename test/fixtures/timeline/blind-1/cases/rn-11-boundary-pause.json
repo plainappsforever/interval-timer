@@ -1,0 +1,76 @@
+{
+ "id": "rn-11-boundary-pause",
+ "family": "runner",
+ "title": "pause exactly on a segment boundary belongs to the next segment",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Run A",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 3,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 20,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": true,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 10,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 5,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "script": [
+   {
+    "t": 0,
+    "op": "start"
+   },
+   {
+    "t": 5000,
+    "op": "pause"
+   },
+   {
+    "t": 9000,
+    "op": "resume"
+   },
+   {
+    "t": 29000,
+    "op": "pause"
+   },
+   {
+    "t": 30000,
+    "op": "probe"
+   }
+  ]
+ }
+}

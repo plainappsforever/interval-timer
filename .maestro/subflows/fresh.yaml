@@ -1,0 +1,34 @@
+appId: ${APP_ID}
+---
+# A fresh install state (templates seeded, nothing used, no recovery record) for flows that must not depend on order.
+- launchApp:
+    stopApp: true
+    clearState: true
+# Dev builds only: clearState also forgets the dev client's last Metro server, so its launcher opens; pick THIS app's
+# Metro (port 8240). Release builds (preview) start the app directly and skip this.
+- tapOn:
+    text: "http://.*:8240"
+    optional: true
+# the launcher can list the server only after the first optional tap gave up (Android, P6)
+- runFlow:
+    when:
+      visible: "http://.*:8240"
+    commands:
+      - tapOn: "http://.*:8240"
+# a tap while the launcher is still loading can be lost (Android under load, P7): wait, then tap once more if needed
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 45000
+    optional: true
+- runFlow:
+    when:
+      visible: "http://.*:8240"
+    commands:
+      - tapOn: "http://.*:8240"
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 90000
+- waitForAnimationToEnd:
+    timeout: 5000

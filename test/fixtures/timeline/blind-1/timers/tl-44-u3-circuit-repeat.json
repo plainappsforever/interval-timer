@@ -1,0 +1,219 @@
+{
+ "timer": {
+  "name": "Big circuit",
+  "color": "#C62828",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "Block 1",
+    "rounds": 3,
+    "restBetweenRoundsS": 60,
+    "intervals": [
+     {
+      "name": "S11",
+      "seconds": 45,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "S12",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "S13",
+      "seconds": 45,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "S14",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "S15",
+      "seconds": 45,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "S16",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   },
+   {
+    "name": "Block 2",
+    "rounds": 3,
+    "restBetweenRoundsS": 60,
+    "intervals": [
+     {
+      "name": "S21",
+      "seconds": 45,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "S22",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "S23",
+      "seconds": 45,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "S24",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "S25",
+      "seconds": 45,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "S26",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   },
+   {
+    "name": "Block 3",
+    "rounds": 3,
+    "restBetweenRoundsS": 60,
+    "intervals": [
+     {
+      "name": "S31",
+      "seconds": 45,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "S32",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "S33",
+      "seconds": 45,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "S34",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "S35",
+      "seconds": 45,
+      "type": "work",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "S36",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 10,
+   "endCue": "both",
+   "repeatWhole": 2,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 5
+ }
+}

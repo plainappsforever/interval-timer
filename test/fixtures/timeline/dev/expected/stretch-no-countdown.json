@@ -1,0 +1,198 @@
+{
+ "totalMs": 305000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 5000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 5000,
+   "endMs": 35000,
+   "type": "cooldown",
+   "label": "Stretch"
+  },
+  {
+   "startMs": 35000,
+   "endMs": 65000,
+   "type": "cooldown",
+   "label": "Stretch"
+  },
+  {
+   "startMs": 65000,
+   "endMs": 95000,
+   "type": "cooldown",
+   "label": "Stretch"
+  },
+  {
+   "startMs": 95000,
+   "endMs": 125000,
+   "type": "cooldown",
+   "label": "Stretch"
+  },
+  {
+   "startMs": 125000,
+   "endMs": 155000,
+   "type": "cooldown",
+   "label": "Stretch"
+  },
+  {
+   "startMs": 155000,
+   "endMs": 185000,
+   "type": "cooldown",
+   "label": "Stretch"
+  },
+  {
+   "startMs": 185000,
+   "endMs": 215000,
+   "type": "cooldown",
+   "label": "Stretch"
+  },
+  {
+   "startMs": 215000,
+   "endMs": 245000,
+   "type": "cooldown",
+   "label": "Stretch"
+  },
+  {
+   "startMs": 245000,
+   "endMs": 275000,
+   "type": "cooldown",
+   "label": "Stretch"
+  },
+  {
+   "startMs": 275000,
+   "endMs": 305000,
+   "type": "cooldown",
+   "label": "Stretch"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 2000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 3000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 4000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 5000,
+   "kind": "round",
+   "text": "Round 1 of 10"
+  },
+  {
+   "atMs": 5000,
+   "kind": "start",
+   "text": "Stretch"
+  },
+  {
+   "atMs": 35000,
+   "kind": "round",
+   "text": "Round 2 of 10"
+  },
+  {
+   "atMs": 35000,
+   "kind": "start",
+   "text": "Stretch"
+  },
+  {
+   "atMs": 65000,
+   "kind": "round",
+   "text": "Round 3 of 10"
+  },
+  {
+   "atMs": 65000,
+   "kind": "start",
+   "text": "Stretch"
+  },
+  {
+   "atMs": 95000,
+   "kind": "round",
+   "text": "Round 4 of 10"
+  },
+  {
+   "atMs": 95000,
+   "kind": "start",
+   "text": "Stretch"
+  },
+  {
+   "atMs": 125000,
+   "kind": "round",
+   "text": "Round 5 of 10"
+  },
+  {
+   "atMs": 125000,
+   "kind": "start",
+   "text": "Stretch"
+  },
+  {
+   "atMs": 155000,
+   "kind": "round",
+   "text": "Round 6 of 10"
+  },
+  {
+   "atMs": 155000,
+   "kind": "start",
+   "text": "Stretch"
+  },
+  {
+   "atMs": 185000,
+   "kind": "round",
+   "text": "Round 7 of 10"
+  },
+  {
+   "atMs": 185000,
+   "kind": "start",
+   "text": "Stretch"
+  },
+  {
+   "atMs": 215000,
+   "kind": "round",
+   "text": "Round 8 of 10"
+  },
+  {
+   "atMs": 215000,
+   "kind": "start",
+   "text": "Stretch"
+  },
+  {
+   "atMs": 245000,
+   "kind": "round",
+   "text": "Round 9 of 10"
+  },
+  {
+   "atMs": 245000,
+   "kind": "start",
+   "text": "Stretch"
+  },
+  {
+   "atMs": 275000,
+   "kind": "round",
+   "text": "Round 10 of 10"
+  },
+  {
+   "atMs": 275000,
+   "kind": "start",
+   "text": "Stretch"
+  },
+  {
+   "atMs": 305000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

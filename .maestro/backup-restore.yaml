@@ -1,0 +1,144 @@
+appId: ${APP_ID}
+name: Backup and restore - backup on the phone, a timer deleted, restored from the backup; restore templates (U10)
+tags:
+  - p7
+---
+- runFlow: subflows/fresh.yaml
+# one history row, so the backup carries a session too
+- tapOn: "Start Tabata"
+- extendedWaitUntil:
+    visible:
+      id: run-label
+    timeout: 30000
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- tapOn:
+    id: done-close
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+- tapOn:
+    id: open-settings
+- scrollUntilVisible:
+    element:
+      id: settings-backup
+    direction: DOWN
+- tapOn:
+    id: settings-backup
+- scrollUntilVisible:
+    element:
+      id: settings-status
+    direction: UP
+- extendedWaitUntil:
+    visible:
+      id: settings-status
+      text: "Backup saved on this phone: plainintervals-backup-.*"
+    timeout: 10000
+- assertVisible:
+    id: settings-backup-share
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - tapOn: "Timers"
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - back
+# delete Boxing from the long-press sheet; the undo bar goes after 5 s
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+- scrollUntilVisible:
+    element:
+      text: "Boxing 3/1.*"
+    direction: DOWN
+- longPressOn: "Boxing 3/1.*"
+- extendedWaitUntil:
+    visible:
+      id: action-delete
+    timeout: 10000
+- tapOn:
+    id: action-delete
+- extendedWaitUntil:
+    visible:
+      id: undo-bar
+    timeout: 5000
+- extendedWaitUntil:
+    notVisible:
+      id: undo-bar
+    timeout: 15000
+- assertNotVisible: "Boxing 3/1.*"
+# restore from the backup on this phone: Replace brings Boxing back, history merged (the row is not doubled)
+- tapOn:
+    id: open-settings
+- scrollUntilVisible:
+    element:
+      id: backup-file-0
+    direction: DOWN
+- tapOn:
+    id: backup-file-0
+- extendedWaitUntil:
+    visible:
+      id: restore-preview
+    timeout: 10000
+- assertVisible: "Timers: 7 · Workouts: 1 .*"
+- scrollUntilVisible:
+    element:
+      id: restore-replace
+    direction: DOWN
+- tapOn:
+    id: restore-replace
+- scrollUntilVisible:
+    element:
+      id: settings-status
+    direction: UP
+- assertVisible:
+    id: settings-status
+    text: "Restored. Timers: 7 · Workouts added: 0"
+# templates: nothing missing now
+- scrollUntilVisible:
+    element:
+      id: settings-restore-templates
+    direction: DOWN
+- tapOn:
+    id: settings-restore-templates
+- scrollUntilVisible:
+    element:
+      id: settings-status
+    direction: UP
+- assertVisible:
+    id: settings-status
+    text: "Templates added: 0"
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - tapOn: "Timers"
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - back
+- scrollUntilVisible:
+    element:
+      text: "Boxing 3/1.*"
+    direction: DOWN
+- assertVisible: "Boxing 3/1.*"
+- tapOn:
+    id: open-history
+- extendedWaitUntil:
+    visible:
+      id: stat-all
+      text: "Workouts: 1 · .*"
+    timeout: 10000

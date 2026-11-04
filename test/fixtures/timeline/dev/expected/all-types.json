@@ -1,0 +1,147 @@
+{
+ "totalMs": 75000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 10000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 15000,
+   "type": "prep",
+   "label": "Prep step"
+  },
+  {
+   "startMs": 15000,
+   "endMs": 35000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 35000,
+   "endMs": 45000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 45000,
+   "endMs": 75000,
+   "type": "cooldown",
+   "label": "Cool"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10000,
+   "kind": "start",
+   "text": "Prep step"
+  },
+  {
+   "atMs": 12000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 13000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 14000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 15000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 32000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 33000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 34000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 35000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 42000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 43000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 44000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 45000,
+   "kind": "start",
+   "text": "Cool"
+  },
+  {
+   "atMs": 60000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 72000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 73000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 74000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 75000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

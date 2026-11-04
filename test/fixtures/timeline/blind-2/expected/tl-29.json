@@ -1,0 +1,69 @@
+{
+ "totalMs": 35000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 25000,
+   "type": "work",
+   "label": "\ud83c\udfc3\u200d\u2640\ufe0f Sprint"
+  },
+  {
+   "startMs": 25000,
+   "endMs": 35000,
+   "type": "rest",
+   "label": "\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "\ud83c\udfc3\u200d\u2640\ufe0f Sprint"
+  },
+  {
+   "atMs": 12500,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 22000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 23000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 24000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 25000,
+   "kind": "start",
+   "text": "\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66"
+  },
+  {
+   "atMs": 32000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 33000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 34000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 35000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

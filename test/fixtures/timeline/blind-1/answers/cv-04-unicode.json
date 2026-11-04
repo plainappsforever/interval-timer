@@ -1,0 +1,41 @@
+{
+ "dataRows": 3,
+ "rows": [
+  {
+   "cells": [
+    {
+     "value": "Übung 🏋️‍♀️",
+     "guard": false
+    },
+    {
+     "value": "👨‍👩‍👧‍👦",
+     "guard": false
+    }
+   ]
+  },
+  {
+   "cells": [
+    {
+     "value": "تمرين",
+     "guard": false
+    },
+    {
+     "value": "‏ملاحظة",
+     "guard": false
+    }
+   ]
+  },
+  {
+   "cells": [
+    {
+     "value": "腕立て伏せ",
+     "guard": false
+    },
+    {
+     "value": "é",
+     "guard": false
+    }
+   ]
+  }
+ ]
+}

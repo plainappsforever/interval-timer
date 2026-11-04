@@ -1,0 +1,56 @@
+appId: ${APP_ID}
+name: Smoke - templates seeded, open a timer, change theme, restart, theme persists
+tags:
+  - smoke
+---
+# a cleared install: the flow must not depend on what an earlier flow or helper left (P7: the A9 helper's 507 timers)
+- runFlow: subflows/fresh.yaml
+
+# First start seeds the templates (SPEC §4)
+- assertVisible: "Tabata.*"
+- assertVisible: "Boxing 3/1.*"
+
+# Open a timer (editor placeholder until P6)
+- tapOn: "Tabata, .*"
+- assertVisible:
+    id: editor-screen
+# iOS has no system Back: use the header's back button (labelled with the previous title); Android: system Back
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - tapOn: "Timers"
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - back
+
+# Settings: switch to dark mode
+- tapOn:
+    id: open-settings
+- assertVisible:
+    id: settings-screen
+- scrollUntilVisible:
+    element:
+      id: theme-dark
+    direction: DOWN
+- tapOn:
+    id: theme-dark
+- assertVisible:
+    id: theme-dark
+    selected: true
+
+# Restart the app: the theme must still be there, templates are not seeded twice
+- stopApp
+- runFlow: subflows/launch.yaml
+- assertVisible: "Tabata.*"
+- tapOn:
+    id: open-settings
+- scrollUntilVisible:
+    element:
+      id: theme-dark
+    direction: DOWN
+- assertVisible:
+    id: theme-dark
+    selected: true

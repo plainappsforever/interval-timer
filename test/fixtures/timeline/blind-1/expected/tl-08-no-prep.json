@@ -1,0 +1,38 @@
+{
+ "totalMs": 7000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 7000,
+   "type": "work",
+   "label": "Work"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 4000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 5000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 6000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 7000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

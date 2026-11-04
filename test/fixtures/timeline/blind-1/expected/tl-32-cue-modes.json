@@ -1,0 +1,220 @@
+{
+ "totalMs": 32000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 4000,
+   "type": "work",
+   "label": "None"
+  },
+  {
+   "startMs": 4000,
+   "endMs": 8000,
+   "type": "work",
+   "label": "Voice"
+  },
+  {
+   "startMs": 8000,
+   "endMs": 12000,
+   "type": "work",
+   "label": "Beep"
+  },
+  {
+   "startMs": 12000,
+   "endMs": 16000,
+   "type": "work",
+   "label": "Both"
+  },
+  {
+   "startMs": 16000,
+   "endMs": 20000,
+   "type": "work",
+   "label": "None"
+  },
+  {
+   "startMs": 20000,
+   "endMs": 24000,
+   "type": "work",
+   "label": "Voice"
+  },
+  {
+   "startMs": 24000,
+   "endMs": 28000,
+   "type": "work",
+   "label": "Beep"
+  },
+  {
+   "startMs": 28000,
+   "endMs": 32000,
+   "type": "work",
+   "label": "Both"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "round",
+   "text": "Round 1 of 2"
+  },
+  {
+   "atMs": 1000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 2000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 3000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 4000,
+   "kind": "start",
+   "text": "Voice"
+  },
+  {
+   "atMs": 5000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 6000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 8000,
+   "kind": "start",
+   "text": "Beep"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 10000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 11000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 12000,
+   "kind": "start",
+   "text": "Both"
+  },
+  {
+   "atMs": 13000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 14000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 15000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 16000,
+   "kind": "round",
+   "text": "Round 2 of 2"
+  },
+  {
+   "atMs": 17000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 18000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 19000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 20000,
+   "kind": "start",
+   "text": "Voice"
+  },
+  {
+   "atMs": 21000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 22000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 23000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 24000,
+   "kind": "start",
+   "text": "Beep"
+  },
+  {
+   "atMs": 25000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 26000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 27000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 28000,
+   "kind": "start",
+   "text": "Both"
+  },
+  {
+   "atMs": 29000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 30000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 31000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 32000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

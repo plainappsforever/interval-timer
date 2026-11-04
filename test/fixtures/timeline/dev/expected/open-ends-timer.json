@@ -1,0 +1,75 @@
+{
+ "totalMs": 42000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 5000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 5000,
+   "endMs": 25000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 25000,
+   "endMs": 42000,
+   "type": "open",
+   "label": "Hold"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 2000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 3000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 4000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 5000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 22000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 23000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 24000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 25000,
+   "kind": "start",
+   "text": "Hold"
+  },
+  {
+   "atMs": 42000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

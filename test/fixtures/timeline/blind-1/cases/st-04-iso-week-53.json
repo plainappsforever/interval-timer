@@ -1,0 +1,70 @@
+{
+ "id": "st-04-iso-week-53",
+ "family": "stats",
+ "title": "ISO week 2026-W53 spans the new year (Mon 28 Dec .. Sun 3 Jan)",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "zone": "Europe/Berlin",
+  "nowMs": 1799089200000,
+  "sessions": [
+   {
+    "timerName": "A",
+    "startedAt": 1798444800000,
+    "endedAt": 1798444900000,
+    "plannedS": 100,
+    "actualS": 100,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "A",
+    "startedAt": 1798704000000,
+    "endedAt": 1798704100000,
+    "plannedS": 100,
+    "actualS": 100,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "A",
+    "startedAt": 1798790400000,
+    "endedAt": 1798790500000,
+    "plannedS": 100,
+    "actualS": 100,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "B",
+    "startedAt": 1798963200000,
+    "endedAt": 1798963300000,
+    "plannedS": 100,
+    "actualS": 100,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "A",
+    "startedAt": 1799049600000,
+    "endedAt": 1799049700000,
+    "plannedS": 100,
+    "actualS": 100,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   }
+  ]
+ }
+}

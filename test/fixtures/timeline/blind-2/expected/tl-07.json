@@ -1,0 +1,134 @@
+{
+ "totalMs": 6009000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 10000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 6009000,
+   "type": "work",
+   "label": "Plank forever"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 1000,
+   "kind": "countdown",
+   "text": "9"
+  },
+  {
+   "atMs": 2000,
+   "kind": "countdown",
+   "text": "8"
+  },
+  {
+   "atMs": 3000,
+   "kind": "countdown",
+   "text": "7"
+  },
+  {
+   "atMs": 4000,
+   "kind": "countdown",
+   "text": "6"
+  },
+  {
+   "atMs": 5000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 6000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10000,
+   "kind": "start",
+   "text": "Plank forever"
+  },
+  {
+   "atMs": 3009500,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 5999000,
+   "kind": "countdown",
+   "text": "10"
+  },
+  {
+   "atMs": 6000000,
+   "kind": "countdown",
+   "text": "9"
+  },
+  {
+   "atMs": 6001000,
+   "kind": "countdown",
+   "text": "8"
+  },
+  {
+   "atMs": 6002000,
+   "kind": "countdown",
+   "text": "7"
+  },
+  {
+   "atMs": 6003000,
+   "kind": "countdown",
+   "text": "6"
+  },
+  {
+   "atMs": 6004000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 6005000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 6006000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 6007000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 6008000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 6009000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

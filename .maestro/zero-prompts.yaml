@@ -1,0 +1,54 @@
+appId: ${APP_ID}
+name: Zero prompts - cold launch shows the timers with no permission dialog, Start runs without one (A5)
+tags:
+  - smoke
+---
+# No `permissions:` block on purpose: the app must never ask for one (SPEC A5).
+- launchApp:
+    stopApp: true
+    clearState: true
+# Dev builds only: clearState also forgets the dev client's last Metro server, so its launcher opens; pick THIS app's
+# Metro (port 8240). Release builds (preview) start the app directly and skip this.
+- tapOn:
+    text: "http://.*:8240"
+    optional: true
+# the launcher can list the server only after the first optional tap gave up (Android, P6)
+- runFlow:
+    when:
+      visible: "http://.*:8240"
+    commands:
+      - tapOn: "http://.*:8240"
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 90000
+- assertNotVisible: Allow
+- assertNotVisible: "Don't Allow"
+- assertVisible: "Tabata.*"
+- waitForAnimationToEnd:
+    timeout: 5000
+# Start: the run (voice clips, audio session, Android foreground service + media notification) asks for nothing
+- tapOn:
+    id: start-last
+- extendedWaitUntil:
+    visible:
+      id: run-label
+    timeout: 20000
+- assertNotVisible: Allow
+- assertNotVisible: "Don't Allow"
+- assertNotVisible: "Allow.*notifications.*"
+- assertVisible:
+    id: run-status-line
+- tapOn:
+    id: run-end
+# more than 10 % done on a slow device: End asks first
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- assertNotVisible: Allow
+- tapOn:
+    id: done-close

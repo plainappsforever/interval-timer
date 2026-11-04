@@ -1,0 +1,88 @@
+{
+ "id": "rn-10-after-end",
+ "family": "runner",
+ "title": "every control after end is ignored",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Run A",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 3,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 20,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": true,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 10,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 5,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "script": [
+   {
+    "t": 0,
+    "op": "start"
+   },
+   {
+    "t": 30000,
+    "op": "end"
+   },
+   {
+    "t": 31000,
+    "op": "resume"
+   },
+   {
+    "t": 32000,
+    "op": "skip"
+   },
+   {
+    "t": 33000,
+    "op": "back"
+   },
+   {
+    "t": 34000,
+    "op": "addTime"
+   },
+   {
+    "t": 35000,
+    "op": "start"
+   },
+   {
+    "t": 36000,
+    "op": "end"
+   }
+  ]
+ }
+}

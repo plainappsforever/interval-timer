@@ -1,0 +1,40 @@
+{
+ "timer": {
+  "name": "Open EMOM",
+  "color": "#C62828",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 3,
+    "restBetweenRoundsS": 10,
+    "intervals": [
+     {
+      "name": "Minute",
+      "seconds": 60,
+      "type": "open",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 0,
+   "endCue": "both",
+   "repeatWhole": 1,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 3
+ },
+ "nextAt": [
+  61000,
+  120500,
+  185000
+ ]
+}

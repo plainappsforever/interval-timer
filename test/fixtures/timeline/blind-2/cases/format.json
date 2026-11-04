@@ -1,0 +1,134 @@
+[
+ {
+  "id": "fm-01",
+  "family": "format",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "formatDuration(0) in en",
+  "input": {
+   "seconds": 0,
+   "language": "en"
+  },
+  "expected": "00:00"
+ },
+ {
+  "id": "fm-02",
+  "family": "format",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "formatDuration(59) in en",
+  "input": {
+   "seconds": 59,
+   "language": "en"
+  },
+  "expected": "00:59"
+ },
+ {
+  "id": "fm-05",
+  "family": "format",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "formatDuration(3599) in en",
+  "input": {
+   "seconds": 3599,
+   "language": "en"
+  },
+  "expected": "59:59"
+ },
+ {
+  "id": "fm-06",
+  "family": "format",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "formatDuration(3600) in en",
+  "input": {
+   "seconds": 3600,
+   "language": "en"
+  },
+  "expected": "1:00:00"
+ },
+ {
+  "id": "fm-07",
+  "family": "format",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "formatDuration(3601) in en",
+  "input": {
+   "seconds": 3601,
+   "language": "en"
+  },
+  "expected": "1:00:01"
+ },
+ {
+  "id": "fm-08",
+  "family": "format",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "formatDuration(5999) in en",
+  "input": {
+   "seconds": 5999,
+   "language": "en"
+  },
+  "expected": "1:39:59"
+ },
+ {
+  "id": "fm-09",
+  "family": "format",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "formatDuration(6000) in en",
+  "input": {
+   "seconds": 6000,
+   "language": "en"
+  },
+  "expected": "1:40:00"
+ },
+ {
+  "id": "fm-11",
+  "family": "format",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "formatDuration(36000) in en",
+  "input": {
+   "seconds": 36000,
+   "language": "en"
+  },
+  "expected": "10:00:00"
+ },
+ {
+  "id": "fm-12",
+  "family": "format",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "formatDuration(3599) in ar",
+  "input": {
+   "seconds": 3599,
+   "language": "ar"
+  },
+  "expected": "59:59"
+ },
+ {
+  "id": "fm-13",
+  "family": "format",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "formatDuration(5999) in hi",
+  "input": {
+   "seconds": 5999,
+   "language": "hi"
+  },
+  "expected": "1:39:59"
+ },
+ {
+  "id": "fm-14",
+  "family": "format",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "formatDuration(250) in de",
+  "input": {
+   "seconds": 250,
+   "language": "de"
+  },
+  "expected": "04:10"
+ }
+]

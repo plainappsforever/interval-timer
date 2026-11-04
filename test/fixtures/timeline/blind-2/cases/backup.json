@@ -1,0 +1,7656 @@
+[
+ {
+  "id": "bk-01",
+  "family": "backup",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "fresh install (7 templates ids 1-7) keep both: sessions stay with the user's timers, not templates",
+  "input": {
+   "mode": "keepBoth",
+   "current": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "template",
+      "name": "Tabata",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 20,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "template",
+      "name": "HIIT 30/15",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 21,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "template",
+      "name": "EMOM 10",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 22,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 4,
+      "kind": "template",
+      "name": "Boxing",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 23,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 5,
+      "kind": "template",
+      "name": "Walk/Run",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 24,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 6,
+      "kind": "template",
+      "name": "Circuit",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 25,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 7,
+      "kind": "template",
+      "name": "Stretch",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 26,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": []
+   },
+   "backup": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "custom",
+      "name": "Arms",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 42,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 2,
+      "timerId": 2,
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   }
+  },
+  "expected": {
+   "timers": [
+    {
+     "name": "Tabata",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 20,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "HIIT 30/15",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 21,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "EMOM 10",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 22,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Boxing",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 23,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Walk/Run",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 24,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Circuit",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 25,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Stretch",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 26,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Legs",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 41,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Arms",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 42,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Core",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 43,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   ],
+   "idsWithContent": {
+    "1": 0,
+    "2": 1,
+    "3": 2,
+    "4": 3,
+    "5": 4,
+    "6": 5,
+    "7": 6
+   },
+   "sessions": [
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 7
+    },
+    {
+     "content": {
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 8
+    },
+    {
+     "content": {
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 9
+    },
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 7
+    }
+   ],
+   "sessionIds": {}
+  }
+ },
+ {
+  "id": "bk-02",
+  "family": "backup",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "fresh install replace: ids 1-3 take the backup's timers, sessions follow",
+  "input": {
+   "mode": "replace",
+   "current": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "template",
+      "name": "Tabata",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 20,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "template",
+      "name": "HIIT 30/15",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 21,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "template",
+      "name": "EMOM 10",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 22,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 4,
+      "kind": "template",
+      "name": "Boxing",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 23,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 5,
+      "kind": "template",
+      "name": "Walk/Run",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 24,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 6,
+      "kind": "template",
+      "name": "Circuit",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 25,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 7,
+      "kind": "template",
+      "name": "Stretch",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 26,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": []
+   },
+   "backup": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "custom",
+      "name": "Arms",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 42,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 2,
+      "timerId": 2,
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   }
+  },
+  "expected": {
+   "timers": [
+    {
+     "name": "Legs",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 41,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Arms",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 42,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Core",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 43,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Boxing",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 23,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Walk/Run",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 24,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Circuit",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 25,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Stretch",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 26,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   ],
+   "idsWithContent": {
+    "1": 0,
+    "2": 1,
+    "3": 2,
+    "4": 3,
+    "5": 4,
+    "6": 5,
+    "7": 6
+   },
+   "sessions": [
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    },
+    {
+     "content": {
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 1
+    },
+    {
+     "content": {
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 2
+    },
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    }
+   ],
+   "sessionIds": {}
+  }
+ },
+ {
+  "id": "bk-03",
+  "family": "backup",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "same phone, nothing changed since the export, keep both: nothing duplicated",
+  "input": {
+   "mode": "keepBoth",
+   "current": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "custom",
+      "name": "Arms",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 42,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 2,
+      "timerId": 2,
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   },
+   "backup": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "custom",
+      "name": "Arms",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 42,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 2,
+      "timerId": 2,
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   }
+  },
+  "expected": {
+   "timers": [
+    {
+     "name": "Legs",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 41,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Arms",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 42,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Core",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 43,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   ],
+   "idsWithContent": {
+    "1": 0,
+    "2": 1,
+    "3": 2
+   },
+   "sessions": [
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    },
+    {
+     "content": {
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 1
+    },
+    {
+     "content": {
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 2
+    },
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    }
+   ],
+   "sessionIds": {
+    "1": 0,
+    "2": 1,
+    "3": 2,
+    "4": 3
+   }
+  }
+ },
+ {
+  "id": "bk-04",
+  "family": "backup",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "timer 2 edited and session 2 deleted after the export, keep both",
+  "input": {
+   "mode": "keepBoth",
+   "current": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "custom",
+      "name": "Arms",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 52,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 5,
+      "timerId": 2,
+      "timerName": "Arms",
+      "startedAt": 1791529200000,
+      "endedAt": 1791529500000,
+      "plannedS": 210,
+      "actualS": 300,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   },
+   "backup": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "custom",
+      "name": "Arms",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 42,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 2,
+      "timerId": 2,
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   }
+  },
+  "expected": {
+   "timers": [
+    {
+     "name": "Legs",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 41,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Arms",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 52,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Core",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 43,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Arms",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 42,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   ],
+   "idsWithContent": {
+    "1": 0,
+    "2": 1,
+    "3": 2
+   },
+   "sessions": [
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    },
+    {
+     "content": {
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 2
+    },
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    },
+    {
+     "content": {
+      "timerName": "Arms",
+      "startedAt": 1791529200000,
+      "endedAt": 1791529500000,
+      "plannedS": 210,
+      "actualS": 300,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 1
+    },
+    {
+     "content": {
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 3
+    }
+   ],
+   "sessionIds": {
+    "1": 0,
+    "3": 1,
+    "4": 2,
+    "5": 3
+   }
+  }
+ },
+ {
+  "id": "bk-05",
+  "family": "backup",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "same as bk-04 with replace",
+  "input": {
+   "mode": "replace",
+   "current": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "custom",
+      "name": "Arms",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 52,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 5,
+      "timerId": 2,
+      "timerName": "Arms",
+      "startedAt": 1791529200000,
+      "endedAt": 1791529500000,
+      "plannedS": 210,
+      "actualS": 300,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   },
+   "backup": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "custom",
+      "name": "Arms",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 42,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 2,
+      "timerId": 2,
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   }
+  },
+  "expected": {
+   "timers": [
+    {
+     "name": "Legs",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 41,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Arms",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 42,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Core",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 43,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   ],
+   "idsWithContent": {
+    "1": 0,
+    "2": 1,
+    "3": 2
+   },
+   "sessions": [
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    },
+    {
+     "content": {
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 2
+    },
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    },
+    {
+     "content": {
+      "timerName": "Arms",
+      "startedAt": 1791529200000,
+      "endedAt": 1791529500000,
+      "plannedS": 210,
+      "actualS": 300,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 1
+    },
+    {
+     "content": {
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 1
+    }
+   ],
+   "sessionIds": {
+    "1": 0,
+    "3": 1,
+    "4": 2,
+    "5": 3
+   }
+  }
+ },
+ {
+  "id": "bk-06",
+  "family": "backup",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "other phone: ids 4,5 and session ids 5,6 clash with different content, keep both",
+  "input": {
+   "mode": "keepBoth",
+   "current": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "custom",
+      "name": "Arms",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 42,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 4,
+      "kind": "custom",
+      "name": "Sprint",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 61,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 5,
+      "kind": "custom",
+      "name": "Yoga",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 62,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 2,
+      "timerId": 2,
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 5,
+      "timerId": 4,
+      "timerName": "Sprint",
+      "startedAt": 1791183600000,
+      "endedAt": 1791184000000,
+      "plannedS": 210,
+      "actualS": 400,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 6,
+      "timerId": 5,
+      "timerName": "Yoga",
+      "startedAt": 1791270000000,
+      "endedAt": 1791270401000,
+      "plannedS": 210,
+      "actualS": 401,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   },
+   "backup": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "custom",
+      "name": "Arms",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 42,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 4,
+      "kind": "custom",
+      "name": "Swim",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 71,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 5,
+      "kind": "custom",
+      "name": "Bike",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 72,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 2,
+      "timerId": 2,
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 5,
+      "timerId": 4,
+      "timerName": "Swim",
+      "startedAt": 1791356400000,
+      "endedAt": 1791356900000,
+      "plannedS": 210,
+      "actualS": 500,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 6,
+      "timerId": 5,
+      "timerName": "Bike",
+      "startedAt": 1791442800000,
+      "endedAt": 1791443301000,
+      "plannedS": 210,
+      "actualS": 501,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 7,
+      "timerId": 5,
+      "timerName": "Bike",
+      "startedAt": 1791615600000,
+      "endedAt": 1791616102000,
+      "plannedS": 210,
+      "actualS": 502,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   }
+  },
+  "expected": {
+   "timers": [
+    {
+     "name": "Legs",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 41,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Arms",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 42,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Core",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 43,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Sprint",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 61,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Yoga",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 62,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Swim",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 71,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Bike",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 72,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   ],
+   "idsWithContent": {
+    "1": 0,
+    "2": 1,
+    "3": 2,
+    "4": 3,
+    "5": 4
+   },
+   "sessions": [
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    },
+    {
+     "content": {
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 1
+    },
+    {
+     "content": {
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 2
+    },
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    },
+    {
+     "content": {
+      "timerName": "Sprint",
+      "startedAt": 1791183600000,
+      "endedAt": 1791184000000,
+      "plannedS": 210,
+      "actualS": 400,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 3
+    },
+    {
+     "content": {
+      "timerName": "Yoga",
+      "startedAt": 1791270000000,
+      "endedAt": 1791270401000,
+      "plannedS": 210,
+      "actualS": 401,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 4
+    },
+    {
+     "content": {
+      "timerName": "Swim",
+      "startedAt": 1791356400000,
+      "endedAt": 1791356900000,
+      "plannedS": 210,
+      "actualS": 500,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 5
+    },
+    {
+     "content": {
+      "timerName": "Bike",
+      "startedAt": 1791442800000,
+      "endedAt": 1791443301000,
+      "plannedS": 210,
+      "actualS": 501,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 6
+    },
+    {
+     "content": {
+      "timerName": "Bike",
+      "startedAt": 1791615600000,
+      "endedAt": 1791616102000,
+      "plannedS": 210,
+      "actualS": 502,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 6
+    }
+   ],
+   "sessionIds": {
+    "1": 0,
+    "2": 1,
+    "3": 2,
+    "4": 3,
+    "5": 4,
+    "6": 5
+   }
+  }
+ },
+ {
+  "id": "bk-07",
+  "family": "backup",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "copy ids may clash with later backup ids: current {1,2}, backup {1 differs, 3, 4}",
+  "input": {
+   "mode": "keepBoth",
+   "current": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Mine",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 81,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "custom",
+      "name": "Also mine",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 82,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Mine",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838100000,
+      "plannedS": 210,
+      "actualS": 100,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   },
+   "backup": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Theirs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 91,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Third",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 93,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 4,
+      "kind": "custom",
+      "name": "Fourth",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 94,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Theirs",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924510000,
+      "plannedS": 210,
+      "actualS": 110,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 2,
+      "timerId": 3,
+      "timerName": "Third",
+      "startedAt": 1791010800000,
+      "endedAt": 1791010911000,
+      "plannedS": 210,
+      "actualS": 111,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 4,
+      "timerName": "Fourth",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097312000,
+      "plannedS": 210,
+      "actualS": 112,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Theirs",
+      "startedAt": 1791183600000,
+      "endedAt": 1791183713000,
+      "plannedS": 210,
+      "actualS": 113,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   }
+  },
+  "expected": {
+   "timers": [
+    {
+     "name": "Mine",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 81,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Also mine",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 82,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Theirs",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 91,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Third",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 93,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Fourth",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 94,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   ],
+   "idsWithContent": {
+    "1": 0,
+    "2": 1
+   },
+   "sessions": [
+    {
+     "content": {
+      "timerName": "Mine",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838100000,
+      "plannedS": 210,
+      "actualS": 100,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    },
+    {
+     "content": {
+      "timerName": "Theirs",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924510000,
+      "plannedS": 210,
+      "actualS": 110,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 2
+    },
+    {
+     "content": {
+      "timerName": "Third",
+      "startedAt": 1791010800000,
+      "endedAt": 1791010911000,
+      "plannedS": 210,
+      "actualS": 111,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 3
+    },
+    {
+     "content": {
+      "timerName": "Fourth",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097312000,
+      "plannedS": 210,
+      "actualS": 112,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 4
+    },
+    {
+     "content": {
+      "timerName": "Theirs",
+      "startedAt": 1791183600000,
+      "endedAt": 1791183713000,
+      "plannedS": 210,
+      "actualS": 113,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 2
+    }
+   ],
+   "sessionIds": {
+    "1": 0
+   }
+  }
+ },
+ {
+  "id": "bk-08",
+  "family": "backup",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "backup session whose timer was deleted before the export (timerId null)",
+  "input": {
+   "mode": "keepBoth",
+   "current": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "template",
+      "name": "Tabata",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 20,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "template",
+      "name": "HIIT 30/15",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 21,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "template",
+      "name": "EMOM 10",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 22,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 4,
+      "kind": "template",
+      "name": "Boxing",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 23,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 5,
+      "kind": "template",
+      "name": "Walk/Run",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 24,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 6,
+      "kind": "template",
+      "name": "Circuit",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 25,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 7,
+      "kind": "template",
+      "name": "Stretch",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 26,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": []
+   },
+   "backup": {
+    "timers": [
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": null,
+      "timerName": "Old timer",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838120000,
+      "plannedS": 210,
+      "actualS": 120,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 2,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924521000,
+      "plannedS": 210,
+      "actualS": 121,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   }
+  },
+  "expected": {
+   "timers": [
+    {
+     "name": "Tabata",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 20,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "HIIT 30/15",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 21,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "EMOM 10",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 22,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Boxing",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 23,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Walk/Run",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 24,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Circuit",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 25,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Stretch",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 26,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Core",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 43,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   ],
+   "idsWithContent": {
+    "1": 0,
+    "2": 1,
+    "3": 2,
+    "4": 3,
+    "5": 4,
+    "6": 5,
+    "7": 6
+   },
+   "sessions": [
+    {
+     "content": {
+      "timerName": "Old timer",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838120000,
+      "plannedS": 210,
+      "actualS": 120,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": null
+    },
+    {
+     "content": {
+      "timerName": "Core",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924521000,
+      "plannedS": 210,
+      "actualS": 121,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 7
+    }
+   ],
+   "sessionIds": {}
+  }
+ },
+ {
+  "id": "bk-09",
+  "family": "backup",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "rename-only edit after the export, keep both: old name comes back as a copy",
+  "input": {
+   "mode": "keepBoth",
+   "current": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Morning legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "custom",
+      "name": "Arms",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 42,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 2,
+      "timerId": 2,
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   },
+   "backup": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "custom",
+      "name": "Arms",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 42,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 2,
+      "timerId": 2,
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   }
+  },
+  "expected": {
+   "timers": [
+    {
+     "name": "Morning legs",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 41,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Arms",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 42,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Core",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 43,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Legs",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 41,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   ],
+   "idsWithContent": {
+    "1": 0,
+    "2": 1,
+    "3": 2
+   },
+   "sessions": [
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    },
+    {
+     "content": {
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 1
+    },
+    {
+     "content": {
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 2
+    },
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    }
+   ],
+   "sessionIds": {
+    "1": 0,
+    "2": 1,
+    "3": 2,
+    "4": 3
+   }
+  }
+ },
+ {
+  "id": "bk-10",
+  "family": "backup",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "replace keeps current timers that are not in the backup (merge)",
+  "input": {
+   "mode": "replace",
+   "current": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "custom",
+      "name": "Arms",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 42,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 9,
+      "kind": "custom",
+      "name": "New one",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 99,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 2,
+      "timerId": 2,
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 9,
+      "timerId": 9,
+      "timerName": "New one",
+      "startedAt": 1791529200000,
+      "endedAt": 1791529533000,
+      "plannedS": 210,
+      "actualS": 333,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   },
+   "backup": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   }
+  },
+  "expected": {
+   "timers": [
+    {
+     "name": "Legs",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 41,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Arms",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 42,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Core",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 43,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "New one",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 99,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   ],
+   "idsWithContent": {
+    "1": 0,
+    "2": 1,
+    "3": 2,
+    "9": 3
+   },
+   "sessions": [
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    },
+    {
+     "content": {
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 1
+    },
+    {
+     "content": {
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 2
+    },
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    },
+    {
+     "content": {
+      "timerName": "New one",
+      "startedAt": 1791529200000,
+      "endedAt": 1791529533000,
+      "plannedS": 210,
+      "actualS": 333,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 3
+    }
+   ],
+   "sessionIds": {
+    "1": 0,
+    "2": 1,
+    "3": 2,
+    "4": 3,
+    "9": 4
+   }
+  }
+ },
+ {
+  "id": "bk-11",
+  "family": "backup",
+  "adversarial": true,
+  "ambiguous": "A12",
+  "why": "timer deleted after the export (its sessions now have timerId null), keep both",
+  "input": {
+   "mode": "keepBoth",
+   "current": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 2,
+      "timerId": null,
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   },
+   "backup": {
+    "timers": [
+     {
+      "id": 1,
+      "kind": "custom",
+      "name": "Legs",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 41,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 2,
+      "kind": "custom",
+      "name": "Arms",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 42,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     },
+     {
+      "id": 3,
+      "kind": "custom",
+      "name": "Core",
+      "color": "#2E7D32",
+      "notes": "",
+      "blocks": [
+       {
+        "name": "",
+        "rounds": 4,
+        "restBetweenRoundsS": 0,
+        "intervals": [
+         {
+          "name": "Work",
+          "seconds": 43,
+          "type": "work",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         },
+         {
+          "name": "Rest",
+          "seconds": 10,
+          "type": "rest",
+          "color": "",
+          "cueStart": "both",
+          "halfwayCue": false,
+          "countdownCue": true,
+          "openTickS": 0
+         }
+        ]
+       }
+      ],
+      "prefs": {
+       "prepSeconds": 10,
+       "endCue": "both",
+       "repeatWhole": 1,
+       "vibrate": true
+      }
+     }
+    ],
+    "sessions": [
+     {
+      "id": 1,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 2,
+      "timerId": 2,
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 3,
+      "timerId": 3,
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     {
+      "id": 4,
+      "timerId": 1,
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     }
+    ]
+   }
+  },
+  "expected": {
+   "timers": [
+    {
+     "name": "Legs",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 41,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Core",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 43,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    },
+    {
+     "name": "Arms",
+     "color": "#2E7D32",
+     "notes": "",
+     "blocks": [
+      {
+       "name": "",
+       "rounds": 4,
+       "restBetweenRoundsS": 0,
+       "intervals": [
+        {
+         "name": "Work",
+         "seconds": 42,
+         "type": "work",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        },
+        {
+         "name": "Rest",
+         "seconds": 10,
+         "type": "rest",
+         "color": "",
+         "cueStart": "both",
+         "halfwayCue": false,
+         "countdownCue": true,
+         "openTickS": 0
+        }
+       ]
+      }
+     ],
+     "prefs": {
+      "prepSeconds": 10,
+      "endCue": "both",
+      "repeatWhole": 1,
+      "vibrate": true
+     }
+    }
+   ],
+   "idsWithContent": {
+    "1": 0,
+    "3": 1
+   },
+   "sessions": [
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1790838000000,
+      "endedAt": 1790838200000,
+      "plannedS": 210,
+      "actualS": 200,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    },
+    {
+     "content": {
+      "timerName": "Arms",
+      "startedAt": 1790924400000,
+      "endedAt": 1790924601000,
+      "plannedS": 210,
+      "actualS": 201,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": null
+    },
+    {
+     "content": {
+      "timerName": "Core",
+      "startedAt": 1791010800000,
+      "endedAt": 1791011002000,
+      "plannedS": 210,
+      "actualS": 202,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 1
+    },
+    {
+     "content": {
+      "timerName": "Legs",
+      "startedAt": 1791097200000,
+      "endedAt": 1791097403000,
+      "plannedS": 210,
+      "actualS": 203,
+      "completed": true,
+      "skippedIntervals": 0,
+      "pauses": 0,
+      "note": ""
+     },
+     "timer": 0
+    }
+   ],
+   "sessionIds": {
+    "1": 0,
+    "2": 1,
+    "3": 2,
+    "4": 3
+   }
+  }
+ }
+]

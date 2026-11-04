@@ -1,0 +1,170 @@
+{
+ "totalMs": 20000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 1000,
+   "type": "work",
+   "label": "One"
+  },
+  {
+   "startMs": 1000,
+   "endMs": 3000,
+   "type": "work",
+   "label": "Two"
+  },
+  {
+   "startMs": 3000,
+   "endMs": 6000,
+   "type": "work",
+   "label": "Three"
+  },
+  {
+   "startMs": 6000,
+   "endMs": 10000,
+   "type": "work",
+   "label": "Four"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 11000,
+   "type": "work",
+   "label": "One"
+  },
+  {
+   "startMs": 11000,
+   "endMs": 13000,
+   "type": "work",
+   "label": "Two"
+  },
+  {
+   "startMs": 13000,
+   "endMs": 16000,
+   "type": "work",
+   "label": "Three"
+  },
+  {
+   "startMs": 16000,
+   "endMs": 20000,
+   "type": "work",
+   "label": "Four"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "round",
+   "text": "Round 1 of 2"
+  },
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "One"
+  },
+  {
+   "atMs": 1000,
+   "kind": "start",
+   "text": "Two"
+  },
+  {
+   "atMs": 2000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 3000,
+   "kind": "start",
+   "text": "Three"
+  },
+  {
+   "atMs": 4000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 5000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 6000,
+   "kind": "start",
+   "text": "Four"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10000,
+   "kind": "round",
+   "text": "Round 2 of 2"
+  },
+  {
+   "atMs": 10000,
+   "kind": "start",
+   "text": "One"
+  },
+  {
+   "atMs": 11000,
+   "kind": "start",
+   "text": "Two"
+  },
+  {
+   "atMs": 12000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 13000,
+   "kind": "start",
+   "text": "Three"
+  },
+  {
+   "atMs": 14000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 15000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 16000,
+   "kind": "start",
+   "text": "Four"
+  },
+  {
+   "atMs": 17000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 18000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 19000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 20000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+{
+ "ok": true,
+ "sessions": [
+  {
+   "timerName": "Tabata",
+   "startedAt": 1791615600000,
+   "endedAt": 1791615850000,
+   "plannedS": 250,
+   "actualS": 250,
+   "completed": true,
+   "skippedIntervals": 0,
+   "pauses": 0,
+   "note": ""
+  }
+ ],
+ "timers": [
+  {
+   "name": "Tabata",
+   "color": "#C62828",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 8,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 20,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 10,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 10,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  }
+ ],
+ "settings": {
+  "countdown_from": 5,
+  "language": "de",
+  "halfway_default": true,
+  "keep_screen_on": false
+ }
+}

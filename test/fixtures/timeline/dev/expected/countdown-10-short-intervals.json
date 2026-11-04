@@ -1,0 +1,191 @@
+{
+ "totalMs": 31000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 10000,
+   "type": "work",
+   "label": "A"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 21000,
+   "type": "work",
+   "label": "B"
+  },
+  {
+   "startMs": 21000,
+   "endMs": 30000,
+   "type": "work",
+   "label": "C"
+  },
+  {
+   "startMs": 30000,
+   "endMs": 31000,
+   "type": "work",
+   "label": "D"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "A"
+  },
+  {
+   "atMs": 1000,
+   "kind": "countdown",
+   "text": "9"
+  },
+  {
+   "atMs": 2000,
+   "kind": "countdown",
+   "text": "8"
+  },
+  {
+   "atMs": 3000,
+   "kind": "countdown",
+   "text": "7"
+  },
+  {
+   "atMs": 4000,
+   "kind": "countdown",
+   "text": "6"
+  },
+  {
+   "atMs": 5000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 6000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10000,
+   "kind": "start",
+   "text": "B"
+  },
+  {
+   "atMs": 11000,
+   "kind": "countdown",
+   "text": "10"
+  },
+  {
+   "atMs": 12000,
+   "kind": "countdown",
+   "text": "9"
+  },
+  {
+   "atMs": 13000,
+   "kind": "countdown",
+   "text": "8"
+  },
+  {
+   "atMs": 14000,
+   "kind": "countdown",
+   "text": "7"
+  },
+  {
+   "atMs": 15000,
+   "kind": "countdown",
+   "text": "6"
+  },
+  {
+   "atMs": 16000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 17000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 18000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 19000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 20000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 21000,
+   "kind": "start",
+   "text": "C"
+  },
+  {
+   "atMs": 22000,
+   "kind": "countdown",
+   "text": "8"
+  },
+  {
+   "atMs": 23000,
+   "kind": "countdown",
+   "text": "7"
+  },
+  {
+   "atMs": 24000,
+   "kind": "countdown",
+   "text": "6"
+  },
+  {
+   "atMs": 25000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 26000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 27000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 28000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 29000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 30000,
+   "kind": "start",
+   "text": "D"
+  },
+  {
+   "atMs": 31000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

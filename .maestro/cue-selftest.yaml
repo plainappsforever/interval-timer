@@ -1,0 +1,37 @@
+appId: ${APP_ID}
+name: Cue self-test - voice clips rendered, a 20-second timer plays its cues to the end (P5 smoke)
+tags:
+  - smoke
+  - dev-only
+---
+# Development builds only: the self-test route says "Development builds only." elsewhere. Evidence (timings, voice
+# render results) is read from the screen here and from logcat / the timing-log.json file by the phase agent (V1_LOG P5).
+# iOS asks "Open in …?" for a deep link (also left over from native.sh's dev-client link): confirm when shown.
+- tapOn:
+    text: "Open"
+    optional: true
+- runFlow: subflows/launch.yaml
+- openLink: plainintervals-dev://debug/selftest
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: debug-selftest-screen
+    timeout: 30000
+- tapOn:
+    id: selftest-prepare
+- extendedWaitUntil:
+    visible: "voice: available=true.*"
+    timeout: 60000
+- tapOn:
+    id: selftest-start-short
+- extendedWaitUntil:
+    visible: "running.*"
+    timeout: 10000
+- extendedWaitUntil:
+    visible: "ended.*"
+    timeout: 40000
+# iOS lists the JS-played cues here; on Android the native runner plays them (timings in logcat SessionRunner)
+- assertVisible:
+    id: selftest-summary

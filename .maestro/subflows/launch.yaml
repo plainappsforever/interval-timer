@@ -1,0 +1,33 @@
+appId: ${APP_ID}
+---
+- launchApp:
+    stopApp: true
+# Dev builds only: after a clearState (zero-prompts.yaml) the dev client forgets its last Metro server and opens its
+# launcher; pick THIS app's Metro (port 8240). Release builds start the app directly and skip this.
+- tapOn:
+    text: "http://.*:8240"
+    optional: true
+# the launcher can list the server only after the first optional tap gave up (Android, P6)
+- runFlow:
+    when:
+      visible: "http://.*:8240"
+    commands:
+      - tapOn: "http://.*:8240"
+# a tap while the launcher is still loading can be lost (Android under load, P7): wait, then tap once more if needed
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 45000
+    optional: true
+- runFlow:
+    when:
+      visible: "http://.*:8240"
+    commands:
+      - tapOn: "http://.*:8240"
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 90000
+# the dev launcher → app transition can still be animating; a tap during it is lost (P5, iOS)
+- waitForAnimationToEnd:
+    timeout: 5000

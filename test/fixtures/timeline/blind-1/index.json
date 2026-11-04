@@ -1,0 +1,1696 @@
+{
+ "set": "intervals-b1",
+ "count": 150,
+ "cases": [
+  {
+   "id": "tl-01-tabata",
+   "family": "timeline",
+   "title": "Tabata template: work 20 / rest 10 x 8, prep 10, countdown 3 (FORMAT.md example total 250 000)",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-01-tabata.json",
+   "expected": "expected/tl-01-tabata.json"
+  },
+  {
+   "id": "tl-02-hiit",
+   "family": "timeline",
+   "title": "HIIT 30/15 x 10, halfway on work",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-02-hiit.json",
+   "expected": "expected/tl-02-hiit.json"
+  },
+  {
+   "id": "tl-03-emom",
+   "family": "timeline",
+   "title": "EMOM 10: 'Minute' 60 s x 10 with halfway",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-03-emom.json",
+   "expected": "expected/tl-03-emom.json"
+  },
+  {
+   "id": "tl-04-boxing",
+   "family": "timeline",
+   "title": "Boxing 3/1 x 12, halfway on rounds, countdown from 10",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-04-boxing.json",
+   "expected": "expected/tl-04-boxing.json"
+  },
+  {
+   "id": "tl-06-circuit",
+   "family": "timeline",
+   "title": "Circuit: 6 stations 45/15, 3 rounds, 60 s rest between rounds",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-06-circuit.json",
+   "expected": "expected/tl-06-circuit.json"
+  },
+  {
+   "id": "tl-07-stretch",
+   "family": "timeline",
+   "title": "Stretch 30 s x 10 cooldown, no countdown, prep 5",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-07-stretch.json",
+   "expected": "expected/tl-07-stretch.json"
+  },
+  {
+   "id": "tl-08-no-prep",
+   "family": "timeline",
+   "title": "No prep, one 7 s interval: countdown at 4/5/6 s, end at 7 s",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-08-no-prep.json",
+   "expected": "expected/tl-08-no-prep.json"
+  },
+  {
+   "id": "tl-09-prep-60-cf10",
+   "family": "timeline",
+   "title": "Prep 60 (limit) with countdown from 10, then one 1 s interval (no countdown fits)",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-09-prep-60-cf10.json",
+   "expected": "expected/tl-09-prep-60-cf10.json"
+  },
+  {
+   "id": "tl-10-rest-on-one-round-block",
+   "family": "timeline",
+   "title": "3 blocks; a 1-round block with rest 45 must not get a round-rest; no round cue for rounds 1",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-10-rest-on-one-round-block.json",
+   "expected": "expected/tl-10-rest-on-one-round-block.json"
+  },
+  {
+   "id": "tl-11-repeat-3",
+   "family": "timeline",
+   "title": "Repeat whole x 3: prep once, nothing between repeats, round cues restart each repeat",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-11-repeat-3.json",
+   "expected": "expected/tl-11-repeat-3.json"
+  },
+  {
+   "id": "tl-12-repeat-10",
+   "family": "timeline",
+   "title": "Repeat whole 10 (limit), no prep, 2 s interval",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-12-repeat-10.json",
+   "expected": "expected/tl-12-repeat-10.json"
+  },
+  {
+   "id": "tl-13-rounds-99",
+   "family": "timeline",
+   "title": "99 rounds (limit) of 1 s with 1 s rest: only start/round cues, 197 segments",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-13-rounds-99.json",
+   "expected": "expected/tl-13-rounds-99.json"
+  },
+  {
+   "id": "tl-14-30-intervals",
+   "family": "timeline",
+   "title": "30 intervals (limit) of 1..30 s, all halfway, countdown 5",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-14-30-intervals.json",
+   "expected": "expected/tl-14-30-intervals.json"
+  },
+  {
+   "id": "tl-15-20-blocks",
+   "family": "timeline",
+   "title": "20 blocks (limit), prep 3",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-15-20-blocks.json",
+   "expected": "expected/tl-15-20-blocks.json"
+  },
+  {
+   "id": "tl-16-total-8h",
+   "family": "timeline",
+   "title": "Total exactly 8 h (4 x 5999 + 4804 s)",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-16-total-8h.json",
+   "expected": "expected/tl-16-total-8h.json"
+  },
+  {
+   "id": "tl-17-5999-halfway",
+   "family": "timeline",
+   "title": "One 5999 s interval with halfway (2 999 500 ms) and countdown 10",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-17-5999-halfway.json",
+   "expected": "expected/tl-17-5999-halfway.json"
+  },
+  {
+   "id": "tl-18-open-next",
+   "family": "timeline",
+   "title": "Open interval closed by Next at 42 000, then a 10 s work",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-18-open-next.json",
+   "expected": "expected/tl-18-open-next.json"
+  },
+  {
+   "id": "tl-19-open-stays-open",
+   "family": "timeline",
+   "title": "Timeline cut at an open interval without Next: totalMs null, no end cue, nothing after",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-19-open-stays-open.json",
+   "expected": "expected/tl-19-open-stays-open.json"
+  },
+  {
+   "id": "tl-20-open-emom-rest",
+   "family": "timeline",
+   "title": "Open 60 x 3 rounds with 10 s round-rest, three Nexts",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-20-open-emom-rest.json",
+   "expected": "expected/tl-20-open-emom-rest.json"
+  },
+  {
+   "id": "tl-21-next-before-start",
+   "family": "timeline",
+   "title": "Next earlier than the open segment's start: zero-length open segment",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-21-next-before-start.json",
+   "expected": "expected/tl-21-next-before-start.json"
+  },
+  {
+   "id": "tl-22-open-flags-ignored",
+   "family": "timeline",
+   "title": "Open interval with halfway and countdown flags: both ignored; end after Next",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-22-open-flags-ignored.json",
+   "expected": "expected/tl-22-open-flags-ignored.json"
+  },
+  {
+   "id": "tl-23-two-opens-one-next",
+   "family": "timeline",
+   "title": "Two open intervals, one Next: the second stays open",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-23-two-opens-one-next.json",
+   "expected": "expected/tl-23-two-opens-one-next.json"
+  },
+  {
+   "id": "tl-24-open-first-in-round",
+   "family": "timeline",
+   "title": "Open as first interval of each of 2 rounds: round cue at each open start",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-24-open-first-in-round.json",
+   "expected": "expected/tl-24-open-first-in-round.json"
+  },
+  {
+   "id": "tl-25-open-repeat",
+   "family": "timeline",
+   "title": "Repeat x 2 with an open interval; Next only in repeat 1",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-25-open-repeat.json",
+   "expected": "expected/tl-25-open-repeat.json"
+  },
+  {
+   "id": "tl-26-next-at-start",
+   "family": "timeline",
+   "title": "Next exactly at the open start (zero length) between two worked intervals",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-26-next-at-start.json",
+   "expected": "expected/tl-26-next-at-start.json"
+  },
+  {
+   "id": "tl-28-cf10-on-3s",
+   "family": "timeline",
+   "title": "Countdown 10 on 3 s prep and a 3 s interval: 2/1 each",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-28-cf10-on-3s.json",
+   "expected": "expected/tl-28-cf10-on-3s.json"
+  },
+  {
+   "id": "tl-29-halfway-threshold",
+   "family": "timeline",
+   "title": "Halfway only from 10 s: 9 s none, 10 s at +5000, 11 s at +5500, 13 s at +6500",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-29-halfway-threshold.json",
+   "expected": "expected/tl-29-halfway-threshold.json"
+  },
+  {
+   "id": "tl-30-halfway-meets-cd10",
+   "family": "timeline",
+   "title": "Countdown 10: 10 s halfway meets '5', 20 s halfway meets '10': both kept, halfway first",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-30-halfway-meets-cd10.json",
+   "expected": "expected/tl-30-halfway-meets-cd10.json"
+  },
+  {
+   "id": "tl-32-cue-modes",
+   "family": "timeline",
+   "title": "cueStart voice/beep/both/none x 2 rounds: none drops only the start cue (round cue stays)",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-32-cue-modes.json",
+   "expected": "expected/tl-32-cue-modes.json"
+  },
+  {
+   "id": "tl-33-end-none",
+   "family": "timeline",
+   "title": "endCue none: no end cue",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-33-end-none.json",
+   "expected": "expected/tl-33-end-none.json"
+  },
+  {
+   "id": "tl-35-prep-rest-always-cd",
+   "family": "timeline",
+   "title": "Intervals without countdown; prep and round-rest still count down (countdown 5)",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-35-prep-rest-always-cd.json",
+   "expected": "expected/tl-35-prep-rest-always-cd.json"
+  },
+  {
+   "id": "tl-36-round-rest-no-halfway",
+   "family": "timeline",
+   "title": "12 s round-rest never gets a halfway cue though the intervals have one",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-36-round-rest-no-halfway.json",
+   "expected": "expected/tl-36-round-rest-no-halfway.json"
+  },
+  {
+   "id": "tl-38-unicode",
+   "family": "timeline",
+   "title": "Unicode names: emoji ZWJ, Japanese, Arabic, NFD combining, quotes, commas, backslash",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-38-unicode.json",
+   "expected": "expected/tl-38-unicode.json"
+  },
+  {
+   "id": "tl-39-names-40",
+   "family": "timeline",
+   "title": "Names at the 40-character limit (ASCII and Japanese)",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-39-names-40.json",
+   "expected": "expected/tl-39-names-40.json"
+  },
+  {
+   "id": "tl-40-typed-prep-interval",
+   "family": "timeline",
+   "title": "An interval of TYPE prep inside a block (halfway on, countdown off)",
+   "adversarial": true,
+   "ambiguous": true,
+   "readings": [
+    "T2"
+   ],
+   "readingsNoted": [
+    "T2"
+   ],
+   "input": "timers/tl-40-typed-prep-interval.json",
+   "expected": "expected/tl-40-typed-prep-interval.json"
+  },
+  {
+   "id": "tl-41-open-tick-not-listed",
+   "family": "timeline",
+   "title": "openTickS on an open and a work interval: never in the cue list",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-41-open-tick-not-listed.json",
+   "expected": "expected/tl-41-open-tick-not-listed.json"
+  },
+  {
+   "id": "tl-42-cf10-on-10s",
+   "family": "timeline",
+   "title": "Countdown 10 on a 10 s interval: nine cues ('10' would sit on the start)",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-42-cf10-on-10s.json",
+   "expected": "expected/tl-42-cf10-on-10s.json"
+  },
+  {
+   "id": "tl-43-all-ones",
+   "family": "timeline",
+   "title": "Everything 1 s (prep, intervals, round-rest): no countdown, no halfway anywhere",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-43-all-ones.json",
+   "expected": "expected/tl-43-all-ones.json"
+  },
+  {
+   "id": "tl-44-u3-circuit-repeat",
+   "family": "timeline",
+   "title": "U3: 3 blocks x 6 stations x 3 rounds, round-rest 60, repeat 2, countdown 5",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-44-u3-circuit-repeat.json",
+   "expected": "expected/tl-44-u3-circuit-repeat.json"
+  },
+  {
+   "id": "tl-45-open-last-closed",
+   "family": "timeline",
+   "title": "Open as the LAST interval, closed by Next: end cue at the new total",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "timers/tl-45-open-last-closed.json",
+   "expected": "expected/tl-45-open-last-closed.json"
+  },
+  {
+   "id": "cb-01-basic-windows",
+   "family": "cuesBetween",
+   "title": "Exclusive from, inclusive to; latest same-ms batch of the current segment",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/cb-01-basic-windows.json",
+   "expected": "answers/cb-01-basic-windows.json"
+  },
+  {
+   "id": "cb-02-long-gap",
+   "family": "cuesBetween",
+   "title": "A 47 s gap over 3 segments plays only the latest batch of the current segment",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/cb-02-long-gap.json",
+   "expected": "answers/cb-02-long-gap.json"
+  },
+  {
+   "id": "cb-03-boundary",
+   "family": "cuesBetween",
+   "title": "Window ending exactly on a segment start belongs to the new segment",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/cb-03-boundary.json",
+   "expected": "answers/cb-03-boundary.json"
+  },
+  {
+   "id": "cb-04-into-end",
+   "family": "cuesBetween",
+   "title": "Windows reaching the end: only the end cue (no countdown burst)",
+   "adversarial": true,
+   "ambiguous": true,
+   "readings": [
+    "C1"
+   ],
+   "readingsNoted": [
+    "C1"
+   ],
+   "input": "cases/cb-04-into-end.json",
+   "expected": "answers/cb-04-into-end.json"
+  },
+  {
+   "id": "cb-05-open",
+   "family": "cuesBetween",
+   "title": "Open timeline: the open segment's batch, no end cue",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/cb-05-open.json",
+   "expected": "answers/cb-05-open.json"
+  },
+  {
+   "id": "cb-06-halfway-batch",
+   "family": "cuesBetween",
+   "title": "A batch holds halfway and countdown '5' at the same ms",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/cb-06-halfway-batch.json",
+   "expected": "answers/cb-06-halfway-batch.json"
+  },
+  {
+   "id": "cb-07-round-batch",
+   "family": "cuesBetween",
+   "title": "Round + start at a round boundary arrive together after a gap",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/cb-07-round-batch.json",
+   "expected": "answers/cb-07-round-batch.json"
+  },
+  {
+   "id": "rn-01-basic",
+   "family": "runner",
+   "title": "start, probes, end early",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rn-01-basic.json",
+   "expected": "answers/rn-01-basic.json"
+  },
+  {
+   "id": "rn-02-pause-accounting",
+   "family": "runner",
+   "title": "pause/resume twice: elapsed excludes paused time",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rn-02-pause-accounting.json",
+   "expected": "answers/rn-02-pause-accounting.json"
+  },
+  {
+   "id": "rn-04-back-rule",
+   "family": "runner",
+   "title": "back after 3 s restarts the segment; back 1.5 s in goes to the previous",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rn-04-back-rule.json",
+   "expected": "answers/rn-04-back-rule.json"
+  },
+  {
+   "id": "rn-05-back-2000-exact",
+   "family": "runner",
+   "title": "back exactly 2000 ms in restarts; 1999 ms in goes back",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rn-05-back-2000-exact.json",
+   "expected": "answers/rn-05-back-2000-exact.json"
+  },
+  {
+   "id": "rn-07-add-time",
+   "family": "runner",
+   "title": "+30 s shifts the rest of the timeline; two +30 s at the same ms add 60 s",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rn-07-add-time.json",
+   "expected": "answers/rn-07-add-time.json"
+  },
+  {
+   "id": "rn-08-add-then-back",
+   "family": "runner",
+   "title": "+30 s then back: the segment restarts with its extended length",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rn-08-add-then-back.json",
+   "expected": "answers/rn-08-add-then-back.json"
+  },
+  {
+   "id": "rn-09-double-actions",
+   "family": "runner",
+   "title": "start twice, pause twice, resume twice: second call is a no-op",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rn-09-double-actions.json",
+   "expected": "answers/rn-09-double-actions.json"
+  },
+  {
+   "id": "rn-10-after-end",
+   "family": "runner",
+   "title": "every control after end is ignored",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rn-10-after-end.json",
+   "expected": "answers/rn-10-after-end.json"
+  },
+  {
+   "id": "rn-11-boundary-pause",
+   "family": "runner",
+   "title": "pause exactly on a segment boundary belongs to the next segment",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rn-11-boundary-pause.json",
+   "expected": "answers/rn-11-boundary-pause.json"
+  },
+  {
+   "id": "rn-12-end-while-paused",
+   "family": "runner",
+   "title": "end while paused keeps the paused elapsed",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rn-12-end-while-paused.json",
+   "expected": "answers/rn-12-end-while-paused.json"
+  },
+  {
+   "id": "rn-13-skip-paused",
+   "family": "runner",
+   "title": "skip while paused moves and stays paused",
+   "adversarial": false,
+   "ambiguous": true,
+   "readings": [
+    "R4"
+   ],
+   "readingsNoted": [],
+   "input": "cases/rn-13-skip-paused.json",
+   "expected": "answers/rn-13-skip-paused.json"
+  },
+  {
+   "id": "rn-14-skip-to-end",
+   "family": "runner",
+   "title": "skipping through every segment; skip on the last ends at the total",
+   "adversarial": false,
+   "ambiguous": true,
+   "readings": [
+    "R3"
+   ],
+   "readingsNoted": [],
+   "input": "cases/rn-14-skip-to-end.json",
+   "expected": "answers/rn-14-skip-to-end.json"
+  },
+  {
+   "id": "rn-15-runs-out",
+   "family": "runner",
+   "title": "probing after the total: the run has ended at the total",
+   "adversarial": false,
+   "ambiguous": true,
+   "readings": [
+    "R2"
+   ],
+   "readingsNoted": [],
+   "input": "cases/rn-15-runs-out.json",
+   "expected": "answers/rn-15-runs-out.json"
+  },
+  {
+   "id": "rn-16-open-next",
+   "family": "runner",
+   "title": "open interval counts up (no remaining, no total) until Next rebases",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rn-16-open-next.json",
+   "expected": "answers/rn-16-open-next.json"
+  },
+  {
+   "id": "rn-17-open-add-skip",
+   "family": "runner",
+   "title": "+30 s on an open interval; skip on an open interval",
+   "adversarial": false,
+   "ambiguous": true,
+   "readings": [
+    "R5",
+    "R6"
+   ],
+   "readingsNoted": [],
+   "input": "cases/rn-17-open-add-skip.json",
+   "expected": "answers/rn-17-open-add-skip.json"
+  },
+  {
+   "id": "rn-18-back-into-closed-open",
+   "family": "runner",
+   "title": "back < 2 s after Next returns to the (now closed) open interval",
+   "adversarial": false,
+   "ambiguous": true,
+   "readings": [
+    "R8"
+   ],
+   "readingsNoted": [],
+   "input": "cases/rn-18-back-into-closed-open.json",
+   "expected": "answers/rn-18-back-into-closed-open.json"
+  },
+  {
+   "id": "rn-20-odd-ms",
+   "family": "runner",
+   "title": "pause/resume at odd milliseconds",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rn-20-odd-ms.json",
+   "expected": "answers/rn-20-odd-ms.json"
+  },
+  {
+   "id": "rn-21-round-rest",
+   "family": "runner",
+   "title": "skip into the round-rest, back after 2.7 s restarts it, +30 s on it",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rn-21-round-rest.json",
+   "expected": "answers/rn-21-round-rest.json"
+  },
+  {
+   "id": "rn-22-double-skip",
+   "family": "runner",
+   "title": "two skips at the same ms (screen + notification) move two segments",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rn-22-double-skip.json",
+   "expected": "answers/rn-22-double-skip.json"
+  },
+  {
+   "id": "rc-01-running-mid",
+   "family": "recovery",
+   "title": "killed at 1:40, relaunch at 4:00 wall: resume at the wall-clock elapsed",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rc-01-running-mid.json",
+   "expected": "answers/rc-01-running-mid.json"
+  },
+  {
+   "id": "rc-02-running-past-end",
+   "family": "recovery",
+   "title": "relaunch an hour later: finished, completed",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rc-02-running-past-end.json",
+   "expected": "answers/rc-02-running-past-end.json"
+  },
+  {
+   "id": "rc-03-running-exact-end",
+   "family": "recovery",
+   "title": "relaunch exactly at the total: finished",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rc-03-running-exact-end.json",
+   "expected": "answers/rc-03-running-exact-end.json"
+  },
+  {
+   "id": "rc-04-paused-10min",
+   "family": "recovery",
+   "title": "paused record, relaunch 10 min later: resume where paused",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rc-04-paused-10min.json",
+   "expected": "answers/rc-04-paused-10min.json"
+  },
+  {
+   "id": "rc-05-paused-25h",
+   "family": "recovery",
+   "title": "paused 25 h: saved as partial",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rc-05-paused-25h.json",
+   "expected": "answers/rc-05-paused-25h.json"
+  },
+  {
+   "id": "rc-06-paused-24h-exact",
+   "family": "recovery",
+   "title": "paused exactly 24 h",
+   "adversarial": true,
+   "ambiguous": true,
+   "readings": [
+    "REC2"
+   ],
+   "readingsNoted": [],
+   "input": "cases/rc-06-paused-24h-exact.json",
+   "expected": "answers/rc-06-paused-24h-exact.json"
+  },
+  {
+   "id": "rc-07-ended",
+   "family": "recovery",
+   "title": "ended record: nothing to offer",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rc-07-ended.json",
+   "expected": "answers/rc-07-ended.json"
+  },
+  {
+   "id": "rc-08-clock-back",
+   "family": "recovery",
+   "title": "wall clock set back 10 min after the save",
+   "adversarial": true,
+   "ambiguous": true,
+   "readings": [
+    "REC1"
+   ],
+   "readingsNoted": [],
+   "input": "cases/rc-08-clock-back.json",
+   "expected": "answers/rc-08-clock-back.json"
+  },
+  {
+   "id": "rc-09-dst-spring",
+   "family": "recovery",
+   "title": "Berlin DST spring-forward between save and relaunch (15 min real, 75 min on the local clock)",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rc-09-dst-spring.json",
+   "expected": "answers/rc-09-dst-spring.json"
+  },
+  {
+   "id": "rc-10-dst-fall",
+   "family": "recovery",
+   "title": "New York DST fall-back: local clock reads earlier at relaunch, 30 min really passed",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rc-10-dst-fall.json",
+   "expected": "answers/rc-10-dst-fall.json"
+  },
+  {
+   "id": "rc-11-replay-add",
+   "family": "recovery",
+   "title": "+30 s event replayed before locating the segment",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rc-11-replay-add.json",
+   "expected": "answers/rc-11-replay-add.json"
+  },
+  {
+   "id": "rc-12-open-resume",
+   "family": "recovery",
+   "title": "open-ended run (Next replayed) relaunched after 18 min: resume in the second open interval",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rc-12-open-resume.json",
+   "expected": "answers/rc-12-open-resume.json"
+  },
+  {
+   "id": "rc-13-open-stale",
+   "family": "recovery",
+   "title": "open-ended run older than 2 h: partial",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rc-13-open-stale.json",
+   "expected": "answers/rc-13-open-stale.json"
+  },
+  {
+   "id": "rc-14-open-closed-finished",
+   "family": "recovery",
+   "title": "both opens closed by replayed Nexts, relaunch after the end: finished",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/rc-14-open-closed-finished.json",
+   "expected": "answers/rc-14-open-closed-finished.json"
+  },
+  {
+   "id": "va-01-tabata",
+   "family": "validation",
+   "title": "valid Tabata",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-01-tabata.json",
+   "expected": "answers/va-01-tabata.json"
+  },
+  {
+   "id": "va-02-seconds-0",
+   "family": "validation",
+   "title": "interval of 0 s",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-02-seconds-0.json",
+   "expected": "answers/va-02-seconds-0.json"
+  },
+  {
+   "id": "va-03-seconds-6000",
+   "family": "validation",
+   "title": "interval of 6000 s",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-03-seconds-6000.json",
+   "expected": "answers/va-03-seconds-6000.json"
+  },
+  {
+   "id": "va-04-seconds-edges",
+   "family": "validation",
+   "title": "1 s and 5999 s are valid",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-04-seconds-edges.json",
+   "expected": "answers/va-04-seconds-edges.json"
+  },
+  {
+   "id": "va-05-rounds-0",
+   "family": "validation",
+   "title": "rounds 0",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-05-rounds-0.json",
+   "expected": "answers/va-05-rounds-0.json"
+  },
+  {
+   "id": "va-06-rounds-100",
+   "family": "validation",
+   "title": "rounds 100",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-06-rounds-100.json",
+   "expected": "answers/va-06-rounds-100.json"
+  },
+  {
+   "id": "va-08-21-blocks",
+   "family": "validation",
+   "title": "21 blocks",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-08-21-blocks.json",
+   "expected": "answers/va-08-21-blocks.json"
+  },
+  {
+   "id": "va-09-20-blocks",
+   "family": "validation",
+   "title": "20 blocks valid",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-09-20-blocks.json",
+   "expected": "answers/va-09-20-blocks.json"
+  },
+  {
+   "id": "va-10-31-intervals",
+   "family": "validation",
+   "title": "31 intervals in one block",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-10-31-intervals.json",
+   "expected": "answers/va-10-31-intervals.json"
+  },
+  {
+   "id": "va-11-30-intervals",
+   "family": "validation",
+   "title": "30 intervals x 2 blocks valid (limit is per block)",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-11-30-intervals.json",
+   "expected": "answers/va-11-30-intervals.json"
+  },
+  {
+   "id": "va-13-block-name-41",
+   "family": "validation",
+   "title": "block name 41 characters",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-13-block-name-41.json",
+   "expected": "answers/va-13-block-name-41.json"
+  },
+  {
+   "id": "va-14-total-8h",
+   "family": "validation",
+   "title": "total exactly 8 h incl. prep 10 is valid",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-14-total-8h.json",
+   "expected": "answers/va-14-total-8h.json"
+  },
+  {
+   "id": "va-15-total-8h-1s",
+   "family": "validation",
+   "title": "total 8 h + 1 s",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-15-total-8h-1s.json",
+   "expected": "answers/va-15-total-8h-1s.json"
+  },
+  {
+   "id": "va-16-prep-pushes-over",
+   "family": "validation",
+   "title": "8 h of intervals + prep 1 s is over the limit",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-16-prep-pushes-over.json",
+   "expected": "answers/va-16-prep-pushes-over.json"
+  },
+  {
+   "id": "va-17-repeat-pushes-over",
+   "family": "validation",
+   "title": "2 h timer x repeat 5 = 10 h",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-17-repeat-pushes-over.json",
+   "expected": "answers/va-17-repeat-pushes-over.json"
+  },
+  {
+   "id": "va-18-round-rest-pushes-over",
+   "family": "validation",
+   "title": "99 rounds x 290 s + 98 x 5 s round-rest > 8 h, without rests < 8 h",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-18-round-rest-pushes-over.json",
+   "expected": "answers/va-18-round-rest-pushes-over.json"
+  },
+  {
+   "id": "va-19-emoji-40",
+   "family": "validation",
+   "title": "timer name of 40 emoji (40 code points, 80 UTF-16 units)",
+   "adversarial": true,
+   "ambiguous": true,
+   "readings": [
+    "V1"
+   ],
+   "readingsNoted": [],
+   "input": "cases/va-19-emoji-40.json",
+   "expected": "answers/va-19-emoji-40.json"
+  },
+  {
+   "id": "va-20-japanese-41",
+   "family": "validation",
+   "title": "interval name of 41 Japanese characters",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/va-20-japanese-41.json",
+   "expected": "answers/va-20-japanese-41.json"
+  },
+  {
+   "id": "va-21-combining",
+   "family": "validation",
+   "title": "interval name of 40 user-perceived characters, 41 code points (NFD e+acute)",
+   "adversarial": true,
+   "ambiguous": true,
+   "readings": [
+    "V1"
+   ],
+   "readingsNoted": [],
+   "input": "cases/va-21-combining.json",
+   "expected": "answers/va-21-combining.json"
+  },
+  {
+   "id": "va-22-fraction",
+   "family": "validation",
+   "title": "2.5 s interval",
+   "adversarial": true,
+   "ambiguous": true,
+   "readings": [
+    "V4"
+   ],
+   "readingsNoted": [],
+   "input": "cases/va-22-fraction.json",
+   "expected": "answers/va-22-fraction.json"
+  },
+  {
+   "id": "fm-01-duration-0-en",
+   "family": "format",
+   "title": "duration 0 s in en",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/fm-01-duration-0-en.json",
+   "expected": "answers/fm-01-duration-0-en.json"
+  },
+  {
+   "id": "fm-02-duration-59-en",
+   "family": "format",
+   "title": "duration 59 s in en",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/fm-02-duration-59-en.json",
+   "expected": "answers/fm-02-duration-59-en.json"
+  },
+  {
+   "id": "fm-03-duration-599-en",
+   "family": "format",
+   "title": "duration 599 s in en",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/fm-03-duration-599-en.json",
+   "expected": "answers/fm-03-duration-599-en.json"
+  },
+  {
+   "id": "fm-04-duration-3600-en",
+   "family": "format",
+   "title": "duration 3600 s in en",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/fm-04-duration-3600-en.json",
+   "expected": "answers/fm-04-duration-3600-en.json"
+  },
+  {
+   "id": "fm-05-duration-5999-en",
+   "family": "format",
+   "title": "duration 5999 s in en",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/fm-05-duration-5999-en.json",
+   "expected": "answers/fm-05-duration-5999-en.json"
+  },
+  {
+   "id": "fm-06-duration-28800-de",
+   "family": "format",
+   "title": "duration 28800 s in de",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/fm-06-duration-28800-de.json",
+   "expected": "answers/fm-06-duration-28800-de.json"
+  },
+  {
+   "id": "fm-07-duration-754-ar",
+   "family": "format",
+   "title": "duration 754 s in ar",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/fm-07-duration-754-ar.json",
+   "expected": "answers/fm-07-duration-754-ar.json"
+  },
+  {
+   "id": "fm-08-duration-3725-hi",
+   "family": "format",
+   "title": "duration 3725 s in hi",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/fm-08-duration-3725-hi.json",
+   "expected": "answers/fm-08-duration-3725-hi.json"
+  },
+  {
+   "id": "fm-11-block-circuit",
+   "family": "format",
+   "title": "block total: 6 stations 45/15 x 3 rounds + 2 x 60 s round-rest",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/fm-11-block-circuit.json",
+   "expected": "answers/fm-11-block-circuit.json"
+  },
+  {
+   "id": "fm-12-block-one-round-rest",
+   "family": "format",
+   "title": "block total: 1 round with rest 45 (never used)",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/fm-12-block-one-round-rest.json",
+   "expected": "answers/fm-12-block-one-round-rest.json"
+  },
+  {
+   "id": "fm-13-timer-tabata",
+   "family": "format",
+   "title": "timer total Tabata incl. prep",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/fm-13-timer-tabata.json",
+   "expected": "answers/fm-13-timer-tabata.json"
+  },
+  {
+   "id": "fm-14-timer-repeat",
+   "family": "format",
+   "title": "timer total with repeat 3, two blocks, round-rest, prep 7",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/fm-14-timer-repeat.json",
+   "expected": "answers/fm-14-timer-repeat.json"
+  },
+  {
+   "id": "sh-01-tabata",
+   "family": "share",
+   "title": "round trip Tabata (link + file)",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/sh-01-tabata.json",
+   "expected": "answers/sh-01-tabata.json"
+  },
+  {
+   "id": "sh-02-unicode",
+   "family": "share",
+   "title": "round trip Unicode names (UTF-8 inside base64url; URL-like characters)",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/sh-02-unicode.json",
+   "expected": "answers/sh-02-unicode.json"
+  },
+  {
+   "id": "sh-03-every-field",
+   "family": "share",
+   "title": "round trip every enum value and non-default prefs (a compact codec must not drop defaults)",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/sh-03-every-field.json",
+   "expected": "answers/sh-03-every-field.json"
+  },
+  {
+   "id": "sh-04-big",
+   "family": "share",
+   "title": "round trip 20 blocks x 5 intervals with 40-character names",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/sh-04-big.json",
+   "expected": "answers/sh-04-big.json"
+  },
+  {
+   "id": "sh-05-notes",
+   "family": "share",
+   "title": "round trip with notes",
+   "adversarial": false,
+   "ambiguous": true,
+   "readings": [
+    "SH1"
+   ],
+   "readingsNoted": [],
+   "input": "cases/sh-05-notes.json",
+   "expected": "answers/sh-05-notes.json"
+  },
+  {
+   "id": "sh-06-unknown-field",
+   "family": "share",
+   "title": "unknown top-level field in the decoded JSON is ignored",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/sh-06-unknown-field.json",
+   "expected": "answers/sh-06-unknown-field.json"
+  },
+  {
+   "id": "sh-07-tamper-seconds",
+   "family": "share",
+   "title": "decoded JSON edited: 4321 s -> 6001 s must be refused",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/sh-07-tamper-seconds.json",
+   "expected": "answers/sh-07-tamper-seconds.json"
+  },
+  {
+   "id": "sh-08-tamper-name",
+   "family": "share",
+   "title": "decoded JSON edited: 40-character name -> 41 must be refused",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/sh-08-tamper-name.json",
+   "expected": "answers/sh-08-tamper-name.json"
+  },
+  {
+   "id": "sh-09-tamper-total",
+   "family": "share",
+   "title": "decoded JSON edited so that the total exceeds 8 h (each field still in range)",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/sh-09-tamper-total.json",
+   "expected": "answers/sh-09-tamper-total.json"
+  },
+  {
+   "id": "sh-10-tamper-rounds",
+   "family": "share",
+   "title": "decoded JSON edited: rounds 97 -> 100 must be refused",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/sh-10-tamper-rounds.json",
+   "expected": "answers/sh-10-tamper-rounds.json"
+  },
+  {
+   "id": "sh-11-hostile-links",
+   "family": "share",
+   "title": "hostile links: empty, non-base64url, non-JSON, JSON array/null/{}, huge, deep nesting",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/sh-11-hostile-links.json",
+   "expected": "answers/sh-11-hostile-links.json"
+  },
+  {
+   "id": "st-01-basic",
+   "family": "stats",
+   "title": "3 consecutive days ending today; totals, planned vs actual",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/st-01-basic.json",
+   "expected": "answers/st-01-basic.json"
+  },
+  {
+   "id": "st-02-dst-spring",
+   "family": "stats",
+   "title": "Berlin spring-forward: 23-hour day inside a 3-day streak",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/st-02-dst-spring.json",
+   "expected": "answers/st-02-dst-spring.json"
+  },
+  {
+   "id": "st-03-dst-fall",
+   "family": "stats",
+   "title": "New York fall-back: 25-hour day; 23:30 sessions on consecutive days",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/st-03-dst-fall.json",
+   "expected": "answers/st-03-dst-fall.json"
+  },
+  {
+   "id": "st-04-iso-week-53",
+   "family": "stats",
+   "title": "ISO week 2026-W53 spans the new year (Mon 28 Dec .. Sun 3 Jan)",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/st-04-iso-week-53.json",
+   "expected": "answers/st-04-iso-week-53.json"
+  },
+  {
+   "id": "st-05-iso-week-years",
+   "family": "stats",
+   "title": "30 Dec 2024 is 2025-W01; 3 Jan 2021 is 2020-W53",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/st-05-iso-week-years.json",
+   "expected": "answers/st-05-iso-week-years.json"
+  },
+  {
+   "id": "st-06-kiritimati",
+   "family": "stats",
+   "title": "UTC+14: 09:30Z and 10:30Z on the same UTC day fall on different local days",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/st-06-kiritimati.json",
+   "expected": "answers/st-06-kiritimati.json"
+  },
+  {
+   "id": "st-07-pago-pago",
+   "family": "stats",
+   "title": "Same sessions in UTC-11",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/st-07-pago-pago.json",
+   "expected": "answers/st-07-pago-pago.json"
+  },
+  {
+   "id": "st-08-kathmandu",
+   "family": "stats",
+   "title": "UTC+5:45: 23:59 and 00:01 local are different days; streak 2",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/st-08-kathmandu.json",
+   "expected": "answers/st-08-kathmandu.json"
+  },
+  {
+   "id": "st-09-lord-howe",
+   "family": "stats",
+   "title": "Lord Howe 30-minute DST change (4 Oct 2026); streak and month boundary",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/st-09-lord-howe.json",
+   "expected": "answers/st-09-lord-howe.json"
+  },
+  {
+   "id": "st-10-gap-streaks",
+   "family": "stats",
+   "title": "today + yesterday current 2, an older 5-day run is the longest",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/st-10-gap-streaks.json",
+   "expected": "answers/st-10-gap-streaks.json"
+  },
+  {
+   "id": "st-11-planned-null",
+   "family": "stats",
+   "title": "open-interval sessions have no planned time; most used by count",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/st-11-planned-null.json",
+   "expected": "answers/st-11-planned-null.json"
+  },
+  {
+   "id": "st-12-yesterday-only",
+   "family": "stats",
+   "title": "last session yesterday, none yet today",
+   "adversarial": false,
+   "ambiguous": true,
+   "readings": [
+    "S2"
+   ],
+   "readingsNoted": [],
+   "input": "cases/st-12-yesterday-only.json",
+   "expected": "answers/st-12-yesterday-only.json"
+  },
+  {
+   "id": "st-13-midnight-crossing",
+   "family": "stats",
+   "title": "a session that starts 23:50 and ends 00:20; an ended-early session alone on a day",
+   "adversarial": false,
+   "ambiguous": true,
+   "readings": [
+    "S1",
+    "S3"
+   ],
+   "readingsNoted": [],
+   "input": "cases/st-13-midnight-crossing.json",
+   "expected": "answers/st-13-midnight-crossing.json"
+  },
+  {
+   "id": "cv-01-plain",
+   "family": "csv",
+   "title": "plain rows",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/cv-01-plain.json",
+   "expected": "answers/cv-01-plain.json"
+  },
+  {
+   "id": "cv-02-guard",
+   "family": "csv",
+   "title": "formula lead characters = + - @ TAB CR in names and notes",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/cv-02-guard.json",
+   "expected": "answers/cv-02-guard.json"
+  },
+  {
+   "id": "cv-03-quoting",
+   "family": "csv",
+   "title": "commas, quotes, CRLF/LF/CR inside a note, leading and trailing spaces",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/cv-03-quoting.json",
+   "expected": "answers/cv-03-quoting.json"
+  },
+  {
+   "id": "cv-04-unicode",
+   "family": "csv",
+   "title": "emoji, Arabic, Japanese, RTL mark, NFD",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/cv-04-unicode.json",
+   "expected": "answers/cv-04-unicode.json"
+  },
+  {
+   "id": "cv-05-guard-and-quote",
+   "family": "csv",
+   "title": "formula characters together with commas and quotes",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/cv-05-guard-and-quote.json",
+   "expected": "answers/cv-05-guard-and-quote.json"
+  },
+  {
+   "id": "cv-06-no-false-guard",
+   "family": "csv",
+   "title": "not guarded: '=' and '@' inside, digits, apostrophe, empty",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/cv-06-no-false-guard.json",
+   "expected": "answers/cv-06-no-false-guard.json"
+  },
+  {
+   "id": "bk-01-fresh-roundtrip",
+   "family": "backup",
+   "title": "U10: backup -> restore on a fresh install: timers and history identical",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/bk-01-fresh-roundtrip.json",
+   "expected": "answers/bk-01-fresh-roundtrip.json"
+  },
+  {
+   "id": "bk-02-fresh-settings",
+   "family": "backup",
+   "title": "fresh install restore also brings the settings back",
+   "adversarial": false,
+   "ambiguous": true,
+   "readings": [
+    "BK3"
+   ],
+   "readingsNoted": [],
+   "input": "cases/bk-02-fresh-settings.json",
+   "expected": "answers/bk-02-fresh-settings.json"
+  },
+  {
+   "id": "bk-03-replace",
+   "family": "backup",
+   "title": "replace: edits reverted, deleted re-added, later additions kept, sessions merged by id",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/bk-03-replace.json",
+   "expected": "answers/bk-03-replace.json"
+  },
+  {
+   "id": "bk-04-keep-both",
+   "family": "backup",
+   "title": "keep both: every changed timer exists twice (current + backup copy), deleted ones return",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/bk-04-keep-both.json",
+   "expected": "answers/bk-04-keep-both.json"
+  },
+  {
+   "id": "bk-05-keep-both-unchanged",
+   "family": "backup",
+   "title": "keep both with one timer unchanged since the backup",
+   "adversarial": false,
+   "ambiguous": true,
+   "readings": [
+    "BK1"
+   ],
+   "readingsNoted": [],
+   "input": "cases/bk-05-keep-both-unchanged.json",
+   "expected": "answers/bk-05-keep-both-unchanged.json"
+  },
+  {
+   "id": "bk-06-truncated",
+   "family": "backup",
+   "title": "restore of a backup cut in half: refused, database unchanged",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/bk-06-truncated.json",
+   "expected": "answers/bk-06-truncated.json"
+  },
+  {
+   "id": "bk-07-not-json",
+   "family": "backup",
+   "title": "restore of non-JSON text: refused, database unchanged",
+   "adversarial": true,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/bk-07-not-json.json",
+   "expected": "answers/bk-07-not-json.json"
+  },
+  {
+   "id": "bk-08-null",
+   "family": "backup",
+   "title": "restore of the JSON value null: refused, database unchanged",
+   "adversarial": false,
+   "ambiguous": false,
+   "readings": [],
+   "readingsNoted": [],
+   "input": "cases/bk-08-null.json",
+   "expected": "answers/bk-08-null.json"
+  }
+ ]
+}

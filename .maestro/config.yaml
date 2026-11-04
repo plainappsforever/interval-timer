@@ -1,0 +1,24 @@
+# P7 adds history, settings-language, backup-restore, two-sessions and live-activity (iOS only; Android skips it by tag).
+# Flows share one simulator and one database, so run them sequentially in this order (by flow name). Every P6 flow
+# starts from a cleared state (subflows/fresh.yaml), so the order only matters for speed.
+flows:
+  - "*"
+executionOrder:
+  continueOnFailure: true
+  flowsOrder:
+    - "Smoke - templates seeded, open a timer, change theme, restart, theme persists"
+    - "Zero prompts - cold launch shows the timers with no permission dialog, Start runs without one (A5)"
+    - "Start in two taps - cold start, Start on the last-used timer, prep, cues, Done, history row (A5, U1)"
+    - "Editor - template changed and saved (U2), new custom timer with two blocks, inline validation, live total (U3, A15)"
+    - "Run controls - Skip, Pause/Resume, +30 s, Back, lock, quick toggles, End with confirm (A6 screen part, A17)"
+    - "Running screen in landscape - time, interval and controls stay on screen; other screens stay portrait (SPEC §3, A16)"
+    - "Recovery - the app is killed mid-session, relaunch offers Resume at the right time, cues continue (A8, U6)"
+    - "Import link - a shared timer link opens the Import preview, Save adds it; a broken link says so (U8, D19)"
+    - "Cue self-test - voice clips rendered, a 20-second timer plays its cues to the end (P5 smoke)"
+    - "History - a completed and an ended-early workout, stats, week/month buckets, note, delete (A10, SPEC screen 5)"
+    - "Settings - language switch without restart and after one (U9, A12), cue settings saved, help and privacy texts"
+    - "Backup and restore - backup on the phone, a timer deleted, restored from the backup; restore templates (U10)"
+    - "Home actions - the long-press sheet opens again and again; Duplicate, Cancel, backdrop, Back, Share, Delete with Undo (D39.5, review F6)"
+    - "Two sessions - a start link during a workout asks Keep/End; a share link during a workout returns to it after Save (SPEC §9, D41)"
+    - "Run link - a start link from outside asks Start-name first; Cancel goes home, Start runs; in-app Start still starts at once (review F11)"
+    - "Live Activity - off by default, switched on from the running screen, interval and countdown in Notification Center, Paused, removed at End (A14, iOS)"

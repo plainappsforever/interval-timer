@@ -1,0 +1,25 @@
+appId: ${APP_ID}
+name: A8 Android swipe-away check - relaunch offers Resume, Resume continues (after a swipe-away from Recents by adb)
+---
+- runFlow: ../subflows/launch.yaml
+- assertVisible:
+    id: recovery-offer
+- assertVisible:
+    id: recovery-text
+    text: "Tabata was interrupted at .*"
+- tapOn:
+    id: recovery-resume
+- extendedWaitUntil:
+    visible:
+      id: run-toggle
+      text: "Pause"
+    timeout: 30000
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-interrupted
+    timeout: 10000

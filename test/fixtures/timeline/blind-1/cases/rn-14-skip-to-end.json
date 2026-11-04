@@ -1,0 +1,90 @@
+{
+ "id": "rn-14-skip-to-end",
+ "family": "runner",
+ "title": "skipping through every segment; skip on the last ends at the total",
+ "adversarial": false,
+ "ambiguous": true,
+ "readings": [
+  "R3"
+ ],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Run A",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 3,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 20,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": true,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 10,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 5,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "script": [
+   {
+    "t": 0,
+    "op": "start"
+   },
+   {
+    "t": 1000,
+    "op": "skip"
+   },
+   {
+    "t": 2000,
+    "op": "skip"
+   },
+   {
+    "t": 3000,
+    "op": "skip"
+   },
+   {
+    "t": 4000,
+    "op": "skip"
+   },
+   {
+    "t": 5000,
+    "op": "skip"
+   },
+   {
+    "t": 6000,
+    "op": "skip"
+   },
+   {
+    "t": 7000,
+    "op": "skip"
+   }
+  ]
+ }
+}

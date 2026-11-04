@@ -1,0 +1,145 @@
+{
+ "totalMs": 210000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 30000,
+   "type": "work",
+   "label": "Squat"
+  },
+  {
+   "startMs": 30000,
+   "endMs": 60000,
+   "type": "work",
+   "label": "Lunge"
+  },
+  {
+   "startMs": 60000,
+   "endMs": 75000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 75000,
+   "endMs": 105000,
+   "type": "work",
+   "label": "Squat"
+  },
+  {
+   "startMs": 105000,
+   "endMs": 135000,
+   "type": "work",
+   "label": "Lunge"
+  },
+  {
+   "startMs": 135000,
+   "endMs": 150000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 150000,
+   "endMs": 180000,
+   "type": "work",
+   "label": "Squat"
+  },
+  {
+   "startMs": 180000,
+   "endMs": 210000,
+   "type": "work",
+   "label": "Lunge"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "round",
+   "text": "Round 1 of 3"
+  },
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Squat"
+  },
+  {
+   "atMs": 30000,
+   "kind": "start",
+   "text": "Lunge"
+  },
+  {
+   "atMs": 60000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 72000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 73000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 74000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 75000,
+   "kind": "round",
+   "text": "Round 2 of 3"
+  },
+  {
+   "atMs": 75000,
+   "kind": "start",
+   "text": "Squat"
+  },
+  {
+   "atMs": 105000,
+   "kind": "start",
+   "text": "Lunge"
+  },
+  {
+   "atMs": 135000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 147000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 148000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 149000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 150000,
+   "kind": "round",
+   "text": "Round 3 of 3"
+  },
+  {
+   "atMs": 150000,
+   "kind": "start",
+   "text": "Squat"
+  },
+  {
+   "atMs": 180000,
+   "kind": "start",
+   "text": "Lunge"
+  },
+  {
+   "atMs": 210000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

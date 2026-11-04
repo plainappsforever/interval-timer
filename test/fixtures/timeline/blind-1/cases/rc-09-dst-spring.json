@@ -1,0 +1,63 @@
+{
+ "id": "rc-09-dst-spring",
+ "family": "recovery",
+ "title": "Berlin DST spring-forward between save and relaunch (15 min real, 75 min on the local clock)",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Recover long",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 30,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 40,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 20,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 10,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "record": {
+   "state": "running",
+   "startedAtWallMs": 1774745400000,
+   "savedAtWallMs": 1774745700000,
+   "elapsedMs": 300000,
+   "events": [],
+   "baseWallMs": 1774745400000
+  },
+  "nowWallMs": 1774746300000
+ }
+}

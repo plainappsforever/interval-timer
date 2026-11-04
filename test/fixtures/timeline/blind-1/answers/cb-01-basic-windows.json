@@ -1,0 +1,32 @@
+{
+ "windows": [
+  [
+   {
+    "atMs": 0,
+    "kind": "start",
+    "text": "Get ready"
+   }
+  ],
+  [],
+  [
+   {
+    "atMs": 4000,
+    "kind": "countdown",
+    "text": "1"
+   }
+  ],
+  [
+   {
+    "atMs": 5000,
+    "kind": "round",
+    "text": "Round 1 of 2"
+   },
+   {
+    "atMs": 5000,
+    "kind": "start",
+    "text": "Work"
+   }
+  ],
+  []
+ ]
+}

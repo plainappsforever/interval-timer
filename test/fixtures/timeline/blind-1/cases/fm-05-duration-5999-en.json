@@ -1,0 +1,14 @@
+{
+ "id": "fm-05-duration-5999-en",
+ "family": "format",
+ "title": "duration 5999 s in en",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "op": "duration",
+  "seconds": 5999,
+  "lang": "en"
+ }
+}

@@ -1,0 +1,1165 @@
+{
+ "id": "sh-04-big",
+ "family": "share",
+ "title": "round trip 20 blocks x 5 intervals with 40-character names",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "op": "roundtrip",
+  "timer": {
+   "name": "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "00-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "00-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "00-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "00-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "00-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "01-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "01-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "01-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "01-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "01-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "02-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "02-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "02-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "02-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "02-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "03-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "03-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "03-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "03-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "03-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "04-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "04-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "04-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "04-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "04-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "05-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "05-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "05-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "05-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "05-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "06-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "06-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "06-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "06-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "06-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "07-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "07-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "07-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "07-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "07-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "08-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "08-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "08-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "08-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "08-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "09-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "09-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "09-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "09-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "09-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "10-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "10-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "10-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "10-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "10-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "11-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "11-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "11-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "11-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "11-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "12-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "12-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "12-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "12-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "12-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "13-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "13-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "13-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "13-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "13-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "14-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "14-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "14-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "14-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "14-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "15-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "15-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "15-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "15-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "15-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "16-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "16-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "16-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "16-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "16-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "17-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "17-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "17-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "17-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "17-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "18-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "18-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "18-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "18-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "18-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+     "rounds": 2,
+     "restBetweenRoundsS": 1,
+     "intervals": [
+      {
+       "name": "19-0-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 5,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "19-1-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 6,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "19-2-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 7,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "19-3-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 8,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "19-4-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn",
+       "seconds": 9,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 0,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  }
+ }
+}

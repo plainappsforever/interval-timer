@@ -1,0 +1,45 @@
+{
+ "timer": {
+  "name": "Typed",
+  "color": "#C62828",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 1,
+    "restBetweenRoundsS": 0,
+    "intervals": [
+     {
+      "name": "Warm-up",
+      "seconds": 20,
+      "type": "prep",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": false,
+      "openTickS": 0
+     },
+     {
+      "name": "Breather",
+      "seconds": 10,
+      "type": "rest",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 0,
+   "endCue": "both",
+   "repeatWhole": 1,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 3
+ }
+}

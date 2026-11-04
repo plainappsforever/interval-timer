@@ -1,0 +1,46 @@
+{
+ "id": "cv-04-unicode",
+ "family": "csv",
+ "title": "emoji, Arabic, Japanese, RTL mark, NFD",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "sessions": [
+   {
+    "timerName": "Übung 🏋️‍♀️",
+    "startedAt": 1791615600000,
+    "endedAt": 1791615850000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "👨‍👩‍👧‍👦"
+   },
+   {
+    "timerName": "تمرين",
+    "startedAt": 1791702000000,
+    "endedAt": 1791702251000,
+    "plannedS": 250,
+    "actualS": 251,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "‏ملاحظة"
+   },
+   {
+    "timerName": "腕立て伏せ",
+    "startedAt": 1791788400000,
+    "endedAt": 1791788652000,
+    "plannedS": 250,
+    "actualS": 252,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "é"
+   }
+  ]
+ }
+}

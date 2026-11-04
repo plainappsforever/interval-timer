@@ -1,0 +1,112 @@
+appId: ${APP_ID}
+name: Home actions - the long-press sheet opens again and again; Duplicate, Cancel, backdrop, Back, Share, Delete with Undo (D39.5, review F6)
+tags:
+  - fixround
+---
+# The sheet used to be a React Native Modal, which on iOS dropped out of the accessibility tree when shown a second
+# time (D39.5). Now an in-screen overlay; this flow opens it six times in one run.
+- runFlow: subflows/fresh.yaml
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+
+# 1: Duplicate - the copy appears under "My timers", the sheet is gone
+- longPressOn: "Tabata, .*"
+- extendedWaitUntil:
+    visible:
+      id: action-duplicate
+    timeout: 10000
+- tapOn:
+    id: action-duplicate
+- extendedWaitUntil:
+    visible: "Tabata copy.*"
+    timeout: 10000
+- assertNotVisible:
+    id: timer-actions
+
+# 2: Cancel
+- longPressOn: "Tabata, .*"
+- extendedWaitUntil:
+    visible:
+      id: action-cancel
+    timeout: 10000
+- tapOn:
+    id: action-cancel
+- assertNotVisible:
+    id: timer-actions
+
+# 3: a tap on the dimmed area above the sheet closes it
+- longPressOn: "Tabata, .*"
+- extendedWaitUntil:
+    visible:
+      id: timer-actions
+    timeout: 10000
+- tapOn:
+    point: "50%,30%"
+- assertNotVisible:
+    id: timer-actions
+- assertVisible:
+    id: home-screen
+
+# 4 (Android): the system Back button closes the sheet and stays on Home
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - longPressOn: "Tabata, .*"
+      - extendedWaitUntil:
+          visible:
+            id: timer-actions
+          timeout: 10000
+      - back
+      - assertNotVisible:
+          id: timer-actions
+      - assertVisible:
+          id: home-screen
+
+# 5 (Android): Share opens the system share sheet; Back closes it and Home is still there. (Had Share opened nothing,
+# this Back would have left the app and the home-screen check would fail.)
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - longPressOn: "Tabata copy, .*"
+      - extendedWaitUntil:
+          visible:
+            id: action-share
+          timeout: 10000
+      - tapOn:
+          id: action-share
+      - waitForAnimationToEnd:
+          timeout: 5000
+      - assertNotVisible:
+          id: timer-actions
+      - back
+      - extendedWaitUntil:
+          visible:
+            id: home-screen
+          timeout: 10000
+
+# 6: Delete the copy, then Undo brings it back
+- longPressOn: "Tabata copy, .*"
+- extendedWaitUntil:
+    visible:
+      id: action-delete
+    timeout: 10000
+- tapOn:
+    id: action-delete
+- extendedWaitUntil:
+    visible:
+      id: undo-bar
+    timeout: 5000
+# the row's label ("Tabata copy, 04:10"), not "Tabata copy.*": the undo bar itself says "Tabata copy deleted", and an
+# assertNotVisible on that waits out the 5 s undo window (first fix-round run)
+- assertNotVisible: "Tabata copy, .*"
+- tapOn:
+    id: undo-delete
+- extendedWaitUntil:
+    visible: "Tabata copy, .*"
+    timeout: 5000
+- assertNotVisible:
+    id: undo-bar

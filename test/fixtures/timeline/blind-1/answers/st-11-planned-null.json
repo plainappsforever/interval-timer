@@ -1,0 +1,47 @@
+{
+ "sessions": 4,
+ "completedSessions": 4,
+ "actualS": 2055,
+ "plannedS": 850,
+ "perDay": {
+  "2026-10-01": {
+   "sessions": 1,
+   "actualS": 590
+  },
+  "2026-10-14": {
+   "sessions": 1,
+   "actualS": 250
+  },
+  "2026-10-15": {
+   "sessions": 1,
+   "actualS": 600
+  },
+  "2026-10-16": {
+   "sessions": 1,
+   "actualS": 615
+  }
+ },
+ "perWeek": {
+  "2026-W40": {
+   "sessions": 1,
+   "actualS": 590
+  },
+  "2026-W42": {
+   "sessions": 3,
+   "actualS": 1465
+  }
+ },
+ "perMonth": {
+  "2026-10": {
+   "sessions": 4,
+   "actualS": 2055
+  }
+ },
+ "streakCurrent": 3,
+ "streakLongest": 3,
+ "mostUsed": {
+  "EMOM": 3,
+  "Tabata": 1
+ },
+ "topTimer": "EMOM"
+}

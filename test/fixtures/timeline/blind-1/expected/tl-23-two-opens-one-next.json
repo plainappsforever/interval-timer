@@ -1,0 +1,29 @@
+{
+ "totalMs": null,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 20000,
+   "type": "open",
+   "label": "A"
+  },
+  {
+   "startMs": 20000,
+   "endMs": null,
+   "type": "open",
+   "label": "B"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "A"
+  },
+  {
+   "atMs": 20000,
+   "kind": "start",
+   "text": "B"
+  }
+ ]
+}

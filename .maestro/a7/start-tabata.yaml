@@ -1,0 +1,18 @@
+appId: ${APP_ID}
+name: A7 step 1 - start Tabata and wait for Work (driven by scripts/a7-call.sh; not part of the suite)
+---
+- runFlow: ../subflows/fresh.yaml
+- tapOn:
+    id: start-last
+- extendedWaitUntil:
+    visible:
+      id: run-screen
+    timeout: 30000
+- tapOn:
+    id: run-skip
+- assertVisible:
+    id: run-label
+    text: "Work"
+- assertVisible:
+    id: run-toggle
+    text: "Pause"

@@ -1,0 +1,142 @@
+appId: ${APP_ID}
+name: Run controls - Skip, Pause/Resume, +30 s, Back, lock, quick toggles, End with confirm (A6 screen part, A17)
+tags:
+  - p6
+---
+- runFlow: subflows/fresh.yaml
+# Tabata: 10 s get ready, then 8 x (Work 20, Rest 10)
+- tapOn:
+    id: start-last
+- extendedWaitUntil:
+    visible:
+      id: run-label
+      text: "Get ready"
+    timeout: 20000
+- assertVisible:
+    id: run-status-line
+    text: "Sound.*continue when locked.*"
+- tapOn:
+    id: run-skip
+- assertVisible:
+    id: run-label
+    text: "Work"
+- assertVisible:
+    id: run-path
+    text: "Round 1 of 8"
+- assertVisible:
+    id: run-next-line
+    text: "Next: Rest"
+# Pause / Resume
+- tapOn:
+    id: run-toggle
+- assertVisible:
+    id: run-paused
+- assertVisible:
+    id: run-toggle
+    text: "Resume"
+- tapOn:
+    id: run-toggle
+- assertNotVisible:
+    id: run-paused
+- assertVisible:
+    id: run-toggle
+    text: "Pause"
+# +30 s on Work 20 s: up to 50 s left
+- tapOn:
+    id: run-add
+- extendedWaitUntil:
+    visible:
+      id: run-remaining
+      text: "(Work, )?00:4[0-5]"
+    timeout: 15000
+# Back restarts the current interval (more than 2 s in): its full 50 s again
+- tapOn:
+    id: run-back
+- assertVisible:
+    id: run-remaining
+    text: "(Work, )?00:(49|50)"
+- assertVisible:
+    id: run-label
+    text: "Work"
+# Lock: buttons do nothing until the lock is held
+- tapOn:
+    id: run-lock
+- assertVisible:
+    id: run-locked-hint
+- tapOn:
+    id: run-skip
+- assertVisible:
+    id: run-label
+    text: "Work"
+- longPressOn:
+    id: run-unlock
+- assertNotVisible:
+    id: run-locked-hint
+# Quick toggles (sound off and on again, vibration off and on again)
+- tapOn:
+    id: run-sound
+- tapOn:
+    id: run-sound
+- tapOn:
+    id: run-vibration
+- tapOn:
+    id: run-vibration
+# Android: the system Back button never drops the workout, it asks
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - back
+      - assertVisible:
+          id: run-end-dialog
+      - tapOn:
+          id: run-end-cancel
+      - assertVisible:
+          id: run-screen
+# three more skips (Rest, Work, Rest): more than 10 % done, so End asks first
+- tapOn:
+    id: run-skip
+- assertVisible:
+    id: run-label
+    text: "Rest"
+- tapOn:
+    id: run-skip
+- assertVisible:
+    id: run-path
+    text: "Round 2 of 8"
+- tapOn:
+    id: run-skip
+- tapOn:
+    id: run-end
+- assertVisible:
+    id: run-end-dialog
+- tapOn:
+    id: run-end-cancel
+- assertVisible:
+    id: run-screen
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- assertVisible:
+    id: done-result
+    text: "Ended early"
+- assertVisible:
+    id: done-skipped
+    text: "4"
+- assertVisible:
+    id: done-pauses
+    text: "1"
+- tapOn:
+    id: done-note
+- inputText: "Felt good"
+- tapOn:
+    id: done-result
+- tapOn:
+    id: done-close
+- assertVisible:
+    id: home-screen

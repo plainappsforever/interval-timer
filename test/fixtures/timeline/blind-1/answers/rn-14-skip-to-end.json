@@ -1,0 +1,58 @@
+{
+ "steps": [
+  {
+   "state": "running",
+   "elapsedMs": 0,
+   "totalMs": 95000,
+   "segmentIndex": 0,
+   "remainingMs": 5000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 5000,
+   "totalMs": 95000,
+   "segmentIndex": 1,
+   "remainingMs": 20000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 25000,
+   "totalMs": 95000,
+   "segmentIndex": 2,
+   "remainingMs": 10000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 35000,
+   "totalMs": 95000,
+   "segmentIndex": 3,
+   "remainingMs": 20000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 55000,
+   "totalMs": 95000,
+   "segmentIndex": 4,
+   "remainingMs": 10000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 65000,
+   "totalMs": 95000,
+   "segmentIndex": 5,
+   "remainingMs": 20000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 85000,
+   "totalMs": 95000,
+   "segmentIndex": 6,
+   "remainingMs": 10000
+  },
+  {
+   "state": "ended",
+   "elapsedMs": 95000,
+   "totalMs": 95000
+  }
+ ]
+}

@@ -1,0 +1,80 @@
+{
+ "id": "rn-20-odd-ms",
+ "family": "runner",
+ "title": "pause/resume at odd milliseconds",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Run A",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 3,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 20,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": true,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 10,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 5,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "script": [
+   {
+    "t": 1234,
+    "op": "start"
+   },
+   {
+    "t": 5678,
+    "op": "pause"
+   },
+   {
+    "t": 9999,
+    "op": "resume"
+   },
+   {
+    "t": 12345,
+    "op": "pause"
+   },
+   {
+    "t": 20000,
+    "op": "resume"
+   },
+   {
+    "t": 33333,
+    "op": "probe"
+   }
+  ]
+ }
+}

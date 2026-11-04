@@ -1,0 +1,59 @@
+{
+ "id": "st-03-dst-fall",
+ "family": "stats",
+ "title": "New York fall-back: 25-hour day; 23:30 sessions on consecutive days",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "zone": "America/New_York",
+  "nowMs": 1793681400000,
+  "sessions": [
+   {
+    "timerName": "Row",
+    "startedAt": 1793503800000,
+    "endedAt": 1793505000000,
+    "plannedS": 1200,
+    "actualS": 1200,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Row",
+    "startedAt": 1793507400000,
+    "endedAt": 1793507700000,
+    "plannedS": 300,
+    "actualS": 300,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Row",
+    "startedAt": 1793593800000,
+    "endedAt": 1793595000000,
+    "plannedS": 1200,
+    "actualS": 1200,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Lift",
+    "startedAt": 1793680200000,
+    "endedAt": 1793681700000,
+    "plannedS": 1500,
+    "actualS": 1500,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   }
+  ]
+ }
+}

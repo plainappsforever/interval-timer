@@ -1,0 +1,39 @@
+{
+ "steps": [
+  {
+   "state": "running",
+   "elapsedMs": 0,
+   "totalMs": 95000,
+   "segmentIndex": 0,
+   "remainingMs": 5000
+  },
+  {
+   "state": "paused",
+   "elapsedMs": 5000,
+   "totalMs": 95000,
+   "segmentIndex": 1,
+   "remainingMs": 20000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 5000,
+   "totalMs": 95000,
+   "segmentIndex": 1,
+   "remainingMs": 20000
+  },
+  {
+   "state": "paused",
+   "elapsedMs": 25000,
+   "totalMs": 95000,
+   "segmentIndex": 2,
+   "remainingMs": 10000
+  },
+  {
+   "state": "paused",
+   "elapsedMs": 25000,
+   "totalMs": 95000,
+   "segmentIndex": 2,
+   "remainingMs": 10000
+  }
+ ]
+}

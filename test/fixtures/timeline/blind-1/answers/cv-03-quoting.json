@@ -1,0 +1,53 @@
+{
+ "dataRows": 4,
+ "rows": [
+  {
+   "cells": [
+    {
+     "value": "Box, 3/1",
+     "guard": false
+    },
+    {
+     "value": "a, b",
+     "guard": false
+    }
+   ]
+  },
+  {
+   "cells": [
+    {
+     "value": "\"Quoted\"",
+     "guard": false
+    },
+    {
+     "value": "she said \"go\"",
+     "guard": false
+    }
+   ]
+  },
+  {
+   "cells": [
+    {
+     "value": "Multi",
+     "guard": false
+    },
+    {
+     "value": "line 1\r\nline 2\nline 3\rline 4",
+     "guard": false
+    }
+   ]
+  },
+  {
+   "cells": [
+    {
+     "value": "Spaces",
+     "guard": false
+    },
+    {
+     "value": "  padded  ",
+     "guard": false
+    }
+   ]
+  }
+ ]
+}

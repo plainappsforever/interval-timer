@@ -1,0 +1,43 @@
+{
+ "id": "va-21-combining",
+ "family": "validation",
+ "title": "interval name of 40 user-perceived characters, 41 code points (NFD e+acute)",
+ "adversarial": true,
+ "ambiguous": true,
+ "readings": [
+  "V1"
+ ],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Valid",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 1,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeéx",
+       "seconds": 20,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 10,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  }
+ }
+}

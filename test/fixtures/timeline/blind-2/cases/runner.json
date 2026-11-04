@@ -1,0 +1,2567 @@
+[
+ {
+  "id": "rn-01",
+  "family": "runner",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "plain run to the natural end and reads long after",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1003000,
+     "do": "view"
+    },
+    {
+     "at": 1030000,
+     "do": "view"
+    },
+    {
+     "at": 1080000,
+     "do": "view"
+    },
+    {
+     "at": 1200000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 3000,
+    "segmentIndex": 0,
+    "remainingMs": 2000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 30000,
+    "segmentIndex": 2,
+    "remainingMs": 5000
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ },
+ {
+  "id": "rn-02",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "double Start never restarts the run",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1010000,
+     "do": "start"
+    },
+    {
+     "at": 1012000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 10000,
+    "segmentIndex": 1,
+    "remainingMs": 15000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 12000,
+    "segmentIndex": 1,
+    "remainingMs": 13000
+   }
+  ]
+ },
+ {
+  "id": "rn-03",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "Start after the natural end stays ended",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1090000,
+     "do": "view"
+    },
+    {
+     "at": 1095000,
+     "do": "start"
+    },
+    {
+     "at": 1096000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ },
+ {
+  "id": "rn-04",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "Pause after the natural end without a read in between: ended, not paused",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1085000,
+     "do": "pause"
+    },
+    {
+     "at": 1090000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ },
+ {
+  "id": "rn-05",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "Pause exactly at the total: ended",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1080000,
+     "do": "pause"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ },
+ {
+  "id": "rn-06",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "Pause 1 ms before the total, resume much later, end 1 ms after resume",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1079999,
+     "do": "pause"
+    },
+    {
+     "at": 1179999,
+     "do": "resume"
+    },
+    {
+     "at": 1179999,
+     "do": "view"
+    },
+    {
+     "at": 1180000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "paused",
+    "totalMs": 80000,
+    "elapsedMs": 79999,
+    "segmentIndex": 5,
+    "remainingMs": 1
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 79999,
+    "segmentIndex": 5,
+    "remainingMs": 1
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 79999,
+    "segmentIndex": 5,
+    "remainingMs": 1
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ },
+ {
+  "id": "rn-07",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "Back after the natural end does not revive the run",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1081000,
+     "do": "back"
+    },
+    {
+     "at": 1082000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ },
+ {
+  "id": "rn-08",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "+30 s after the natural end does not extend the run",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1080500,
+     "do": "addTime"
+    },
+    {
+     "at": 1081000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ },
+ {
+  "id": "rn-09",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "Skip after the natural end (notification) is a no-op",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1100000,
+     "do": "skip",
+     "source": "notification"
+    },
+    {
+     "at": 1100001,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ },
+ {
+  "id": "rn-10",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "headset play-pause and notification resume after the natural end",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1090000,
+     "do": "toggle",
+     "source": "headset"
+    },
+    {
+     "at": 1091000,
+     "do": "resume",
+     "source": "notification"
+    },
+    {
+     "at": 1092000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ },
+ {
+  "id": "rn-11",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": "A6",
+  "why": "Back while paused restarts the segment and stays paused",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1012000,
+     "do": "pause"
+    },
+    {
+     "at": 1020000,
+     "do": "back"
+    },
+    {
+     "at": 1030000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "paused",
+    "totalMs": 80000,
+    "elapsedMs": 12000,
+    "segmentIndex": 1,
+    "remainingMs": 13000
+   },
+   {
+    "state": "paused",
+    "totalMs": 80000,
+    "elapsedMs": 5000,
+    "segmentIndex": 1,
+    "remainingMs": 20000
+   },
+   {
+    "state": "paused",
+    "totalMs": 80000,
+    "elapsedMs": 5000,
+    "segmentIndex": 1,
+    "remainingMs": 20000
+   }
+  ]
+ },
+ {
+  "id": "rn-13",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "Back at 1999 ms into a segment goes to the previous start; at 2000 ms restarts the current",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1026999,
+     "do": "back"
+    },
+    {
+     "at": 1027000,
+     "do": "view"
+    },
+    {
+     "at": 1040000,
+     "do": "skip"
+    },
+    {
+     "at": 1052000,
+     "do": "back"
+    },
+    {
+     "at": 1052001,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 5000,
+    "segmentIndex": 1,
+    "remainingMs": 20000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 5001,
+    "segmentIndex": 1,
+    "remainingMs": 19999
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 25000,
+    "segmentIndex": 2,
+    "remainingMs": 10000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 35000,
+    "segmentIndex": 3,
+    "remainingMs": 15000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 35001,
+    "segmentIndex": 3,
+    "remainingMs": 14999
+   }
+  ]
+ },
+ {
+  "id": "rn-14",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "Back < 2 s into the prep (segment 0) restarts the prep",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1001500,
+     "do": "back"
+    },
+    {
+     "at": 1001600,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 100,
+    "segmentIndex": 0,
+    "remainingMs": 4900
+   }
+  ]
+ },
+ {
+  "id": "rn-15",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "Skip from prep, then skip exactly on a segment start",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1001000,
+     "do": "skip"
+    },
+    {
+     "at": 1001000,
+     "do": "view"
+    },
+    {
+     "at": 1021000,
+     "do": "skip"
+    },
+    {
+     "at": 1021000,
+     "do": "skip"
+    },
+    {
+     "at": 1021500,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 5000,
+    "segmentIndex": 1,
+    "remainingMs": 20000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 5000,
+    "segmentIndex": 1,
+    "remainingMs": 20000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 35000,
+    "segmentIndex": 3,
+    "remainingMs": 15000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 50000,
+    "segmentIndex": 4,
+    "remainingMs": 20000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 50500,
+    "segmentIndex": 4,
+    "remainingMs": 19500
+   }
+  ]
+ },
+ {
+  "id": "rn-16",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": "A6",
+  "why": "Skip in the last segment ends the run",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1072000,
+     "do": "skip"
+    },
+    {
+     "at": 1072001,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ },
+ {
+  "id": "rn-17",
+  "family": "runner",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "+30 s extends the current segment and shifts the rest; skip and natural end follow",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1010000,
+     "do": "addTime"
+    },
+    {
+     "at": 1010000,
+     "do": "view"
+    },
+    {
+     "at": 1011000,
+     "do": "skip"
+    },
+    {
+     "at": 1011000,
+     "do": "view"
+    },
+    {
+     "at": 1066000,
+     "do": "view"
+    },
+    {
+     "at": 1110000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "running",
+    "totalMs": 110000,
+    "elapsedMs": 10000,
+    "segmentIndex": 1,
+    "remainingMs": 45000
+   },
+   {
+    "state": "running",
+    "totalMs": 110000,
+    "elapsedMs": 10000,
+    "segmentIndex": 1,
+    "remainingMs": 45000
+   },
+   {
+    "state": "running",
+    "totalMs": 110000,
+    "elapsedMs": 55000,
+    "segmentIndex": 2,
+    "remainingMs": 10000
+   },
+   {
+    "state": "running",
+    "totalMs": 110000,
+    "elapsedMs": 55000,
+    "segmentIndex": 2,
+    "remainingMs": 10000
+   },
+   {
+    "state": "ended",
+    "totalMs": 110000,
+    "elapsedMs": 110000,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "ended",
+    "totalMs": 110000,
+    "elapsedMs": 110000,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ },
+ {
+  "id": "rn-18",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "+30 s twice with pause accounting",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1060000,
+     "do": "addTime"
+    },
+    {
+     "at": 1061000,
+     "do": "addTime",
+     "source": "screen"
+    },
+    {
+     "at": 1062000,
+     "do": "pause"
+    },
+    {
+     "at": 1300000,
+     "do": "resume"
+    },
+    {
+     "at": 1318000,
+     "do": "view"
+    },
+    {
+     "at": 1378000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "running",
+    "totalMs": 110000,
+    "elapsedMs": 60000,
+    "segmentIndex": 4,
+    "remainingMs": 40000
+   },
+   {
+    "state": "running",
+    "totalMs": 140000,
+    "elapsedMs": 61000,
+    "segmentIndex": 4,
+    "remainingMs": 69000
+   },
+   {
+    "state": "paused",
+    "totalMs": 140000,
+    "elapsedMs": 62000,
+    "segmentIndex": 4,
+    "remainingMs": 68000
+   },
+   {
+    "state": "running",
+    "totalMs": 140000,
+    "elapsedMs": 62000,
+    "segmentIndex": 4,
+    "remainingMs": 68000
+   },
+   {
+    "state": "running",
+    "totalMs": 140000,
+    "elapsedMs": 80000,
+    "segmentIndex": 4,
+    "remainingMs": 50000
+   },
+   {
+    "state": "ended",
+    "totalMs": 140000,
+    "elapsedMs": 140000,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ },
+ {
+  "id": "rn-19",
+  "family": "runner",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "headset toggles: pause, resume, pause, resume",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1008000,
+     "do": "toggle",
+     "source": "headset"
+    },
+    {
+     "at": 1020000,
+     "do": "toggle",
+     "source": "headset"
+    },
+    {
+     "at": 1030000,
+     "do": "toggle",
+     "source": "headset"
+    },
+    {
+     "at": 1031000,
+     "do": "toggle",
+     "source": "headset"
+    },
+    {
+     "at": 1040000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "paused",
+    "totalMs": 80000,
+    "elapsedMs": 8000,
+    "segmentIndex": 1,
+    "remainingMs": 17000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 8000,
+    "segmentIndex": 1,
+    "remainingMs": 17000
+   },
+   {
+    "state": "paused",
+    "totalMs": 80000,
+    "elapsedMs": 18000,
+    "segmentIndex": 1,
+    "remainingMs": 7000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 18000,
+    "segmentIndex": 1,
+    "remainingMs": 7000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 27000,
+    "segmentIndex": 2,
+    "remainingMs": 8000
+   }
+  ]
+ },
+ {
+  "id": "rn-20",
+  "family": "runner",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "notification Pause twice, Resume, End, then reads",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1008000,
+     "do": "pause",
+     "source": "notification"
+    },
+    {
+     "at": 1009000,
+     "do": "pause",
+     "source": "notification"
+    },
+    {
+     "at": 1010000,
+     "do": "resume",
+     "source": "notification"
+    },
+    {
+     "at": 1040000,
+     "do": "end",
+     "source": "notification"
+    },
+    {
+     "at": 1060000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "paused",
+    "totalMs": 80000,
+    "elapsedMs": 8000,
+    "segmentIndex": 1,
+    "remainingMs": 17000
+   },
+   {
+    "state": "paused",
+    "totalMs": 80000,
+    "elapsedMs": 8000,
+    "segmentIndex": 1,
+    "remainingMs": 17000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 8000,
+    "segmentIndex": 1,
+    "remainingMs": 17000
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 38000,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 38000,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ },
+ {
+  "id": "rn-21",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "actions on idle are no-ops, Start still works afterwards",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "pause"
+    },
+    {
+     "at": 1000100,
+     "do": "resume"
+    },
+    {
+     "at": 1000200,
+     "do": "skip"
+    },
+    {
+     "at": 1000300,
+     "do": "back"
+    },
+    {
+     "at": 1000400,
+     "do": "addTime"
+    },
+    {
+     "at": 1000500,
+     "do": "next"
+    },
+    {
+     "at": 1001000,
+     "do": "start"
+    },
+    {
+     "at": 1003000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "idle",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "idle",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "idle",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "idle",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "idle",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "idle",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 2000,
+    "segmentIndex": 0,
+    "remainingMs": 3000
+   }
+  ]
+ },
+ {
+  "id": "rn-22",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": "A8",
+  "why": "End and headset toggle on idle",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "toggle",
+     "source": "headset"
+    },
+    {
+     "at": 1000100,
+     "do": "end"
+    },
+    {
+     "at": 1000200,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "idle",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "idle",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "idle",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ },
+ {
+  "id": "rn-23",
+  "family": "runner",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "open interval: Next closes it, timeline continues, natural end, Next after end no-op",
+  "input": {
+   "timer": {
+    "name": "Open runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Warm",
+        "seconds": 10,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "AMRAP",
+        "seconds": 30,
+        "type": "open",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 10
+       },
+       {
+        "name": "Cool",
+        "seconds": 20,
+        "type": "cooldown",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 0,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1025000,
+     "do": "view"
+    },
+    {
+     "at": 1047000,
+     "do": "next"
+    },
+    {
+     "at": 1047000,
+     "do": "view"
+    },
+    {
+     "at": 1060000,
+     "do": "view"
+    },
+    {
+     "at": 1067000,
+     "do": "view"
+    },
+    {
+     "at": 1068000,
+     "do": "next"
+    },
+    {
+     "at": 1069000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": null,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 10000
+   },
+   {
+    "state": "running",
+    "totalMs": null,
+    "elapsedMs": 25000,
+    "segmentIndex": 1,
+    "remainingMs": null
+   },
+   {
+    "state": "running",
+    "totalMs": 67000,
+    "elapsedMs": 47000,
+    "segmentIndex": 2,
+    "remainingMs": 20000
+   },
+   {
+    "state": "running",
+    "totalMs": 67000,
+    "elapsedMs": 47000,
+    "segmentIndex": 2,
+    "remainingMs": 20000
+   },
+   {
+    "state": "running",
+    "totalMs": 67000,
+    "elapsedMs": 60000,
+    "segmentIndex": 2,
+    "remainingMs": 7000
+   },
+   {
+    "state": "ended",
+    "totalMs": 67000,
+    "elapsedMs": 67000,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "ended",
+    "totalMs": 67000,
+    "elapsedMs": 67000,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "ended",
+    "totalMs": 67000,
+    "elapsedMs": 67000,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ },
+ {
+  "id": "rn-24",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": "A9",
+  "why": "Next on a non-open segment",
+  "input": {
+   "timer": {
+    "name": "Open runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Warm",
+        "seconds": 10,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "AMRAP",
+        "seconds": 30,
+        "type": "open",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 10
+       },
+       {
+        "name": "Cool",
+        "seconds": 20,
+        "type": "cooldown",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 0,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1005000,
+     "do": "next"
+    },
+    {
+     "at": 1006000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": null,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 10000
+   },
+   {
+    "state": "running",
+    "totalMs": null,
+    "elapsedMs": 5000,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "running",
+    "totalMs": null,
+    "elapsedMs": 6000,
+    "segmentIndex": 0,
+    "remainingMs": 4000
+   }
+  ]
+ },
+ {
+  "id": "rn-25",
+  "family": "runner",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "End arriving after the total: the natural end wins (elapsed = total)",
+  "input": {
+   "timer": {
+    "name": "Runner",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 15,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "steps": [
+    {
+     "at": 1000000,
+     "do": "start"
+    },
+    {
+     "at": 1100000,
+     "do": "end"
+    },
+    {
+     "at": 1100000,
+     "do": "view"
+    }
+   ]
+  },
+  "expected": [
+   {
+    "state": "running",
+    "totalMs": 80000,
+    "elapsedMs": 0,
+    "segmentIndex": 0,
+    "remainingMs": 5000
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   },
+   {
+    "state": "ended",
+    "totalMs": 80000,
+    "elapsedMs": 80000,
+    "segmentIndex": null,
+    "remainingMs": null
+   }
+  ]
+ }
+]

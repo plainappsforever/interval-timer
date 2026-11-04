@@ -1,0 +1,42 @@
+appId: ${APP_ID}
+name: A6 Android - the media notification's Skip and End drive the running screen (after a7/start-tabata.yaml)
+---
+- assertVisible:
+    id: run-label
+    text: "Work"
+- swipe:
+    start: 50%, 1%
+    end: 50%, 70%
+- extendedWaitUntil:
+    visible: "Tabata"
+    timeout: 10000
+- tapOn: "Skip"
+- swipe:
+    start: 50%, 90%
+    end: 50%, 10%
+- extendedWaitUntil:
+    visible:
+      id: run-label
+      text: "Rest"
+    timeout: 5000
+- swipe:
+    start: 50%, 1%
+    end: 50%, 70%
+- extendedWaitUntil:
+    visible: "Tabata"
+    timeout: 10000
+- tapOn: "End"
+- swipe:
+    start: 50%, 90%
+    end: 50%, 10%
+# a notification End is recorded like the screen's End: the Done screen with the history row
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- assertVisible:
+    id: done-result
+    text: "Ended early"
+- assertVisible:
+    id: done-skipped
+    text: "2"

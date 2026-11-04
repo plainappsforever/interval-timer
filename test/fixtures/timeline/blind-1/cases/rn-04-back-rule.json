@@ -1,0 +1,76 @@
+{
+ "id": "rn-04-back-rule",
+ "family": "runner",
+ "title": "back after 3 s restarts the segment; back 1.5 s in goes to the previous",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Run A",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 3,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 20,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": true,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 10,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 5,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "script": [
+   {
+    "t": 1000,
+    "op": "start"
+   },
+   {
+    "t": 9000,
+    "op": "probe"
+   },
+   {
+    "t": 9000,
+    "op": "back"
+   },
+   {
+    "t": 10500,
+    "op": "back"
+   },
+   {
+    "t": 11000,
+    "op": "probe"
+   }
+  ]
+ }
+}

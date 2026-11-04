@@ -1,0 +1,154 @@
+{
+ "totalMs": 22000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 11000,
+   "type": "work",
+   "label": "Hang"
+  },
+  {
+   "startMs": 11000,
+   "endMs": 22000,
+   "type": "work",
+   "label": "Hang"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "round",
+   "text": "Round 1 of 2"
+  },
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Hang"
+  },
+  {
+   "atMs": 1000,
+   "kind": "countdown",
+   "text": "10"
+  },
+  {
+   "atMs": 2000,
+   "kind": "countdown",
+   "text": "9"
+  },
+  {
+   "atMs": 3000,
+   "kind": "countdown",
+   "text": "8"
+  },
+  {
+   "atMs": 4000,
+   "kind": "countdown",
+   "text": "7"
+  },
+  {
+   "atMs": 5000,
+   "kind": "countdown",
+   "text": "6"
+  },
+  {
+   "atMs": 5500,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 6000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 10000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 11000,
+   "kind": "round",
+   "text": "Round 2 of 2"
+  },
+  {
+   "atMs": 11000,
+   "kind": "start",
+   "text": "Hang"
+  },
+  {
+   "atMs": 12000,
+   "kind": "countdown",
+   "text": "10"
+  },
+  {
+   "atMs": 13000,
+   "kind": "countdown",
+   "text": "9"
+  },
+  {
+   "atMs": 14000,
+   "kind": "countdown",
+   "text": "8"
+  },
+  {
+   "atMs": 15000,
+   "kind": "countdown",
+   "text": "7"
+  },
+  {
+   "atMs": 16000,
+   "kind": "countdown",
+   "text": "6"
+  },
+  {
+   "atMs": 16500,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 17000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 18000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 19000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 20000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 21000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 22000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "timer": {
+  "name": "Modes",
+  "color": "",
+  "notes": "",
+  "blocks": [
+   {
+    "name": "",
+    "rounds": 1,
+    "restBetweenRoundsS": 0,
+    "intervals": [
+     {
+      "name": "Voice",
+      "seconds": 15,
+      "type": "work",
+      "color": "",
+      "cueStart": "voice",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Beep",
+      "seconds": 15,
+      "type": "rest",
+      "color": "",
+      "cueStart": "beep",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Silent",
+      "seconds": 15,
+      "type": "work",
+      "color": "",
+      "cueStart": "none",
+      "halfwayCue": true,
+      "countdownCue": true,
+      "openTickS": 0
+     },
+     {
+      "name": "Both",
+      "seconds": 15,
+      "type": "cooldown",
+      "color": "",
+      "cueStart": "both",
+      "halfwayCue": false,
+      "countdownCue": true,
+      "openTickS": 0
+     }
+    ]
+   }
+  ],
+  "prefs": {
+   "prepSeconds": 10,
+   "endCue": "both",
+   "repeatWhole": 1,
+   "vibrate": true
+  }
+ },
+ "settings": {
+  "countdownFrom": 3
+ }
+}

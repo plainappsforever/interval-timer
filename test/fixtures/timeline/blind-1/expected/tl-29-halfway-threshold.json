@@ -1,0 +1,71 @@
+{
+ "totalMs": 43000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 9000,
+   "type": "work",
+   "label": "Nine"
+  },
+  {
+   "startMs": 9000,
+   "endMs": 19000,
+   "type": "work",
+   "label": "Ten"
+  },
+  {
+   "startMs": 19000,
+   "endMs": 30000,
+   "type": "work",
+   "label": "Eleven"
+  },
+  {
+   "startMs": 30000,
+   "endMs": 43000,
+   "type": "work",
+   "label": "Thirteen"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Nine"
+  },
+  {
+   "atMs": 9000,
+   "kind": "start",
+   "text": "Ten"
+  },
+  {
+   "atMs": 14000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 19000,
+   "kind": "start",
+   "text": "Eleven"
+  },
+  {
+   "atMs": 24500,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 30000,
+   "kind": "start",
+   "text": "Thirteen"
+  },
+  {
+   "atMs": 36500,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 43000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+{
+ "totalMs": 185000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 61000,
+   "type": "open",
+   "label": "Minute"
+  },
+  {
+   "startMs": 61000,
+   "endMs": 71000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 71000,
+   "endMs": 120500,
+   "type": "open",
+   "label": "Minute"
+  },
+  {
+   "startMs": 120500,
+   "endMs": 130500,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 130500,
+   "endMs": 185000,
+   "type": "open",
+   "label": "Minute"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "round",
+   "text": "Round 1 of 3"
+  },
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Minute"
+  },
+  {
+   "atMs": 61000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 68000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 69000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 70000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 71000,
+   "kind": "round",
+   "text": "Round 2 of 3"
+  },
+  {
+   "atMs": 71000,
+   "kind": "start",
+   "text": "Minute"
+  },
+  {
+   "atMs": 120500,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 127500,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 128500,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 129500,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 130500,
+   "kind": "round",
+   "text": "Round 3 of 3"
+  },
+  {
+   "atMs": 130500,
+   "kind": "start",
+   "text": "Minute"
+  },
+  {
+   "atMs": 185000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

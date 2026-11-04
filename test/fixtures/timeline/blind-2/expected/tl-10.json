@@ -1,0 +1,134 @@
+{
+ "totalMs": 100000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 60000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 60000,
+   "endMs": 100000,
+   "type": "work",
+   "label": "Row"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 50000,
+   "kind": "countdown",
+   "text": "10"
+  },
+  {
+   "atMs": 51000,
+   "kind": "countdown",
+   "text": "9"
+  },
+  {
+   "atMs": 52000,
+   "kind": "countdown",
+   "text": "8"
+  },
+  {
+   "atMs": 53000,
+   "kind": "countdown",
+   "text": "7"
+  },
+  {
+   "atMs": 54000,
+   "kind": "countdown",
+   "text": "6"
+  },
+  {
+   "atMs": 55000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 56000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 57000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 58000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 59000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 60000,
+   "kind": "start",
+   "text": "Row"
+  },
+  {
+   "atMs": 90000,
+   "kind": "countdown",
+   "text": "10"
+  },
+  {
+   "atMs": 91000,
+   "kind": "countdown",
+   "text": "9"
+  },
+  {
+   "atMs": 92000,
+   "kind": "countdown",
+   "text": "8"
+  },
+  {
+   "atMs": 93000,
+   "kind": "countdown",
+   "text": "7"
+  },
+  {
+   "atMs": 94000,
+   "kind": "countdown",
+   "text": "6"
+  },
+  {
+   "atMs": 95000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 96000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 97000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 98000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 99000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 100000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

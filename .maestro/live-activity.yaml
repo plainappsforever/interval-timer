@@ -1,0 +1,122 @@
+appId: ${APP_ID}
+name: Live Activity - off by default, switched on from the running screen, interval and countdown in Notification Center, Paused, removed at End (A14, iOS)
+tags:
+  - ios-only
+  - p7
+# iOS 16.2+ with the widget extension (default build). The first Live Activity makes iOS ask "Allow Live Activities
+# from ...?" (only after the switch was turned on); the flow allows it. Notification Center (swipe down from the top
+# left) shows the Lock Screen presentation (breathe D56).
+---
+- runFlow: subflows/fresh.yaml
+- tapOn: "Start Tabata"
+- extendedWaitUntil:
+    visible:
+      id: run-label
+      text: "Get ready"
+    timeout: 30000
+- assertVisible:
+    id: run-live-activity
+    checked: false
+- tapOn:
+    id: run-live-activity
+- assertVisible:
+    id: run-live-activity
+    checked: true
+- tapOn:
+    id: run-skip
+- assertVisible:
+    id: run-label
+    text: "Work"
+
+# Running: timer name, interval, round and a system countdown.
+- pressKey: Home
+- waitForAnimationToEnd
+- swipe:
+    start: 20%,1%
+    end: 20%,60%
+- waitForAnimationToEnd
+- runFlow:
+    when:
+      visible: "Allow"
+    commands:
+      - tapOn: "Allow"
+- assertVisible: "Tabata"
+- assertVisible: "Work|Rest"
+- assertVisible: "Round [0-9] of 8"
+- assertVisible: "[0-9]?[0-9]:[0-5][0-9]"
+- swipe:
+    start: 50%,95%
+    end: 50%,30%
+- waitForAnimationToEnd
+
+# Paused: "Paused" and a still clock.
+- launchApp:
+    stopApp: false
+- extendedWaitUntil:
+    visible:
+      id: run-toggle
+    timeout: 10000
+- tapOn:
+    id: run-toggle
+- assertVisible:
+    id: run-paused
+- pressKey: Home
+- waitForAnimationToEnd
+- swipe:
+    start: 20%,1%
+    end: 20%,60%
+- waitForAnimationToEnd
+- assertVisible: "Paused"
+- assertVisible: "Tabata"
+- swipe:
+    start: 50%,95%
+    end: 50%,30%
+- waitForAnimationToEnd
+
+# Ended: gone.
+- launchApp:
+    stopApp: false
+- extendedWaitUntil:
+    visible:
+      id: run-end
+    timeout: 10000
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- pressKey: Home
+- waitForAnimationToEnd
+- swipe:
+    start: 20%,1%
+    end: 20%,60%
+- waitForAnimationToEnd
+- assertNotVisible: "Paused"
+- assertNotVisible: "Round [0-9] of 8"
+- swipe:
+    start: 50%,95%
+    end: 50%,30%
+- waitForAnimationToEnd
+- launchApp:
+    stopApp: false
+- tapOn:
+    id: done-close
+# the choice was saved: Settings shows it on; switch it back off (its default) for the next flows
+- tapOn:
+    id: open-settings
+- scrollUntilVisible:
+    element:
+      id: set-live-activity
+    direction: DOWN
+- assertVisible:
+    id: set-live-activity
+    checked: true
+- tapOn:
+    id: set-live-activity
+- assertVisible:
+    id: set-live-activity
+    checked: false

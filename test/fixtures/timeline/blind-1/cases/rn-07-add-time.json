@@ -1,0 +1,80 @@
+{
+ "id": "rn-07-add-time",
+ "family": "runner",
+ "title": "+30 s shifts the rest of the timeline; two +30 s at the same ms add 60 s",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Run A",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 3,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 20,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": true,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 10,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 5,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "script": [
+   {
+    "t": 0,
+    "op": "start"
+   },
+   {
+    "t": 15000,
+    "op": "addTime"
+   },
+   {
+    "t": 60000,
+    "op": "probe"
+   },
+   {
+    "t": 61000,
+    "op": "addTime"
+   },
+   {
+    "t": 61000,
+    "op": "addTime"
+   },
+   {
+    "t": 62000,
+    "op": "probe"
+   }
+  ]
+ }
+}

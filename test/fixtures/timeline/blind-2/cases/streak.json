@@ -1,0 +1,66 @@
+[
+ {
+  "id": "ss-01",
+  "family": "streak",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "4-day streak across the spring DST change (23 h day)",
+  "input": {
+   "tz": "Europe/Berlin",
+   "nowMs": 1774907100000,
+   "sessions": [
+    {
+     "startedAt": 1774650600000,
+     "actualS": 60
+    },
+    {
+     "startedAt": 1774737000000,
+     "actualS": 60
+    },
+    {
+     "startedAt": 1774819800000,
+     "actualS": 60
+    },
+    {
+     "startedAt": 1774906200000,
+     "actualS": 60
+    },
+    {
+     "startedAt": 1774477800000,
+     "actualS": 60
+    }
+   ]
+  },
+  "expected": 4
+ },
+ {
+  "id": "ss-02",
+  "family": "streak",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "autumn DST end in New York: a missing day breaks the streak",
+  "input": {
+   "tz": "America/New_York",
+   "nowMs": 1793678400000,
+   "sessions": [
+    {
+     "startedAt": 1793419140000,
+     "actualS": 60
+    },
+    {
+     "startedAt": 1793507400000,
+     "actualS": 60
+    },
+    {
+     "startedAt": 1793511000000,
+     "actualS": 60
+    },
+    {
+     "startedAt": 1793674800000,
+     "actualS": 60
+    }
+   ]
+  },
+  "expected": 2
+ }
+]

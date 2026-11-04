@@ -1,0 +1,216 @@
+{
+ "totalMs": 220000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 10000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 55000,
+   "type": "open",
+   "label": "Set"
+  },
+  {
+   "startMs": 55000,
+   "endMs": 75000,
+   "type": "rest",
+   "label": "Breathe"
+  },
+  {
+   "startMs": 75000,
+   "endMs": 85000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 85000,
+   "endMs": 120000,
+   "type": "open",
+   "label": "Set"
+  },
+  {
+   "startMs": 120000,
+   "endMs": 140000,
+   "type": "rest",
+   "label": "Breathe"
+  },
+  {
+   "startMs": 140000,
+   "endMs": 150000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 150000,
+   "endMs": 200000,
+   "type": "open",
+   "label": "Set"
+  },
+  {
+   "startMs": 200000,
+   "endMs": 220000,
+   "type": "rest",
+   "label": "Breathe"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10000,
+   "kind": "round",
+   "text": "Round 1 of 3"
+  },
+  {
+   "atMs": 10000,
+   "kind": "start",
+   "text": "Set"
+  },
+  {
+   "atMs": 55000,
+   "kind": "start",
+   "text": "Breathe"
+  },
+  {
+   "atMs": 72000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 73000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 74000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 75000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 82000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 83000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 84000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 85000,
+   "kind": "round",
+   "text": "Round 2 of 3"
+  },
+  {
+   "atMs": 85000,
+   "kind": "start",
+   "text": "Set"
+  },
+  {
+   "atMs": 120000,
+   "kind": "start",
+   "text": "Breathe"
+  },
+  {
+   "atMs": 137000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 138000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 139000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 140000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 147000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 148000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 149000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 150000,
+   "kind": "round",
+   "text": "Round 3 of 3"
+  },
+  {
+   "atMs": 150000,
+   "kind": "start",
+   "text": "Set"
+  },
+  {
+   "atMs": 200000,
+   "kind": "start",
+   "text": "Breathe"
+  },
+  {
+   "atMs": 217000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 218000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 219000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 220000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

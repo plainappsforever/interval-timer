@@ -1,0 +1,14 @@
+{
+ "id": "fm-03-duration-599-en",
+ "family": "format",
+ "title": "duration 599 s in en",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "op": "duration",
+  "seconds": 599,
+  "lang": "en"
+ }
+}

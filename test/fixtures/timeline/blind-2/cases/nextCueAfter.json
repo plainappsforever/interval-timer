@@ -1,0 +1,189 @@
+[
+ {
+  "id": "nc-01",
+  "family": "nextCueAfter",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "next cue strictly after an exact cue time",
+  "input": {
+   "timer": {
+    "name": "Catch-up",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 3,
+      "restBetweenRoundsS": 12,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "after": 15000
+  },
+  "expected": {
+   "atMs": 22000,
+   "kinds": [
+    "countdown"
+   ]
+  }
+ },
+ {
+  "id": "nc-02",
+  "family": "nextCueAfter",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "inside an open segment the next cue is a tick",
+  "input": {
+   "timer": {
+    "name": "Open recovery",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Warm",
+        "seconds": 60,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Max",
+        "seconds": 30,
+        "type": "open",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 30
+       },
+       {
+        "name": "Cool",
+        "seconds": 120,
+        "type": "cooldown",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "after": 131000
+  },
+  "expected": {
+   "atMs": 160000,
+   "kinds": [
+    "openTick"
+   ]
+  }
+ },
+ {
+  "id": "nc-03",
+  "family": "nextCueAfter",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "after the last countdown the next cue is the end",
+  "input": {
+   "timer": {
+    "name": "Catch-up",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 3,
+      "restBetweenRoundsS": 12,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "after": 118500
+  },
+  "expected": {
+   "atMs": 119000,
+   "kinds": [
+    "end"
+   ]
+  }
+ }
+]

@@ -1,0 +1,169 @@
+{
+ "totalMs": null,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 30000,
+   "type": "open",
+   "label": "Left"
+  },
+  {
+   "startMs": 30000,
+   "endMs": 40000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 40000,
+   "endMs": 45000,
+   "type": "open",
+   "label": "Right"
+  },
+  {
+   "startMs": 45000,
+   "endMs": 75000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 75000,
+   "endMs": 100000,
+   "type": "open",
+   "label": "Left"
+  },
+  {
+   "startMs": 100000,
+   "endMs": 110000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 110000,
+   "endMs": null,
+   "type": "open",
+   "label": "Right"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "round",
+   "text": "Round 1 of 2"
+  },
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Left"
+  },
+  {
+   "atMs": 30000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 35000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 36000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 37000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 38000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 39000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 40000,
+   "kind": "start",
+   "text": "Right"
+  },
+  {
+   "atMs": 45000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 70000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 71000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 72000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 73000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 74000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 75000,
+   "kind": "round",
+   "text": "Round 2 of 2"
+  },
+  {
+   "atMs": 75000,
+   "kind": "start",
+   "text": "Left"
+  },
+  {
+   "atMs": 100000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 105000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 106000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 107000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 108000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 109000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 110000,
+   "kind": "start",
+   "text": "Right"
+  }
+ ]
+}

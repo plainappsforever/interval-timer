@@ -1,0 +1,14 @@
+{
+ "id": "fm-07-duration-754-ar",
+ "family": "format",
+ "title": "duration 754 s in ar",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "op": "duration",
+  "seconds": 754,
+  "lang": "ar"
+ }
+}

@@ -1,0 +1,270 @@
+{
+ "steps": [
+  {
+   "state": "running",
+   "elapsedMs": 0,
+   "totalMs": 95000,
+   "segmentIndex": 0,
+   "remainingMs": 5000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 15000,
+   "totalMs": 125000,
+   "segmentIndex": 1,
+   "remainingMs": 40000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 60000,
+   "totalMs": 125000,
+   "segmentIndex": 2,
+   "remainingMs": 5000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 61000,
+   "totalMs": 155000,
+   "segmentIndex": 2,
+   "remainingMs": 34000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 61000,
+   "totalMs": 185000,
+   "segmentIndex": 2,
+   "remainingMs": 64000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 62000,
+   "totalMs": 185000,
+   "segmentIndex": 2,
+   "remainingMs": 63000
+  }
+ ],
+ "timeline": {
+  "totalMs": 185000,
+  "segments": [
+   {
+    "startMs": 0,
+    "endMs": 5000,
+    "type": "prep",
+    "label": "Get ready"
+   },
+   {
+    "startMs": 5000,
+    "endMs": 55000,
+    "type": "work",
+    "label": "Work"
+   },
+   {
+    "startMs": 55000,
+    "endMs": 125000,
+    "type": "rest",
+    "label": "Rest"
+   },
+   {
+    "startMs": 125000,
+    "endMs": 145000,
+    "type": "work",
+    "label": "Work"
+   },
+   {
+    "startMs": 145000,
+    "endMs": 155000,
+    "type": "rest",
+    "label": "Rest"
+   },
+   {
+    "startMs": 155000,
+    "endMs": 175000,
+    "type": "work",
+    "label": "Work"
+   },
+   {
+    "startMs": 175000,
+    "endMs": 185000,
+    "type": "rest",
+    "label": "Rest"
+   }
+  ],
+  "cues": [
+   {
+    "atMs": 0,
+    "kind": "start",
+    "text": "Get ready"
+   },
+   {
+    "atMs": 2000,
+    "kind": "countdown",
+    "text": "3"
+   },
+   {
+    "atMs": 3000,
+    "kind": "countdown",
+    "text": "2"
+   },
+   {
+    "atMs": 4000,
+    "kind": "countdown",
+    "text": "1"
+   },
+   {
+    "atMs": 5000,
+    "kind": "round",
+    "text": "Round 1 of 3"
+   },
+   {
+    "atMs": 5000,
+    "kind": "start",
+    "text": "Work"
+   },
+   {
+    "atMs": 15000,
+    "kind": "halfway",
+    "text": "Halfway"
+   },
+   {
+    "atMs": 52000,
+    "kind": "countdown",
+    "text": "3"
+   },
+   {
+    "atMs": 53000,
+    "kind": "countdown",
+    "text": "2"
+   },
+   {
+    "atMs": 54000,
+    "kind": "countdown",
+    "text": "1"
+   },
+   {
+    "atMs": 55000,
+    "kind": "start",
+    "text": "Rest"
+   },
+   {
+    "atMs": 122000,
+    "kind": "countdown",
+    "text": "3"
+   },
+   {
+    "atMs": 123000,
+    "kind": "countdown",
+    "text": "2"
+   },
+   {
+    "atMs": 124000,
+    "kind": "countdown",
+    "text": "1"
+   },
+   {
+    "atMs": 125000,
+    "kind": "round",
+    "text": "Round 2 of 3"
+   },
+   {
+    "atMs": 125000,
+    "kind": "start",
+    "text": "Work"
+   },
+   {
+    "atMs": 135000,
+    "kind": "halfway",
+    "text": "Halfway"
+   },
+   {
+    "atMs": 142000,
+    "kind": "countdown",
+    "text": "3"
+   },
+   {
+    "atMs": 143000,
+    "kind": "countdown",
+    "text": "2"
+   },
+   {
+    "atMs": 144000,
+    "kind": "countdown",
+    "text": "1"
+   },
+   {
+    "atMs": 145000,
+    "kind": "start",
+    "text": "Rest"
+   },
+   {
+    "atMs": 152000,
+    "kind": "countdown",
+    "text": "3"
+   },
+   {
+    "atMs": 153000,
+    "kind": "countdown",
+    "text": "2"
+   },
+   {
+    "atMs": 154000,
+    "kind": "countdown",
+    "text": "1"
+   },
+   {
+    "atMs": 155000,
+    "kind": "round",
+    "text": "Round 3 of 3"
+   },
+   {
+    "atMs": 155000,
+    "kind": "start",
+    "text": "Work"
+   },
+   {
+    "atMs": 165000,
+    "kind": "halfway",
+    "text": "Halfway"
+   },
+   {
+    "atMs": 172000,
+    "kind": "countdown",
+    "text": "3"
+   },
+   {
+    "atMs": 173000,
+    "kind": "countdown",
+    "text": "2"
+   },
+   {
+    "atMs": 174000,
+    "kind": "countdown",
+    "text": "1"
+   },
+   {
+    "atMs": 175000,
+    "kind": "start",
+    "text": "Rest"
+   },
+   {
+    "atMs": 182000,
+    "kind": "countdown",
+    "text": "3"
+   },
+   {
+    "atMs": 183000,
+    "kind": "countdown",
+    "text": "2"
+   },
+   {
+    "atMs": 184000,
+    "kind": "countdown",
+    "text": "1"
+   },
+   {
+    "atMs": 185000,
+    "kind": "end",
+    "text": "Done"
+   }
+  ]
+ }
+}

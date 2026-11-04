@@ -1,0 +1,48 @@
+{
+ "id": "st-05-iso-week-years",
+ "family": "stats",
+ "title": "30 Dec 2024 is 2025-W01; 3 Jan 2021 is 2020-W53",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "zone": "UTC",
+  "nowMs": 1735732800000,
+  "sessions": [
+   {
+    "timerName": "X",
+    "startedAt": 1609675200000,
+    "endedAt": 1609675260000,
+    "plannedS": 60,
+    "actualS": 60,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "X",
+    "startedAt": 1735473600000,
+    "endedAt": 1735473660000,
+    "plannedS": 60,
+    "actualS": 60,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Y",
+    "startedAt": 1735560000000,
+    "endedAt": 1735560060000,
+    "plannedS": 60,
+    "actualS": 60,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   }
+  ]
+ }
+}

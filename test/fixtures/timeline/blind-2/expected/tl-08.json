@@ -1,0 +1,54 @@
+{
+ "totalMs": 50000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 20000,
+   "type": "prep",
+   "label": "Warm-up"
+  },
+  {
+   "startMs": 20000,
+   "endMs": 50000,
+   "type": "work",
+   "label": "Go"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Warm-up"
+  },
+  {
+   "atMs": 10000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 20000,
+   "kind": "start",
+   "text": "Go"
+  },
+  {
+   "atMs": 47000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 48000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 49000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 50000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "id": "va-17-repeat-pushes-over",
+ "family": "validation",
+ "title": "2 h timer x repeat 5 = 10 h",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Valid",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 2,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Long",
+       "seconds": 3600,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 0,
+    "endCue": "both",
+    "repeatWhole": 5,
+    "vibrate": true
+   }
+  }
+ }
+}

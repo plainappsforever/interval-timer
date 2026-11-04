@@ -1,0 +1,86 @@
+{
+ "totalMs": 100000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 20000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 20000,
+   "endMs": 40000,
+   "type": "open",
+   "label": "Max reps"
+  },
+  {
+   "startMs": 40000,
+   "endMs": 60000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 60000,
+   "endMs": 100000,
+   "type": "open",
+   "label": "Max reps"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 17000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 18000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 19000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 20000,
+   "kind": "start",
+   "text": "Max reps"
+  },
+  {
+   "atMs": 40000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 57000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 58000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 59000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 60000,
+   "kind": "start",
+   "text": "Max reps"
+  },
+  {
+   "atMs": 100000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

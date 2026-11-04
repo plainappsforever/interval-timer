@@ -1,0 +1,53 @@
+{
+ "steps": [
+  {
+   "state": "running",
+   "elapsedMs": 0,
+   "totalMs": 95000,
+   "segmentIndex": 0,
+   "remainingMs": 5000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 1000,
+   "totalMs": 95000,
+   "segmentIndex": 0,
+   "remainingMs": 4000
+  },
+  {
+   "state": "paused",
+   "elapsedMs": 2000,
+   "totalMs": 95000,
+   "segmentIndex": 0,
+   "remainingMs": 3000
+  },
+  {
+   "state": "paused",
+   "elapsedMs": 2000,
+   "totalMs": 95000,
+   "segmentIndex": 0,
+   "remainingMs": 3000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 2000,
+   "totalMs": 95000,
+   "segmentIndex": 0,
+   "remainingMs": 3000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 3000,
+   "totalMs": 95000,
+   "segmentIndex": 0,
+   "remainingMs": 2000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 4000,
+   "totalMs": 95000,
+   "segmentIndex": 0,
+   "remainingMs": 1000
+  }
+ ]
+}

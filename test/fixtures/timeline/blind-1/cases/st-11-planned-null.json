@@ -1,0 +1,59 @@
+{
+ "id": "st-11-planned-null",
+ "family": "stats",
+ "title": "open-interval sessions have no planned time; most used by count",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "zone": "America/New_York",
+  "nowMs": 1792166400000,
+  "sessions": [
+   {
+    "timerName": "EMOM",
+    "startedAt": 1792144800000,
+    "endedAt": 1792145415000,
+    "plannedS": null,
+    "actualS": 615,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "EMOM",
+    "startedAt": 1792058400000,
+    "endedAt": 1792059000000,
+    "plannedS": null,
+    "actualS": 600,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "Tabata",
+    "startedAt": 1791972000000,
+    "endedAt": 1791972250000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   },
+   {
+    "timerName": "EMOM",
+    "startedAt": 1790848800000,
+    "endedAt": 1790849390000,
+    "plannedS": 600,
+    "actualS": 590,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": ""
+   }
+  ]
+ }
+}

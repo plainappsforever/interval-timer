@@ -1,0 +1,78 @@
+{
+ "totalMs": 5999000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 5999000,
+   "type": "work",
+   "label": "Hold"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Hold"
+  },
+  {
+   "atMs": 2999500,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 5989000,
+   "kind": "countdown",
+   "text": "10"
+  },
+  {
+   "atMs": 5990000,
+   "kind": "countdown",
+   "text": "9"
+  },
+  {
+   "atMs": 5991000,
+   "kind": "countdown",
+   "text": "8"
+  },
+  {
+   "atMs": 5992000,
+   "kind": "countdown",
+   "text": "7"
+  },
+  {
+   "atMs": 5993000,
+   "kind": "countdown",
+   "text": "6"
+  },
+  {
+   "atMs": 5994000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 5995000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 5996000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 5997000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 5998000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 5999000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

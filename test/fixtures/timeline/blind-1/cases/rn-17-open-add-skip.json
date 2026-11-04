@@ -1,0 +1,85 @@
+{
+ "id": "rn-17-open-add-skip",
+ "family": "runner",
+ "title": "+30 s on an open interval; skip on an open interval",
+ "adversarial": false,
+ "ambiguous": true,
+ "readings": [
+  "R5",
+  "R6"
+ ],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Run open",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 1,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Warm",
+       "seconds": 10,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Free",
+       "seconds": 60,
+       "type": "open",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Work",
+       "seconds": 10,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 0,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "script": [
+   {
+    "t": 0,
+    "op": "start"
+   },
+   {
+    "t": 20000,
+    "op": "addTime"
+   },
+   {
+    "t": 25000,
+    "op": "skip"
+   },
+   {
+    "t": 26000,
+    "op": "probe"
+   }
+  ]
+ }
+}

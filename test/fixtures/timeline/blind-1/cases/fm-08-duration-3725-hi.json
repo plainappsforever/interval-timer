@@ -1,0 +1,14 @@
+{
+ "id": "fm-08-duration-3725-hi",
+ "family": "format",
+ "title": "duration 3725 s in hi",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "op": "duration",
+  "seconds": 3725,
+  "lang": "hi"
+ }
+}

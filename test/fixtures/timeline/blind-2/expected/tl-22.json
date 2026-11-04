@@ -1,0 +1,55 @@
+{
+ "totalMs": null,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 42000,
+   "type": "open",
+   "label": "Max reps"
+  },
+  {
+   "startMs": 42000,
+   "endMs": 72000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 72000,
+   "endMs": null,
+   "type": "open",
+   "label": "Max reps again"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Max reps"
+  },
+  {
+   "atMs": 42000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 69000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 70000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 71000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 72000,
+   "kind": "start",
+   "text": "Max reps again"
+  }
+ ]
+}

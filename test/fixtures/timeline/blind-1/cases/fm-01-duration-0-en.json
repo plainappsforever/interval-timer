@@ -1,0 +1,14 @@
+{
+ "id": "fm-01-duration-0-en",
+ "family": "format",
+ "title": "duration 0 s in en",
+ "adversarial": false,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "op": "duration",
+  "seconds": 0,
+  "lang": "en"
+ }
+}

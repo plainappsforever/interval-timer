@@ -1,0 +1,184 @@
+{
+ "totalMs": 89000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 5000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 5000,
+   "endMs": 25000,
+   "type": "prep",
+   "label": "Breathe in"
+  },
+  {
+   "startMs": 25000,
+   "endMs": 37000,
+   "type": "prep",
+   "label": "Set up"
+  },
+  {
+   "startMs": 37000,
+   "endMs": 47000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 47000,
+   "endMs": 67000,
+   "type": "prep",
+   "label": "Breathe in"
+  },
+  {
+   "startMs": 67000,
+   "endMs": 79000,
+   "type": "prep",
+   "label": "Set up"
+  },
+  {
+   "startMs": 79000,
+   "endMs": 89000,
+   "type": "work",
+   "label": "Work"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 2000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 3000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 4000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 5000,
+   "kind": "round",
+   "text": "Round 1 of 2"
+  },
+  {
+   "atMs": 5000,
+   "kind": "start",
+   "text": "Breathe in"
+  },
+  {
+   "atMs": 15000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 25000,
+   "kind": "start",
+   "text": "Set up"
+  },
+  {
+   "atMs": 34000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 35000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 36000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 37000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 44000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 45000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 46000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 47000,
+   "kind": "round",
+   "text": "Round 2 of 2"
+  },
+  {
+   "atMs": 47000,
+   "kind": "start",
+   "text": "Breathe in"
+  },
+  {
+   "atMs": 57000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 67000,
+   "kind": "start",
+   "text": "Set up"
+  },
+  {
+   "atMs": 76000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 77000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 78000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 79000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 86000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 87000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 88000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 89000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

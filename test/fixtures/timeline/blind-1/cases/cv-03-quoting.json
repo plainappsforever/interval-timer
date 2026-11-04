@@ -1,0 +1,57 @@
+{
+ "id": "cv-03-quoting",
+ "family": "csv",
+ "title": "commas, quotes, CRLF/LF/CR inside a note, leading and trailing spaces",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "sessions": [
+   {
+    "timerName": "Box, 3/1",
+    "startedAt": 1791615600000,
+    "endedAt": 1791615850000,
+    "plannedS": 250,
+    "actualS": 250,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "a, b"
+   },
+   {
+    "timerName": "\"Quoted\"",
+    "startedAt": 1791702000000,
+    "endedAt": 1791702251000,
+    "plannedS": 250,
+    "actualS": 251,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "she said \"go\""
+   },
+   {
+    "timerName": "Multi",
+    "startedAt": 1791788400000,
+    "endedAt": 1791788652000,
+    "plannedS": 250,
+    "actualS": 252,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "line 1\r\nline 2\nline 3\rline 4"
+   },
+   {
+    "timerName": "Spaces",
+    "startedAt": 1791874800000,
+    "endedAt": 1791875053000,
+    "plannedS": 250,
+    "actualS": 253,
+    "completed": true,
+    "skippedIntervals": 0,
+    "pauses": 0,
+    "note": "  padded  "
+   }
+  ]
+ }
+}

@@ -1,0 +1,23 @@
+{
+ "totalMs": 30000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 30000,
+   "type": "open",
+   "label": "Free"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Free"
+  },
+  {
+   "atMs": 30000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

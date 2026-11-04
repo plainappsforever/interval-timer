@@ -1,0 +1,23 @@
+{
+ "steps": [
+  {
+   "state": "running",
+   "elapsedMs": 0,
+   "totalMs": 95000,
+   "segmentIndex": 0,
+   "remainingMs": 5000
+  },
+  {
+   "state": "running",
+   "elapsedMs": 94000,
+   "totalMs": 95000,
+   "segmentIndex": 6,
+   "remainingMs": 1000
+  },
+  {
+   "state": "ended",
+   "elapsedMs": 95000,
+   "totalMs": 95000
+  }
+ ]
+}

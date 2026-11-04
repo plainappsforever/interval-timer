@@ -1,0 +1,178 @@
+{
+ "totalMs": 36000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 5000,
+   "type": "work",
+   "label": "Five"
+  },
+  {
+   "startMs": 5000,
+   "endMs": 11000,
+   "type": "work",
+   "label": "Six"
+  },
+  {
+   "startMs": 11000,
+   "endMs": 18000,
+   "type": "work",
+   "label": "Seven"
+  },
+  {
+   "startMs": 18000,
+   "endMs": 23000,
+   "type": "work",
+   "label": "Five"
+  },
+  {
+   "startMs": 23000,
+   "endMs": 29000,
+   "type": "work",
+   "label": "Six"
+  },
+  {
+   "startMs": 29000,
+   "endMs": 36000,
+   "type": "work",
+   "label": "Seven"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "round",
+   "text": "Round 1 of 2"
+  },
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Five"
+  },
+  {
+   "atMs": 1000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 2000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 3000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 4000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 5000,
+   "kind": "start",
+   "text": "Six"
+  },
+  {
+   "atMs": 6000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 10000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 11000,
+   "kind": "start",
+   "text": "Seven"
+  },
+  {
+   "atMs": 18000,
+   "kind": "round",
+   "text": "Round 2 of 2"
+  },
+  {
+   "atMs": 18000,
+   "kind": "start",
+   "text": "Five"
+  },
+  {
+   "atMs": 19000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 20000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 21000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 22000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 23000,
+   "kind": "start",
+   "text": "Six"
+  },
+  {
+   "atMs": 24000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 25000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 26000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 27000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 28000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 29000,
+   "kind": "start",
+   "text": "Seven"
+  },
+  {
+   "atMs": 36000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

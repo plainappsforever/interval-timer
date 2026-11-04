@@ -1,0 +1,49 @@
+{
+ "totalMs": 52000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 42000,
+   "type": "open",
+   "label": "Count up"
+  },
+  {
+   "startMs": 42000,
+   "endMs": 52000,
+   "type": "work",
+   "label": "Work"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Count up"
+  },
+  {
+   "atMs": 42000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 49000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 50000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 51000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 52000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

@@ -1,0 +1,94 @@
+{
+ "totalMs": 20000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 10000,
+   "type": "work",
+   "label": "Hold"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 20000,
+   "type": "rest",
+   "label": "Rest"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Hold"
+  },
+  {
+   "atMs": 5000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 5000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 6000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 15000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 15000,
+   "kind": "countdown",
+   "text": "5"
+  },
+  {
+   "atMs": 16000,
+   "kind": "countdown",
+   "text": "4"
+  },
+  {
+   "atMs": 17000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 18000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 19000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 20000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

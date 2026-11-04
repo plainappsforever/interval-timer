@@ -1,0 +1,69 @@
+{
+ "totalMs": 80000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 20000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 20000,
+   "endMs": 80000,
+   "type": "cooldown",
+   "label": "Cool"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 17000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 18000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 19000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 20000,
+   "kind": "start",
+   "text": "Cool"
+  },
+  {
+   "atMs": 50000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 77000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 78000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 79000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 80000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

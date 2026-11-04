@@ -1,0 +1,69 @@
+{
+ "id": "fm-14-timer-repeat",
+ "family": "format",
+ "title": "timer total with repeat 3, two blocks, round-rest, prep 7",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "op": "timerTotal",
+  "timer": {
+   "name": "Mix",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 4,
+     "restBetweenRoundsS": 11,
+     "intervals": [
+      {
+       "name": "W",
+       "seconds": 33,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "R",
+       "seconds": 17,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    },
+    {
+     "name": "",
+     "rounds": 1,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "X",
+       "seconds": 61,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 7,
+    "endCue": "both",
+    "repeatWhole": 3,
+    "vibrate": true
+   }
+  }
+ }
+}

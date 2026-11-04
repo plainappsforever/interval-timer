@@ -1,0 +1,82 @@
+{
+ "id": "sh-03-every-field",
+ "family": "share",
+ "title": "round trip every enum value and non-default prefs (a compact codec must not drop defaults)",
+ "adversarial": true,
+ "ambiguous": false,
+ "readings": [],
+ "readingsNoted": [],
+ "input": {
+  "op": "roundtrip",
+  "timer": {
+   "name": "Every field",
+   "color": "#00897B",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "Main",
+     "rounds": 3,
+     "restBetweenRoundsS": 25,
+     "intervals": [
+      {
+       "name": "Prep-ish",
+       "seconds": 15,
+       "type": "prep",
+       "color": "#112233",
+       "cueStart": "voice",
+       "halfwayCue": false,
+       "countdownCue": false,
+       "openTickS": 0
+      },
+      {
+       "name": "Work",
+       "seconds": 20,
+       "type": "work",
+       "color": "",
+       "cueStart": "beep",
+       "halfwayCue": true,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 10,
+       "type": "rest",
+       "color": "",
+       "cueStart": "none",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Cool",
+       "seconds": 30,
+       "type": "cooldown",
+       "color": "#FFFFFF",
+       "cueStart": "both",
+       "halfwayCue": true,
+       "countdownCue": false,
+       "openTickS": 0
+      },
+      {
+       "name": "Open",
+       "seconds": 60,
+       "type": "open",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 15
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 0,
+    "endCue": "none",
+    "repeatWhole": 10,
+    "vibrate": false
+   }
+  }
+ }
+}

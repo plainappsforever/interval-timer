@@ -1,0 +1,458 @@
+{
+ "totalMs": 64000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 3000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 3000,
+   "endMs": 6000,
+   "type": "work",
+   "label": "B1"
+  },
+  {
+   "startMs": 6000,
+   "endMs": 10000,
+   "type": "work",
+   "label": "B2"
+  },
+  {
+   "startMs": 10000,
+   "endMs": 12000,
+   "type": "work",
+   "label": "B3"
+  },
+  {
+   "startMs": 12000,
+   "endMs": 15000,
+   "type": "work",
+   "label": "B4"
+  },
+  {
+   "startMs": 15000,
+   "endMs": 19000,
+   "type": "work",
+   "label": "B5"
+  },
+  {
+   "startMs": 19000,
+   "endMs": 21000,
+   "type": "work",
+   "label": "B6"
+  },
+  {
+   "startMs": 21000,
+   "endMs": 24000,
+   "type": "work",
+   "label": "B7"
+  },
+  {
+   "startMs": 24000,
+   "endMs": 28000,
+   "type": "work",
+   "label": "B8"
+  },
+  {
+   "startMs": 28000,
+   "endMs": 30000,
+   "type": "work",
+   "label": "B9"
+  },
+  {
+   "startMs": 30000,
+   "endMs": 33000,
+   "type": "work",
+   "label": "B10"
+  },
+  {
+   "startMs": 33000,
+   "endMs": 37000,
+   "type": "work",
+   "label": "B11"
+  },
+  {
+   "startMs": 37000,
+   "endMs": 39000,
+   "type": "work",
+   "label": "B12"
+  },
+  {
+   "startMs": 39000,
+   "endMs": 42000,
+   "type": "work",
+   "label": "B13"
+  },
+  {
+   "startMs": 42000,
+   "endMs": 46000,
+   "type": "work",
+   "label": "B14"
+  },
+  {
+   "startMs": 46000,
+   "endMs": 48000,
+   "type": "work",
+   "label": "B15"
+  },
+  {
+   "startMs": 48000,
+   "endMs": 51000,
+   "type": "work",
+   "label": "B16"
+  },
+  {
+   "startMs": 51000,
+   "endMs": 55000,
+   "type": "work",
+   "label": "B17"
+  },
+  {
+   "startMs": 55000,
+   "endMs": 57000,
+   "type": "work",
+   "label": "B18"
+  },
+  {
+   "startMs": 57000,
+   "endMs": 60000,
+   "type": "work",
+   "label": "B19"
+  },
+  {
+   "startMs": 60000,
+   "endMs": 64000,
+   "type": "work",
+   "label": "B20"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 1000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 2000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 3000,
+   "kind": "start",
+   "text": "B1"
+  },
+  {
+   "atMs": 4000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 5000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 6000,
+   "kind": "start",
+   "text": "B2"
+  },
+  {
+   "atMs": 7000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 8000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 9000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 10000,
+   "kind": "start",
+   "text": "B3"
+  },
+  {
+   "atMs": 11000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 12000,
+   "kind": "start",
+   "text": "B4"
+  },
+  {
+   "atMs": 13000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 14000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 15000,
+   "kind": "start",
+   "text": "B5"
+  },
+  {
+   "atMs": 16000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 17000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 18000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 19000,
+   "kind": "start",
+   "text": "B6"
+  },
+  {
+   "atMs": 20000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 21000,
+   "kind": "start",
+   "text": "B7"
+  },
+  {
+   "atMs": 22000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 23000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 24000,
+   "kind": "start",
+   "text": "B8"
+  },
+  {
+   "atMs": 25000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 26000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 27000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 28000,
+   "kind": "start",
+   "text": "B9"
+  },
+  {
+   "atMs": 29000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 30000,
+   "kind": "start",
+   "text": "B10"
+  },
+  {
+   "atMs": 31000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 32000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 33000,
+   "kind": "start",
+   "text": "B11"
+  },
+  {
+   "atMs": 34000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 35000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 36000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 37000,
+   "kind": "start",
+   "text": "B12"
+  },
+  {
+   "atMs": 38000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 39000,
+   "kind": "start",
+   "text": "B13"
+  },
+  {
+   "atMs": 40000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 41000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 42000,
+   "kind": "start",
+   "text": "B14"
+  },
+  {
+   "atMs": 43000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 44000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 45000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 46000,
+   "kind": "start",
+   "text": "B15"
+  },
+  {
+   "atMs": 47000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 48000,
+   "kind": "start",
+   "text": "B16"
+  },
+  {
+   "atMs": 49000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 50000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 51000,
+   "kind": "start",
+   "text": "B17"
+  },
+  {
+   "atMs": 52000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 53000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 54000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 55000,
+   "kind": "start",
+   "text": "B18"
+  },
+  {
+   "atMs": 56000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 57000,
+   "kind": "start",
+   "text": "B19"
+  },
+  {
+   "atMs": 58000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 59000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 60000,
+   "kind": "start",
+   "text": "B20"
+  },
+  {
+   "atMs": 61000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 62000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 63000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 64000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

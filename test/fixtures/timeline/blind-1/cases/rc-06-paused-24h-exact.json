@@ -1,0 +1,64 @@
+{
+ "id": "rc-06-paused-24h-exact",
+ "family": "recovery",
+ "title": "paused exactly 24 h",
+ "adversarial": true,
+ "ambiguous": true,
+ "readings": [
+  "REC2"
+ ],
+ "readingsNoted": [],
+ "input": {
+  "timer": {
+   "name": "Recover",
+   "color": "#C62828",
+   "notes": "",
+   "blocks": [
+    {
+     "name": "",
+     "rounds": 10,
+     "restBetweenRoundsS": 0,
+     "intervals": [
+      {
+       "name": "Work",
+       "seconds": 40,
+       "type": "work",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      },
+      {
+       "name": "Rest",
+       "seconds": 20,
+       "type": "rest",
+       "color": "",
+       "cueStart": "both",
+       "halfwayCue": false,
+       "countdownCue": true,
+       "openTickS": 0
+      }
+     ]
+    }
+   ],
+   "prefs": {
+    "prepSeconds": 10,
+    "endCue": "both",
+    "repeatWhole": 1,
+    "vibrate": true
+   }
+  },
+  "settings": {
+   "countdownFrom": 3
+  },
+  "record": {
+   "state": "paused",
+   "startedAtWallMs": 1792173600000,
+   "savedAtWallMs": 1792173730000,
+   "elapsedMs": 125000,
+   "events": []
+  },
+  "nowWallMs": 1792260130000
+ }
+}

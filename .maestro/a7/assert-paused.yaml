@@ -1,0 +1,10 @@
+appId: ${APP_ID}
+name: A7 check - the running screen shows the session paused (driven by scripts/a7-call.sh; not part of the suite)
+---
+- extendedWaitUntil:
+    visible:
+      id: run-paused
+    timeout: 10000
+- assertVisible:
+    id: run-toggle
+    text: "Resume"

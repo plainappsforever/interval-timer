@@ -1,0 +1,1577 @@
+[
+ {
+  "id": "va-01",
+  "family": "validation",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "plain valid timer",
+  "input": {
+   "timer": {
+    "name": "Timer",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": true,
+   "reasons": []
+  }
+ },
+ {
+  "id": "va-02",
+  "family": "validation",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "timer name 40 emoji (80 UTF-16 units) is valid",
+  "input": {
+   "timer": {
+    "name": "\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": true,
+   "reasons": []
+  }
+ },
+ {
+  "id": "va-03",
+  "family": "validation",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "timer name 41 emoji is invalid",
+  "input": {
+   "timer": {
+    "name": "\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00\ud83d\ude00",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": false,
+   "reasons": [
+    "timer name > 40 code points"
+   ]
+  }
+ },
+ {
+  "id": "va-05",
+  "family": "validation",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "20 decomposed e+acute = 40 code points: valid",
+  "input": {
+   "timer": {
+    "name": "e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": true,
+   "reasons": []
+  }
+ },
+ {
+  "id": "va-06",
+  "family": "validation",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "21 decomposed e+acute = 42 code points (21 graphemes): invalid, no normalisation",
+  "input": {
+   "timer": {
+    "name": "e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301e\u0301",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": false,
+   "reasons": [
+    "timer name > 40 code points"
+   ]
+  }
+ },
+ {
+  "id": "va-07",
+  "family": "validation",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "21 precomposed e-acute = 21 code points: valid",
+  "input": {
+   "timer": {
+    "name": "\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9\u00e9",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": true,
+   "reasons": []
+  }
+ },
+ {
+  "id": "va-08",
+  "family": "validation",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "6 ZWJ family emoji = 42 code points (6 graphemes): invalid",
+  "input": {
+   "timer": {
+    "name": "\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": false,
+   "reasons": [
+    "timer name > 40 code points"
+   ]
+  }
+ },
+ {
+  "id": "va-09",
+  "family": "validation",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "5 ZWJ family emoji + 5 letters = 40 code points: valid",
+  "input": {
+   "timer": {
+    "name": "\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66\ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66abcde",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": true,
+   "reasons": []
+  }
+ },
+ {
+  "id": "va-11",
+  "family": "validation",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "21 flags = 42 code points invalid as interval name",
+  "input": {
+   "timer": {
+    "name": "Timer",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5\ud83c\uddef\ud83c\uddf5",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": false,
+   "reasons": [
+    "interval name > 40 code points"
+   ]
+  }
+ },
+ {
+  "id": "va-13",
+  "family": "validation",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "block name 41 supplementary CJK: invalid",
+  "input": {
+   "timer": {
+    "name": "Timer",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7\ud842\udfb7",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": false,
+   "reasons": [
+    "block name > 40 code points"
+   ]
+  }
+ },
+ {
+  "id": "va-14",
+  "family": "validation",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "lone high surrogate + 39 letters = 40 code points: valid (D31)",
+  "input": {
+   "timer": {
+    "name": "\ud83daaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": true,
+   "reasons": []
+  }
+ },
+ {
+  "id": "va-15",
+  "family": "validation",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "seconds 6000 invalid",
+  "input": {
+   "timer": {
+    "name": "Timer",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 6000,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": false,
+   "reasons": [
+    "seconds out of 1..5999"
+   ]
+  }
+ },
+ {
+  "id": "va-16",
+  "family": "validation",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "seconds 0 invalid",
+  "input": {
+   "timer": {
+    "name": "Timer",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 0,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": false,
+   "reasons": [
+    "seconds out of 1..5999"
+   ]
+  }
+ },
+ {
+  "id": "va-18",
+  "family": "validation",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "rounds 100 invalid",
+  "input": {
+   "timer": {
+    "name": "Timer",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 100,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 3,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": false,
+   "reasons": [
+    "rounds out of 1..99"
+   ]
+  }
+ },
+ {
+  "id": "va-20",
+  "family": "validation",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "21 blocks invalid",
+  "input": {
+   "timer": {
+    "name": "B21",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": false,
+   "reasons": [
+    "more than 20 blocks"
+   ]
+  }
+ },
+ {
+  "id": "va-21",
+  "family": "validation",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "31 intervals in a block invalid",
+  "input": {
+   "timer": {
+    "name": "I31",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "x",
+        "seconds": 5,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": false,
+   "reasons": [
+    "more than 30 intervals in a block"
+   ]
+  }
+ },
+ {
+  "id": "va-22",
+  "family": "validation",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "total 28799 s incl. prep: valid",
+  "input": {
+   "timer": {
+    "name": "Almost 8h",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 4,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Long",
+        "seconds": 5999,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Rest",
+        "seconds": 4793,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": true,
+   "reasons": []
+  }
+ },
+ {
+  "id": "va-23",
+  "family": "validation",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "total 28801 s incl. prep: invalid",
+  "input": {
+   "timer": {
+    "name": "Over 8h",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 4,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Long",
+        "seconds": 5999,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Rest",
+        "seconds": 4793,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 12,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": false,
+   "reasons": [
+    "total 28801000 ms > 8 h"
+   ]
+  }
+ },
+ {
+  "id": "va-24",
+  "family": "validation",
+  "adversarial": true,
+  "ambiguous": "A4",
+  "why": "total exactly 8 h: SPEC 5.3 says <= 8 h, SPEC 9 says >= 8 h refused",
+  "input": {
+   "timer": {
+    "name": "Exactly 8h",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 4,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Long",
+        "seconds": 5999,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     },
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Rest",
+        "seconds": 4793,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 11,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": true,
+   "reasons": []
+  }
+ },
+ {
+  "id": "va-25",
+  "family": "validation",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "every field valid, total 35994 s via repeat whole 3: invalid",
+  "input": {
+   "timer": {
+    "name": "Repeat over",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 2,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Long",
+        "seconds": 5999,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 0,
+     "endCue": "both",
+     "repeatWhole": 3,
+     "vibrate": true
+    }
+   }
+  },
+  "expected": {
+   "valid": false,
+   "reasons": [
+    "total 35994000 ms > 8 h"
+   ]
+  }
+ }
+]

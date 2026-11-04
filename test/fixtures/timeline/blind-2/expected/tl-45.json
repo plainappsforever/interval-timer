@@ -1,0 +1,147 @@
+{
+ "totalMs": 43000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 3000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 3000,
+   "endMs": 18000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 18000,
+   "endMs": 23000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 23000,
+   "endMs": 38000,
+   "type": "work",
+   "label": "Work"
+  },
+  {
+   "startMs": 38000,
+   "endMs": 43000,
+   "type": "rest",
+   "label": "Rest"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 1000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 2000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 3000,
+   "kind": "round",
+   "text": "Round 1 of 2"
+  },
+  {
+   "atMs": 3000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 15000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 16000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 17000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 18000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 20000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 21000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 22000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 23000,
+   "kind": "round",
+   "text": "Round 2 of 2"
+  },
+  {
+   "atMs": 23000,
+   "kind": "start",
+   "text": "Work"
+  },
+  {
+   "atMs": 35000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 36000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 37000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 38000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 40000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 41000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 42000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 43000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

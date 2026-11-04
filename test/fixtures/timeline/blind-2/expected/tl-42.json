@@ -1,0 +1,230 @@
+{
+ "totalMs": 81000,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": 4000,
+   "type": "prep",
+   "label": "Get ready"
+  },
+  {
+   "startMs": 4000,
+   "endMs": 16000,
+   "type": "work",
+   "label": "A"
+  },
+  {
+   "startMs": 16000,
+   "endMs": 28000,
+   "type": "work",
+   "label": "B"
+  },
+  {
+   "startMs": 28000,
+   "endMs": 40000,
+   "type": "work",
+   "label": "C"
+  },
+  {
+   "startMs": 40000,
+   "endMs": 45000,
+   "type": "rest",
+   "label": "Rest"
+  },
+  {
+   "startMs": 45000,
+   "endMs": 57000,
+   "type": "work",
+   "label": "A"
+  },
+  {
+   "startMs": 57000,
+   "endMs": 69000,
+   "type": "work",
+   "label": "B"
+  },
+  {
+   "startMs": 69000,
+   "endMs": 81000,
+   "type": "work",
+   "label": "C"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Get ready"
+  },
+  {
+   "atMs": 1000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 2000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 3000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 4000,
+   "kind": "round",
+   "text": "Round 1 of 2"
+  },
+  {
+   "atMs": 4000,
+   "kind": "start",
+   "text": "A"
+  },
+  {
+   "atMs": 13000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 14000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 15000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 16000,
+   "kind": "start",
+   "text": "B"
+  },
+  {
+   "atMs": 25000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 26000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 27000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 34000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 37000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 38000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 39000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 40000,
+   "kind": "start",
+   "text": "Rest"
+  },
+  {
+   "atMs": 42000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 43000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 44000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 45000,
+   "kind": "round",
+   "text": "Round 2 of 2"
+  },
+  {
+   "atMs": 45000,
+   "kind": "start",
+   "text": "A"
+  },
+  {
+   "atMs": 54000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 55000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 56000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 57000,
+   "kind": "start",
+   "text": "B"
+  },
+  {
+   "atMs": 66000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 67000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 68000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 75000,
+   "kind": "halfway",
+   "text": "Halfway"
+  },
+  {
+   "atMs": 78000,
+   "kind": "countdown",
+   "text": "3"
+  },
+  {
+   "atMs": 79000,
+   "kind": "countdown",
+   "text": "2"
+  },
+  {
+   "atMs": 80000,
+   "kind": "countdown",
+   "text": "1"
+  },
+  {
+   "atMs": 81000,
+   "kind": "end",
+   "text": "Done"
+  }
+ ]
+}

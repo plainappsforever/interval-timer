@@ -1,0 +1,146 @@
+[
+ {
+  "id": "sk-01",
+  "family": "statsKeys",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "D34 example 2027-01-01 -> 2026-W53",
+  "input": {
+   "atMs": 1798801200000,
+   "tz": "Europe/Berlin"
+  },
+  "expected": {
+   "day": "2027-01-01",
+   "week": "2026-W53",
+   "month": "2027-01"
+  }
+ },
+ {
+  "id": "sk-02",
+  "family": "statsKeys",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "UTC+14: 2026-12-31 11:00Z is local 2027-01-01 01:00",
+  "input": {
+   "atMs": 1798714800000,
+   "tz": "Pacific/Kiritimati"
+  },
+  "expected": {
+   "day": "2027-01-01",
+   "week": "2026-W53",
+   "month": "2027-01"
+  }
+ },
+ {
+  "id": "sk-04",
+  "family": "statsKeys",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "UTC-12: 2027-01-04 11:59Z is local Sunday 2027-01-03 23:59",
+  "input": {
+   "atMs": 1799063940000,
+   "tz": "Etc/GMT+12"
+  },
+  "expected": {
+   "day": "2027-01-03",
+   "week": "2026-W53",
+   "month": "2027-01"
+  }
+ },
+ {
+  "id": "sk-05",
+  "family": "statsKeys",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "UTC-12: 2027-01-04 12:00Z is local Monday 00:00 -> W01",
+  "input": {
+   "atMs": 1799064000000,
+   "tz": "Etc/GMT+12"
+  },
+  "expected": {
+   "day": "2027-01-04",
+   "week": "2027-W01",
+   "month": "2027-01"
+  }
+ },
+ {
+  "id": "sk-06",
+  "family": "statsKeys",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "Monday 2024-12-30 belongs to ISO year 2025",
+  "input": {
+   "atMs": 1735574400000,
+   "tz": "America/Los_Angeles"
+  },
+  "expected": {
+   "day": "2024-12-30",
+   "week": "2025-W01",
+   "month": "2024-12"
+  }
+ },
+ {
+  "id": "sk-08",
+  "family": "statsKeys",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "Samoa skipped 2011-12-30: the instant lands on 2011-12-31",
+  "input": {
+   "atMs": 1325239200000,
+   "tz": "Pacific/Apia"
+  },
+  "expected": {
+   "day": "2011-12-31",
+   "week": "2011-W52",
+   "month": "2011-12"
+  }
+ },
+ {
+  "id": "sk-09",
+  "family": "statsKeys",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "first Monday after the spring DST change, local midnight",
+  "input": {
+   "atMs": 1774821600000,
+   "tz": "Europe/Berlin"
+  },
+  "expected": {
+   "day": "2026-03-30",
+   "week": "2026-W14",
+   "month": "2026-03"
+  }
+ },
+ {
+  "id": "sk-10",
+  "family": "statsKeys",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "Lord Howe (+11 in summer): local 2027-01-01 00:00",
+  "input": {
+   "atMs": 1798722000000,
+   "tz": "Australia/Lord_Howe"
+  },
+  "expected": {
+   "day": "2027-01-01",
+   "week": "2026-W53",
+   "month": "2027-01"
+  }
+ },
+ {
+  "id": "sk-11",
+  "family": "statsKeys",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "Monday 2026-12-28 is 2026-W53 (53-week year)",
+  "input": {
+   "atMs": 1798383600000,
+   "tz": "Asia/Tokyo"
+  },
+  "expected": {
+   "day": "2026-12-28",
+   "week": "2026-W53",
+   "month": "2026-12"
+  }
+ }
+]

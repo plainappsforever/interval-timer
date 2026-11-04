@@ -1,0 +1,18 @@
+{
+ "totalMs": null,
+ "segments": [
+  {
+   "startMs": 0,
+   "endMs": null,
+   "type": "open",
+   "label": "Hold"
+  }
+ ],
+ "cues": [
+  {
+   "atMs": 0,
+   "kind": "start",
+   "text": "Hold"
+  }
+ ]
+}

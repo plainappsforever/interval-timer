@@ -1,0 +1,377 @@
+[
+ {
+  "id": "cb-01",
+  "family": "cuesBetween",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "window inside one segment holding 3 countdown cues -> only the latest",
+  "input": {
+   "timer": {
+    "name": "Catch-up",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 3,
+      "restBetweenRoundsS": 12,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "frm": 21000,
+   "to": 24500
+  },
+  "expected": [
+   {
+    "atMs": 24000,
+    "kind": "countdown",
+    "text": "1"
+   }
+  ]
+ },
+ {
+  "id": "cb-02",
+  "family": "cuesBetween",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "window across several segments ending on a segment start -> round+start batch",
+  "input": {
+   "timer": {
+    "name": "Catch-up",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 3,
+      "restBetweenRoundsS": 12,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "frm": 10000,
+   "to": 47000
+  },
+  "expected": [
+   {
+    "atMs": 47000,
+    "kind": "round",
+    "text": "Round 2 of 3"
+   },
+   {
+    "atMs": 47000,
+    "kind": "start",
+    "text": "Work"
+   }
+  ]
+ },
+ {
+  "id": "cb-03",
+  "family": "cuesBetween",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "from is exclusive: a cue exactly at from is not returned",
+  "input": {
+   "timer": {
+    "name": "Catch-up",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 3,
+      "restBetweenRoundsS": 12,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "frm": 5000,
+   "to": 5500
+  },
+  "expected": []
+ },
+ {
+  "id": "cb-04",
+  "family": "cuesBetween",
+  "adversarial": false,
+  "ambiguous": null,
+  "why": "to is inclusive: halfway exactly at to",
+  "input": {
+   "timer": {
+    "name": "Catch-up",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 3,
+      "restBetweenRoundsS": 12,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "frm": 14000,
+   "to": 15000
+  },
+  "expected": [
+   {
+    "atMs": 15000,
+    "kind": "halfway",
+    "text": "Halfway"
+   }
+  ]
+ },
+ {
+  "id": "cb-05",
+  "family": "cuesBetween",
+  "adversarial": true,
+  "ambiguous": null,
+  "why": "open segment: window spanning 3 ticks -> only the latest tick",
+  "input": {
+   "timer": {
+    "name": "Open recovery",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 1,
+      "restBetweenRoundsS": 0,
+      "intervals": [
+       {
+        "name": "Warm",
+        "seconds": 60,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Max",
+        "seconds": 30,
+        "type": "open",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 30
+       },
+       {
+        "name": "Cool",
+        "seconds": 120,
+        "type": "cooldown",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 10,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "frm": 75000,
+   "to": 165000
+  },
+  "expected": [
+   {
+    "atMs": 160000,
+    "kind": "openTick",
+    "text": null
+   }
+  ]
+ },
+ {
+  "id": "cb-06",
+  "family": "cuesBetween",
+  "adversarial": true,
+  "ambiguous": "A7",
+  "why": "window reaching past the total -> end cue only",
+  "input": {
+   "timer": {
+    "name": "Catch-up",
+    "color": "#1565C0",
+    "notes": "",
+    "blocks": [
+     {
+      "name": "",
+      "rounds": 3,
+      "restBetweenRoundsS": 12,
+      "intervals": [
+       {
+        "name": "Work",
+        "seconds": 20,
+        "type": "work",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": true,
+        "countdownCue": true,
+        "openTickS": 0
+       },
+       {
+        "name": "Rest",
+        "seconds": 10,
+        "type": "rest",
+        "color": "",
+        "cueStart": "both",
+        "halfwayCue": false,
+        "countdownCue": true,
+        "openTickS": 0
+       }
+      ]
+     }
+    ],
+    "prefs": {
+     "prepSeconds": 5,
+     "endCue": "both",
+     "repeatWhole": 1,
+     "vibrate": true
+    }
+   },
+   "settings": {
+    "countdownFrom": 3
+   },
+   "frm": 115000,
+   "to": 999999
+  },
+  "expected": [
+   {
+    "atMs": 119000,
+    "kind": "end",
+    "text": "Done"
+   }
+  ]
+ }
+]

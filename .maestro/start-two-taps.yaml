@@ -1,0 +1,93 @@
+appId: ${APP_ID}
+name: Start in two taps - cold start, Start on the last-used timer, prep, cues, Done, history row (A5, U1)
+tags:
+  - p6
+---
+- runFlow: subflows/fresh.yaml
+# Make a 19-second timer (3 s get ready + 2 x (Work 5, Rest 3)) the last-used one: import it by link, start it once.
+- openLink: ${SCHEME}://t?d=eyJ2IjoxLCJuIjoiUXVpY2sgdGVzdCIsImIiOlt7InIiOjIsImkiOlt7Im4iOiJXb3JrIiwicyI6NSwidCI6IndvcmsifSx7Im4iOiJSZXN0IiwicyI6MywidCI6InJlc3QifV19XSwiYyI6IiMxNTY1QzAiLCJwIjp7InBzIjozfX0
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: import-preview-name
+    timeout: 20000
+- assertVisible: "Quick test"
+- tapOn:
+    id: import-save
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+- tapOn: "Start Quick test"
+- extendedWaitUntil:
+    visible:
+      id: run-screen
+    timeout: 30000
+- tapOn:
+    id: run-end
+# more than 10 % done on a slow device: End asks first
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- tapOn:
+    id: done-close
+
+# Cold start: the big Start is the last-used timer. Tap 1 = Start; the run starts by itself once voice clips are ready.
+- stopApp
+- runFlow: subflows/launch.yaml
+- assertVisible:
+    id: start-last
+    text: "Start Quick test"
+- tapOn:
+    id: start-last
+- extendedWaitUntil:
+    visible:
+      id: run-screen
+    timeout: 30000
+# the 3 s / 5 s / 3 s labels are checked when the device is quick enough to see them (Android Maestro polls slowly)
+- extendedWaitUntil:
+    visible:
+      id: run-label
+      text: "Get ready"
+    timeout: 20000
+    optional: true
+- assertNotVisible: Allow
+- assertNotVisible: "Don't Allow"
+- extendedWaitUntil:
+    visible:
+      id: run-label
+      text: "Work"
+    timeout: 10000
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: run-label
+      text: "Rest"
+    timeout: 10000
+    optional: true
+# the end cue, then the Done screen by itself; the history row is written before it opens
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 60000
+- assertVisible:
+    id: done-result
+    text: "Completed"
+- assertVisible:
+    id: done-planned
+    text: "00:19"
+- assertVisible:
+    id: done-actual
+    text: "00:19"
+- assertVisible:
+    id: done-saved
+- tapOn:
+    id: done-close
+- assertVisible:
+    id: home-screen
