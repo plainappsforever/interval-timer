@@ -102,3 +102,9 @@ export function deleteSession(db: Db, id: number): Promise<void> {
     await tx.runAsync('DELETE FROM sessions WHERE id = ?', id);
   });
 }
+
+/** Workouts that ran to their end (not ended early); the rating prompt counts these. */
+export async function countCompletedSessions(db: Db): Promise<number> {
+  const row = await withRead(db, (r) => r.getFirstAsync<{ n: number }>('SELECT COUNT(*) AS n FROM sessions WHERE completed = 1'));
+  return row?.n ?? 0;
+}

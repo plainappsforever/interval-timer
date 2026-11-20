@@ -12,6 +12,12 @@ tags:
       id: editor-total
       text: "Total 04:10"
     timeout: 10000
+# Redesign R1: the total bar with its pattern strip is taller and the rounds stepper starts below it
+- scrollUntilVisible:
+    element:
+      id: block-0-rounds-minus
+    direction: DOWN
+    centerElement: true
 - tapOn:
     id: block-0-rounds-minus
 - tapOn:
@@ -51,6 +57,11 @@ tags:
     id: editor-total
     text: "Total 06:50"
 # 7 rounds with 20 s rest between rounds: 10 + 7 x 50 + 6 x 20 = 08:00
+- scrollUntilVisible:
+    element:
+      id: block-0-rounds-minus
+    direction: DOWN
+    centerElement: true
 - tapOn:
     id: block-0-rounds-minus
 - scrollUntilVisible:

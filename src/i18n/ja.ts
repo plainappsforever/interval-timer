@@ -65,7 +65,10 @@ export const ja: Record<MessageKey, string> = {
   'status.keepScreenOn': '合図のために画面をオンのままにしてください。',
 
   'home.title': 'タイマー',
-  'home.empty': 'タイマーはまだありません。',
+  'home.empty': '自分のタイマーはまだありません。テンプレートを開始するか、新しいタイマーで作成してください。',
+  'home.rounds': '{n}ラウンド',
+  'home.roundsOne': '1ラウンド',
+  'home.blocks': '{n}ブロック',
   'home.new': '新しいタイマー',
   'home.start': 'スタート',
   'home.count': '{n}個のタイマー',
@@ -251,6 +254,9 @@ export const ja: Record<MessageKey, string> = {
   'settings.privacyTitle': 'プライバシー',
   'settings.privacy': 'Plain Intervals は何も収集しません。アカウント、分析、広告、インターネット接続はありません。タイマーと履歴は、ご自身でファイルを共有しない限りこの端末に残ります。',
   'settings.privacyOnline': 'プライバシーポリシー（ウェブサイトを開きます）',
+  'licenses.title': 'ライセンス',
+  'licenses.open': 'オープンソースライセンス',
+  'licenses.intro': 'このアプリは下のオープンソースソフトウェアを使っています。項目をタップするとライセンスを読めます。',
 
   'settings.backupHint': 'バックアップは共有するまでこの端末にのみ保存されます。端末の紛失やリセットに備えて、ファイル、Drive、メッセージなどに共有してください。',
 };

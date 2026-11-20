@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # Store listing screenshots (RELEASE_KIT 3e): home, running, editor, history, settings, captured by Maestro
 # (.maestro/screenshots/listing.yaml) on a fresh install of an installed Release build, with a clean status bar.
-# Usage: scripts/screenshots.sh <ios|android> [preview|production]
+# Usage: scripts/screenshots.sh <ios|android> [preview|production] [en|de]
+#   de: the same five screens in German (.maestro/screenshots/listing-de.yaml switches the app language in Settings first),
+#       written to artifacts/screenshots/<platform>/de/ (English stays in the flat folder).
 #   iOS: the App Store's 6.9-inch size (1320 x 2868) needs an iPhone 17 Pro Max. The script uses the simulator
 #        SCREENSHOT_IOS_SIM (default "Intervals iPhone Pro Max", created on IOS_RUNTIME by boot.sh if missing) and installs
 #        the variant's newest simulator Release .app from DerivedData there (build it first: scripts/native.sh ios <variant>).
@@ -14,15 +16,19 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 source scripts/env.sh
 
-platform=${1:?Usage: screenshots.sh <ios|android> [preview|production]}
+platform=${1:?Usage: screenshots.sh <ios|android> [preview|production] [en|de]}
 variant=${2:-preview}
+lang=${3:-en}
+[[ $lang == en || $lang == de ]] || { echo "Language: en or de." >&2; exit 1; }
 [[ $variant == preview || $variant == production ]] || { echo "Screenshots come from a Release build: preview or production." >&2; exit 1; }
 
 config=$(APP_VARIANT=$variant npx expo config --json --type public)
 app_id=$(node -e 'console.log(JSON.parse(require("fs").readFileSync(0, "utf8")).ios.bundleIdentifier)' <<<"$config")
 scheme=$(node -e 'console.log(JSON.parse(require("fs").readFileSync(0, "utf8")).scheme)' <<<"$config")
 dest="artifacts/screenshots/$platform"
-run="artifacts/maestro/$platform-$variant-screenshots-$(date +%Y%m%d-%H%M%S)"
+flow=.maestro/screenshots/listing.yaml
+if [[ $lang == de ]]; then dest="$dest/de"; flow=.maestro/screenshots/listing-de.yaml; fi
+run="artifacts/maestro/$platform-$variant-screenshots-$lang-$(date +%Y%m%d-%H%M%S)"
 mkdir -p "$dest" "$run"
 
 if [[ $platform == ios ]]; then
@@ -55,7 +61,7 @@ fi
 trap cleanup EXIT
 
 status=0
-maestro --device "$device" test -e APP_ID="$app_id" -e SCHEME="$scheme" --test-output-dir "$run" .maestro/screenshots/listing.yaml || status=$?
+maestro --device "$device" test -e APP_ID="$app_id" -e SCHEME="$scheme" --test-output-dir "$run" "$flow" || status=$?
 
 # Maestro 2.x files each takeScreenshot under <output>/<run>/<flow>/takeScreenshot/ (price-book large-text.sh).
 count=0

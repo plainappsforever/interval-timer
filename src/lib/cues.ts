@@ -12,6 +12,7 @@ import { elapsedAt, type RunnerState } from '@/engine/runner';
 import type { Cue } from '@/engine/schedule';
 
 import { CuePlayers, endBackgroundAudio, setSessionAudioMode } from './audio';
+import { cueVolume } from './silent-audio';
 import { rawBeepName, runnerCues, VOICE_GAP_MS, type VoiceClip } from './runner-cues';
 import type { TimingLog } from './timing-log';
 
@@ -69,7 +70,7 @@ function nativeDriver(o: CueDriverOptions): CueDriver {
       const t = state.timeline;
       switch (reason) {
         case 'start':
-          runner.start(cuesOf(t), { title: o.title, elapsedMs: elapsed, displayEndMs: t.totalMs, sound: o.sound, volume: o.volume, skipLabel: o.labels.skip, endLabel: o.labels.end });
+          runner.start(cuesOf(t), { title: o.title, elapsedMs: elapsed, displayEndMs: t.totalMs, sound: o.sound, volume: cueVolume(o.volume), skipLabel: o.labels.skip, endLabel: o.labels.end });
           break;
         case 'pause':
           runner.pause();

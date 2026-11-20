@@ -11,7 +11,13 @@ tags:
       id: home-screen
     timeout: 10000
 
+# Redesign R1: the poster pushes the rows down and the Start bar covers the lowest one, so each long press scrolls to its row first
+
 # 1: Duplicate - the copy appears under "My timers", the sheet is gone
+- scrollUntilVisible:
+    element: "Tabata, .*"
+    direction: DOWN
+    centerElement: true
 - longPressOn: "Tabata, .*"
 - extendedWaitUntil:
     visible:
@@ -26,6 +32,10 @@ tags:
     id: timer-actions
 
 # 2: Cancel
+- scrollUntilVisible:
+    element: "Tabata, .*"
+    direction: DOWN
+    centerElement: true
 - longPressOn: "Tabata, .*"
 - extendedWaitUntil:
     visible:
@@ -37,6 +47,10 @@ tags:
     id: timer-actions
 
 # 3: a tap on the dimmed area above the sheet closes it
+- scrollUntilVisible:
+    element: "Tabata, .*"
+    direction: DOWN
+    centerElement: true
 - longPressOn: "Tabata, .*"
 - extendedWaitUntil:
     visible:
@@ -54,6 +68,10 @@ tags:
     when:
       platform: Android
     commands:
+      - scrollUntilVisible:
+          element: "Tabata, .*"
+          direction: DOWN
+          centerElement: true
       - longPressOn: "Tabata, .*"
       - extendedWaitUntil:
           visible:

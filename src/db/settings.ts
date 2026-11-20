@@ -31,6 +31,8 @@ export type Settings = {
   templatesSeeded: boolean;
   /** The "no voice installed for this language" note was shown once (D15). */
   voiceNoteShown: boolean;
+  /** App version the rating prompt was last requested in (src/lib/rating.ts); null = never. At most once per version. */
+  ratingAskedVersion: string | null;
 };
 
 const LANGUAGES: readonly LanguagePreference[] = ['system', 'en', 'de', 'es', 'pt-BR', 'fr', 'it', 'tr', 'ru', 'id', 'hi', 'ja', 'zh-CN', 'ko', 'vi', 'ar'];
@@ -63,6 +65,7 @@ const SPECS: { [K in keyof Settings]: Spec<Settings[K]> } = {
   recovery: { key: 'recovery', fallback: null, guard: (v): v is unknown => v === null || (typeof v === 'object' && !Array.isArray(v)) },
   templatesSeeded: { key: 'templates_seeded', fallback: false, guard: isBool },
   voiceNoteShown: { key: 'voice_note_shown', fallback: false, guard: isBool },
+  ratingAskedVersion: { key: 'rating_asked_version', fallback: null, guard: (v): v is string | null => v === null || (typeof v === 'string' && v.length > 0 && v.length <= 32) },
 };
 
 export const DEFAULT_SETTINGS: Settings = Object.fromEntries(Object.entries(SPECS).map(([k, s]) => [k, s.fallback])) as Settings;

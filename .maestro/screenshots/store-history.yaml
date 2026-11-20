@@ -1,0 +1,34 @@
+appId: ${APP_ID}
+name: Store frame 6 (history) after scripts/store-captures.sh has put a believable week of finished workouts into the database
+tags:
+  - screenshots
+---
+- launchApp:
+    stopApp: true
+    arguments:
+      -AppleLanguages: "(${LANGTAG})"
+      -AppleLocale: "${LOCALE}"
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 15000
+- waitForAnimationToEnd:
+    timeout: 3000
+- swipe:
+    start: 50%, 80%
+    end: 50%, 35%
+- waitForAnimationToEnd:
+    timeout: 2000
+- takeScreenshot: 03-tiles
+- swipe:
+    start: 50%, 35%
+    end: 50%, 90%
+- tapOn:
+    id: open-history
+- extendedWaitUntil:
+    visible:
+      id: history-screen
+    timeout: 10000
+- waitForAnimationToEnd:
+    timeout: 2000
+- takeScreenshot: 06-history

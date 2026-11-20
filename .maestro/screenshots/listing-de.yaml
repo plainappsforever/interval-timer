@@ -1,0 +1,123 @@
+appId: ${APP_ID}
+name: Listing screenshots in German - home, running, editor, history, settings (App Store de-DE; run by scripts/screenshots.sh ios <variant> de)
+tags:
+  - screenshots
+---
+# Same five screens as listing.yaml. Step 0 explicitly switches the app language to Deutsch in Settings (alone, no screen change in
+# the same step), then the app is relaunched so the home list is shown in German before the first shot.
+# Fresh install whose first launch runs in German, so the seeded templates and interval names are German (they are stored
+# at first launch in the device language). Release build only: no dev launcher to pick.
+- launchApp:
+    stopApp: true
+    clearState: true
+    arguments:
+      -AppleLanguages: "(de)"
+      -AppleLocale: "de_DE"
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 90000
+- waitForAnimationToEnd:
+    timeout: 5000
+- tapOn:
+    id: open-settings
+- extendedWaitUntil:
+    visible:
+      id: settings-screen
+    timeout: 10000
+- tapOn:
+    id: settings-language
+- scrollUntilVisible:
+    element:
+      id: language-de
+    direction: DOWN
+- tapOn:
+    id: language-de
+- scrollUntilVisible:
+    element:
+      id: settings-language-value
+    direction: UP
+- assertVisible:
+    id: settings-language-value
+    text: "Deutsch"
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: start-last
+    timeout: 15000
+- assertVisible:
+    id: section-templates
+    text: "Vorlagen"
+- takeScreenshot: 01-home
+# 2. Running screen: Tabata, Work, round 3 of 8 (Get ready -> W1 -> R1 -> W2 -> R2 -> W3 = five skips)
+- tapOn: "Tabata starten"
+- extendedWaitUntil:
+    visible:
+      id: run-skip
+    timeout: 30000
+- repeat:
+    times: 5
+    commands:
+      - tapOn:
+          id: run-skip
+- extendedWaitUntil:
+    visible:
+      id: run-path
+      text: "Runde 3 von 8"
+    timeout: 10000
+- takeScreenshot: 02-running
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- tapOn:
+    id: done-close
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+# 3. Editor with the Circuit template (named intervals, rounds, live total)
+- scrollUntilVisible:
+    element: "Zirkel, .*"
+    direction: DOWN
+    timeout: 10000
+- tapOn: "Zirkel, .*"
+- extendedWaitUntil:
+    visible:
+      id: editor-screen
+    timeout: 10000
+- takeScreenshot: 03-editor
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 15000
+# 4. History
+- tapOn:
+    id: open-history
+- extendedWaitUntil:
+    visible:
+      id: history-screen
+    timeout: 10000
+- takeScreenshot: 04-history
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 15000
+# 5. Settings
+- tapOn:
+    id: open-settings
+- extendedWaitUntil:
+    visible:
+      id: settings-screen
+    timeout: 10000
+- takeScreenshot: 05-settings

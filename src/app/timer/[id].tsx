@@ -11,7 +11,9 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Button } from '@/components/button';
 import { Stepper } from '@/components/stepper';
 import { ThemedText } from '@/components/themed-text';
-import { Spacing } from '@/constants/theme';
+import { PatternStrip } from '@/components/pattern-strip';
+import { patternOf } from '@/lib/pattern';
+import { Radius, Spacing } from '@/constants/theme';
 import { useSQLiteContext } from '@/db/provider';
 import { readSettings } from '@/db/settings';
 import { createTimer, getTimer, updateTimer } from '@/db/timers';
@@ -25,6 +27,7 @@ import { parseDurationInput } from '@/lib/duration-input';
 import { cleanForSave, cycle, duplicateAt, hasOpenInterval, move, newTimerDef, nextInterval, removeAt, setAt } from '@/lib/editor-ops';
 import { armStart } from '@/lib/start-intent';
 import { VOICE_LOCALE } from '@/lib/voice';
+import { speechSilence } from '@/lib/silent-audio';
 
 const TYPES: readonly IntervalType[] = ['work', 'rest', 'prep', 'cooldown', 'open'];
 const MODES: readonly CueMode[] = ['both', 'voice', 'beep', 'none'];
@@ -138,6 +141,7 @@ export default function TimerEditorScreen() {
     Speech.stop();
     Speech.speak(text, {
       language: VOICE_LOCALE[language],
+      ...speechSilence(),
       ...(voiceId ? { voice: voiceId } : {}),
     });
   }
@@ -230,7 +234,6 @@ export default function TimerEditorScreen() {
                     style={[
                       styles.interval,
                       {
-                        borderLeftColor: swatch,
                         backgroundColor: theme.background,
                       },
                     ]}>
@@ -281,7 +284,7 @@ export default function TimerEditorScreen() {
                       onChange={(n) => setIv(bi, ii, (x) => ({ ...x, seconds: n }))}
                     />
                     <Pressable testID={`${base}-more`} accessibilityRole="button" onPress={() => toggleExpanded(key)} hitSlop={6}>
-                      <ThemedText type="small" themeColor="tint">
+                      <ThemedText type="small" themeColor="tintText">
                         {isOpen ? t('editor.less') : t('editor.more')}
                       </ThemedText>
                     </Pressable>
@@ -529,9 +532,10 @@ export default function TimerEditorScreen() {
             },
           ]}>
           {/* the live total stays in view while the blocks scroll (A15) */}
-          <ThemedText testID="editor-total" type="smallBold">
+          <ThemedText testID="editor-total" type="smallBold" numeric>
             {totalText}
           </ThemedText>
+          <PatternStrip pieces={patternOf(def)} />
           {totalIssue ? <IssueText text={message(totalIssue)} /> : null}
           {tried && issues.length > 0 ? (
             <ThemedText testID="editor-issues" type="small" style={{ color: theme.danger }}>
@@ -608,7 +612,7 @@ const styles = StyleSheet.create({
   },
   input: {
     borderWidth: 1,
-    borderRadius: 8,
+    borderRadius: Radius.control,
     paddingHorizontal: Spacing.two,
     paddingVertical: 8,
     fontSize: 16,
@@ -616,10 +620,9 @@ const styles = StyleSheet.create({
   nameInput: { fontSize: 18, fontWeight: '600' },
   swatches: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },
   swatch: { width: 32, height: 32, borderRadius: 16, borderWidth: 3 },
-  card: { borderRadius: 12, padding: Spacing.three, gap: Spacing.two },
+  card: { borderRadius: Radius.card, padding: Spacing.three, gap: Spacing.two },
   interval: {
-    borderLeftWidth: 6,
-    borderRadius: 8,
+    borderRadius: Radius.control,
     padding: Spacing.two,
     gap: Spacing.two,
   },

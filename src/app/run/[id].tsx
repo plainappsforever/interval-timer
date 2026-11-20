@@ -3,21 +3,26 @@
 // the CueDriver (D38). `?recover=1` continues the run in `settings.recovery` (the home screen's Resume offer, A8).
 // Voice clips are prepared before Start (D15); a run starts by itself once they are ready (two taps from cold start).
 // Review F11 (P9): only when the app's own UI asked for it (src/lib/start-intent.ts); a link asks "Start <name>?" first.
+import { runColors } from '@/lib/run-colors';
 import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
 import { Stack, useLocalSearchParams, useNavigation, useRouter } from 'expo-router';
 import * as Speech from 'expo-speech';
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { SymbolView } from 'expo-symbols';
+
+import { DialGlyph, type DialGlyphKind } from '@/components/dial-glyph';
+import { StatusBar } from 'expo-status-bar';
+import { useCallback, useEffect, useRef, useState, type ComponentProps } from 'react';
+import { countdownFontSize } from '@/lib/countdown-size';
 import { AppState, Platform, Pressable, StyleSheet, useWindowDimensions, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Button } from '@/components/button';
 import { ThemedText } from '@/components/themed-text';
-import { Spacing } from '@/constants/theme';
+import { BrandFonts, Radius, Spacing } from '@/constants/theme';
 import { useSQLiteContext } from '@/db/provider';
 import { readSettings, setSetting } from '@/db/settings';
 import { getTimer, touchTimer } from '@/db/timers';
 import { formatDuration, formatElapsedMs, formatRemainingMs } from '@/engine/format';
-import { textOn } from '@/engine/palette';
 import { evaluateRecovery, parseRecovery, restoreRunner } from '@/engine/recovery';
 import { apply, idle, type RunnerAction, type RunnerState, type RunnerView } from '@/engine/runner';
 import { buildTimeline, type Cue } from '@/engine/schedule';
@@ -32,6 +37,7 @@ import { liveActivityAvailable, syncLiveActivity } from '@/lib/live-activity';
 import { RunSession, type RunMeta } from '@/lib/run-session';
 import { TimingLog } from '@/lib/timing-log';
 import { prepareVoiceClips, VOICE_LOCALE } from '@/lib/voice';
+import { speechSilence } from '@/lib/silent-audio';
 
 const KEEP_AWAKE_TAG = 'run';
 /** End asks first once more than this share of a known total is done (SPEC §7 screen 3). */
@@ -42,6 +48,13 @@ const CONFIRM_END_OPEN_MS = 60_000;
 type Phase = 'loading' | 'conflict' | 'link' | 'preparing' | 'ready' | 'missing';
 /** What one frame shows; refreshed by the tick and after every action (render never reads the session ref). */
 type Snap = { v: RunnerView; totalMs: number | null; outputs: CueOutput };
+
+// Status bar clock follows the text colour chosen for the interval colour (white text -> light clock).
+function fgIsLight(hex: string): boolean {
+  const m = /^#([0-9a-fA-F]{2})([0-9a-fA-F]{2})([0-9a-fA-F]{2})/.exec(hex);
+  if (!m) return true;
+  return (parseInt(m[1], 16) + parseInt(m[2], 16) + parseInt(m[3], 16)) / 3 > 128;
+}
 
 export default function RunScreen() {
   const { id, recover } = useLocalSearchParams<{
@@ -55,7 +68,7 @@ export default function RunScreen() {
   const t = useT();
   const language = useLanguage();
   const insets = useSafeAreaInsets();
-  const { width, height } = useWindowDimensions();
+  const { width, height, fontScale } = useWindowDimensions();
   const landscape = width > height;
   const [phase, setPhase] = useState<Phase>('loading');
   const [voiceNote, setVoiceNote] = useState(false);
@@ -184,6 +197,7 @@ export default function RunScreen() {
         if (!settings.voiceEnabled || !cue.text || AppState.currentState !== 'active') return;
         Speech.speak(cue.text, {
           language: speechLanguage,
+          ...speechSilence(),
           ...(options.voiceId ? { voice: options.voiceId } : {}),
         });
       };
@@ -335,8 +349,9 @@ export default function RunScreen() {
 
   const { v, totalMs: total, outputs } = snap;
   const seg = v.location?.segment ?? null;
-  const bg = seg?.color ?? theme.background;
-  const fg = textOn(bg);
+  // The colour the user chose for the interval (or its type default, as in 1.0.0) fills the screen; text is white or black for
+  // contrast. Only a screen without an interval colour uses the brand accent.
+  const { bg, fg } = runColors(seg?.color, theme.tint, theme.onTint);
   const openSeg = !!seg && seg.endMs === null;
   const big = openSeg ? formatElapsedMs(v.location?.inSegmentMs ?? 0) : formatRemainingMs(v.location?.remainingMs ?? 0);
   const paused = v.status === 'paused';
@@ -363,9 +378,14 @@ export default function RunScreen() {
     else act('end');
   };
 
-  const timeSize = landscape ? 150 : 112;
+  // the numerals fill the width: start large, adjustsFontSizeToFit shrinks them to the line (ThemedText caps Dynamic Type)
+  // small screens with large text sizes (SE class at accessibility sizes) need smaller numerals or the column overflows
+  const timeSize = countdownFontSize({ platform: Platform.OS, width, height, fontScale, landscape });
   const display = (
     <View style={[styles.display, landscape && styles.displayLandscape]}>
+      <ThemedText testID="run-status-line" type="small" style={[styles.status, { color: fg }]} maxFontSizeMultiplier={1}>
+        {t(statusLineKey(Platform.OS === 'ios' ? 'ios' : 'android'))}
+      </ThemedText>
       <ThemedText testID="run-path" type="smallBold" style={[styles.path, { color: fg }]}>
         {[seg?.pathLabel, seg?.repeatLabel].filter(Boolean).join(' · ')}
       </ThemedText>
@@ -377,7 +397,9 @@ export default function RunScreen() {
         accessibilityLabel={`${seg?.label ?? ''}, ${big}`}
         style={[styles.time, { color: fg, fontSize: timeSize, lineHeight: timeSize * 1.1 }]}
         numberOfLines={1}
-        adjustsFontSizeToFit>
+        minimumFontScale={0.3}
+        {...(Platform.OS === 'ios' ? { maxFontSizeMultiplier: 1 } : {})}
+        adjustsFontSizeToFit={Platform.OS !== 'ios' || big.length > 5}>
         {big}
       </ThemedText>
       {paused ? (
@@ -399,7 +421,7 @@ export default function RunScreen() {
           ]}
         />
       </View>
-      <ThemedText testID="run-elapsed" type="small" style={{ color: fg, fontVariant: ['tabular-nums'] }}>
+      <ThemedText testID="run-elapsed" type="small" numeric style={{ color: fg }}>
         {total !== null ? `${formatElapsedMs(v.elapsedMs)} / ${formatDuration(total / 1000)}` : formatElapsedMs(v.elapsedMs)}
       </ThemedText>
     </View>
@@ -409,50 +431,60 @@ export default function RunScreen() {
     <View style={[styles.controls, landscape && styles.controlsLandscape]}>
       <View style={styles.ctrlRow}>
         <Ctrl testID="run-back" label={t('run.back')} onPress={() => act('back')} fg={fg} locked={locked} />
-        <Ctrl testID="run-toggle" label={paused ? t('run.resume') : t('run.pause')} onPress={() => act('toggle')} fg={fg} locked={locked} />
+        <Ctrl testID="run-toggle" label={paused ? t('run.resume') : t('run.pause')} onPress={() => act('toggle')} fg={fg} locked={locked} solid bg={bg} />
         {openSeg ? (
           <Ctrl testID="run-next" label={t('run.next')} onPress={() => act('next')} fg={fg} locked={locked} />
         ) : (
           <Ctrl testID="run-skip" label={t('run.skip')} onPress={() => act('skip')} fg={fg} locked={locked} />
         )}
-      </View>
-      <View style={styles.ctrlRow}>
         <Ctrl testID="run-add" label={t('run.addTime')} onPress={() => act('addTime')} fg={fg} locked={locked} disabled={openSeg} />
         <Ctrl testID="run-end" label={t('run.end')} onPress={onEnd} fg={fg} locked={locked} />
-        <Pressable
-          testID={locked ? 'run-unlock' : 'run-lock'}
-          accessibilityRole="button"
-          accessibilityLabel={locked ? t('run.unlock') : t('run.lock')}
-          onPress={() => !locked && setLocked(true)}
-          onLongPress={() => setLocked(false)}
-          delayLongPress={800}
-          style={[styles.ctrl, { borderColor: fg, backgroundColor: locked ? fg : 'transparent' }]}>
-          <ThemedText type="smallBold" style={{ color: locked ? bg : fg }} numberOfLines={1} adjustsFontSizeToFit>
-            {locked ? t('run.unlock') : t('run.lock')}
-          </ThemedText>
-        </Pressable>
       </View>
       <View style={styles.ctrlRow}>
-        <Toggle
+        <Dial
+          testID={locked ? 'run-unlock' : 'run-lock'}
+          label={locked ? t('run.unlock') : t('run.lock')}
+          on={locked}
+          symbol="lock"
+          onPress={() => !locked && setLocked(true)}
+          onLongPress={() => setLocked(false)}
+          fg={fg}
+          bg={bg}
+        />
+        <Dial
           testID="run-sound"
           label={t('run.sound')}
           on={outputs.sound}
+          symbol="speaker.wave.2"
           onPress={() => setOutput({ ...outputs, sound: !outputs.sound })}
           fg={fg}
           bg={bg}
           locked={locked}
+          toggle
         />
-        <Toggle
+        <Dial
           testID="run-vibration"
           label={t('run.vibration')}
           on={outputs.vibrate}
+          symbol="iphone.radiowaves.left.and.right"
           onPress={() => setOutput({ ...outputs, vibrate: !outputs.vibrate })}
           fg={fg}
           bg={bg}
           locked={locked}
+          toggle
         />
         {liveAvailable ? (
-          <Toggle testID="run-live-activity" label={t('run.liveActivity')} on={liveOn} onPress={toggleLive} fg={fg} bg={bg} locked={locked} />
+          <Dial
+            testID="run-live-activity"
+            label={t('run.liveActivity')}
+            on={liveOn}
+            symbol="lock.rectangle"
+            onPress={toggleLive}
+            fg={fg}
+            bg={bg}
+            locked={locked}
+            toggle
+          />
         ) : null}
       </View>
       {locked ? (
@@ -460,9 +492,6 @@ export default function RunScreen() {
           {t('run.unlockHint')}
         </ThemedText>
       ) : null}
-      <ThemedText testID="run-status-line" type="small" style={[styles.status, { color: fg }]}>
-        {t(statusLineKey(Platform.OS === 'ios' ? 'ios' : 'android'))}
-      </ThemedText>
       {voiceNote ? (
         <ThemedText testID="run-voice-note" type="small" style={[styles.status, { color: fg }]}>
           {t('run.voiceMissing')}
@@ -485,12 +514,13 @@ export default function RunScreen() {
         },
         landscape && styles.rootLandscape,
       ]}>
+      <StatusBar style={fgIsLight(fg) ? 'light' : 'dark'} />
       {display}
       {controls}
       {/* An in-screen overlay, not a RN Modal: a Modal shown a second time on iOS was missing from the accessibility
           tree (VoiceOver and Maestro could not reach its buttons; P6 run-controls flow). */}
       {confirmEnd ? (
-        <View style={[StyleSheet.absoluteFill, styles.modalBackdrop]} accessibilityViewIsModal>
+        <View style={[StyleSheet.absoluteFill, styles.modalBackdrop, { backgroundColor: theme.scrim }]} accessibilityViewIsModal>
           <View testID="run-end-dialog" style={[styles.modal, { backgroundColor: theme.background }]}>
             <ThemedText type="smallBold">{t('run.endTitle')}</ThemedText>
             <ThemedText type="small" themeColor="textSecondary">
@@ -517,15 +547,19 @@ function Ctrl({
   label,
   onPress,
   fg,
+  bg,
   locked,
   disabled = false,
+  solid = false,
 }: {
   testID: string;
   label: string;
   onPress: () => void;
   fg: string;
+  bg?: string;
   locked: boolean;
   disabled?: boolean;
+  solid?: boolean;
 }) {
   return (
     <Pressable
@@ -534,41 +568,71 @@ function Ctrl({
       accessibilityLabel={label}
       disabled={disabled || locked}
       onPress={onPress}
-      style={({ pressed }) => [styles.ctrl, { borderColor: fg, opacity: disabled ? 0.35 : pressed ? 0.6 : 1 }]}>
-      <ThemedText type="smallBold" style={{ color: fg }} numberOfLines={1} adjustsFontSizeToFit>
+      style={({ pressed }) => [
+        styles.ctrl,
+        { borderColor: fg, backgroundColor: solid ? fg : 'transparent', opacity: disabled ? 0.35 : pressed ? 0.6 : 1 },
+      ]}>
+      <ThemedText
+        type="smallBold"
+        style={{ color: solid && bg ? bg : fg, fontSize: 13 }}
+        numberOfLines={1}
+        minimumFontScale={0.6}
+        adjustsFontSizeToFit
+        maxFontSizeMultiplier={1.15}>
         {label}
       </ThemedText>
     </Pressable>
   );
 }
 
-function Toggle({
+function glyphKind(symbol: string): DialGlyphKind {
+  return symbol === 'lock' ? 'lock' : symbol === 'speaker.wave.2' ? 'sound' : symbol.startsWith('iphone') ? 'vibration' : 'live';
+}
+
+// Round 56 pt switch or lock with its name underneath; a filled circle means on.
+function Dial({
   testID,
   label,
   on,
+  symbol,
   onPress,
+  onLongPress,
   fg,
   bg,
-  locked,
+  locked = false,
+  toggle = false,
 }: {
   testID: string;
   label: string;
   on: boolean;
+  symbol: ComponentProps<typeof SymbolView>['name'];
   onPress: () => void;
+  onLongPress?: () => void;
   fg: string;
   bg: string;
-  locked: boolean;
+  locked?: boolean;
+  toggle?: boolean;
 }) {
+  const ink = on ? bg : fg;
   return (
     <Pressable
       testID={testID}
-      accessibilityRole="switch"
+      accessibilityRole={toggle ? 'switch' : 'button'}
       accessibilityLabel={label}
-      accessibilityState={{ checked: on }}
+      accessibilityState={toggle ? { checked: on } : undefined}
       disabled={locked}
       onPress={onPress}
-      style={[styles.toggle, { borderColor: fg, backgroundColor: on ? fg : 'transparent' }]}>
-      <ThemedText type="small" style={{ color: on ? bg : fg }}>
+      onLongPress={onLongPress}
+      delayLongPress={800}
+      style={styles.dial}>
+      <View style={[styles.dialCircle, { borderColor: fg, backgroundColor: on ? fg : 'transparent' }]}>
+        {Platform.OS === 'ios' ? (
+          <SymbolView name={symbol} size={22} tintColor={ink} />
+        ) : (
+          <DialGlyph kind={glyphKind(symbol as string)} color={ink} off={toggle && !on} />
+        )}
+      </View>
+      <ThemedText type="small" style={[styles.dialLabel, { color: fg }]} numberOfLines={1} adjustsFontSizeToFit maxFontSizeMultiplier={1.15}>
         {label}
       </ThemedText>
     </Pressable>
@@ -599,11 +663,12 @@ const styles = StyleSheet.create({
   label: {
     fontSize: 44,
     lineHeight: 52,
-    fontWeight: '700',
+    fontWeight: '900',
     textAlign: 'center',
   },
   time: {
-    fontWeight: '700',
+    fontFamily: BrandFonts.numerals,
+    fontWeight: '900',
     fontVariant: ['tabular-nums'],
     textAlign: 'center',
     alignSelf: 'stretch',
@@ -616,31 +681,32 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   progressFill: { height: '100%' },
-  controls: { gap: Spacing.two },
+  controls: { gap: Spacing.three },
   controlsLandscape: { flex: 2 },
-  ctrlRow: { flexDirection: 'row', gap: Spacing.two },
+  ctrlRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', gap: Spacing.two },
   ctrl: {
-    flex: 1,
-    minHeight: 52,
+    width: 56,
+    height: 56,
     borderWidth: 2,
-    borderRadius: 14,
+    borderRadius: 28,
     alignItems: 'center',
     justifyContent: 'center',
-    paddingHorizontal: Spacing.one,
+    paddingHorizontal: 2,
   },
-  toggle: {
-    flex: 1,
-    minHeight: 40,
-    borderWidth: 1,
-    borderRadius: 20,
+  dial: { flex: 1, alignItems: 'center', gap: 4 },
+  dialCircle: {
+    width: 56,
+    height: 56,
+    borderWidth: 2,
+    borderRadius: 28,
     alignItems: 'center',
     justifyContent: 'center',
   },
-  status: { textAlign: 'center', opacity: 0.9 },
+  dialLabel: { fontSize: 12, lineHeight: 16, textAlign: 'center', alignSelf: 'stretch' },
+  status: { textAlign: 'center', opacity: 0.85, fontSize: 12, lineHeight: 16 },
   conflictButton: { alignSelf: 'stretch' },
   modalBackdrop: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.5)',
     alignItems: 'center',
     justifyContent: 'center',
     padding: Spacing.four,
@@ -648,7 +714,7 @@ const styles = StyleSheet.create({
   modal: {
     alignSelf: 'stretch',
     maxWidth: 420,
-    borderRadius: 16,
+    borderRadius: Radius.card,
     padding: Spacing.four,
     gap: Spacing.three,
   },

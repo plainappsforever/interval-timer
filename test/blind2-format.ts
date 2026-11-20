@@ -26,6 +26,7 @@ import { clampName, validateTimer } from '@/engine/validation';
 import { makeT } from '@/i18n';
 
 import { createTestDb } from './node-sqlite-db';
+import { zoneCase } from './zone-child';
 
 type Json = null | boolean | number | string | Json[] | { [k: string]: Json };
 type CountdownFrom = 3 | 5 | 10;
@@ -43,7 +44,7 @@ export const ADAPTER_NOTES_B2 = [
   'backup: two in-memory DBs (createTestDb + migrate, no seeding). Each gets its timers through createTimer(db, def, 1 000 000 + i, kind) and sessions through addSession (interrupted false); to land on the README ids, an id gap gets a row that is deleted again with deleteTimer/deleteSession (the same holes a deleted timer/session leaves on a phone). The backup file = exportBackup(backupDb, 2 000 000); restore = parseBackup(text) + restoreBackup(currentDb, parsed, mode). Result = listTimers/listSessions of the current DB.',
   'csv: toCsv(sessions) with interrupted = false.',
   'share: none = decodeTimerLink(encodeTimerLink(timer)); file = decodeTimerText(encodeTimerFile(timer)); tamper ops = the set\'s own share_tamper.py applied to the engine\'s link, then decodeTimerLink; encodeInvalid = encodeTimerLink (a throw -> ok false) then decodeTimerLink. ok -> {ok, timer}; refused -> {ok:false}; a throw anywhere -> {threw, error}.',
-  'stats: process.env.TZ = tz for the call. statsKeys = dayKey/isoWeekKey/monthKey(atMs). statsTotals = buckets(sessions, period) -> {key: {count: totals.sessions, actualS}}. streak = streak(sessions, nowMs). Sessions get id = position + 1, timerId null, timerName "", endedAt = startedAt + actualS * 1000, plannedS null, completed true, 0 skips/pauses, interrupted false, note "".',
+  'stats: computed in a process started with TZ = tz (test/zone-child.ts re-runs the script per zone). statsKeys = dayKey/isoWeekKey/monthKey(atMs). statsTotals = buckets(sessions, period) -> {key: {count: totals.sessions, actualS}}. streak = streak(sessions, nowMs). Sessions get id = position + 1, timerId null, timerName "", endedAt = startedAt + actualS * 1000, plannedS null, completed true, 0 skips/pauses, interrupted false, note "".',
   'templates: seedTemplatesOnce(db, makeT("en")) on an empty DB; the timer whose lowercased name contains keyword; totalMs = buildTimeline(it, {countdownFrom 3, en}).totalMs. templateRestore: seed; deleteTimer for each deleteKeywords match; updateTimer renames the renameKeyword timer (name + suffix) and sets the editKeyword timer\'s first interval seconds; restoreTemplates(db, makeT("en")); result timers {name, blocks}.',
 ];
 
@@ -84,16 +85,7 @@ function nextCueDump(t: Timeline, after: number): Json {
   return { atMs: c.atMs, kinds };
 }
 
-function withTz<T>(tz: string, fn: () => T): T {
-  const prev = process.env.TZ;
-  process.env.TZ = tz;
-  try {
-    return fn();
-  } finally {
-    if (prev === undefined) delete process.env.TZ;
-    else process.env.TZ = prev;
-  }
-}
+const withTz = zoneCase;
 
 type MiniSession = { startedAt: number; actualS: number };
 const statsSession = (s: MiniSession, i: number): Session => ({ id: i + 1, timerId: null, timerName: '', startedAt: s.startedAt, endedAt: s.startedAt + s.actualS * 1000, plannedS: null, actualS: s.actualS, completed: true, skippedIntervals: 0, pauses: 0, interrupted: false, note: '' });

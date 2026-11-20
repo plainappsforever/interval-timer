@@ -6,12 +6,13 @@ import { ScrollView, StyleSheet, TextInput, View } from 'react-native';
 
 import { Button } from '@/components/button';
 import { ThemedText } from '@/components/themed-text';
-import { Spacing } from '@/constants/theme';
+import { Radius, Spacing } from '@/constants/theme';
 import { useSQLiteContext } from '@/db/provider';
 import { getSession, updateSessionNote, type Session } from '@/db/sessions';
 import { formatDuration } from '@/engine/format';
 import { useT } from '@/hooks/use-t';
 import { useTheme } from '@/hooks/use-theme';
+import { maybeAskForRating } from '@/lib/rating';
 import { armStart } from '@/lib/start-intent';
 
 const NOTE_MAX = 500;
@@ -29,6 +30,8 @@ export default function DoneScreen() {
     getSession(db, Number(id)).then((s) => {
       setSession(s);
       setNote(s?.note ?? '');
+      // After a workout that ran to its end, once enough of them are behind the user (src/lib/rating.ts decides).
+      if (s?.completed) maybeAskForRating(db);
     });
   }, [db, id]);
 
@@ -110,5 +113,5 @@ export default function DoneScreen() {
 const styles = StyleSheet.create({
   content: { padding: Spacing.three, gap: Spacing.two },
   row: { flexDirection: 'row', justifyContent: 'space-between', paddingVertical: Spacing.two, borderBottomWidth: StyleSheet.hairlineWidth },
-  note: { borderWidth: 1, borderRadius: 8, padding: Spacing.two, minHeight: 80, fontSize: 16, textAlignVertical: 'top' },
+  note: { borderWidth: 1, borderRadius: Radius.control, padding: Spacing.two, minHeight: 80, fontSize: 16, textAlignVertical: 'top' },
 });

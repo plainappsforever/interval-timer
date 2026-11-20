@@ -1,0 +1,32 @@
+appId: ${APP_ID}
+name: Preview video drive (R5 fix round), muted except a short Sound-ON window; was store frames raw captures (R2b) - one language per run, env LANGTAG (en, de, fr, es, it) and LOCALE (en_US, de_DE, ...); run by scripts/store-captures.sh
+tags:
+  - screenshots
+---
+# Fresh install that starts in the given language (templates and interval names are stored in that language at first launch).
+# Release build only (no dev launcher to pick). One shared circuit is imported so "My timers" has a named circuit.
+- launchApp:
+    stopApp: true
+    arguments:
+      -AppleLanguages: "(${LANGTAG})"
+      -AppleLocale: "${LOCALE}"
+    clearState: true
+    arguments:
+      -AppleLanguages: "(${LANGTAG})"
+      -AppleLocale: "${LOCALE}"
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 90000
+- waitForAnimationToEnd:
+    timeout: 5000
+# Owner order 2026-11-16: no sound from the simulator. Voice cues OFF in the app's settings (default stays on in code), and the
+# run screen's Sound toggle is tapped off at the start of every run below.
+- tapOn:
+    id: open-settings
+- extendedWaitUntil:
+    visible:
+      id: set-voice
+    timeout: 10000
+- tapOn:
+    id: set-voice

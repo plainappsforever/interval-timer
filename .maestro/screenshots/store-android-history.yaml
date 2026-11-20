@@ -1,0 +1,31 @@
+appId: ${APP_ID}
+name: Android store frames 3 and 6 after scripts/store-captures-android.sh has put the colour and history seed into the database
+tags:
+  - screenshots
+---
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 15000
+- waitForAnimationToEnd:
+    timeout: 3000
+- swipe:
+    start: 50%, 80%
+    end: 50%, 35%
+- waitForAnimationToEnd:
+    timeout: 2000
+- takeScreenshot: 03-tiles
+- swipe:
+    start: 50%, 35%
+    end: 50%, 90%
+- tapOn:
+    id: open-history
+- extendedWaitUntil:
+    visible:
+      id: history-screen
+    timeout: 10000
+- waitForAnimationToEnd:
+    timeout: 2000
+- takeScreenshot: 06-history

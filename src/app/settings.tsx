@@ -4,7 +4,7 @@
 // backup / restore / restore templates, "What keeps running when locked" and privacy. Every value is saved at once.
 import Constants from 'expo-constants';
 import * as DocumentPicker from 'expo-document-picker';
-import { Stack } from 'expo-router';
+import { Stack, useRouter } from 'expo-router';
 import * as Speech from 'expo-speech';
 import { useCallback, useEffect, useState } from 'react';
 import { Alert, Linking, Platform, Pressable, ScrollView, StyleSheet, Switch, View } from 'react-native';
@@ -13,7 +13,7 @@ import VoiceRender, { type VoiceInfo } from '../../modules/voice-render/src/Voic
 import { Button } from '@/components/button';
 import { ThemedText } from '@/components/themed-text';
 import { PRIVACY_URL } from '@/constants/app';
-import { Spacing } from '@/constants/theme';
+import { Radius, Spacing } from '@/constants/theme';
 import { exportBackup, restoreBackup, type RestoreSummary } from '@/db/backup';
 import { useSQLiteContext } from '@/db/provider';
 import { DEFAULT_SETTINGS, readSettings, setSetting, type BeepSet, type CountdownFrom, type Settings, type ThemePreference } from '@/db/settings';
@@ -28,6 +28,7 @@ import { listBackupFiles, readTextFile, saveBackupFile, shareFile, type SavedBac
 import { liveActivityAvailable } from '@/lib/live-activity';
 import { applyThemePreference } from '@/lib/theme-preference';
 import { VOICE_LOCALE } from '@/lib/voice';
+import { speechSilence } from '@/lib/silent-audio';
 
 const THEME_OPTIONS: ThemePreference[] = ['system', 'light', 'dark'];
 const BEEP_SETS: BeepSet[] = ['classic', 'soft', 'bright'];
@@ -42,6 +43,7 @@ export default function SettingsScreen() {
   const db = useSQLiteContext();
   const theme = useTheme();
   const t = useT();
+  const router = useRouter();
   const language = useLanguage();
   const [s, setS] = useState<Settings>(DEFAULT_SETTINGS);
   const [languageOpen, setLanguageOpen] = useState(false);
@@ -100,6 +102,7 @@ export default function SettingsScreen() {
     Speech.stop();
     Speech.speak(`${t('cue.getReady')}. 3, 2, 1. ${t('cue.work')}`, {
       language: VOICE_LOCALE[language],
+      ...speechSilence(),
       ...(s.voiceId ? { voice: s.voiceId } : {}),
     });
   }
@@ -265,7 +268,7 @@ export default function SettingsScreen() {
 
         <Section title={t('settings.data')}>
           {status ? (
-            <ThemedText testID="settings-status" type="smallBold" themeColor="tint">
+            <ThemedText testID="settings-status" type="smallBold" themeColor="tintText">
               {status}
             </ThemedText>
           ) : null}
@@ -323,6 +326,9 @@ export default function SettingsScreen() {
             <ThemedText type="small" themeColor="textSecondary">
               {PRIVACY_URL}
             </ThemedText>
+          </Pressable>
+          <Pressable testID="settings-licenses" accessibilityRole="link" onPress={() => router.push('/licenses')}>
+            <ThemedText type="link">{t('licenses.open')}</ThemedText>
           </Pressable>
         </Section>
 
@@ -403,10 +409,10 @@ const styles = StyleSheet.create({
   section: { marginTop: Spacing.two },
   label: { marginTop: Spacing.one },
   flex: { flex: 1 },
-  rowLine: { flexDirection: 'row', alignItems: 'center', borderRadius: 10, padding: Spacing.three },
-  option: { borderRadius: 8, paddingVertical: Spacing.two, paddingHorizontal: Spacing.three },
+  rowLine: { flexDirection: 'row', alignItems: 'center', borderRadius: Radius.card, padding: Spacing.three },
+  option: { borderRadius: Radius.control, paddingVertical: Spacing.two, paddingHorizontal: Spacing.three },
   switchRow: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two, minHeight: 44 },
-  card: { borderRadius: 12, padding: Spacing.three, gap: Spacing.two },
-  segmented: { flexDirection: 'row', borderRadius: 12, padding: Spacing.one, gap: Spacing.one },
-  segment: { flex: 1, alignItems: 'center', paddingVertical: Spacing.two, borderRadius: 8 },
+  card: { borderRadius: Radius.card, padding: Spacing.three, gap: Spacing.two },
+  segmented: { flexDirection: 'row', borderRadius: Radius.control, padding: Spacing.one, gap: Spacing.one },
+  segment: { flex: 1, alignItems: 'center', paddingVertical: Spacing.two, borderRadius: Radius.inner },
 });

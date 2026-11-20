@@ -4,12 +4,16 @@
 // one that ended while the app was away is saved to history and shown on the Done screen.
 import { Link, Stack, useFocusEffect, useRouter } from 'expo-router';
 import { useCallback, useDeferredValue, useEffect, useRef, useState } from 'react';
-import { BackHandler, Pressable, SectionList, StyleSheet, TextInput, View } from 'react-native';
+import { SymbolView } from 'expo-symbols';
+import { BackHandler, Platform, Pressable, SectionList, StyleSheet, TextInput, View, type PressableProps } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Button } from '@/components/button';
+import { Card } from '@/components/card';
+import { PatternRing } from '@/components/pattern-ring';
+import { PatternStrip } from '@/components/pattern-strip';
 import { ThemedText } from '@/components/themed-text';
-import { Spacing } from '@/constants/theme';
+import { BrandFonts, Radius, Spacing } from '@/constants/theme';
 import { useSQLiteContext } from '@/db/provider';
 import { addSession } from '@/db/sessions';
 import { getSetting, setSetting } from '@/db/settings';
@@ -17,18 +21,39 @@ import { deleteTimer, duplicateTimer, listTimers } from '@/db/timers';
 import type { Db } from '@/db/types';
 import { formatDuration, formatElapsedMs } from '@/engine/format';
 import type { Timer } from '@/engine/model';
-import { colorOf } from '@/engine/palette';
 import { evaluateRecovery, parseRecovery, recoveredTimeline, sessionOf, type RecoveryRecord } from '@/engine/recovery';
 import { clampName, plannedSeconds } from '@/engine/validation';
 import { useLanguage, useT } from '@/hooks/use-t';
 import { useTheme } from '@/hooks/use-theme';
 import { otherActiveRun } from '@/lib/active-run';
+import { patternOf, patternSummary, ringArcs } from '@/lib/pattern';
 import { endLiveActivities } from '@/lib/live-activity';
 import { shareTimer } from '@/lib/share';
 import { armStart } from '@/lib/start-intent';
 
-const SEARCH_FROM = 10;
 const UNDO_MS = 5000;
+
+/** "8 rounds · 20 s / 10 s" under the poster ring; a timer with several blocks says so instead of the lengths. */
+function summaryLine(timer: Timer, t: ReturnType<typeof useT>): string {
+  const s = patternSummary(timer);
+  const rounds = s.rounds === 1 ? t('home.roundsOne') : t('home.rounds', { n: s.rounds });
+  if (s.blocks > 1) return `${t('home.blocks', { n: s.blocks })} · ${rounds}`;
+  const len = (n: number) => (n < 60 ? `${n} s` : formatDuration(n));
+  return `${rounds} · ${s.lengths.map(len).join(' / ')}`;
+}
+
+/** Outline pill (D24 sheet: "New timer" and "Import" under the poster); forwards its props so `Link asChild` works. */
+function OutlinePill({ label, style: _ignored, ...rest }: PressableProps & { label: string }) {
+  const theme = useTheme();
+  return (
+    <Pressable
+      accessibilityRole="button"
+      {...rest}
+      style={[styles.pill, { borderColor: theme.tintText }]}>
+      <ThemedText style={[styles.pillLabel, { color: theme.tintText }]}>{label}</ThemedText>
+    </Pressable>
+  );
+}
 
 /** Saves a recovered run that is over (or that the user ends) as a history row and clears the record. */
 async function settleRecovery(db: Db, record: RecoveryRecord, elapsedMs: number, completed: boolean): Promise<number> {
@@ -245,17 +270,23 @@ export default function HomeScreen() {
       <Stack.Screen
         options={{
           title: t('home.title'),
+          headerTitleAlign: 'center',
           headerLeft: () => (
             <Link href="/history" asChild>
-              <Pressable testID="open-history" accessibilityLabel={t('history.title')} hitSlop={8}>
-                <ThemedText themeColor="tint">{t('history.title')}</ThemedText>
+              <Pressable testID="open-history" accessibilityLabel={t('history.title')} hitSlop={8} style={styles.headerLink}>
+                {Platform.OS === 'ios' ? <SymbolView name="clock.arrow.circlepath" size={17} tintColor={theme.tintText} /> : null}
+                <ThemedText themeColor="tintText">{t('history.title')}</ThemedText>
               </Pressable>
             </Link>
           ),
           headerRight: () => (
             <Link href="/settings" asChild>
-              <Pressable testID="open-settings" accessibilityLabel={t('settings.title')} hitSlop={8}>
-                <ThemedText themeColor="tint">{t('settings.title')}</ThemedText>
+              <Pressable testID="open-settings" accessibilityLabel={t('settings.title')} hitSlop={8} style={styles.headerLink}>
+                {Platform.OS === 'ios' ? (
+                  <SymbolView name="gearshape" size={20} tintColor={theme.tintText} />
+                ) : (
+                  <ThemedText themeColor="tintText">{t('settings.title')}</ThemedText>
+                )}
               </Pressable>
             </Link>
           ),
@@ -279,15 +310,7 @@ export default function HomeScreen() {
         ListHeaderComponent={
           <View style={styles.header}>
             {offer && offerOutcome?.status === 'resume' ? (
-              <View
-                testID="recovery-offer"
-                style={[
-                  styles.offer,
-                  {
-                    backgroundColor: theme.backgroundElement,
-                    borderColor: theme.tint,
-                  },
-                ]}>
+              <Card testID="recovery-offer" style={[styles.offer, { borderColor: theme.tint }]}>
                 <ThemedText testID="recovery-text" type="smallBold">
                   {t('recovery.offer', {
                     name: offer.timerName,
@@ -296,50 +319,58 @@ export default function HomeScreen() {
                 </ThemedText>
                 <Button testID="recovery-resume" label={t('recovery.resume', { time: offerTime })} onPress={resume} />
                 <Button testID="recovery-end" variant="secondary" label={t('recovery.end')} onPress={endRecovered} />
-              </View>
+              </Card>
             ) : null}
-            {last && !offer ? (
+            {last ? (
               <Pressable
-                testID="start-last"
+                testID="poster"
                 accessibilityRole="button"
-                accessibilityLabel={t('home.startNamed', { name: last.name })}
-                onPress={() => start(last)}
-                style={({ pressed }) => [
-                  styles.bigStart,
-                  {
-                    backgroundColor: colorOf(last.color, 'work'),
-                    opacity: pressed ? 0.8 : 1,
-                  },
-                ]}>
-                <ThemedText style={styles.bigStartLabel}>{t('home.startNamed', { name: last.name })}</ThemedText>
-                <ThemedText style={styles.bigStartSub}>{formatDuration(plannedSeconds(last))}</ThemedText>
+                // "Edit, <name>", not "<name>, ...": the Maestro flows address the list rows by that pattern (home-actions, editor)
+                accessibilityLabel={`${t('home.edit')}, ${last.name}`}
+                accessibilityHint={summaryLine(last, t)}
+                onPress={() => router.push({ pathname: '/timer/[id]', params: { id: String(last.id) } })}
+                style={styles.poster}>
+                <ThemedText style={styles.posterName} numberOfLines={1}>
+                  {last.name}
+                </ThemedText>
+                <PatternRing arcs={ringArcs(last)}>
+                  <ThemedText numeric style={styles.posterTotal} numberOfLines={1} adjustsFontSizeToFit>
+                    {formatDuration(plannedSeconds(last))}
+                  </ThemedText>
+                  <ThemedText numeric style={styles.posterSummary} numberOfLines={2} adjustsFontSizeToFit themeColor="textSecondary">
+                    {summaryLine(last, t)}
+                  </ThemedText>
+                </PatternRing>
               </Pressable>
-            ) : null}
+            ) : (
+              <View testID="home-empty" style={styles.poster}>
+                <PatternRing arcs={[]} />
+                <ThemedText themeColor="textSecondary" style={styles.emptyPoster}>
+                  {t('home.empty')}
+                </ThemedText>
+              </View>
+            )}
             <View style={styles.rowButtons}>
-              <Link href="/timer/new" asChild>
-                <Button testID="new-timer" label={t('home.new')} style={styles.flex} />
-              </Link>
-              <Link href="/import" asChild>
-                <Button testID="open-import" variant="secondary" label={t('home.import')} style={styles.flex} />
-              </Link>
+              <OutlinePill testID="new-timer" label={t('home.new')} onPress={() => router.push('/timer/new')} />
+              <OutlinePill testID="open-import" label={t('home.import')} onPress={() => router.push('/import')} />
             </View>
-            {visible.length > SEARCH_FROM ? (
+            {timers.length > 0 ? (
               <TextInput
                 testID="home-search"
                 accessibilityLabel={t('home.search')}
+                maxFontSizeMultiplier={1.3}
                 placeholder={t('home.search')}
                 placeholderTextColor={theme.textSecondary}
                 value={query}
                 onChangeText={onSearch}
                 autoCorrect={false}
-                style={[
-                  styles.search,
-                  {
-                    color: theme.text,
-                    backgroundColor: theme.backgroundElement,
-                  },
-                ]}
+                style={[styles.search, { color: theme.text, backgroundColor: theme.backgroundElement, fontFamily: BrandFonts.body }]}
               />
+            ) : null}
+            {visible.length > 0 && !q && mine.length === 0 ? (
+              <ThemedText testID="mine-empty" themeColor="textSecondary" type="small" style={styles.mineEmpty}>
+                {t('home.empty')}
+              </ThemedText>
             ) : null}
           </View>
         }
@@ -349,63 +380,77 @@ export default function HomeScreen() {
           </ThemedText>
         )}
         ListEmptyComponent={
-          <ThemedText themeColor="textSecondary" style={styles.empty}>
-            {q ? t('home.noMatch') : t('home.empty')}
-          </ThemedText>
+          q ? (
+            <ThemedText themeColor="textSecondary" style={styles.empty}>
+              {t('home.noMatch')}
+            </ThemedText>
+          ) : null
         }
         renderItem={({ item }) => {
           const subtitle = item.lastUsedAt
             ? `${formatDuration(plannedSeconds(item))} · ${t('home.lastUsed', { date: new Date(item.lastUsedAt).toLocaleDateString(language) })}`
             : formatDuration(plannedSeconds(item));
           return (
-            <View
-              style={[
-                styles.row,
-                {
-                  backgroundColor: theme.backgroundElement,
-                  borderLeftColor: colorOf(item.color, 'work'),
-                },
-              ]}>
-              <Pressable
-                testID={`timer-${item.id}`}
-                accessibilityRole="button"
-                accessibilityLabel={`${item.name}, ${subtitle}`}
-                accessibilityHint={t('home.edit')}
-                // Screen readers reach Duplicate / Share / Delete from the row too (actions rotor / TalkBack menu).
-                accessibilityActions={[
-                  { name: 'duplicate', label: t('home.duplicate') },
-                  { name: 'share', label: t('home.share') },
-                  { name: 'delete', label: t('common.delete') },
-                ]}
-                onAccessibilityAction={(e) => rowAction(item, e.nativeEvent.actionName)}
-                onPress={() =>
-                  router.push({
-                    pathname: '/timer/[id]',
-                    params: { id: String(item.id) },
-                  })
-                }
-                onLongPress={() => setActionsFor(item)}
-                style={styles.rowMain}>
-                <ThemedText type="smallBold">{item.name}</ThemedText>
-                <ThemedText type="small" themeColor="textSecondary">
-                  {subtitle}
-                </ThemedText>
-              </Pressable>
-              <Pressable
-                testID={`start-${item.id}`}
-                accessibilityRole="button"
-                accessibilityLabel={t('home.startNamed', { name: item.name })}
-                hitSlop={8}
-                onPress={() => start(item)}
-                style={[styles.play, { backgroundColor: theme.tint }]}>
-                <ThemedText style={{ color: theme.onTint, fontWeight: '700' }}>{t('home.start')}</ThemedText>
-              </Pressable>
-            </View>
+            <Card style={styles.row}>
+              <View style={styles.rowTop}>
+                <Pressable
+                  testID={`timer-${item.id}`}
+                  accessibilityRole="button"
+                  accessibilityLabel={`${item.name}, ${subtitle}`}
+                  accessibilityHint={t('home.edit')}
+                  // Screen readers reach Duplicate / Share / Delete from the row too (actions rotor / TalkBack menu).
+                  accessibilityActions={[
+                    { name: 'duplicate', label: t('home.duplicate') },
+                    { name: 'share', label: t('home.share') },
+                    { name: 'delete', label: t('common.delete') },
+                  ]}
+                  onAccessibilityAction={(e) => rowAction(item, e.nativeEvent.actionName)}
+                  onPress={() =>
+                    router.push({
+                      pathname: '/timer/[id]',
+                      params: { id: String(item.id) },
+                    })
+                  }
+                  onLongPress={() => setActionsFor(item)}
+                  style={styles.rowMain}>
+                  <ThemedText style={styles.tileName} numberOfLines={1}>
+                    {item.name}
+                  </ThemedText>
+                  <ThemedText numeric type="small" themeColor="textSecondary" style={styles.tileSub}>
+                    {subtitle}
+                  </ThemedText>
+                </Pressable>
+                <Pressable
+                  testID={`start-${item.id}`}
+                  accessibilityRole="button"
+                  accessibilityLabel={t('home.startNamed', { name: item.name })}
+                  hitSlop={8}
+                  onPress={() => start(item)}
+                  style={[styles.play, { backgroundColor: theme.tint }]}>
+                  <ThemedText style={{ color: theme.onTint, fontWeight: '800' }}>{t('home.start')}</ThemedText>
+                </Pressable>
+              </View>
+              <PatternStrip pieces={patternOf(item)} />
+            </Card>
           );
         }}
       />
+      {last && !offer ? (
+        <View style={[styles.bar, { backgroundColor: theme.background, borderTopColor: theme.border, paddingBottom: Spacing.two + insets.bottom }]}>
+          <Pressable
+            testID="start-last"
+            accessibilityRole="button"
+            accessibilityLabel={t('home.startNamed', { name: last.name })}
+            onPress={() => start(last)}
+            style={({ pressed }) => [styles.barButton, { backgroundColor: theme.tint, opacity: pressed ? 0.8 : 1 }]}>
+            <ThemedText style={[styles.barLabel, { color: theme.onTint }]} numberOfLines={1}>
+              {t('home.startNamed', { name: last.name })}
+            </ThemedText>
+          </Pressable>
+        </View>
+      ) : null}
       {pendingDelete ? (
-        <View testID="undo-bar" style={[styles.undoBar, { backgroundColor: theme.text }]}>
+        <View testID="undo-bar" style={[styles.undoBar, { backgroundColor: theme.text, bottom: BAR_HEIGHT + insets.bottom + Spacing.three }]}>
           <ThemedText style={{ color: theme.background, flex: 1 }}>{t('home.deleted', { name: pendingDelete.name })}</ThemedText>
           <Pressable testID="undo-delete" accessibilityRole="button" onPress={undoDelete} hitSlop={8}>
             <ThemedText type="smallBold" style={{ color: theme.background }}>
@@ -417,7 +462,7 @@ export default function HomeScreen() {
       {/* An in-screen overlay, not a RN Modal (D39.5, review F6): a Modal shown a second time on iOS was missing from the
           accessibility tree (P6 run-controls flow). Same pattern as the running screen's End dialog. */}
       {actionsFor ? (
-        <View testID="timer-actions-overlay" style={[StyleSheet.absoluteFill, styles.backdrop]} accessibilityViewIsModal>
+        <View testID="timer-actions-overlay" style={[StyleSheet.absoluteFill, styles.backdrop, { backgroundColor: theme.scrim }]} accessibilityViewIsModal>
           <Pressable
             testID="action-backdrop"
             style={StyleSheet.absoluteFill}
@@ -472,64 +517,64 @@ export default function HomeScreen() {
   );
 }
 
+const BAR_HEIGHT = 56 + Spacing.two * 2;
+
 const styles = StyleSheet.create({
   content: {
     padding: Spacing.three,
     gap: Spacing.two,
-    paddingBottom: Spacing.six,
+    paddingBottom: Spacing.four,
   },
   header: { gap: Spacing.three, marginBottom: Spacing.two },
+  headerLink: { flexDirection: 'row', alignItems: 'center', gap: Spacing.one },
   offer: {
-    borderRadius: 12,
     borderWidth: 2,
     padding: Spacing.three,
     gap: Spacing.two,
   },
-  bigStart: {
-    borderRadius: 16,
-    paddingVertical: Spacing.four,
-    paddingHorizontal: Spacing.three,
-    alignItems: 'center',
-    gap: Spacing.one,
-  },
-  bigStartLabel: {
-    color: '#FFFFFF',
-    fontSize: 24,
-    lineHeight: 30,
-    fontWeight: '700',
-    textAlign: 'center',
-  },
-  bigStartSub: { color: '#FFFFFF', fontSize: 16, fontWeight: '600' },
+  poster: { alignItems: 'center', gap: Spacing.three, paddingVertical: Spacing.two },
+  posterName: { fontSize: 28, lineHeight: 34, fontWeight: '900', textAlign: 'center' },
+  // R2a: the numerals sit inside a 240 pt ring (inner width 188 pt); 64 pt black "04:10" measured about 220 pt and hit the bars.
+  posterTotal: { fontSize: 48, lineHeight: 54, fontWeight: '900', maxWidth: 150, textAlign: 'center' },
+  posterSummary: { fontSize: 13, lineHeight: 17, fontWeight: '600', textAlign: 'center', maxWidth: 150 },
+  emptyPoster: { textAlign: 'center', fontSize: 15, lineHeight: 21, paddingHorizontal: Spacing.three },
+  mineEmpty: { textAlign: 'center' },
   rowButtons: { flexDirection: 'row', gap: Spacing.two },
-  flex: { flex: 1 },
+  pill: { flex: 1, minHeight: 48, borderRadius: 999, borderWidth: 2, alignItems: 'center', justifyContent: 'center', paddingHorizontal: Spacing.three },
+  pillLabel: { fontSize: 16, fontWeight: '800' },
   search: {
-    borderRadius: 10,
+    borderRadius: Radius.control,
     paddingHorizontal: Spacing.three,
     paddingVertical: Spacing.two,
     fontSize: 16,
+    minHeight: 44,
   },
   sectionHeader: { marginTop: Spacing.two, marginBottom: Spacing.one },
   empty: { textAlign: 'center', marginTop: Spacing.five },
-  row: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    borderRadius: 12,
-    borderLeftWidth: 6,
-    marginBottom: Spacing.two,
-  },
+  row: { marginBottom: Spacing.two, overflow: 'hidden' },
+  rowTop: { flexDirection: 'row', alignItems: 'center' },
   rowMain: { flex: 1, padding: Spacing.three, gap: Spacing.one },
+  tileName: { fontSize: 17, lineHeight: 22, fontWeight: '800' },
+  tileSub: { fontSize: 13, lineHeight: 18 },
   play: {
     marginRight: Spacing.three,
     paddingHorizontal: Spacing.three,
     paddingVertical: Spacing.two,
-    borderRadius: 18,
+    borderRadius: 999,
   },
+  // In the column below the list (not laid over it), so the first screen never hides a heading behind the bar.
+  bar: {
+    paddingTop: Spacing.two,
+    paddingHorizontal: Spacing.three,
+    borderTopWidth: StyleSheet.hairlineWidth,
+  },
+  barButton: { height: 56, borderRadius: 999, alignItems: 'center', justifyContent: 'center', paddingHorizontal: Spacing.four },
+  barLabel: { fontSize: 19, lineHeight: 24, fontWeight: '800' },
   undoBar: {
     position: 'absolute',
     left: Spacing.three,
     right: Spacing.three,
-    bottom: Spacing.five,
-    borderRadius: 12,
+    borderRadius: Radius.control,
     padding: Spacing.three,
     flexDirection: 'row',
     alignItems: 'center',
@@ -537,13 +582,12 @@ const styles = StyleSheet.create({
   },
   backdrop: {
     flex: 1,
-    backgroundColor: 'rgba(0,0,0,0.4)',
     justifyContent: 'flex-end',
   },
   sheet: {
     padding: Spacing.four,
     gap: Spacing.two,
-    borderTopLeftRadius: 16,
-    borderTopRightRadius: 16,
+    borderTopLeftRadius: Radius.card,
+    borderTopRightRadius: Radius.card,
   },
 });

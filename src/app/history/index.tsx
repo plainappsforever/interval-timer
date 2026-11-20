@@ -5,8 +5,9 @@ import { Stack, useFocusEffect, useRouter } from 'expo-router';
 import { useCallback, useState } from 'react';
 import { Pressable, SectionList, StyleSheet, View } from 'react-native';
 
+import { PatternRing } from '@/components/pattern-ring';
 import { ThemedText } from '@/components/themed-text';
-import { Spacing } from '@/constants/theme';
+import { Radius, Spacing } from '@/constants/theme';
 import { useSQLiteContext } from '@/db/provider';
 import { listSessions, type Session } from '@/db/sessions';
 import { toCsv } from '@/engine/csv';
@@ -46,6 +47,7 @@ export default function HistoryScreen() {
 
   const header = (
     <View style={styles.header}>
+      {list.length > 0 ? (
       <View testID="history-stats" style={[styles.card, { backgroundColor: theme.backgroundElement }]}>
         <Stat testID="stat-today" label={t('history.today')} value={totalLine(sum.today)} />
         <Stat testID="stat-week" label={t('history.thisWeek')} value={totalLine(sum.thisWeek)} />
@@ -54,6 +56,7 @@ export default function HistoryScreen() {
         <Stat testID="stat-streak" label={t('history.streak')} value={String(sum.streak)} />
         <Stat testID="stat-longest" label={t('history.longest')} value={String(sum.longestStreak)} />
       </View>
+      ) : null}
       {sum.mostUsed.length > 0 ? (
         <View testID="history-most-used" style={[styles.card, { backgroundColor: theme.backgroundElement }]}>
           <ThemedText type="smallBold">{t('history.mostUsed')}</ThemedText>
@@ -88,7 +91,7 @@ export default function HistoryScreen() {
           accessibilityRole="button"
           onPress={() => shareCsv(toCsv(list), t('history.export')).catch(() => {})}
           style={[styles.exportButton, { borderColor: theme.tint }]}>
-          <ThemedText type="smallBold" themeColor="tint">
+          <ThemedText type="smallBold" themeColor="tintText">
             {t('history.export')}
           </ThemedText>
         </Pressable>
@@ -110,9 +113,12 @@ export default function HistoryScreen() {
         ListHeaderComponent={header}
         ListEmptyComponent={
           sessions ? (
-            <ThemedText testID="history-empty" themeColor="textSecondary" style={styles.empty}>
-              {t('history.empty')}
-            </ThemedText>
+            <View style={styles.emptyBox}>
+              <PatternRing arcs={[]} size={180} thickness={20} />
+              <ThemedText testID="history-empty" themeColor="textSecondary" style={styles.empty}>
+                {t('history.empty')}
+              </ThemedText>
+            </View>
           ) : null
         }
         renderSectionHeader={({ section }) => (
@@ -166,14 +172,15 @@ function Stat({ label, value, testID }: { label: string; value: string; testID?:
 const styles = StyleSheet.create({
   content: { padding: Spacing.three, paddingBottom: Spacing.six },
   header: { gap: Spacing.three, marginBottom: Spacing.two },
-  card: { borderRadius: 12, padding: Spacing.three, gap: Spacing.two },
+  card: { borderRadius: Radius.card, padding: Spacing.three, gap: Spacing.two },
   stat: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
   flex: { flex: 1 },
   segmented: { flexDirection: 'row', gap: Spacing.one },
-  segment: { flex: 1, alignItems: 'center', paddingVertical: Spacing.two, borderRadius: 8 },
-  exportButton: { borderWidth: 1, borderRadius: 12, alignItems: 'center', paddingVertical: Spacing.two },
-  empty: { textAlign: 'center', marginTop: Spacing.five },
+  segment: { flex: 1, alignItems: 'center', paddingVertical: Spacing.two, borderRadius: Radius.inner },
+  exportButton: { borderWidth: 1, borderRadius: Radius.control, alignItems: 'center', paddingVertical: Spacing.two },
+  emptyBox: { alignItems: 'center', gap: Spacing.four, marginTop: Spacing.five },
+  empty: { textAlign: 'center' },
   dayHeader: { marginTop: Spacing.two, marginBottom: Spacing.one },
-  row: { borderRadius: 12, padding: Spacing.three, gap: Spacing.one, marginBottom: Spacing.two },
+  row: { borderRadius: Radius.card, padding: Spacing.three, gap: Spacing.one, marginBottom: Spacing.two },
   rowTop: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
 });

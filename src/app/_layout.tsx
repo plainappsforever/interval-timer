@@ -1,7 +1,9 @@
-import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
+import { DarkTheme, DefaultTheme, Stack, ThemeProvider, type Theme } from 'expo-router';
 import { defaultDatabaseDirectory, type SQLiteDatabase } from 'expo-sqlite';
+import { StatusBar } from 'expo-status-bar';
 import { useColorScheme } from 'react-native';
 
+import { BrandFonts, Colors } from '@/constants/theme';
 import { migrate } from '@/db/migrations';
 import { DatabaseProvider } from '@/db/provider';
 import { readSettings } from '@/db/settings';
@@ -24,6 +26,24 @@ async function initDatabase(db: SQLiteDatabase) {
   await seedTemplatesOnce(db, makeT(getLanguage()));
 }
 
+// D24: header, back button and screen backgrounds follow the brand tokens instead of React Navigation's iOS blue.
+function navigationTheme(dark: boolean): Theme {
+  const base = dark ? DarkTheme : DefaultTheme;
+  const c = Colors[dark ? 'dark' : 'light'];
+  const font = (f: Theme['fonts']['regular']) => ({ ...f, fontFamily: BrandFonts.body });
+  return {
+    ...base,
+    colors: { ...base.colors, primary: c.tintText, background: c.background, card: c.background, text: c.text, border: c.border },
+    fonts: {
+      regular: font(base.fonts.regular),
+      medium: font(base.fonts.medium),
+      bold: font(base.fonts.bold),
+      heavy: font(base.fonts.heavy),
+    },
+  };
+}
+const NAV_THEMES = { light: navigationTheme(false), dark: navigationTheme(true) };
+
 export default function RootLayout() {
   return (
     <DatabaseProvider onInit={initDatabase}>
@@ -35,9 +55,11 @@ export default function RootLayout() {
 function Navigator() {
   const scheme = useColorScheme();
   return (
-    <ThemeProvider value={scheme === 'dark' ? DarkTheme : DefaultTheme}>
+    <ThemeProvider value={NAV_THEMES[scheme === 'dark' ? 'dark' : 'light']}>
+      {/* Explicit style: the clock must follow the app's own light/dark choice, not the phone's. */}
+      <StatusBar style={scheme === 'dark' ? 'light' : 'dark'} />
       {/* Portrait everywhere except the running screen (SPEC §3: landscape on the running screen). */}
-      <Stack screenOptions={{ orientation: 'portrait' }}>
+      <Stack screenOptions={{ orientation: 'portrait', headerTitleStyle: { fontFamily: BrandFonts.title } }}>
         <Stack.Screen name="index" />
         <Stack.Screen name="timer/[id]" />
         <Stack.Screen name="run/[id]" options={{ headerShown: false, gestureEnabled: false, orientation: 'all', animation: 'fade' }} />

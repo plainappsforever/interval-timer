@@ -65,7 +65,10 @@ export const id: Record<MessageKey, string> = {
   'status.keepScreenOn': 'Biarkan layar menyala untuk aba-aba.',
 
   'home.title': 'Timer',
-  'home.empty': 'Belum ada timer.',
+  'home.empty': 'Belum ada timer buatanmu. Mulai dari templat, atau buat sendiri lewat Timer baru.',
+  'home.rounds': '{n} putaran',
+  'home.roundsOne': '1 putaran',
+  'home.blocks': '{n} blok',
   'home.new': 'Timer baru',
   'home.start': 'Mulai',
   'home.count': '{n} timer',
@@ -251,6 +254,9 @@ export const id: Record<MessageKey, string> = {
   'settings.privacyTitle': 'Privasi',
   'settings.privacy': 'Plain Intervals tidak mengumpulkan apa pun: tanpa akun, tanpa analitik, tanpa iklan, tanpa akses internet. Timer dan riwayat tetap di ponsel ini kecuali Anda sendiri membagikan file.',
   'settings.privacyOnline': 'Kebijakan privasi (membuka situs web)',
+  'licenses.title': 'Lisensi',
+  'licenses.open': 'Lisensi sumber terbuka',
+  'licenses.intro': 'Aplikasi ini memakai perangkat lunak sumber terbuka di bawah. Ketuk satu entri untuk membaca lisensinya.',
 
   'settings.backupHint': 'Cadangan tetap di ponsel ini sampai Anda membagikannya. Bagikan ke File, Drive, atau pesan agar tetap aman jika ponsel hilang atau direset.',
 };

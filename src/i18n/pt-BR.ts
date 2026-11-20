@@ -65,7 +65,10 @@ export const ptBR: Record<MessageKey, string> = {
   'status.keepScreenOn': 'Mantenha a tela ligada para os avisos.',
 
   'home.title': 'Timers',
-  'home.empty': 'Nenhum timer ainda.',
+  'home.empty': 'Você ainda não tem timers próprios. Inicie um modelo ou crie um com Novo timer.',
+  'home.rounds': '{n} rodadas',
+  'home.roundsOne': '1 rodada',
+  'home.blocks': '{n} blocos',
   'home.new': 'Novo timer',
   'home.start': 'Iniciar',
   'home.count': '{n} timers',
@@ -251,6 +254,9 @@ export const ptBR: Record<MessageKey, string> = {
   'settings.privacyTitle': 'Privacidade',
   'settings.privacy': 'O Plain Intervals não coleta nada: sem conta, sem análises, sem anúncios, sem acesso à internet. Timers e histórico ficam neste celular, a menos que você compartilhe um arquivo.',
   'settings.privacyOnline': 'Política de privacidade (abre o site)',
+  'licenses.title': 'Licenças',
+  'licenses.open': 'Licenças de código aberto',
+  'licenses.intro': 'Este app usa o software de código aberto abaixo. Toque em um item para ler a licença.',
 
   'settings.backupHint': 'Um backup fica neste celular até você compartilhá-lo. Compartilhe em Arquivos, Drive ou uma mensagem para mantê-lo se o celular for perdido ou redefinido.',
 };

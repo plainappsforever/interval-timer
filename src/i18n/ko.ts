@@ -65,7 +65,10 @@ export const ko: Record<MessageKey, string> = {
   'status.keepScreenOn': '신호를 위해 화면을 켜 두세요.',
 
   'home.title': '타이머',
-  'home.empty': '아직 타이머가 없습니다.',
+  'home.empty': '아직 내 타이머가 없습니다. 템플릿을 시작하거나 새 타이머로 직접 만드세요.',
+  'home.rounds': '{n}라운드',
+  'home.roundsOne': '1라운드',
+  'home.blocks': '{n}블록',
   'home.new': '새 타이머',
   'home.start': '시작',
   'home.count': '타이머 {n}개',
@@ -251,6 +254,9 @@ export const ko: Record<MessageKey, string> = {
   'settings.privacyTitle': '개인정보',
   'settings.privacy': 'Plain Intervals는 아무것도 수집하지 않습니다. 계정, 분석, 광고, 인터넷 접속이 없습니다. 직접 파일을 공유하지 않는 한 타이머와 기록은 이 휴대전화에만 남습니다.',
   'settings.privacyOnline': '개인정보 처리방침 (웹사이트 열기)',
+  'licenses.title': '라이선스',
+  'licenses.open': '오픈소스 라이선스',
+  'licenses.intro': '이 앱은 아래 오픈소스 소프트웨어를 사용합니다. 항목을 누르면 라이선스를 읽을 수 있습니다.',
 
   'settings.backupHint': '백업은 공유하기 전까지 이 휴대전화에만 있습니다. 휴대전화를 잃어버리거나 초기화해도 보관하려면 파일, Drive 또는 메시지로 공유하세요.',
 };

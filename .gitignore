@@ -50,10 +50,3 @@ __pycache__/
 
 # Gradle output of the local native modules (P8: 312 files of it are still tracked from P5-P7; untracking them = orchestrator item)
 modules/*/android/build/
-keystore.properties
-*.keystore
-google-services.json
-GoogleService-Info.plist
-.env
-.env.*
-test/fixtures/real/

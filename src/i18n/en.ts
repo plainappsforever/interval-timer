@@ -65,7 +65,10 @@ export const en = {
   'status.keepScreenOn': 'Keep the screen on for cues.',
 
   'home.title': 'Timers',
-  'home.empty': 'No timers yet.',
+  'home.empty': 'No timers of your own yet. Start a template, or build one with New timer.',
+  'home.rounds': '{n} rounds',
+  'home.roundsOne': '1 round',
+  'home.blocks': '{n} blocks',
   'home.new': 'New timer',
   'home.start': 'Start',
   'home.count': '{n} timers',
@@ -251,6 +254,9 @@ export const en = {
   'settings.privacyTitle': 'Privacy',
   'settings.privacy': 'Plain Intervals collects nothing: no account, no analytics, no ads, no internet access. Timers and history stay on this phone unless you share a file yourself.',
   'settings.privacyOnline': 'Privacy policy (opens the website)',
+  'licenses.title': 'Licences',
+  'licenses.open': 'Open-source licences',
+  'licenses.intro': 'This app is built with the open-source software below. Tap an entry to read its licence.',
 
   'settings.backupHint': 'A backup stays on this phone until you share it. Share it to Files, Drive or a message to keep it if the phone is lost or reset.',
 } as const;

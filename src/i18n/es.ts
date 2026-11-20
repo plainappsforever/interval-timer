@@ -65,7 +65,10 @@ export const es: Record<MessageKey, string> = {
   'status.keepScreenOn': 'Mantén la pantalla encendida para los avisos.',
 
   'home.title': 'Temporizadores',
-  'home.empty': 'Aún no hay temporizadores.',
+  'home.empty': 'Aún no tienes temporizadores propios. Empieza con una plantilla o crea uno con Nuevo temporizador.',
+  'home.rounds': '{n} rondas',
+  'home.roundsOne': '1 ronda',
+  'home.blocks': '{n} bloques',
   'home.new': 'Nuevo temporizador',
   'home.start': 'Empezar',
   'home.count': '{n} temporizadores',
@@ -251,6 +254,9 @@ export const es: Record<MessageKey, string> = {
   'settings.privacyTitle': 'Privacidad',
   'settings.privacy': 'Plain Intervals no recopila nada: sin cuenta, sin analíticas, sin anuncios, sin acceso a internet. Los temporizadores y el historial se quedan en este teléfono salvo que compartas un archivo.',
   'settings.privacyOnline': 'Política de privacidad (abre el sitio web)',
+  'licenses.title': 'Licencias',
+  'licenses.open': 'Licencias de código abierto',
+  'licenses.intro': 'Esta app usa el software de código abierto de la lista. Toca una entrada para leer su licencia.',
 
   'settings.backupHint': 'Una copia se queda en este teléfono hasta que la compartes. Compártela en Archivos, Drive o un mensaje para conservarla si pierdes o restableces el teléfono.',
 };

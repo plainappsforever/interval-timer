@@ -65,7 +65,10 @@ export const it: Record<MessageKey, string> = {
   'status.keepScreenOn': 'Tieni lo schermo acceso per i segnali.',
 
   'home.title': 'Timer',
-  'home.empty': 'Nessun timer ancora.',
+  'home.empty': 'Ancora nessun timer tuo. Avvia un modello o creane uno con Nuovo timer.',
+  'home.rounds': '{n} round',
+  'home.roundsOne': '1 round',
+  'home.blocks': '{n} blocchi',
   'home.new': 'Nuovo timer',
   'home.start': 'Avvia',
   'home.count': '{n} timer',
@@ -251,6 +254,9 @@ export const it: Record<MessageKey, string> = {
   'settings.privacyTitle': 'Privacy',
   'settings.privacy': 'Plain Intervals non raccoglie nulla: nessun account, nessuna analisi, nessuna pubblicità, nessun accesso a internet. Timer e cronologia restano su questo telefono, a meno che tu non condivida un file.',
   'settings.privacyOnline': 'Informativa sulla privacy (apre il sito web)',
+  'licenses.title': 'Licenze',
+  'licenses.open': 'Licenze open source',
+  'licenses.intro': 'Questa app usa il software open source qui sotto. Tocca una voce per leggerne la licenza.',
 
   'settings.backupHint': 'Un backup resta su questo telefono finché non lo condividi. Condividilo su File, Drive o in un messaggio per conservarlo se il telefono viene perso o ripristinato.',
 };

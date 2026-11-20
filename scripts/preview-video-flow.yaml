@@ -1,0 +1,58 @@
+appId: ${APP_ID}
+name: Preview video part (recorded by scripts/preview-video.sh)
+---
+- launchApp:
+    stopApp: true
+    arguments:
+      -AppleLanguages: "(${LANGTAG})"
+      -AppleLocale: "${LOCALE}"
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 15000
+- waitForAnimationToEnd:
+    timeout: 4000
+- scrollUntilVisible:
+    element:
+      id: start-last
+    direction: UP
+    optional: true
+- tapOn:
+    id: start-last
+- extendedWaitUntil:
+    visible:
+      id: run-skip
+    timeout: 30000
+- tapOn:
+    id: run-sound
+- tapOn:
+    id: run-skip
+- waitForAnimationToEnd:
+    timeout: 1500
+- tapOn:
+    id: run-sound
+- extendedWaitUntil:
+    visible: "NEVER_VISIBLE_PAUSE"
+    timeout: 7000
+    optional: true
+- tapOn:
+    id: run-sound
+- tapOn:
+    id: run-skip
+- extendedWaitUntil:
+    visible: "NEVER_VISIBLE_PAUSE"
+    timeout: 5000
+    optional: true
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- extendedWaitUntil:
+    visible: "NEVER_VISIBLE_PAUSE"
+    timeout: 2500
+    optional: true

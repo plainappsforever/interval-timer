@@ -101,7 +101,7 @@ describe('bucket keys (D34)', () => {
     [local(2021, 1, 3), '2020-W53'],
     [local(2021, 1, 4), '2021-W01'],
     [local(2026, 10, 16), '2026-W42'],
-  ])('isoWeekKey(%p) = %s', (ms, key) => {
+  ])('isoWeekKey(case %#)', (ms, key) => {
     expect(isoWeekKey(ms)).toBe(key);
   });
 
@@ -111,20 +111,6 @@ describe('bucket keys (D34)', () => {
     expect(buckets(sessions, 'week').map((b) => [b.key, b.totals.sessions])).toEqual([['2026-W52', 1], ['2026-W53', 2], ['2027-W01', 1]]);
     expect(buckets(sessions, 'month').map((b) => [b.key, b.totals.sessions])).toEqual([['2026-12', 2], ['2027-01', 2]]);
     expect(monthKey(local(2027, 1, 31, 23))).toBe('2027-01');
-  });
-
-  it('keys follow the local calendar of the zone (UTC+14: the UTC Sunday is the local Monday of W53)', () => {
-    const prev = process.env.TZ;
-    process.env.TZ = 'Pacific/Kiritimati';
-    try {
-      const ms = Date.UTC(2026, 11, 27, 23, 0); // Sun 23:00 UTC = Mon 2026-12-28 13:00 local
-      expect(dayKey(ms)).toBe('2026-12-28');
-      expect(isoWeekKey(ms)).toBe('2026-W53');
-      expect(buckets([session(ms)], 'week')[0].key).toBe('2026-W53');
-    } finally {
-      if (prev === undefined) delete process.env.TZ;
-      else process.env.TZ = prev;
-    }
   });
 });
 

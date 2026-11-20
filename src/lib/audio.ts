@@ -6,6 +6,8 @@ import { createAudioPlayer, setAudioModeAsync, setIsAudioActiveAsync, type Audio
 
 import type { BeepSet } from '@/db/settings';
 
+import { cueVolume, isSilentAudio } from './silent-audio';
+
 const BEEPS = {
   classic: {
     'beep-start': require('../../assets/sounds/classic_start.wav'),
@@ -55,7 +57,7 @@ function clampVolume(volume: number): number {
 export function previewBeep(beepSet: BeepSet, volume: number): void {
   try {
     const p = createAudioPlayer(BEEPS[beepSet]['beep-start']);
-    p.volume = clampVolume(volume);
+    p.volume = cueVolume(clampVolume(volume));
     p.play();
     setTimeout(() => p.remove(), 2000);
   } catch {
@@ -74,7 +76,7 @@ export class CuePlayers {
   private volume = 1;
 
   preload(beepSet: BeepSet, voicePaths: string[], volume: number): void {
-    this.volume = clampVolume(volume);
+    this.volume = cueVolume(clampVolume(volume));
     for (const [id, source] of Object.entries(BEEPS[beepSet])) this.beeps.set(id, this.prepared(createAudioPlayer(source)));
     for (const path of voicePaths) this.addVoice(path);
   }
@@ -145,7 +147,7 @@ export class CuePlayers {
     }
     const player = createAudioPlayer(AMBIENT_FILE);
     player.loop = true;
-    player.volume = 1; // the WAV itself is recorded at ~-40 dB
+    player.volume = isSilentAudio() ? 0 : 1; // the WAV itself is recorded at ~-40 dB
     player.play();
     this.ambient = player;
     if (onInterrupted) {

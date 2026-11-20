@@ -10,9 +10,9 @@ tags:
     visible:
       id: history-empty
     timeout: 10000
-- assertVisible:
+# empty state: the drawn ring and the sentence stand alone, no table of zeros
+- assertNotVisible:
     id: stat-all
-    text: "Workouts: 0 · 00:00"
 - runFlow:
     when:
       platform: iOS
@@ -53,6 +53,11 @@ tags:
     visible:
       id: home-screen
     timeout: 10000
+# Redesign R1: the bottom bar starts the last-used timer (Quick test here); Tabata's own Start is on its tile below the poster
+- scrollUntilVisible:
+    element: "Start Tabata"
+    direction: DOWN
+    centerElement: true
 - tapOn: "Start Tabata"
 - extendedWaitUntil:
     visible:

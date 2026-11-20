@@ -28,6 +28,7 @@ import { plannedSeconds, validateTimer } from '@/engine/validation';
 
 import { createTestDb } from './node-sqlite-db';
 import { loadDevSet, type Fixture } from './timeline-score';
+import { zoneCase } from './zone-child';
 
 type Json = null | boolean | number | string | Json[] | { [k: string]: Json };
 type Obj = Record<string, unknown>;
@@ -42,7 +43,7 @@ export const ADAPTER_NOTES = [
   'validation: validateTimer issue keys validation.<x> -> rule <x>; validation.noIntervals -> "blocks" when its path is "blocks", else "intervals"; keys without a README rule id (prep, repeat, restBetweenRounds, openTick) are dumped under their own name.',
   'format: duration = formatDuration(seconds) (the engine takes no language: Western digits everywhere); blockTotal = plannedSeconds of a one-block timer with prep 0 and repeat 1 (the engine has no block-total function; plannedSeconds sums exactly this per block) + formatDuration; timerTotal = buildTimeline(...).totalMs and formatDuration(plannedSeconds(timer)) (what describeTimer shows).',
   'share: link = encodeTimerLink, linkTimer = decodeTimerLink(link).def, fileTimer = decodeTimerText(encodeTimerFile(timer)).def; payload edits for unknownField/tamper use the engine\'s own base64url (decodeText/encodeText) and re-import with decodeTimerLink.',
-  'stats: process.env.TZ = zone for the call; sessions get id = position + 1, timerId null, interrupted false; totals(), buckets(day/week/month), streak(nowMs), longestStreak(), mostUsed() (default limit 5). Bucket keys = the engine\'s own keys (day YYYY-MM-DD, week ISO YYYY-Www, month YYYY-MM; D34). topTimer = mostUsed()[0].timerName.',
+  'stats: computed in a process started with TZ = zone (test/zone-child.ts re-runs the script per zone); sessions get id = position + 1, timerId null, interrupted false; totals(), buckets(day/week/month), streak(nowMs), longestStreak(), mostUsed() (default limit 5). Bucket keys = the engine\'s own keys (day YYYY-MM-DD, week ISO YYYY-Www, month YYYY-MM; D34). topTimer = mostUsed()[0].timerName.',
   'csv: toCsv(sessions) with id = position + 1, timerId null, interrupted false.',
   'backup: createTestDb() + migrate() (no seeding); initial timers via createTimer(db, def, now = 1 000 000 + position); initial sessions via addSession with timerId = the live timer with the same name (null when none), interrupted false; export = exportBackup(db, 2 000 000); mutations editTimer -> updateTimer, deleteTimer -> deleteTimer, addTimer -> createTimer, addSession -> addSession (timerId by name), deleteSession -> deleteSession; restore = parseBackup(text) then restoreBackup(db, backup, mode); ok = parse ok and restore did not throw. settings: SPEC §4 snake_case names -> Settings camelCase keys, setSetting before the export, getSetting after the restore.',
 ];
@@ -215,9 +216,7 @@ function shareCase(inp: { op: string; timer?: TimerDef; find?: string; replace?:
 }
 
 function statsCase(inp: { zone: string; nowMs: number; sessions: InSession[] }): Json {
-  const prevTz = process.env.TZ;
-  process.env.TZ = inp.zone;
-  try {
+  return zoneCase(inp.zone, () => {
     const sessions = inp.sessions.map(toSession);
     const all = totals(sessions);
     const map = (unit: 'day' | 'week' | 'month') => {
@@ -239,10 +238,7 @@ function statsCase(inp: { zone: string; nowMs: number; sessions: InSession[] }):
       mostUsed: Object.fromEntries(used.map((u) => [u.timerName, u.sessions])),
       topTimer: used[0]?.timerName ?? null,
     };
-  } finally {
-    if (prevTz === undefined) delete process.env.TZ;
-    else process.env.TZ = prevTz;
-  }
+  });
 }
 
 function csvCase(inp: { sessions: InSession[] }): Json {

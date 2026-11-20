@@ -65,7 +65,10 @@ export const hi: Record<MessageKey, string> = {
   'status.keepScreenOn': 'संकेतों के लिए स्क्रीन चालू रखें।',
 
   'home.title': 'टाइमर',
-  'home.empty': 'अभी कोई टाइमर नहीं।',
+  'home.empty': 'अभी आपका अपना कोई टाइमर नहीं है। कोई टेम्पलेट चलाएँ, या नया टाइमर से अपना बनाएँ।',
+  'home.rounds': '{n} राउंड',
+  'home.roundsOne': '1 राउंड',
+  'home.blocks': '{n} ब्लॉक',
   'home.new': 'नया टाइमर',
   'home.start': 'शुरू करें',
   'home.count': '{n} टाइमर',
@@ -251,6 +254,9 @@ export const hi: Record<MessageKey, string> = {
   'settings.privacyTitle': 'निजता',
   'settings.privacy': 'Plain Intervals कुछ भी इकट्ठा नहीं करता: कोई खाता नहीं, कोई एनालिटिक्स नहीं, कोई विज्ञापन नहीं, कोई इंटरनेट एक्सेस नहीं। टाइमर और इतिहास इसी फ़ोन पर रहते हैं, जब तक आप खुद कोई फ़ाइल शेयर न करें।',
   'settings.privacyOnline': 'गोपनीयता नीति (वेबसाइट खोलता है)',
+  'licenses.title': 'लाइसेंस',
+  'licenses.open': 'ओपन-सोर्स लाइसेंस',
+  'licenses.intro': 'यह ऐप नीचे दिए ओपन-सोर्स सॉफ़्टवेयर से बना है। लाइसेंस पढ़ने के लिए किसी प्रविष्टि पर टैप करें।',
 
   'settings.backupHint': 'बैकअप तब तक इसी फ़ोन पर रहता है जब तक आप उसे शेयर न करें। फ़ोन खोने या रीसेट होने पर बचाए रखने के लिए उसे Files, Drive या किसी संदेश में शेयर करें।',
 };

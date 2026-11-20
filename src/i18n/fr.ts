@@ -65,7 +65,10 @@ export const fr: Record<MessageKey, string> = {
   'status.keepScreenOn': 'Gardez l\'écran allumé pour les signaux.',
 
   'home.title': 'Minuteurs',
-  'home.empty': 'Aucun minuteur pour l\'instant.',
+  'home.empty': 'Pas encore de minuteur à vous. Lancez un modèle ou créez-en un avec Nouveau minuteur.',
+  'home.rounds': '{n} tours',
+  'home.roundsOne': '1 tour',
+  'home.blocks': '{n} blocs',
   'home.new': 'Nouveau minuteur',
   'home.start': 'Démarrer',
   'home.count': '{n} minuteurs',
@@ -251,6 +254,9 @@ export const fr: Record<MessageKey, string> = {
   'settings.privacyTitle': 'Confidentialité',
   'settings.privacy': 'Plain Intervals ne collecte rien : pas de compte, pas d’analyse, pas de publicité, pas d’accès à internet. Minuteurs et historique restent sur ce téléphone, sauf si vous partagez vous-même un fichier.',
   'settings.privacyOnline': 'Politique de confidentialité (ouvre le site web)',
+  'licenses.title': 'Licences',
+  'licenses.open': 'Licences open source',
+  'licenses.intro': 'Cette app utilise les logiciels libres ci-dessous. Touchez une entrée pour lire sa licence.',
 
   'settings.backupHint': 'Une sauvegarde reste sur ce téléphone tant que vous ne la partagez pas. Partagez-la vers Fichiers, Drive ou un message pour la garder en cas de perte ou de réinitialisation.',
 };

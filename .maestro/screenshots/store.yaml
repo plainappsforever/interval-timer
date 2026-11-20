@@ -1,0 +1,199 @@
+appId: ${APP_ID}
+name: Store frames raw captures (R2b) - one language per run, env LANGTAG (en, de, fr, es, it) and LOCALE (en_US, de_DE, ...); run by scripts/store-captures.sh
+tags:
+  - screenshots
+---
+# Fresh install that starts in the given language (templates and interval names are stored in that language at first launch).
+# Release build only (no dev launcher to pick). One shared circuit is imported so "My timers" has a named circuit.
+- launchApp:
+    stopApp: true
+    arguments:
+      -AppleLanguages: "(${LANGTAG})"
+      -AppleLocale: "${LOCALE}"
+    clearState: true
+    arguments:
+      -AppleLanguages: "(${LANGTAG})"
+      -AppleLocale: "${LOCALE}"
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 90000
+- waitForAnimationToEnd:
+    timeout: 5000
+# Owner order 2026-11-16: no sound from the simulator. Voice cues OFF in the app's settings (default stays on in code), and the
+# run screen's Sound toggle is tapped off at the start of every run below.
+- tapOn:
+    id: open-settings
+- extendedWaitUntil:
+    visible:
+      id: set-voice
+    timeout: 10000
+- tapOn:
+    id: set-voice
+- launchApp:
+    stopApp: true
+    arguments:
+      -AppleLanguages: "(${LANGTAG})"
+      -AppleLocale: "${LOCALE}"
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 15000
+# import the named circuit through the app's own share link (what the Share button sends)
+- openLink: ${SCHEME}://t?d=eyJ2IjoxLCJuIjoiTW9ybmluZyBjaXJjdWl0IiwiYiI6W3siciI6MywiaSI6W3sibiI6IlNxdWF0cyIsInMiOjQwLCJ0Ijoid29yayJ9LHsibiI6IlJlc3QiLCJzIjoyMCwidCI6InJlc3QifSx7Im4iOiJQdXNoLXVwcyIsInMiOjQwLCJ0Ijoid29yayJ9LHsibiI6IlJlc3QiLCJzIjoyMCwidCI6InJlc3QifSx7Im4iOiJQbGFuayIsInMiOjQ1LCJ0Ijoid29yayJ9LHsibiI6IlJlc3QiLCJzIjoyMCwidCI6InJlc3QifV0sIm4iOiJMZWdzIGFuZCBjb3JlIiwicnIiOjYwfSx7InIiOjIsImkiOlt7Im4iOiJQbGFuayIsInMiOjYwLCJ0Ijoid29yayIsImgiOjF9XSwicnIiOjMwfSx7InIiOjQsImkiOlt7Im4iOiJCdXJwZWVzIiwicyI6MzAsInQiOiJ3b3JrIn0seyJuIjoiUmVzdCIsInMiOjE1LCJ0IjoicmVzdCJ9LHsibiI6Ik1vdW50YWluIGNsaW1iZXJzIiwicyI6MzAsInQiOiJ3b3JrIn0seyJuIjoiUmVzdCIsInMiOjE1LCJ0IjoicmVzdCJ9XSwibiI6IkZpbmlzaGVyIiwicnIiOjQ1fSx7InIiOjMsImkiOlt7Im4iOiJMdW5nZXMiLCJzIjo0MCwidCI6IndvcmsifSx7Im4iOiJSZXN0IiwicyI6MjAsInQiOiJyZXN0In0seyJuIjoiSnVtcGluZyBqYWNrcyIsInMiOjQwLCJ0Ijoid29yayJ9LHsibiI6IlJlc3QiLCJzIjoyMCwidCI6InJlc3QifSx7Im4iOiJTaWRlIHBsYW5rIiwicyI6MzAsInQiOiJ3b3JrIn0seyJuIjoiUmVzdCIsInMiOjIwLCJ0IjoicmVzdCJ9XSwibiI6IkxlZ3MgYW5kIGJhbGFuY2UiLCJyciI6NjB9LHsiciI6MiwiaSI6W3sibiI6IkhpZ2gga25lZXMiLCJzIjozMCwidCI6IndvcmsifSx7Im4iOiJSZXN0IiwicyI6MTUsInQiOiJyZXN0In0seyJuIjoiRGlwcyIsInMiOjMwLCJ0Ijoid29yayJ9LHsibiI6IlJlc3QiLCJzIjoxNSwidCI6InJlc3QifV0sIm4iOiJGYXN0IHBhaXIiLCJyciI6NDV9LHsiciI6MSwiaSI6W3sibiI6IlN0cmV0Y2giLCJzIjoxMjAsInQiOiJjb29sZG93biJ9XSwibiI6IkNvb2wgZG93biJ9XSwiYyI6IiMwMDg5N0IifQ
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: import-preview
+    timeout: 20000
+- waitForAnimationToEnd:
+    timeout: 3000
+- takeScreenshot: 07-import
+- tapOn:
+    id: import-save
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+- waitForAnimationToEnd:
+    timeout: 3000
+# home with the last-used timer (Tabata) as the ring poster
+- scrollUntilVisible:
+    element:
+      id: start-last
+    direction: UP
+    optional: true
+- takeScreenshot: 02-home
+- swipe:
+    start: 50%, 80%
+    end: 50%, 35%
+- waitForAnimationToEnd:
+    timeout: 2000
+- takeScreenshot: 03-tiles
+# run screen: Get ready -> Work (one skip) in the work colour, then Rest (second skip) in the rest colour
+- scrollUntilVisible:
+    element:
+      id: start-last
+    direction: UP
+    optional: true
+- tapOn:
+    id: start-last
+- extendedWaitUntil:
+    visible:
+      id: run-skip
+    timeout: 30000
+- tapOn:
+    id: run-sound
+- tapOn:
+    id: run-skip
+- waitForAnimationToEnd:
+    timeout: 1500
+# the Sound pill shows ON in the frame; it is switched on after the skip and off again right after the shot, so no cue plays
+- tapOn:
+    id: run-sound
+- takeScreenshot: 01-run-work
+- tapOn:
+    id: run-sound
+- tapOn:
+    id: run-skip
+- waitForAnimationToEnd:
+    timeout: 1500
+- tapOn:
+    id: run-sound
+- takeScreenshot: 05-run-rest
+- tapOn:
+    id: run-sound
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- tapOn:
+    id: done-close
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+# editor of the named circuit
+- swipe:
+    start: 50%, 25%
+    end: 50%, 90%
+- swipe:
+    start: 50%, 25%
+    end: 50%, 90%
+- waitForAnimationToEnd:
+    timeout: 2000
+- tapOn:
+    point: 84%,69%
+- extendedWaitUntil:
+    visible:
+      id: run-skip
+    timeout: 30000
+- tapOn:
+    id: run-sound
+- tapOn:
+    id: run-skip
+- waitForAnimationToEnd:
+    timeout: 2000
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- tapOn:
+    id: done-close
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+# the poster ring now shows the circuit (last used); tapping it opens its editor
+- tapOn:
+    point: 50%,32%
+- extendedWaitUntil:
+    visible:
+      id: editor-total
+    timeout: 10000
+- waitForAnimationToEnd:
+    timeout: 2000
+- takeScreenshot: 04-editor
+- launchApp:
+    stopApp: true
+    arguments:
+      -AppleLanguages: "(${LANGTAG})"
+      -AppleLocale: "${LOCALE}"
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 15000
+- tapOn:
+    id: open-settings
+- extendedWaitUntil:
+    visible:
+      id: settings-screen
+    timeout: 10000
+- waitForAnimationToEnd:
+    timeout: 2000
+- scrollUntilVisible:
+    element:
+      id: settings-privacy
+    direction: DOWN
+    timeout: 20000
+- scrollUntilVisible:
+    element:
+      id: settings-licenses
+    direction: DOWN
+    timeout: 20000
+    optional: true
+- waitForAnimationToEnd:
+    timeout: 2000
+- takeScreenshot: 08-settings

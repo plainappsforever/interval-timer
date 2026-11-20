@@ -1,0 +1,189 @@
+appId: ${APP_ID}
+name: Android store frames raw captures (R3) - one language per run, language set by scripts/store-captures-android.sh
+tags:
+  - screenshots
+---
+# Fresh install that starts in the given language (templates and interval names are stored in that language at first launch).
+# Release build only (no dev launcher to pick). One shared circuit is imported so "My timers" has a named circuit.
+- launchApp:
+    stopApp: true
+    clearState: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 90000
+- waitForAnimationToEnd:
+    timeout: 5000
+# Frame 8 shows the Settings screen: voice cues off (owner order 2026-11-16 and no voice ids on the frame).
+- tapOn:
+    id: open-settings
+- extendedWaitUntil:
+    visible:
+      id: set-voice
+    timeout: 10000
+- tapOn:
+    id: set-voice
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 15000
+# Android frames keep the app defaults: Sound pill ON (the emulator runs with -no-audio and media volume 0).
+# import the named circuit through the app's own share link (what the Share button sends)
+- openLink: ${SCHEME}://t?d=eyJ2IjoxLCJuIjoiTW9ybmluZyBjaXJjdWl0IiwiYiI6W3siciI6MywiaSI6W3sibiI6IlNxdWF0cyIsInMiOjQwLCJ0Ijoid29yayJ9LHsibiI6IlJlc3QiLCJzIjoyMCwidCI6InJlc3QifSx7Im4iOiJQdXNoLXVwcyIsInMiOjQwLCJ0Ijoid29yayJ9LHsibiI6IlJlc3QiLCJzIjoyMCwidCI6InJlc3QifSx7Im4iOiJQbGFuayIsInMiOjQ1LCJ0Ijoid29yayJ9LHsibiI6IlJlc3QiLCJzIjoyMCwidCI6InJlc3QifV0sIm4iOiJMZWdzIGFuZCBjb3JlIiwicnIiOjYwfSx7InIiOjIsImkiOlt7Im4iOiJQbGFuayIsInMiOjYwLCJ0Ijoid29yayIsImgiOjF9XSwicnIiOjMwfSx7InIiOjQsImkiOlt7Im4iOiJCdXJwZWVzIiwicyI6MzAsInQiOiJ3b3JrIn0seyJuIjoiUmVzdCIsInMiOjE1LCJ0IjoicmVzdCJ9LHsibiI6Ik1vdW50YWluIGNsaW1iZXJzIiwicyI6MzAsInQiOiJ3b3JrIn0seyJuIjoiUmVzdCIsInMiOjE1LCJ0IjoicmVzdCJ9XSwibiI6IkZpbmlzaGVyIiwicnIiOjQ1fSx7InIiOjEsImkiOlt7Im4iOiJTdHJldGNoIiwicyI6MTIwLCJ0IjoiY29vbGRvd24ifV0sIm4iOiJDb29sIGRvd24ifV0sImMiOiIjMDA4OTdCIn0
+- tapOn:
+    text: "Open"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: import-preview
+    timeout: 20000
+- waitForAnimationToEnd:
+    timeout: 3000
+- takeScreenshot: 07-import
+- tapOn:
+    id: import-save
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+- waitForAnimationToEnd:
+    timeout: 3000
+# home with the last-used timer (Tabata) as the ring poster
+- scrollUntilVisible:
+    element:
+      id: start-last
+    direction: UP
+    optional: true
+- takeScreenshot: 02-home
+- swipe:
+    start: 50%, 80%
+    end: 50%, 35%
+- waitForAnimationToEnd:
+    timeout: 2000
+- takeScreenshot: 03-tiles
+# run screen: Get ready -> Work (one skip) in the work colour, then Rest (second skip) in the rest colour
+- scrollUntilVisible:
+    element:
+      id: start-last
+    direction: UP
+    optional: true
+- tapOn:
+    id: start-last
+- extendedWaitUntil:
+    visible:
+      id: run-skip
+    timeout: 30000
+- tapOn:
+    id: run-skip
+- waitForAnimationToEnd:
+    timeout: 1500
+- takeScreenshot: 01-run-work
+- tapOn:
+    id: run-skip
+- waitForAnimationToEnd:
+    timeout: 1500
+- takeScreenshot: 05-run-rest
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- tapOn:
+    id: done-close
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+# editor of the named circuit
+- swipe:
+    start: 50%, 25%
+    end: 50%, 90%
+- swipe:
+    start: 50%, 25%
+    end: 50%, 90%
+- waitForAnimationToEnd:
+    timeout: 2000
+- tapOn:
+    point: 84%,69%
+- extendedWaitUntil:
+    visible:
+      id: run-skip
+    timeout: 30000
+- tapOn:
+    id: run-skip
+- waitForAnimationToEnd:
+    timeout: 2000
+- tapOn:
+    id: run-end
+- tapOn:
+    id: run-end-confirm
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 10000
+- tapOn:
+    id: done-close
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 10000
+# the poster ring now shows the circuit (last used); tapping it opens its editor
+- tapOn:
+    point: 50%,32%
+- extendedWaitUntil:
+    visible:
+      id: editor-total
+    timeout: 10000
+- waitForAnimationToEnd:
+    timeout: 2000
+- takeScreenshot: 04-editor
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 15000
+- tapOn:
+    id: open-history
+- extendedWaitUntil:
+    visible:
+      id: history-screen
+    timeout: 10000
+- waitForAnimationToEnd:
+    timeout: 2000
+- takeScreenshot: 06-history
+- launchApp:
+    stopApp: true
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 15000
+- tapOn:
+    id: open-settings
+- extendedWaitUntil:
+    visible:
+      id: settings-screen
+    timeout: 10000
+- waitForAnimationToEnd:
+    timeout: 2000
+- scrollUntilVisible:
+    element:
+      id: settings-privacy
+    direction: DOWN
+    timeout: 20000
+- scrollUntilVisible:
+    element:
+      id: settings-licenses
+    direction: DOWN
+    timeout: 20000
+    optional: true
+- waitForAnimationToEnd:
+    timeout: 2000
+- takeScreenshot: 08-settings

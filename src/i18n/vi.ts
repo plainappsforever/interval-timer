@@ -65,7 +65,10 @@ export const vi: Record<MessageKey, string> = {
   'status.keepScreenOn': 'Giữ màn hình bật để nghe tín hiệu.',
 
   'home.title': 'Bộ đếm',
-  'home.empty': 'Chưa có bộ đếm nào.',
+  'home.empty': 'Bạn chưa có bộ đếm riêng. Hãy chạy một mẫu, hoặc tạo bằng Bộ đếm mới.',
+  'home.rounds': '{n} hiệp',
+  'home.roundsOne': '1 hiệp',
+  'home.blocks': '{n} khối',
   'home.new': 'Bộ đếm mới',
   'home.start': 'Bắt đầu',
   'home.count': '{n} bộ đếm',
@@ -251,6 +254,9 @@ export const vi: Record<MessageKey, string> = {
   'settings.privacyTitle': 'Quyền riêng tư',
   'settings.privacy': 'Plain Intervals không thu thập gì: không tài khoản, không phân tích, không quảng cáo, không truy cập internet. Hẹn giờ và lịch sử ở lại trên điện thoại này trừ khi bạn tự chia sẻ tệp.',
   'settings.privacyOnline': 'Chính sách quyền riêng tư (mở trang web)',
+  'licenses.title': 'Giấy phép',
+  'licenses.open': 'Giấy phép mã nguồn mở',
+  'licenses.intro': 'Ứng dụng này dùng phần mềm mã nguồn mở bên dưới. Chạm vào một mục để đọc giấy phép.',
 
   'settings.backupHint': 'Bản sao lưu chỉ nằm trên điện thoại này cho đến khi bạn chia sẻ. Hãy chia sẻ vào Tệp, Drive hoặc tin nhắn để giữ lại nếu mất hoặc đặt lại điện thoại.',
 };

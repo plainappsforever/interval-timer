@@ -1,9 +1,16 @@
+import brand from './src/constants/brand.json';
 import type { ConfigContext, ExpoConfig } from 'expo/config';
 
 // One codebase, three installable variants that can sit side by side on a device.
 // Select with APP_VARIANT (set by scripts/native.sh and eas.json).
 // Reverse-domain prefix of the bundle id / applicationId (owner, 2026-10-16: same scheme for every app; card-scanner D10).
 // Never put a personal name into an identifier.
+// D24: splash and Android icon background come from the app's identity file (src/constants/brand.json), never a literal
+// here; src/constants/brand.test.ts fails a preview/production config that still carries the template placeholder.
+const IDENTITY = {
+  splash: { light: brand.light.background, dark: brand.dark.background },
+  iconBackground: brand.light.accent,
+};
 const ID_PREFIX = 'com.plainapps';
 // PROVISIONAL product name (DECISIONS D11: the owner picks Plain Intervals / Roundset / Clearset before the first
 // device build). Also in src/constants/app.ts (APP_NAME) for the UI; change both together.
@@ -68,7 +75,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   ...config,
   name,
   slug: 'interval-timer',
-  version: '1.0.0',
+  version: '1.1.0',
   // SPEC §3: the running screen turns to landscape; every other screen locks itself to portrait (src/app/_layout.tsx).
   orientation: 'default',
   icon: './assets/images/icon.png',
@@ -76,8 +83,12 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   userInterfaceStyle: 'automatic',
   ios: {
     bundleIdentifier: id,
+    // 1.0.0 shipped with the default build number 1; 1.1.0 (redesign) is build 2.
+    buildNumber: '2',
     ...(appleTeamId ? { appleTeamId } : {}),
-    icon: './assets/expo.icon',
+    // Redesign R1: explicit light, dark and tinted artwork (scripts/make-icon-ring.swift). assets/expo.icon (Icon Composer)
+    // is kept as the same artwork in one layer, but is not used.
+    icon: { light: './assets/images/icon.png', dark: './assets/images/icon-dark.png', tinted: './assets/images/icon-tinted.png' },
     // P8: no encryption beyond the system's (ITSAppUsesNonExemptEncryption = false; export-compliance answer in RELEASE_KIT).
     config: { usesNonExemptEncryption: false },
     infoPlist: {
@@ -88,8 +99,9 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   },
   android: {
     package: id,
+    versionCode: 2,
     adaptiveIcon: {
-      backgroundColor: '#B43308',
+      backgroundColor: IDENTITY.iconBackground,
       foregroundImage: './assets/images/android-icon-foreground.png',
       backgroundImage: './assets/images/android-icon-background.png',
       monochromeImage: './assets/images/android-icon-monochrome.png',
@@ -110,7 +122,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
     // expo-notifications' plugin); kept as a belt so a future library cannot bring the Push capability in silently.
     './plugins/without-push-entitlement.js',
     'expo-router',
-    ['expo-splash-screen', { backgroundColor: '#B43308', image: './assets/images/splash-icon.png', imageWidth: 76 }],
+    ['expo-splash-screen', { backgroundColor: IDENTITY.splash.light, dark: { backgroundColor: IDENTITY.splash.dark }, image: './assets/images/splash-icon.png', imageWidth: 76 }],
     'expo-sqlite',
     // Dev builds reopen the last Metro server directly, so Maestro can launch them unattended. Development only (P8):
     // release variants do not link the development client at all (with-dev-client-linking.js, print-cost D83), and a

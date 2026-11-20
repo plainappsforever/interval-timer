@@ -9,7 +9,9 @@ import { ScrollView, StyleSheet, TextInput, View } from 'react-native';
 
 import { Button } from '@/components/button';
 import { ThemedText } from '@/components/themed-text';
-import { Spacing } from '@/constants/theme';
+import { PatternStrip } from '@/components/pattern-strip';
+import { patternOf } from '@/lib/pattern';
+import { Radius, Spacing } from '@/constants/theme';
 import { useSQLiteContext } from '@/db/provider';
 import { createTimer } from '@/db/timers';
 import { formatDuration } from '@/engine/format';
@@ -85,6 +87,7 @@ export default function ImportScreen() {
                 time: formatDuration(plannedSeconds(result.def)),
               })}
             </ThemedText>
+            <PatternStrip pieces={patternOf(result.def)} height={8} />
             <ThemedText type="small" themeColor="textSecondary">
               {describeTimer(result.def, formatDuration, plannedSeconds(result.def))}
             </ThemedText>
@@ -123,10 +126,10 @@ export default function ImportScreen() {
 
 const styles = StyleSheet.create({
   content: { padding: Spacing.three, gap: Spacing.three },
-  card: { borderRadius: 12, padding: Spacing.three, gap: Spacing.two },
+  card: { borderRadius: Radius.card, padding: Spacing.three, gap: Spacing.two },
   input: {
     borderWidth: 1,
-    borderRadius: 8,
+    borderRadius: Radius.control,
     padding: Spacing.two,
     minHeight: 80,
     fontSize: 14,

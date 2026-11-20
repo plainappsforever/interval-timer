@@ -65,7 +65,10 @@ export const ar: Record<MessageKey, string> = {
   'status.keepScreenOn': 'أبقِ الشاشة مضاءة لسماع الإشارات.',
 
   'home.title': 'المؤقتات',
-  'home.empty': 'لا توجد مؤقتات بعد.',
+  'home.empty': 'لا توجد مؤقتات خاصة بك بعد. ابدأ قالبًا، أو أنشئ مؤقتًا بزر مؤقت جديد.',
+  'home.rounds': '{n} جولات',
+  'home.roundsOne': 'جولة واحدة',
+  'home.blocks': '{n} كتل',
   'home.new': 'مؤقت جديد',
   'home.start': 'ابدأ',
   'home.count': '{n} مؤقتات',
@@ -251,6 +254,9 @@ export const ar: Record<MessageKey, string> = {
   'settings.privacyTitle': 'الخصوصية',
   'settings.privacy': 'لا يجمع Plain Intervals أي شيء: لا حساب ولا تحليلات ولا إعلانات ولا اتصال بالإنترنت. تبقى المؤقتات والسجل على هذا الهاتف ما لم تشارك ملفًا بنفسك.',
   'settings.privacyOnline': 'سياسة الخصوصية (يفتح الموقع الإلكتروني)',
+  'licenses.title': 'التراخيص',
+  'licenses.open': 'تراخيص المصدر المفتوح',
+  'licenses.intro': 'يستخدم هذا التطبيق البرامج مفتوحة المصدر أدناه. اضغط على أي عنصر لقراءة ترخيصه.',
 
   'settings.backupHint': 'تبقى النسخة الاحتياطية على هذا الهاتف حتى تشاركها. شاركها إلى الملفات أو Drive أو رسالة لتحتفظ بها إذا فُقد الهاتف أو أُعيد ضبطه.',
 };

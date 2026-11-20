@@ -65,7 +65,10 @@ export const zhCN: Record<MessageKey, string> = {
   'status.keepScreenOn': '请保持屏幕常亮以接收提示。',
 
   'home.title': '计时器',
-  'home.empty': '还没有计时器。',
+  'home.empty': '还没有自己的计时器。可以先用模板，或点新建计时器自己做一个。',
+  'home.rounds': '{n} 轮',
+  'home.roundsOne': '1 轮',
+  'home.blocks': '{n} 个分组',
   'home.new': '新建计时器',
   'home.start': '开始',
   'home.count': '{n} 个计时器',
@@ -251,6 +254,9 @@ export const zhCN: Record<MessageKey, string> = {
   'settings.privacyTitle': '隐私',
   'settings.privacy': 'Plain Intervals 不收集任何内容：没有账户、没有分析、没有广告、不联网。除非你自己分享文件，计时器和历史都只保存在这台手机上。',
   'settings.privacyOnline': '隐私政策（打开网站）',
+  'licenses.title': '许可证',
+  'licenses.open': '开源许可证',
+  'licenses.intro': '本应用使用下列开源软件。点按条目可阅读其许可证。',
 
   'settings.backupHint': '备份在你分享之前只保存在这台手机上。分享到“文件”、Drive 或消息中，手机丢失或重置时也能保留。',
 };

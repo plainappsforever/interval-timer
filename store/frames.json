@@ -1,0 +1,193 @@
+{
+  "style": {
+    "layout": "full-bleed",
+    "captionPosition": "top",
+    "background": {
+      "type": "solid",
+      "colors": [
+        "#F3EFF0"
+      ]
+    },
+    "textColor": "#201B1E",
+    "font": "black",
+    "deviceFrame": false,
+    "cropTop": 0.135
+  },
+  "frames": [
+    {
+      "capture": "artifacts/store/captures/en/01-run-work.png",
+      "captureByLang": {
+        "de": "artifacts/store/captures/de/01-run-work.png",
+        "fr": "artifacts/store/captures/fr/01-run-work.png",
+        "es": "artifacts/store/captures/es/01-run-work.png",
+        "it": "artifacts/store/captures/it/01-run-work.png"
+      },
+      "captions": {
+        "en": "Hear the next round with the phone in your pocket.",
+        "de": "Die nächste Runde hörst du, auch mit dem Handy in der Tasche.",
+        "fr": "Entends le prochain tour, même avec le téléphone dans la poche.",
+        "es": "Oye la siguiente ronda con el móvil en el bolsillo.",
+        "it": "Senti il round successivo anche con il telefono in tasca.",
+        "nl": "Hoor de volgende ronde met je telefoon in je zak."
+      },
+      "style": {
+        "background": {
+          "type": "solid",
+          "colors": [
+            "#C62828"
+          ]
+        },
+        "textColor": "#FFFFFF",
+        "cropTop": 0.075
+      }
+    },
+    {
+      "capture": "artifacts/store/captures/en/02-home.png",
+      "captureByLang": {
+        "de": "artifacts/store/captures/de/02-home.png",
+        "fr": "artifacts/store/captures/fr/02-home.png",
+        "es": "artifacts/store/captures/es/02-home.png",
+        "it": "artifacts/store/captures/it/02-home.png"
+      },
+      "captions": {
+        "en": "Your last timer waits on the first screen. One tap and go.",
+        "de": "Dein letzter Timer wartet auf dem ersten Bildschirm. Ein Tipp, los.",
+        "fr": "Ton dernier minuteur t'attend sur le premier écran. Un geste, c'est parti.",
+        "es": "Tu último temporizador te espera en la primera pantalla. Un toque y a entrenar.",
+        "it": "Il tuo ultimo timer ti aspetta nella prima schermata. Un tocco e via.",
+        "nl": "Je laatste timer wacht op het eerste scherm. Eén tik en starten."
+      }
+    },
+    {
+      "capture": "artifacts/store/captures/en/03-tiles.png",
+      "captureByLang": {
+        "de": "artifacts/store/captures/de/03-tiles.png",
+        "fr": "artifacts/store/captures/fr/03-tiles.png",
+        "es": "artifacts/store/captures/es/03-tiles.png",
+        "it": "artifacts/store/captures/it/03-tiles.png"
+      },
+      "captions": {
+        "en": "Tabata, EMOM, boxing: each timer shows its own shape.",
+        "de": "Tabata, EMOM, Boxen: jeder Timer zeigt seine eigene Form.",
+        "fr": "Tabata, EMOM, boxe : chaque minuteur montre sa propre forme.",
+        "es": "Tabata, EMOM, boxeo: cada temporizador muestra su propia forma.",
+        "it": "Tabata, EMOM, boxe: ogni timer mostra la sua forma.",
+        "nl": "Tabata, EMOM, boksen: elke timer toont zijn eigen vorm."
+      },
+      "style": {
+        "cropTop": 0.135
+      }
+    },
+    {
+      "capture": "artifacts/store/captures/en/04-editor.png",
+      "captureByLang": {
+        "de": "artifacts/store/captures/de/04-editor.png",
+        "fr": "artifacts/store/captures/fr/04-editor.png",
+        "es": "artifacts/store/captures/es/04-editor.png",
+        "it": "artifacts/store/captures/it/04-editor.png"
+      },
+      "captions": {
+        "en": "Blocks, rounds, rests and open intervals for a whole circuit.",
+        "de": "Blöcke, Runden, Pausen und offene Intervalle für einen ganzen Zirkel.",
+        "fr": "Blocs, tours, pauses et intervalles libres pour un circuit entier.",
+        "es": "Bloques, rondas, descansos e intervalos abiertos para un circuito entero.",
+        "it": "Blocchi, round, pause e intervalli aperti per un intero circuito.",
+        "nl": "Blokken, rondes, rustpauzes en open intervallen voor een hele circuittraining."
+      }
+    },
+    {
+      "capture": "artifacts/store/captures/en/05-run-rest.png",
+      "captureByLang": {
+        "de": "artifacts/store/captures/de/05-run-rest.png",
+        "fr": "artifacts/store/captures/fr/05-run-rest.png",
+        "es": "artifacts/store/captures/es/05-run-rest.png",
+        "it": "artifacts/store/captures/it/05-run-rest.png"
+      },
+      "captions": {
+        "en": "Work in red, rest in green. Read it from across the room.",
+        "de": "Belastung in Rot, Pause in Grün. Lesbar von der anderen Zimmerseite.",
+        "fr": "Effort en rouge, repos en vert. Lisible depuis l'autre bout de la pièce.",
+        "es": "Esfuerzo en rojo, descanso en verde. Se lee desde el otro lado de la sala.",
+        "it": "Sforzo in rosso, pausa in verde. Si legge dall'altra parte della stanza.",
+        "nl": "Inspanning in rood, rust in groen. Leesbaar vanaf de andere kant van de kamer."
+      },
+      "style": {
+        "background": {
+          "type": "solid",
+          "colors": [
+            "#2E7D32"
+          ]
+        },
+        "textColor": "#FFFFFF",
+        "cropTop": 0.075
+      }
+    },
+    {
+      "capture": "artifacts/store/captures/en/06-history.png",
+      "captureByLang": {
+        "de": "artifacts/store/captures/de/06-history.png",
+        "fr": "artifacts/store/captures/fr/06-history.png",
+        "es": "artifacts/store/captures/es/06-history.png",
+        "it": "artifacts/store/captures/it/06-history.png"
+      },
+      "captions": {
+        "en": "Streaks and every finished workout, in History.",
+        "de": "Serien und jedes beendete Training im Verlauf.",
+        "fr": "Les séries et chaque séance terminée, dans l'historique.",
+        "es": "Rachas y cada entrenamiento terminado, en el historial.",
+        "it": "Serie e ogni allenamento concluso, nella cronologia.",
+        "nl": "Reeksen en elke afgeronde training, in de geschiedenis."
+      }
+    },
+    {
+      "capture": "artifacts/store/captures/en/07-import.png",
+      "captureByLang": {
+        "de": "artifacts/store/captures/de/07-import.png",
+        "fr": "artifacts/store/captures/fr/07-import.png",
+        "es": "artifacts/store/captures/es/07-import.png",
+        "it": "artifacts/store/captures/it/07-import.png"
+      },
+      "captions": {
+        "en": "Send a timer to your training partner as a link.",
+        "de": "Schick deinem Trainingspartner einen Timer als Link.",
+        "fr": "Envoie un minuteur à ton partenaire d'entraînement sous forme de lien.",
+        "es": "Envía un temporizador a tu compañero de entreno como enlace.",
+        "it": "Manda un timer al tuo compagno di allenamento come link.",
+        "nl": "Stuur een timer als link naar je trainingspartner."
+      },
+      "style": {
+        "cropTop": 0.135
+      }
+    },
+    {
+      "capture": "artifacts/store/captures/en/08-settings.png",
+      "captureByLang": {
+        "de": "artifacts/store/captures/de/08-settings.png",
+        "fr": "artifacts/store/captures/fr/08-settings.png",
+        "es": "artifacts/store/captures/es/08-settings.png",
+        "it": "artifacts/store/captures/it/08-settings.png"
+      },
+      "captions": {
+        "en": "Every timer free. No ads between rounds, no login before you sweat.",
+        "de": "Alle Timer gratis. Keine Werbung zwischen den Runden, keine Anmeldung vor dem Training.",
+        "fr": "Tous les minuteurs gratuits. Pas de pub entre les tours, pas de compte avant l'effort.",
+        "es": "Todos los temporizadores gratis. Sin anuncios entre rondas, sin registro antes de sudar.",
+        "it": "Tutti i timer gratis. Niente pubblicità tra i round, nessun login prima dell'allenamento.",
+        "nl": "Alle timers gratis. Geen reclame tussen de rondes, geen login voor je zweet."
+      },
+      "style": {
+        "cropTop": 0.135
+      }
+    }
+  ],
+  "plan": {
+    "ownStyle": "Poster look (design review R4 fix 2, sheet 3). No coloured band over a centred phone and no device edge. Each frame's top area is the app's OWN ground colour and the capture continues it, so the caption reads as part of the screen: work red on the run frames, the app's warm off-white (#F3EFF0) with near-black text on the rest. Caption in SF Pro Black (generator font 'black', the app's own numeral weight), set top-left of the screen area. Frames 1 and 5 are run screens where the numerals are the hero: full bleed, caption on the work or rest colour above the numerals.",
+    "frame1": "full-bleed on the new run screen; background = work red #D42A1E, white text. Recapture needed (new run screen).",
+    "frame3": "Caption 'each timer shows its own shape' must be true: capture data gives the templates their own interval colours (Tabata red, Boxing amber, Walk/Run green, EMOM blue, Circuit violet) and the list starts with the Tabata tile whole. If the capture cannot show different colours, change the caption to 'Tabata, EMOM, boxing: each timer drawn as its own strip.' and keep the strips.",
+    "frame5": "full-bleed on the rest screen; background = the rest colour sampled from the capture's top-left pixel (set it in frame style, text colour chosen for 4.5:1).",
+    "frame6": "Android capture still shows two 'Ended early' rows and 'Workouts: 2 / 00:48': recapture with scripts/store-history-seed.sql applied (as on iOS).",
+    "frame8": "Android capture lists emulator voice ids (en-us-x-iob-local): recapture with voice cues off so the picker is hidden (as on iOS). Also show the privacy paragraph rather than a toggle list (review fix 6).",
+    "frame7": "Fill the lower 40 % (longer pasted timer with its strip) or crop to the card.",
+    "video": "The preview video must END on the done screen of a COMPLETED workout (use a short Quick test that runs to its end, not End workout), not on the End dialog; silent unless the owner OKs recorded beeps."
+  }
+}

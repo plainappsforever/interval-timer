@@ -65,7 +65,10 @@ export const tr: Record<MessageKey, string> = {
   'status.keepScreenOn': 'Uyarılar için ekranı açık tutun.',
 
   'home.title': 'Zamanlayıcılar',
-  'home.empty': 'Henüz zamanlayıcı yok.',
+  'home.empty': 'Henüz kendi zamanlayıcınız yok. Bir şablon başlatın veya Yeni zamanlayıcı ile kendinizinkini oluşturun.',
+  'home.rounds': '{n} tur',
+  'home.roundsOne': '1 tur',
+  'home.blocks': '{n} blok',
   'home.new': 'Yeni zamanlayıcı',
   'home.start': 'Başlat',
   'home.count': '{n} zamanlayıcı',
@@ -251,6 +254,9 @@ export const tr: Record<MessageKey, string> = {
   'settings.privacyTitle': 'Gizlilik',
   'settings.privacy': 'Plain Intervals hiçbir şey toplamaz: hesap yok, analiz yok, reklam yok, internet erişimi yok. Zamanlayıcılar ve geçmiş, kendin bir dosya paylaşmadıkça bu telefonda kalır.',
   'settings.privacyOnline': 'Gizlilik politikası (web sitesini açar)',
+  'licenses.title': 'Lisanslar',
+  'licenses.open': 'Açık kaynak lisansları',
+  'licenses.intro': 'Bu uygulama aşağıdaki açık kaynak yazılımlarla yapıldı. Lisansı okumak için bir girişe dokunun.',
 
   'settings.backupHint': 'Yedek, paylaşana kadar bu telefonda kalır. Telefon kaybolur ya da sıfırlanırsa saklamak için Dosyalar, Drive veya bir mesajla paylaş.',
 };

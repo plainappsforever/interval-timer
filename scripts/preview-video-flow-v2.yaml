@@ -1,0 +1,44 @@
+appId: ${APP_ID}
+name: Preview video v2 (R6 part 2) home, short timer, completed workout, done screen
+---
+- launchApp:
+    stopApp: true
+    arguments:
+      -AppleLanguages: "(${LANGTAG})"
+      -AppleLocale: "${LOCALE}"
+- extendedWaitUntil:
+    visible:
+      id: home-screen
+    timeout: 15000
+- waitForAnimationToEnd:
+    timeout: 2000
+- scrollUntilVisible:
+    element:
+      id: start-8
+    direction: DOWN
+    optional: true
+- tapOn:
+    id: run-sound-never
+    optional: true
+- tapOn:
+    id: start-8
+- extendedWaitUntil:
+    visible:
+      id: run-sound
+    timeout: 30000
+- tapOn:
+    id: run-sound
+- extendedWaitUntil:
+    visible: "NEVER_VISIBLE_PAUSE"
+    timeout: 2500
+    optional: true
+- tapOn:
+    id: run-skip
+- extendedWaitUntil:
+    visible:
+      id: done-screen
+    timeout: 40000
+- extendedWaitUntil:
+    visible: "NEVER_VISIBLE_PAUSE"
+    timeout: 4000
+    optional: true

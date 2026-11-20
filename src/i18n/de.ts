@@ -65,7 +65,10 @@ export const de: Record<MessageKey, string> = {
   'status.keepScreenOn': 'Bildschirm für die Signale eingeschaltet lassen.',
 
   'home.title': 'Timer',
-  'home.empty': 'Noch keine Timer.',
+  'home.empty': 'Noch keine eigenen Timer. Starte eine Vorlage oder erstelle mit Neuer Timer einen eigenen.',
+  'home.rounds': '{n} Runden',
+  'home.roundsOne': '1 Runde',
+  'home.blocks': '{n} Blöcke',
   'home.new': 'Neuer Timer',
   'home.start': 'Start',
   'home.count': '{n} Timer',
@@ -251,6 +254,9 @@ export const de: Record<MessageKey, string> = {
   'settings.privacyTitle': 'Datenschutz',
   'settings.privacy': 'Plain Intervals erfasst nichts: kein Konto, keine Analyse, keine Werbung, kein Internetzugriff. Timer und Verlauf bleiben auf diesem Telefon, außer du teilst selbst eine Datei.',
   'settings.privacyOnline': 'Datenschutzerklärung (öffnet die Website)',
+  'licenses.title': 'Lizenzen',
+  'licenses.open': 'Open-Source-Lizenzen',
+  'licenses.intro': 'Diese App nutzt die folgende Open-Source-Software. Tippe auf einen Eintrag, um die Lizenz zu lesen.',
 
   'settings.backupHint': 'Eine Sicherung bleibt auf diesem Telefon, bis du sie teilst. Teile sie in Dateien, Drive oder eine Nachricht, damit sie bei Verlust oder Zurücksetzen erhalten bleibt.',
 };

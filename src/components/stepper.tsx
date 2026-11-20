@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Pressable, StyleSheet, TextInput, View } from 'react-native';
 
 import { ThemedText } from '@/components/themed-text';
-import { Spacing } from '@/constants/theme';
+import { Radius, Spacing } from '@/constants/theme';
 import { useT } from '@/hooks/use-t';
 import { useTheme } from '@/hooks/use-theme';
 import { clampInt } from '@/lib/duration-input';
@@ -72,5 +72,5 @@ const styles = StyleSheet.create({
   label: { flex: 1 },
   btn: { width: 40, height: 40, borderRadius: 20, alignItems: 'center', justifyContent: 'center' },
   value: { minWidth: 76, textAlign: 'center', fontVariant: ['tabular-nums'] },
-  input: { borderWidth: 1, borderRadius: 8, paddingVertical: 6, fontSize: 16, fontWeight: '600' },
+  input: { borderWidth: 1, borderRadius: Radius.control, paddingVertical: 6, fontSize: 16, fontWeight: '600' },
 });

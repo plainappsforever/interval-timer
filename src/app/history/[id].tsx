@@ -6,7 +6,7 @@ import { Keyboard, ScrollView, StyleSheet, TextInput, View } from 'react-native'
 
 import { Button } from '@/components/button';
 import { ThemedText } from '@/components/themed-text';
-import { Spacing } from '@/constants/theme';
+import { Radius, Spacing } from '@/constants/theme';
 import { useSQLiteContext } from '@/db/provider';
 import { deleteSession, getSession, updateSessionNote, type Session } from '@/db/sessions';
 import { formatDuration } from '@/engine/format';
@@ -100,7 +100,7 @@ export default function SessionScreen() {
         ) : null}
       </ScrollView>
       {confirmDelete ? (
-        <View style={[StyleSheet.absoluteFill, styles.backdrop]} accessibilityViewIsModal>
+        <View style={[StyleSheet.absoluteFill, styles.backdrop, { backgroundColor: theme.scrim }]} accessibilityViewIsModal>
           <View testID="session-delete-dialog" style={[styles.dialog, { backgroundColor: theme.background }]}>
             <ThemedText type="smallBold">{t('history.deleteTitle')}</ThemedText>
             <Button testID="session-delete-confirm" label={t('common.delete')} onPress={remove} />
@@ -115,7 +115,7 @@ export default function SessionScreen() {
 const styles = StyleSheet.create({
   content: { padding: Spacing.three, gap: Spacing.two },
   row: { flexDirection: 'row', justifyContent: 'space-between', paddingVertical: Spacing.two, borderBottomWidth: StyleSheet.hairlineWidth },
-  note: { borderWidth: 1, borderRadius: 8, padding: Spacing.two, minHeight: 80, fontSize: 16, textAlignVertical: 'top' },
-  backdrop: { backgroundColor: 'rgba(0,0,0,0.5)', alignItems: 'center', justifyContent: 'center', padding: Spacing.four },
-  dialog: { alignSelf: 'stretch', maxWidth: 420, borderRadius: 16, padding: Spacing.four, gap: Spacing.three },
+  note: { borderWidth: 1, borderRadius: Radius.control, padding: Spacing.two, minHeight: 80, fontSize: 16, textAlignVertical: 'top' },
+  backdrop: { alignItems: 'center', justifyContent: 'center', padding: Spacing.four },
+  dialog: { alignSelf: 'stretch', maxWidth: 420, borderRadius: Radius.card, padding: Spacing.four, gap: Spacing.three },
 });

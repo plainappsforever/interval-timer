@@ -8,7 +8,9 @@ tags:
 
 # First start seeds the templates (SPEC §4)
 - assertVisible: "Tabata.*"
-- assertVisible: "Boxing 3/1.*"
+# Redesign R1: the poster ring pushes the later templates below the first screen; the poster itself is on it
+- assertVisible:
+    id: poster
 
 # Open a timer (editor placeholder until P6)
 - tapOn: "Tabata, .*"
@@ -25,6 +27,9 @@ tags:
       platform: Android
     commands:
       - back
+- scrollUntilVisible:
+    element: "Boxing 3/1.*"
+    direction: DOWN
 
 # Settings: switch to dark mode
 - tapOn:
